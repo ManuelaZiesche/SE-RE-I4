@@ -1,2 +1,2 @@
-==Projektplan: I4 Weiterentwicklung der Mitgliederdatenbank des Stura
+= Projektplan: I4 Weiterentwicklung der Mitgliederdatenbank des Stura
 
