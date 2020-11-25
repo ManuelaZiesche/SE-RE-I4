@@ -1,0 +1,17 @@
+= Iteration Plan 01: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+
+== Meilensteine
+
+.Meilensteine
+|======
+| *Meilenstein* | *Datum*
+| Beginn der Iteration | 23.11.2020
+| Erstes Meeting mit Themenstellern | 30.11.2020
+| URL des Repository an Coach | 02.12.2020
+
+
+|======
+
+== Wesentliche Ziele
+- Weiterentwicklung und Optimierung der Datenbank
+- 

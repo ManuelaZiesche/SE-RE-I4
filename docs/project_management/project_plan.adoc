@@ -1,2 +1,38 @@
-= Projektplan: I4 Weiterentwicklung der Mitgliederdatenbank des Stura
+= Projektplan: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
+
+== Einführung 
+
+Dieser Plan zeigt Inhalt, sowie Meilensteine des 'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa' Projektes. 
+Ein anderer Plan beinhaltet alle benutzten Tools und Werkzeuge. 
+
+== Projektorganisation
+
+Blablabla
+Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt worden.
+
+-Projektmanagement: Manuela Ziesche + 
+-Analyse: Kristina Lapatanova, Erik Würfel + 
+-Architektur: Basti, Benni + 
+-Entwicklung: Vasco, Sabine + 
+-Test: Bayu, Basti + 
+
+== Projektpraktiken
+
+== Meilensteine des Projektes
+
+.Iterationsphasen
+
+|======
+| *Phase* | *Iteration* | | *Iterationsstart* | *Iterationsende* | *Kalendertage*
+| Inception | M0 | | 23.11.2020 | 06.12.2020 | 14 Tage 
+| Elaboration | M1 | | 07.12.2020 | | 
+| Elaboration | M2 | | | | 
+| Elaboration | M3 | | | |
+
+|====== 
+
+== Deployment
+
+
+== Lessons Learned?
 

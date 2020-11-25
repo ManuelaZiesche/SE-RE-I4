@@ -1,0 +1,19 @@
+= Risikoliste: {I4 - Weiterentwicklung der Mitgleiderdatenbank des StuRa}
+
+In diesem Dokument sind alle wesentlichen Risiken des Projektes aufgeführt. 
+
+Dabei werden folgende *Attribute* verwendet:
+
+- Typ: Ressourcen, Geschäftlich, Technisch, Zeitlich
+- Auswirkung (IMP): Wert zwischen 1 (niedrig) und 5 (hoch), der die Auswirkungen auf das Projekt angibt, wenn das Risiko eintritt. 
+- Wahrscheinlichkeit (PRB): Prozentangabe für die Eintrittswahrscheinlichkeit des Risikos.
+-Stärke (MAG): Produkt aus Auswirkung und Wahrscheinlichkeit.
+
+== Risiken
+
+Die Risiken sind in folgender Tabelle (LINK ZU RISIKENTABELLE) dargestellt. Das Datum des Dokumentes oben gibt an, wann die Risikoliste zuletzt aktualisiert wurde. 
+
+.Risiken
+|======
+|
+|======
