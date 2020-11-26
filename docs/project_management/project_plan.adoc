@@ -12,9 +12,9 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt worden
 
 -Projektmanagement: Manuela Ziesche + 
 -Analyse: Kristina Lapatanova, Erik Würfel + 
--Architektur: Basti, Benni + 
--Entwicklung: Vasco, Sabine + 
--Test: Bayu, Basti + 
+-Architektur: Sebastian Matthäus, Benjamin Müller + 
+-Entwicklung: Leander  Vasco Schwarze, Sabine Elisabeth Adam +
+-Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
 == Projektpraktiken
 
