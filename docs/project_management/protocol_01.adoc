@@ -1,0 +1,49 @@
+= Protokoll 30.11.2020
+Sabine Adam
+1.0, 30.11.2020
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+== Anforderungen an die Datenbank/ an das Projekt
+
+-> aus dem Gespräch mit Sophia (STURA)
+
+=== Check-Listen
+
+* automatische Zuordnung von Checklisten an neu angelegte Mitglieder
+** Schlüsselzugänge (Tabelle -> Sophia)
+** Mailverteiler
+** Kartenleser
+* Kandidaten bekommen keine Checklisten zugeordnet
+* nur Admins können die Checklisten bearbeiten
+** User haben darauf keinen Einfluss (Zugriffsrecht)
+
+=== Aufwandsentschädigung
+
+* "Workload" soll hinzugefügt werden (Maß der Aktivität des Mitgliedes)
+* -> daraus resultiert die Aufwandsentschädigung
+** soll am Ende Quartals aufsummiert werden
+-> Mit dem Ausschuss Personelles verständigen
+
+=== Kanditaten/-Mitgliederunterscheidung
+
+Neben Mitgliedern sollen auch Kandidaten angelegt werden können
+
+* Kandidatendaten
+** Vorname
+** Nachname
+** Wahldatum
+** Beschlussnummer
+** Button -> Upgrade Mitglied ?
+
+* Stimmzettelgenerierung aus Kandidaten gewünscht
+
+=== "Verbindung nach Außen"
+
+* Mail nach "außen" versenden
+
+=== Organigramm
+
+* Organigramm erstellen
+* offene Stellen expotieren
