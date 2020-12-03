@@ -1,6 +1,7 @@
 = Vision: *Projekt - Weiterentwicklung der Mitgliederdatenbanken*
 Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
+
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
@@ -36,10 +37,10 @@ Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen 
 
 [cols="1,3"]
 |===
-|Das Problem |	Änderung von Cocktails entsprechend den Wünschen von Kunden. Erweiterung der Reichweite
-|betrifft |	Die Kunden, der Barbetreiber
-|die Auswirkung davon ist |	Wenig Umsatz, nicht erfüllte Kundenbedürfnisse
-|eine erfolgreiche Lösung wäre | Einführung des Systems, (online-shops) wo Kunden die Getränke selbst mixen können
+|Das Problem |	Unübersichtliche und unpraktische Art die Daten in Mitgliederdatenbank anzulegen/einzupflegen
+|betrifft |	Mitglieder der StuRa, Angestellte HTW
+|die Auswirkung davon ist |	lange und fehleranfällige Bearbeitung der Daten 
+|eine erfolgreiche Lösung wäre | Einführung einer Software, die die Prozesse beschleunigt und die Bedienbarkeit verbessert
 |===
 
 ////
@@ -61,12 +62,12 @@ Beispiel
 
 [cols="1,3"]
 |===
-|Für|	Die Privatkunden (Gruppen)
-|der / die| schnell und einfach Alkoholische Cocktails für die Feierlichkeiten bestellen möchten.
-|Das Produkt / die Lösung ist ein | Online-shop
-|Die / Das	| eine Bestellabwicklung von Standart- oder Personalisiertecocktails in Größen von (1L, 1.5L, oder 2L) in wenigen Schritten bietet.
-|Im Gegensatz zu	| dem brick-and-mortar Bar läuft hier alles bequem über die Webseite. (zu viel Aufwand - selber mischen; dosen-cocktails)
-|Unser Produkt|	Zeigt außerdem alle relevante Informationen wie Bestellhistorie mit Status.  
+|Für|	Mitglieder des Studentenrates
+|deren | Daten anschaulich eingepflegt werden können.
+|Das Produkt / die Lösung ist eine | Webseite
+|Die / Das	| essenziellen Daten für die Mitglieder aufbereitet, zuordnet
+|Im Gegensatz zu | Excel-Tabellen 
+|Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar.
 |===
 
 //|Für|	[Zielkunde / Nutzer]
@@ -75,8 +76,6 @@ Beispiel
 //|Die / Das	|[Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
 //|Im Gegensatz zu	|[wesentliche Lösungsalternative]
 //|Unser Produkt|	[Aussage zum Hauptunterschied]
-
-
 
 //Beispiel Produkt:
 //|===
@@ -94,13 +93,11 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|Barbetreiber| Besitzt und betreibt ein Bar |Auftraggeber. Überwacht den Prozessfortschritt
-|Kunden| --| Nutzer des Produkts
-|Systembetreuer, IT-Abteilung| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität des Online-Shops verantwortlich
-|Zahlungssystemen | -- | Die Zahlungsabwicklung muss sicher und verbindlich durchgeführt werder
-|Fernabsatzgesetz | Das Fernabsatzgesetz ist nach § 312b BGB anwendbar auf Verträge über die Lieferung von Waren oder die Erbringung von Dienstleistungen, die zwischen Unternehmer und Verbraucher unter ausschließlicher Verwendung von Fernkommunikationsmitteln abgeschlossen wurden.| Ziel der Richtlinie ist es, den Versandhandel in der EU zu harmonisieren und die Stellung der Verbraucher zu stärken. 
-|Jugendschutzgesetz | §9 Alkoholische Getränke oder Lebensmittel an Kinder und Jugendliche weder abgegeben noch darf ihnen der Verzehr gestattet werden. |Muss vom Barbetreiber angegeben und eingehalten werden
-|Häcker | Jemand, der illegal in Computersysteme eindringt.| Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
+|HTW | Hochschule | --
+|Mitglieder der StuRa| --| Nutzer des Produkts
+|Systembetreuer, Admin| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
+|_Zahlungssystemen_ | -- | Die Zahlungsabwicklung muss sicher und verbindlich durchgeführt werder
+|Hacker | Jemand, der illegal in Computersysteme eindringt.| Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
 
 
 
@@ -111,11 +108,12 @@ Beispiel
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren. Kontext
-. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, nimmt eventuell mit der Zeit zu
-. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
-. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
-. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
+. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, nimmt mit der Zeit ab.
+. Die Bearbeitung der Aufgabe dauert zwei Semester. Jede Iteration wird innerhalb von zwei Wochen abgeschlossen.
+. Besondere Umgebungsbedingungen: responsive, online  - ?? __Außeneinsatz Touchbedienung_??
+. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig? 
+Windows, Linux, iOS, Android
+. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden? mit Outlook/Groupware??
 
 Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -156,3 +154,5 @@ Hinweise:
 
 == Zusatzinfo
 include::glossary.adoc[]
+
+Verbessertes Image durch professionelles Erscheinungsbild
