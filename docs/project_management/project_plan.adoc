@@ -2,20 +2,25 @@
 
 == Einführung 
 
-Dieser Plan zeigt Inhalt, sowie Meilensteine des 'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa' Projektes. +
-Alle Risiken wurden in der sogenannten 'Risk List' aufgeführt. +
-Die 'Work Items List' beinhaltet alle benutzten Tools und Werkzeuge, die im Projekt gebraucht wurden. + 
-Außerdem gibt es für jede Iteration noch einen eigenen Iterationsplan. 
+Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
+ +
+Alle _Risiken_ wurden in der <<risk_list.adoc>>  aufgeführt. +
+Die <<work_item_list.adoc>> beinhaltet alle _benutzten Tools und Werkzeuge_, die im Projekt gebraucht wurden.  + 
+Die Dokumentation unseres Projektes umfassst ebenso die Protokolle von Meetings. VERWEIS AUF ORDNER? +
+Außerdem gibt es für jede Iteration noch einen eigenen Iterationsplan: 
+ +
+<<iteration_plan01.adoc>> +
+
 
 == Projektorganisation
 
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
 
--Projektmanagement: Manuela Ziesche + 
--Analyse: Kristina Lapatanova, Erik Würfel + 
--Architektur: Sebastian Matthäus, Benjamin Müller + 
--Entwicklung: Leander  Vasco Schwarze, Sabine Elisabeth Adam +
-Test: Bayu Anggi Saputra, Sebastian Matthäus + 
+- Projektmanagement: Manuela Ziesche + 
+- Analyse: Kristina Lapatanova, Erik Würfel + 
+- Architektur: Sebastian Matthäus, Benjamin Müller + 
+- Entwicklung: Leander  Vasco Schwarze, Sabine Elisabeth Adam +
+- Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
 == Projektpraktiken
 
@@ -25,8 +30,8 @@ Test: Bayu Anggi Saputra, Sebastian Matthäus +
 
 |======
 | *Phase* | *Iteration* | *Hauptziel* | *Iterationsstart* | *Iterationsende* | *Kalendertage*
-| Inception | M0 | | 23.11.2020 | 06.12.2020 | 14 Tage 
-| Elaboration | M1 | | 07.12.2020 | | 
+| Inception | M0 | | 30.11.2020 | 13.12.2020 | 14 Tage 
+| Elaboration | M1 | | 15.12.2020 | | 
 | Elaboration | M2 | | | | 
 | Elaboration | M3 | | | |
 
@@ -35,5 +40,5 @@ Test: Bayu Anggi Saputra, Sebastian Matthäus +
 == Deployment
 
 
-== Lessons Learned?
+== Erkenntnisse
 

@@ -5,13 +5,30 @@
 .Meilensteine
 |======
 | *Meilenstein* | *Datum*
-| Beginn der Iteration | 23.11.2020
+| Beginn der Iteration | 30.11.2020
 | Erstes Meeting mit Themenstellern | 30.11.2020
-| URL des Repository an Coach | 02.12.2020
-
+| Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020
+| Ende der Iteration | 13.12.2020
 
 |======
 
 == Wesentliche Ziele
-- Weiterentwicklung und Optimierung der Datenbank
-- 
+- Überblick über genutzte Tools verschaffen  +
+- Aufgabenstellung analysieren + 
+
+
+
+== Aufgabenzuordnung
+
+Die in dieser Iteration geplanten Aufgaben sind in der Work Item List dargestellt. <<project_plan.adoc>> +
+_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
+
+
+
+
+== Probleme 
+
+== Bewertungskriterien
+
+== Assessment
+
