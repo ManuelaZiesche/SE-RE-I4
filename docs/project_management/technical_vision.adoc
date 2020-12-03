@@ -1,21 +1,21 @@
-= Vision: *Projekt - Cocktailversand*
-Kristina Lapatanova <s79329@htw-dresden.de>; Olena Pokotilova <s77788@htw-dresden.de>; Lavinia Kaufmann <s79188@htw-dresden.de>
+= Vision: *Projekt - Weiterentwicklung der Mitgliederdatenbanken*
+Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des *Cocktailversand* zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das *Cocktailversand* diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Weiterentwicklung der Mitgliederdatenbanken zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das Weiterentwicklung der Mitgliederdatenbanken diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das *Cocktailversand*, das von _Wing-girls_ entwickelt wird. Das System wird es *_dem Barbetreiber_* erlauben, sein Geschäftsfeld durch einen Online-Shop für Cocktailversand zu erweitern (zu nutzen), um damit besser auf Kundenwünsche einzugehen (zu erreichen).
+Dieses Visions-Dokument bezieht sich auf das Weiterentwicklung der Mitgliederdatenbanken, das von SE/RE I4-Gruppe entwickelt wird. Das System wird es dem Studentenrat erlauben, seine Mitgliederdatenbank optimal darzustellen, um eine bessere Übersichtlichkeit und Benutzerfreundlichkeit zu erreichen.
 
 === Definitionen, Akronyme und Abkürzungen
-siehe <<Glossar>>.
+siehe Glossar.
 
 
 
@@ -25,7 +25,8 @@ siehe <<Glossar>>.
 == Positionierung
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
-Der Umsatz des Unternehens soll erhöht werden, indem mehr Kunden erreicht werden. Die Cocktails sollen außer im Bar noch über einen Online-Portal angeboten werden. Es soll näher auf die Kundenbedürfnissen eingegengen werden.
+
+Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen Prozesse Excell-Tabellen. Diese Abläufe der Mitgliederdatenbank sollen optimiert werden, um den Beteiligten  Zeit zu sparen. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
 
 
 
