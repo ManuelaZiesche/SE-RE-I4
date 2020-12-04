@@ -1,0 +1,83 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: Kundenbestellung
+===	Kurzbeschreibung
+//Der Kunde betätigt seine Bestellung
+
+===	Kurzbeschreibung der Akteure
+==== Kunde und/oder Cocktail-Mischer und/oder Lieferdienst und/oder Barkeeper als Buchhaltung
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Kunde muss registriert sein (Daten zum Alter für die Prüfung auf die Volljährigkeit)
+* Die Internetseite ist geöffnet
+* Kunde muss angemeldet sein  
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+//. Der Use Case beginnt, wenn <Kunde> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+
+.für Kunde
+. Auswahl ob Standardcocktail oder Indivudalcocktail
+. Katalogauswahl ( was und wieviel)
+. Nach Auswahl fügt sich Artikel in Warenkorb ein 
+. Wahl zwischen Warenkorb öffnen oder Bestellung Auswahl fortführen
+. nach Warenkorb- Öffnung erscheint Butto "zur Kasse"
+. Abfrage von Liefer- und Rechnungsadresse (kann vorgespeichert sein)
+. Abfrage vom Zahlungsmittel 
+. Endzusammenfassung der Bestellung und Abfrage, ob der Kauf abgewickelt werden kann 
+. Bestellbestätigung per email
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Alternativer Ablauf 1
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+//. "What can go wrong?"; "What options are available at this point?"
+
+. wenn der Kunde sich registrieren will, und unter 18 Jahren ist, kommt eine Störungsmeldung [andere Lösung ]
+. wenn eine Zutat nicht zur Verfüfung steht ( oder nicht in ausreichender Menge), kommt eine Störungsmeldung 
+. wenn in Lieferadresse ein Feld nicht ausgefüllt wird, kommt eine Fehlermeldung
+. ( Kunde nicht zahlungsfähig)
+. Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
+
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== Unterablauf 1
+. Lieferadresse speichern, Schritt 1
+. …
+. <Bestellungen abspeichern für eventuelle Wiederholung, Schritt n
+. beforzugte Zahlungsvariante abspeichern
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+==== Szenario 1
+. <Szenario 1, Schritt 1>
+. 	…
+. <Szenario 1, Schritt n>
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+. erfolgreiche Bestellung 
+. erfolgreicher Cocktailzubereitung inklusive Versand
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+==== seitens Bestellabwicklung in Firma
+* Hygiene
+* Software- Organisation ( Bestellung darf nicht verloren gehen) 
+* Kontrolle ( ob Auftrag ausgeführt wurde und in passendem Umfang/ Qulität [Zutaten/ Menge] vorliegt)
+* 
+
+==== Benutzeroberfläche
+* Impressum und AGBs auf Website
+* ?
