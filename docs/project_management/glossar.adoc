@@ -1,7 +1,7 @@
 = Glossar
-Kristina Lapatanova <s79329@htw-dresden.de>; Olena Pokotilova <s77788@htw-dresden.de>; Lavinia Kaufmann <s79188@htw-dresden.de>
+Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
-// include::../_includes/default-attributes.inc.adoc[]
+//include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 

@@ -1,8 +1,7 @@
 = Vision: *Projekt - Weiterentwicklung der Mitgliederdatenbanken*
 Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
-
-include::../_includes/default-attributes.inc.adoc[]
+//include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -151,8 +150,5 @@ Hinweise:
 |xx|xx|xx|
 |===
 
-
-== Zusatzinfo
-include::glossary.adoc[]
 
 Verbessertes Image durch professionelles Erscheinungsbild
