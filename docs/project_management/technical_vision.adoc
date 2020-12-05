@@ -124,12 +124,16 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|xx|xx|xx|xx
-|Möglichkeit aus Standartcocktails auswählen oder "eigene Kreaktion" zu mixen | Hoch | Menü/ Katalog | xx
-|Auswahl von Zutaten für die "eigene Kreationen" von Kunden: Säften, Alkoholischen Getränken und Topings | Hoch | Cocktailkonfigurator | xx 
-|Datenerhebung für die Statistiken und Werbezwecken| Hoch | Kundenkonto| xx
-|Schnelle und einfache Bestellungsabwicklung (max. 5 Schritte) | Hoch | Warenkorb | xx
-|Bezahlmöglichkeiten geben | Hoch| Anbindung zu den bestehenden Bezahlsystemen: PayPal, EC-Karte, Kreditkarte ect. |  xx
+| --| Mittel |Kandidaten sollen angelegt werden | xx
+|Wahldatum der potenziellen Mitglieder ist ersichtlich | Mittel| -- |xx
+|Automatische Zuordnung der Check-Listen an neu angelegte Mitglieder | Hoch | -- | xx
+|Schlüsseln zuordnen |Hoch | -- | xx
+|Mailverteiler | Hoch | --| xx
+|Kartenleser | Hoch | -- | xx
+|Möglichkeit einer direkten Kontaktaufnahme per E-Mail auf der Webseite| Niedrig | -- | xx 
+|Stimmzettelgenerierung aus Kandidaten | Mittel | -- | xx
+|Workload soll hinzugefügt werden| Hoch | -- | xx
+|Auszahlung des personelles Ausschusses für die Bearbeitung des Projekts (vllt gleich Workload)| Hoch | --| xx
 |===
 
 
@@ -146,8 +150,10 @@ Hinweise:
 [%header, cols="4,1,1"]
 |===
 |Anforderung|	Priorität|	Geplantes Release
-|Volljährigkeitsprüfung | --| --
-|xx|xx|xx|
+|Einfache Bedienbarkeit | MIttel | --
+|System kann nur online genutzt werden (nicht offline) |Mittel|--
+|System muss auf allen gängigen Browsern sowie auf mobilen
+Endgeräten lauffähig sein| Hoch | --
 |===
 
 

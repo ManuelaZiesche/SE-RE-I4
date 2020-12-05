@@ -13,9 +13,9 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
-|Kunde|Bezeichnet in diesem Kontext die Käufer der Cocktails|Nutzer, Benutzer
-
-|Barbetreiber|Bezeichnet den Geschäftsführer der Bar, der die Anforderungen stellt und bestimmt, ob das System als abgenommen gilt|
+|Check-Liste| -- | --
+|Aufwandsentschädigung | Bezahlung für die Abarbeitung der Aufgaben | --
+|Workload | Maß der Aktivität des Mitgliedes | --
 
 |===
 
