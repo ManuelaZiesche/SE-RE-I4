@@ -1,4 +1,4 @@
-= Vision: Projekt - Weiterentwicklung der Mitgliederdatenbanken
+= Vision: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
 Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
 //include::../_includes/default-attributes.inc.adoc[]

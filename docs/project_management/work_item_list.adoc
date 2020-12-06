@@ -1,0 +1,8 @@
+== Work Item List: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
+
+|===
+| *Name / Description* |*Priority*|*Size estimate (Points)*|*State*|*Target iteration*|*Assig-ned To*|*Effort estimate left (hours)*|*Hours worked*|*Reference material*
+| Produce draft vision | 1 | -- | in progress | -- | --| -- | --| --
+
+
+|===

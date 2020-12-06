@@ -1,4 +1,4 @@
-= Use-Case Model: Projekt - Weiterentwicklung der Mitgliederdatenbanken
+= Use-Case Model: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
 Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 //include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
