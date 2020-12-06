@@ -1,12 +1,12 @@
 = Glossar
-Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
+Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
 //include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der <Projektthema-Systems> definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
+In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der  Weiterentwicklung der Mitgliederdatenbank des StuRa definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
 
 == Begriffe
 [%header]
@@ -14,8 +14,9 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
 |Check-Liste| -- | --
-|Aufwandsentschädigung | Bezahlung für die Abarbeitung der Aufgaben | --
-|Workload | Maß der Aktivität des Mitgliedes | --
+|Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
+|Workload | Maß der Aktivität des Mitgliedes | Fortschritt
+|--| --| --
 
 |===
 
@@ -25,7 +26,8 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Abkürzung|	Bedeutung|	Erläuterung
 //|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung|
-|ml|Milliliter|eine Einheit für das Volumen
+| AE | Aufwandsentschädigung | siehe oben
+| xx | xx | xx
 |===
 
 == Verzeichnis der Datenstrukturen

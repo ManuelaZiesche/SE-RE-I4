@@ -1,5 +1,5 @@
 = System-Wide Requirements: Projekt - Weiterentwicklung der Mitgliederdatenbanken
-Kristina Lapatanova <s79329@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
+Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>
 {localdatetime}
 //include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
