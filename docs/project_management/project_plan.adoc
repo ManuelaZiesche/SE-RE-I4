@@ -4,7 +4,7 @@
 
 Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
  +
-Alle _Risiken_ wurden in der <<risk_list.adoc>>  aufgeführt. +
+Alle _Risiken_ wurden in der <<link:risk_list.adoc[]>>  aufgeführt. +
 Die <<work_item_list.adoc>> beinhaltet alle _benutzten Tools und Werkzeuge_, die im Projekt gebraucht wurden.  + 
 Die Dokumentation unseres Projektes umfassst ebenso die Protokolle von Meetings. VERWEIS AUF ORDNER? +
 Außerdem gibt es für jede Iteration noch einen eigenen Iterationsplan: 
@@ -30,7 +30,8 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 |======
 | *Phase* | *Iteration* | *Hauptziel* | *Iterationsstart* | *Iterationsende* | *Kalendertage*
-| Inception | M0 | | 30.11.2020 | 13.12.2020 | 14 Tage 
+| Inception | M0 | -Lifecycle Objective +
+ -Ziel ist klar + | 30.11.2020 | 13.12.2020 | 14 Tage 
 | Elaboration | M1 | | 15.12.2020 | | 
 | Elaboration | M2 | | | | 
 | Elaboration | M3 | | | |

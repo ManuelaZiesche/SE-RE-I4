@@ -13,8 +13,10 @@
 |======
 
 == Wesentliche Ziele
-- Überblick über genutzte Tools verschaffen  +
-- Aufgabenstellung analysieren + 
+- Überblick über genutzte Tools/Projektumgebung verschaffen  +
+- Aufgabenstellung analysieren, Vision entferfen + 
+- 
+
 
 
 

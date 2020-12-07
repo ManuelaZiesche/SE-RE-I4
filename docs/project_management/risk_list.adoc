@@ -11,7 +11,7 @@ Dabei werden folgende *Attribute* verwendet:
 
 == Risiken
 
-Die Risiken sind in folgender Tabelle (LINK ZU RISIKENTABELLE) dargestellt. Das Datum des Dokumentes oben gibt an, wann die Risikoliste zuletzt aktualisiert wurde. 
+Die Risiken sind in folgender Tabelle (LINK ZU RISIKENTABELLE) dargestellt. 
 
 .Risiken
 |======
