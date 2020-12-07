@@ -5,11 +5,11 @@
 Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
  +
 Alle _Risiken_ wurden in der <<link:risk_list.adoc[]>>  aufgeführt. +
-Die <<work_item_list.adoc>> beinhaltet alle _benutzten Tools und Werkzeuge_, die im Projekt gebraucht wurden.  + 
+Die <<link:work_item_list.adoc[]>> beinhaltet alle _benutzten Tools und Werkzeuge_, die im Projekt gebraucht wurden.  + 
 Die Dokumentation unseres Projektes umfassst ebenso die Protokolle von Meetings. VERWEIS AUF ORDNER? +
 Außerdem gibt es für jede Iteration noch einen eigenen Iterationsplan: 
  +
-<<iteration_plan01.adoc>> +
+<<link:iteration_plan01.adoc[]>> +
 
 
 == Projektorganisation
