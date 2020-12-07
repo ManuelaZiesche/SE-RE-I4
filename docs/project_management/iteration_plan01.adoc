@@ -4,33 +4,49 @@
 
 .Meilensteine
 |======
-| *Meilenstein* | *Datum*
-| Beginn der Iteration | 30.11.2020
-| Erstes Meeting mit Themenstellern | 30.11.2020
-| Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020
-| Ende der Iteration | 13.12.2020
+| *Meilenstein* | *Datum* | *Notizen*
+| Beginn der Iteration | 30.11.2020 |
+| Erstes Meeting mit Themenstellern | 30.11.2020 |
+| Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020 |
+| Teammeeting | 07.12.2020 | 
+| Ende der Iteration - LCA Meilenstein| 13.12.2020 |
 
 |======
 
 == Wesentliche Ziele
+
 - Überblick über genutzte Tools/Projektumgebung verschaffen  +
 - Aufgabenstellung analysieren, Vision entferfen + 
 - 
 
 
-
-
 == Aufgabenzuordnung
 
-Die in dieser Iteration geplanten Aufgaben sind in der Work Item List dargestellt. <<project_plan.adoc>> +
-_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
 
+.Aufgabenverteilung
+|======
+|*Aufgabe* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Referenzen* | *geplante Iteration* | *Zugewiesen* | *Gearbeitete Stunden* | *Schätzung der verbleibenden Stunden*
+| Vision erstellen | Kristina und Erik
+
+|======
 
 
 
 == Probleme 
 
+.Probleme
+|======
+| *Problem* | *Status* | *Notizen*
+| Themensteller hat eine Woche lang nicht auf E-Mails reagiert | offen | Wir kommen nicht weiter mit der Visionserstellung, so lang wie wir kein neues Meeting mit dem Themensteller haben
+|======
+
+
 == Bewertungskriterien
+
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit den Themenstellern und dem gesamten Team ergibt positive Rückmeldungen 
+- Überprüfung der Programmziele mit den Themenstellern
+
 
 == Assessment
 
