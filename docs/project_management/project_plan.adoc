@@ -1,4 +1,6 @@
 = Projektplan: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
+Manuela Ziesche <manuela.ziesche@htw-dresden.de>
+{localdatetime}
 
 == Einführung 
 

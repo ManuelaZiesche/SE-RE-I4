@@ -1,4 +1,6 @@
 = Risikoliste: {I4 - Weiterentwicklung der Mitgleiderdatenbank des StuRa}
+Manuela Ziesche <manuela.ziesche@htw-dresden.de>
+{localdatetime}
 
 In diesem Dokument sind alle wesentlichen Risiken des Projektes aufgeführt. 
 

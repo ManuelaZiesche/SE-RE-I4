@@ -1,0 +1,49 @@
+= Iteration Plan 02: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+Manuela Ziesche <manuela.ziesche@htw-dresden.de>
+{localdatetime}
+
+== Meilensteine
+
+.Meilensteine
+|===
+| *Meilenstein* | *Datum* | *Notizen*
+| Beginn der Iteration | 14.12.2020 | 
+| | | 
+| | |
+| | | 
+| | |
+
+|===
+
+== Wesentliche Ziele
+
+
+
+
+== Aufgabenzuordnung
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
+
+.Aufgabenverteilung
+|===
+|*Aufgabe* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Referenzen* | *geplante Iteration* | *Zugewiesen* | *Gearbeitete Stunden* | *Schätzung der verbleibenden Stunden*
+
+
+|===
+
+
+
+== Probleme 
+
+.Probleme
+|===
+| *Problem* | *Status* | *Notizen*
+
+|===
+
+
+== Bewertungskriterien
+
+
+== Assessment
+
