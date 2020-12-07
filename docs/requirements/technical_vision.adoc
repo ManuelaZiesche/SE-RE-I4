@@ -26,7 +26,7 @@ siehe Glossar.
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
-Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen Prozesse Excell-Tabellen. Diese Abläufe der Mitgliederdatenbank sollen optimiert werden, um den Beteiligten  Zeit zu sparen. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
+Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen Prozesse Excell-Tabellen. Diese Abläufe der Mitgliederdatenbank sollen optimiert werden, um den Beteiligten  Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
 
 
 
@@ -157,4 +157,3 @@ Endgeräten lauffähig sein| Hoch | --
 |===
 
 
-Verbessertes Image durch professionelles Erscheinungsbild
