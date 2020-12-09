@@ -11,6 +11,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:protocol_01.adoc[]>>
 | Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020 |
 | Teammeeting | 07.12.2020 | 
+| Meeting mit Themenstellern | 11.12.2020 | Protokolllink | 
 | Ende der Iteration - LCA Meilenstein| 13.12.2020 |
 
 |===
