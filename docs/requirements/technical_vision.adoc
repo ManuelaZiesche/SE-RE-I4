@@ -95,7 +95,6 @@ Beispiel
 |HTW | Hochschule | --
 |Mitglieder der StuRa| --| Nutzer des Produkts
 |Systembetreuer, Admin| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
-|_Zahlungssystemen_ | -- | Die Zahlungsabwicklung muss sicher und verbindlich durchgeführt werder
 |Hacker | Jemand, der illegal in Computersysteme eindringt.| Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
 
 
