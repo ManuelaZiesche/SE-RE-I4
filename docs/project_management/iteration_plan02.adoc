@@ -8,10 +8,10 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 14.12.2020 | 
-| | | 
+| Teammeeting | 14.12.2020 | Protokolllink
 | | |
 | | | 
-| | |
+| Ende der  Iteration | |
 
 |===
 
@@ -46,4 +46,17 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
 
 
 == Assessment
+
+.Assessment
+|===
+|*Assessment Ziel* | *Das kann die gesamte Iteration oder eine spezifische Komponente sein*
+|Assessment Datum | 
+| Teilnehmer | 
+| Projektstatus | rot, gelb, grün 
+|===
+
+- 
+- 
+- 
+- 
 

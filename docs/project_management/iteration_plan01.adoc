@@ -11,26 +11,29 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:protocol_01.adoc[]>>
 | Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020 |
 | Teammeeting | 07.12.2020 | 
-| Meeting mit Themenstellern | 11.12.2020 | Protokolllink | 
-| Ende der Iteration - LCA Meilenstein| 13.12.2020 |
-
+| Meeting mit Themenstellern | 11.12.2020 | Protokolllink
+| Ende der Iteration - LCA Meilenstein| 13.12.2020 |
 |===
 
 == Wesentliche Ziele
 
 - Überblick über genutzte Tools/Projektumgebung verschaffen  +
+- Erstes Meeting mit den Themenstellern
 - Aufgabenstellung analysieren, Vision entwerfen + 
 
 
 == Aufgabenzuordnung
 
 Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
+Siehe auch: <<link:work_item_list.adoc[]>>
 
 .Aufgabenverteilung
 |===
 |*Aufgabe* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Referenzen* | *geplante Iteration* | *Zugewiesen* | *Gearbeitete Stunden* | *Schätzung der verbleibenden Stunden*
-| Vision erstellen | Kristina und Erik
-
+| Vision erstellen | Kristina und Erik | | | | | | | | 
+| Projektplan | | | | | | | | |
+| Iterationsplan 01 | | | | | | | | | 
+| Risk List erstellen | | | | | | | | 
 |===
 
 
@@ -40,7 +43,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
-| Themensteller hat eine Woche lang nicht auf E-Mails reagiert | offen | So lang wie wir kein neues Meeting mit dem Themensteller haben, kommen wir nicht weiter mit der Visionserstellung.
+| Themensteller hat eine Woche lang nicht auf E-Mails reagiert | erledigt -> Themensteller hat sich gemeldet und wir haben einen neuen Termin für ein Meeting.| So lang wie wir kein neues Meeting mit dem Themensteller haben, kommen wir nicht weiter mit der Visionserstellung.
+| AE Formel | offen | Wir sollen die AE mit einbauen, bräuchten dafür jedoch eine Formel die fehlt noch
 |===
 
 
@@ -51,4 +55,16 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
 
 
 == Assessment
+
+|===
+|*Assessment Ziel* | *Das kann die gesamte Iteration oder eine spezifische Komponente sein*
+|Assessment Datum | 
+| Teilnehmer | 
+| Projektstatus | rot, gelb, grün 
+|===
+
+- Beurteilung im Vergleich zu den Zielen
+- Geplante vs. erledigte Aufgaben
+- Beurteilung im Vergleich zu den Bewertungskriterien
+- Andere Belange und Abweichungen
 
