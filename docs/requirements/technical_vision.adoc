@@ -26,7 +26,7 @@ siehe Glossar.
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
-Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen Prozesse Excell-Tabellen. Diese Abläufe der Mitgliederdatenbank sollen optimiert werden, um den Beteiligten  Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
+Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen Prozesse Excell-Tabellen. Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Beteiligten  Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
 
 
 
@@ -37,7 +37,7 @@ Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen 
 [cols="1,3"]
 |===
 |Das Problem |	Unübersichtliche und unpraktische Art die Daten in Mitgliederdatenbank anzulegen/einzupflegen
-|betrifft |	Mitglieder der StuRa, Angestellte HTW
+|betrifft |	Mitglieder der StuRa
 |die Auswirkung davon ist |	lange und fehleranfällige Bearbeitung der Daten 
 |eine erfolgreiche Lösung wäre | Einführung einer Software, die die Prozesse beschleunigt und die Bedienbarkeit verbessert
 |===
@@ -64,7 +64,7 @@ Beispiel
 |Für|	Mitglieder des Studentenrates
 |deren | Daten anschaulich eingepflegt werden können.
 |Das Produkt / die Lösung ist eine | Webseite
-|Die / Das	| essenziellen Daten für die Mitglieder aufbereitet, zuordnet
+|die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
 |Im Gegensatz zu | Excel-Tabellen 
 |Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar.
 |===
@@ -93,9 +93,12 @@ Beispiel
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 |HTW | Hochschule | --
-|Mitglieder der StuRa| --| Nutzer des Produkts
+|Mitglieder der StuRa|Repräsentanten der Studenten| Nutzer des Produkts
 |Systembetreuer, Admin| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
 |Hacker | Jemand, der illegal in Computersysteme eindringt.| Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
+|der Gesetzgeber|gibt rechtliche Rahmenbedingungen vor, z.B. durch Gesetze für Jugendschutz, Datenschutz und Fernabsatz | überwacht Gesetze und Regelungen
+hinsichtlich der Einhaltung des Telemediengesetzes
+
 
 
 
@@ -108,10 +111,11 @@ Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren. Kontext
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, nimmt mit der Zeit ab.
 . Die Bearbeitung der Aufgabe dauert zwei Semester. Jede Iteration wird innerhalb von zwei Wochen abgeschlossen.
-. Besondere Umgebungsbedingungen: responsive, online  - ?? __Außeneinsatz Touchbedienung_??
-. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig? 
-Windows, Linux, iOS, Android
-. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden? mit Outlook/Groupware??
+. Besondere Umgebungsbedingungen: 
+* Die Weiterentwicklung der Mitgliederdatenbank muss weiterhin eine responsive Webseite gewährleisten, damit die Beidienung auch unterwegs mit dem Handy funktioniert.  
+* Die Webseite muss jederzeit online sein. 
+. Diese Systemplattformen werden heute und wahrscheinlich zukünftig weiterhin eingesetzt: Windows, Linux, iOS, Android. 
+. Thunderbird muss zur E-Mail Nutzung integriert werden.
 
 Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -123,14 +127,12 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-| --| Mittel |Kandidaten sollen angelegt werden | xx
-|Wahldatum der potenziellen Mitglieder ist ersichtlich | Mittel| -- |xx
-|Automatische Zuordnung der Check-Listen an neu angelegte Mitglieder | Hoch | -- | xx
-|Schlüsseln zuordnen |Hoch | -- | xx
-|Mailverteiler | Hoch | --| xx
-|Kartenleser | Hoch | -- | xx
-|Möglichkeit einer direkten Kontaktaufnahme per E-Mail auf der Webseite| Niedrig | -- | xx 
-|Stimmzettelgenerierung aus Kandidaten | Mittel | -- | xx
+|Kandidaten können angelegt  werden | Hoch |mittels Bedienoberfläche können Kandidaten angelegt werden  | xx
+|wichtige Informationen werden für Mitglieder angezeigt| Hoch|Wahldatum der Kandidaten ist ersichtlich  |xx
+|Check-Listen für Angestellte | Hoch |für Admin/Angestellte des Stura werden einzelne Aufgaben angelegt, welche abgehakt werden können. Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben der Schlüssel für die passenden Räume; E-Mail (Datengeheimnis, Mitwirkungsordnung unterschreiben) versenden; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann; eintragen ob Telefonnummer weitergegeben werden darf  | xx
+|einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx
+|spezielle Informationen/Features dürfen nur von Admins und nicht von Mitgliedern gesehen werden| Hoch |Checklisten nicht von Mitgliedern einsehbar; Telefonnumer von anderen Mitgliedern nicht einsehbar; | 
+|Automatisierung der Mitgliederaufnahme vor und nach der Wahl | Mittel |vor Wahl (eventuell) Stimmzettelgenerierung, nach Wahl können Kandidaten mit einem Knopfdruck als Mitglied aufgenommen werden | xx
 |Workload soll hinzugefügt werden| Hoch | -- | xx
 |Auszahlung des personelles Ausschusses für die Bearbeitung des Projekts (vllt gleich Workload)| Hoch | --| xx
 |===
