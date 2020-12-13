@@ -27,8 +27,8 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Aufgabenzuordnung
 
-Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
-Siehe auch: <<link:work_item_list.adoc[]>>
+Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work Item List* zu finden. 
+ <<link:work_item_list.adoc[]>>
 
 
 == Probleme 
