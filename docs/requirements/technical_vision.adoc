@@ -18,7 +18,6 @@ Dieses Visions-Dokument bezieht sich auf das Weiterentwicklung der Mitgliederdat
 siehe Glossar.
 
 
-
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
