@@ -20,22 +20,15 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - Überblick über genutzte Tools/Projektumgebung verschaffen  +
 - Erstes Meeting mit den Themenstellern
 - Aufgabenstellung analysieren, Vision entwerfen + 
+- Kennenlernen des Teams
+- Aufgabenverteilung untereinander 
+- allgemeines Verständnis der Anforderungen 
 
 
 == Aufgabenzuordnung
 
-Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
-Siehe auch: <<link:work_item_list.adoc[]>>
-
-.Aufgabenverteilung
-|===
-|*Aufgabe* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Referenzen* | *geplante Iteration* | *Zugewiesen* | *Gearbeitete Stunden* | *Schätzung der verbleibenden Stunden*
-| Vision erstellen | Kristina und Erik | | | | | | | | 
-| Projektplan | | | | | | | | |
-| Iterationsplan 01 | | | | | | | | | 
-| Risk List erstellen | | | | | | | | 
-|===
-
+Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work Item List* zu finden. 
+ <<link:work_item_list.adoc[]>>
 
 
 == Probleme 

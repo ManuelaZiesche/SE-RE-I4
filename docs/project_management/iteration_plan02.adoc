@@ -22,15 +22,8 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Aufgabenzuordnung
 
-Die folgenden Aufgaben werden in dieser Iteration bearbeitet.
-
-.Aufgabenverteilung
-|===
-|*Aufgabe* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Referenzen* | *geplante Iteration* | *Zugewiesen* | *Gearbeitete Stunden* | *Schätzung der verbleibenden Stunden*
-
-
-|===
-
+Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work Item List* zu finden. 
+ <<link:work_item_list.adoc[]>>
 
 
 == Probleme 
