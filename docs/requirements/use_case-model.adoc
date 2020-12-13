@@ -8,22 +8,26 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 // ...
 
 |===
-|Akteur |Ziel
-|Kunde | Bestellung des Produkts
-|Barbetreiber | Bestellung abwickeln
-|Cocktail-Mischer | Cocktail zubereiten
-|Lieferdienst | Lieferung des Produkts (Cocktail)
-|Zahlungsdienstleister | Zahlung abwickeln 
+| *Akteur* | *Ziel*
+|Admin des Studentenrats | Einpflegen der Mitglieder und Abarbeitung der Check-Listen
+|Mitglieder StuRa  | Übersichtliche Einsehbarkeit von Informationen von anderen Mitgliedern
 
 |===
+
+== Identifizierte Use Cases
+*_für Admins_* +
+*Use-Case 01*: Ausgewählte Kandidaten in Mitglieder hinzufügen +
+*Use-Case 02*: Check-Listen Generierung + 
+*Use-Case 03*: 
+
+*Use-Case*: Workload erfassen +
+*Use-Case*: Aufwandsentschädigung berehnnung aufgrund des Workloads +
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
 <<<
-include::use_case_01.inc.adoc[]
-//<<<
-//include::use_case_02.inc.adoc[]
-//<<<
+include::use_case_02.inc.adoc[]
+<<<
 //include::use_case_03.inc.adoc[]
 //<<<
 //include::use_case_04.inc.adoc[]
