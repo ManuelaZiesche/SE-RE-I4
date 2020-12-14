@@ -7,8 +7,8 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 .Meilensteine
 |===
 | *Meilenstein* | *Datum* | *Notizen*
-| Beginn der Iteration | 14.12.2020 | 
-| Teammeeting | 14.12.2020 | Protokolllink
+| Beginn der Iteration | 21.12.2020 | 
+| Teammeeting | 21.12.2020 | Protokolllink
 | | |
 | | | 
 | Ende der  Iteration | |
@@ -16,6 +16,8 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 
 == Wesentliche Ziele
+- Architektur entwickeln +
+- Anforderungen verfeinern +
 
 
 
