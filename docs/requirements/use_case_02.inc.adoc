@@ -1,17 +1,17 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Kundenbestellung
+== Use-Case 02: Check-Listen Generierung
 ===	Kurzbeschreibung
-//Der Kunde betätigt seine Bestellung
+Die Check-Liste wird nach Übernahme eines Kandidaten automatisch erstellt 
 
 ===	Kurzbeschreibung der Akteure
-==== Kunde und/oder Cocktail-Mischer und/oder Lieferdienst und/oder Barkeeper als Buchhaltung
+==== Admin
+Ist für die Bearbeitung der Check-Listen zuständig
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-* Kunde muss registriert sein (Daten zum Alter für die Prüfung auf die Volljährigkeit)
 * Die Internetseite ist geöffnet
-* Kunde muss angemeldet sein  
+* Der Admin muss angemeldet sein  
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -22,17 +22,12 @@
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
 
-.für Kunde
-. Auswahl ob Standardcocktail oder Indivudalcocktail
-. Katalogauswahl ( was und wieviel)
-. Nach Auswahl fügt sich Artikel in Warenkorb ein 
-. Wahl zwischen Warenkorb öffnen oder Bestellung Auswahl fortführen
-. nach Warenkorb- Öffnung erscheint Butto "zur Kasse"
-. Abfrage von Liefer- und Rechnungsadresse (kann vorgespeichert sein)
-. Abfrage vom Zahlungsmittel 
-. Endzusammenfassung der Bestellung und Abfrage, ob der Kauf abgewickelt werden kann 
-. Bestellbestätigung per email
-
+. E-Mail (Datengeheimnis, Mitwirkungsordnung unterschreiben) versenden; 
+. die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); 
+. Ausgeben der Schlüssel für die passenden Räume; 
+. Kontrolle der hochgeladenen Unterlagen; 
+. Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann; 
+. eintragen ob Telefonnummer weitergegeben werden darf 
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
