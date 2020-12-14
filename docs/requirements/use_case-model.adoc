@@ -16,12 +16,16 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 
 == Identifizierte Use Cases
 *_für Admins_* +
-*Use-Case 01*: Ausgewählte Kandidaten in Mitglieder hinzufügen +
+*Use-Case 01*: gewählte Kandidaten werden als Mitglied hinzugefügt +
 *Use-Case 02*: Check-Listen Generierung + 
-*Use-Case 03*: 
+*Use-Case 03*: E-Mail Export mittels Thunderbird +
+*Use-Case 04*: Einpflegung weiterer Informationen
+//Einbindung von Dokumenten
 
 *Use-Case*: Workload erfassen +
 *Use-Case*: Aufwandsentschädigung berehnnung aufgrund des Workloads +
+*Use-Case*: Stimmzettelgenerierung +
+*Use-Case*: Organigramm überarbeiten 
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
