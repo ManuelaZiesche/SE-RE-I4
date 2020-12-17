@@ -16,7 +16,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |StuRa | Studentische Vertretung an der HTW Dresden | --
 |Mitglied | Mitglied der StuRa, der eigentliche Nutzer | --
 |Admin | Zuständig für die administrative Aufgaben der Webseite und für die Zuodrung der Check-Listen |
-|Check-Liste| Liste, die der Admin abhacken muss. Bezieht sich auf die erhaltung der Informationen von neu ausgewählten Mitgliedern | --
+|Check-Liste| Liste, die der Admin abhacken muss. Bezieht sich auf die Erhaltung der Informationen von neu ausgewählten Mitgliedern und Zuordnung von Schlüsseln, Kartenleser | --
 |Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
 |--| --| --
