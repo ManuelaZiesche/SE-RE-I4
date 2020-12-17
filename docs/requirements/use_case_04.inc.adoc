@@ -1,18 +1,18 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 04: Einpflegung weiterer Informationen
+== Use-Case 04: Check-Listen Generierung
 ===	Kurzbeschreibung
-Administrator kann weitere Informationen für neu angelegte Mitglieder einpflegen
+Die Check-Liste wird nach Übernahme eines Kandidaten automatisch erstellt 
 
 ===	Kurzbeschreibung der Akteure
 ==== Admin
-Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
+Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 * Die Internetseite ist geöffnet
 * Der Admin muss angemeldet sein  
-* Die unterschriebenen Dokumente und Einwilligung bzw. der Widerspruch wurden von den neuen Mitgliedern zugesendet. 
+* Admin muss Kandidat als neues Mitglied bestätigen
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -22,8 +22,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Admin lädt die zugesendeten, unterschrieben Dokumente hoch
-. Desweiterem füllt er aus, ob die Telefonummer im Notfall an andere Mitglieder weitergegeben werden darf 
+. Das System erstellt automatisch unter "Checklisten" eine Checkliste mit allen Aufgaben für Admin
 
 
 === Alternative Abläufe
@@ -33,10 +32,12 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. <Ablauf beschreiben>
 //. Der Use Case wird im Schritt <y> fortgesetzt.
 //. "What can go wrong?"; "What options are available at this point?"
-
-. wenn der Admin eine zu große Datei hochlädt, kommt eine Fehlermeldung [andere Lösung ]
-
-//Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
+ 
+//. wenn der Kunde sich registrieren will, und unter 18 Jahren ist, kommt eine Störungsmeldung [andere Lösung ]
+//. wenn eine Zutat nicht zur Verfüfung steht ( oder nicht in ausreichender Menge), kommt eine Störungsmeldung 
+//. wenn in Lieferadresse ein Feld nicht ausgefüllt wird, kommt eine Fehlermeldung
+//. ( Kunde nicht zahlungsfähig)
+//. Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
 
 
 === Wesentliche Szenarios
@@ -48,12 +49,11 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-. erfolgreiche Informationsimplementierung 
+Check Liste mit zu erfüllenden Aufgaben für den Admin ist erstellt
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-* einfache Bedienbarkeit ermöglichen
-* Hochladen der Informationen muss in dazu angemessene Zeit erfolgen
+
 
 ==== Benutzeroberfläche
 * Impressum und AGBs auf Website
