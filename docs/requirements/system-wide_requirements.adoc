@@ -26,7 +26,7 @@ F2: Passwort muss folgenden Anforderungen entsprechen:
 . mindestens eine Kleinebuchstabe
 . mindestens eine Großbuchstabe
 
-F3: Daten müssen verschlüsselt sein;
+F3: Die Daten müssen verschlüsselt sein.
 
 
 == Qualitätsanforderungen für das Gesamtsystem
@@ -35,16 +35,40 @@ F3: Daten müssen verschlüsselt sein;
 === Benutzbarkeit (Usability)
 //Usability: Bedienbarkeit, Verständlichkeit, Erlernbarkeit. Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet. 
+B1: Der Mitglied/Admin sollen die Bedingung innerhalb eines Tages erlernen. +
+//Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
+B2: Die Anzahl von Mausklicks soll maximal 5 sein (je nach Aufgabe) +
+B3: Der/Die Text/Meldungen müssen: +
+
+. klar formuliert sein 
+. passender Schriftgröse
+. gut lesbare Schriftart
+. kontraste Farbe von Hintergrund zu dem Schrift
+
 
 === Zuverlässigkeit (Reliability)
 // Reliability: Fehlertoleranz, Wiederherstellbarkeit. Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
+Z1: Die Anwendung soll 95% pro Jahr verfügbar sein +
+Z2: Die Reaktionszeiten für Fehlerbehebung: + 
+
+. Sofort - 4 Stunden
+. Hoch - 1 Werktag
+. Mittel - 2 Werktage
+. Niedrig - 5 Werktage
+
+
 === Effizienz (Performance)
 // Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
+E1: Das System muss für eine gleichzeitige Nutzung von 100 Nutzern ausgelegt sein; +
+E2: Die Ladezeiten innerhalb der Anwendung müssen angemessen sein +
+E3: Das Hoch/Runterladen der Dokumente muss zeitlich angemessen sein +
+
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+
+
 
 == Zusätzliche Anforderungen
 === Einschränkungen
@@ -52,7 +76,7 @@ Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
 * Ressourcenbegrenzungen
 * zu nutzende Komponenten / Bibliotheken / Frameworks
 * Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
+//* zu unterstützende Plattformen / Betriebssysteme
 * Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
 === Organisatorische Randbedingungen
