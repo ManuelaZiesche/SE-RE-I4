@@ -22,7 +22,7 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 - Projektmanagement: Manuela Ziesche + 
 - Analyse: Kristina Lapatanova, Erik Würfel + 
-- Architektur: Sebastian Matthäus, Benjamin Müller + 
+- Architektur: Benjamin Müller + 
 - Entwicklung: Leander  Vasco Schwarze, Sabine Elisabeth Adam +
 - Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
@@ -33,13 +33,11 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 .Iterationsphasen
 
 |======
-| *Phase* | *Iteration* | *Hauptziel* | *Iterationsstart* | *Iterationsende* | *Kalendertage*
-| Inception | M0 | - Lifecycle Objective + 
-- Vision| 30.11.2020 | 13.12.2020 | 14 Tage 
-| Elaboration | M1 | | 14.12.2020 | | 
-| Elaboration | M2 | | | | 
-| Elaboration | M3 | - Abgabe der Dokumentation in PDF| | 31.01.2021 |
-
+| *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
+| Inception | M0 | - Lifecycle Objectives Milestone + 
+- Vision erstellen | 30.11.2020 | 20.12.2020 | 21 Tage | 
+| Elaboration | M1 | | 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+| Elaboration | M2 | - Abgabe Dokumentation  - Lifecycle Architecture Milestone | 11.01.2021 | 31.01.2021 | 21 Tage  | 
 
 |====== 
 

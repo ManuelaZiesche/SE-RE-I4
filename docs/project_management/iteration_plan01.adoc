@@ -12,7 +12,9 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020 |
 | Teammeeting | 07.12.2020 | 
 | Meeting mit Themenstellern | 11.12.2020 | Protokolllink
-| Ende der Iteration - LCA Meilenstein| 13.12.2020 |
+| Teammeeting | 14.12.2020 | |
+| Teammeeting | 17.12.2020 | 
+| Ende der Iteration | 20.12.2020 |
 |===
 
 == Wesentliche Ziele
@@ -37,7 +39,6 @@ Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work It
 |===
 | *Problem* | *Status* | *Notizen*
 | Themensteller hat eine Woche lang nicht auf E-Mails reagiert | erledigt -> Themensteller hat sich gemeldet und wir haben einen neuen Termin für ein Meeting.| So lang wie wir kein neues Meeting mit dem Themensteller haben, kommen wir nicht weiter mit der Visionserstellung.
-| AE Formel | offen | Wir sollen die AE mit einbauen, bräuchten dafür jedoch eine Formel die fehlt noch
 |===
 
 
