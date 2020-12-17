@@ -16,7 +16,7 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 
 == Identifizierte Use Cases
 *_für Admins_* +
-*Use-Case 01*: gewählte Kandidaten werden als Mitglied hinzugefügt +
+*Use-Case 01*: Gewählte Kandidaten als Mitglied hinzufügen +
 *Use-Case 02*: Check-Listen Generierung + 
 *Use-Case 03*: E-Mail Export mittels Thunderbird +
 *Use-Case 04*: Einpflegung weiterer Informationen
@@ -24,17 +24,18 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 
 *Use-Case*: Workload erfassen +
 *Use-Case*: Aufwandsentschädigung berehnnung aufgrund des Workloads +
-*Use-Case*: Stimmzettelgenerierung +
+*Use-Case*: Anlegen der Kandidaten mit Name, Vorname, Wahldatum und Beschlussnummer und daraus generieren ein Stimmzettel +
 *Use-Case*: Organigramm überarbeiten 
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
 <<<
 include::use_case_02.inc.adoc[]
-<<<
-//include::use_case_03.inc.adoc[]
 //<<<
-//include::use_case_04.inc.adoc[]
+//include::use_case_03.inc.adoc[]
+
+<<<
+include::use_case_04.inc.adoc[]
 //<<<
 //include::use_case_05.inc.adoc[]
 //<<<

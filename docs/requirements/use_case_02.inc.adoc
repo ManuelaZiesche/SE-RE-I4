@@ -22,7 +22,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Das System erstellt automatisch unter "Checklisten" eine Checkliste mit allen Aufgaben 
+. Das System erstellt automatisch unter "Checklisten" eine Checkliste mit allen Aufgaben für Admin
 
 
 === Alternative Abläufe
@@ -32,12 +32,12 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. <Ablauf beschreiben>
 //. Der Use Case wird im Schritt <y> fortgesetzt.
 //. "What can go wrong?"; "What options are available at this point?"
-. 
-. wenn der Kunde sich registrieren will, und unter 18 Jahren ist, kommt eine Störungsmeldung [andere Lösung ]
-. wenn eine Zutat nicht zur Verfüfung steht ( oder nicht in ausreichender Menge), kommt eine Störungsmeldung 
-. wenn in Lieferadresse ein Feld nicht ausgefüllt wird, kommt eine Fehlermeldung
-. ( Kunde nicht zahlungsfähig)
-. Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
+ 
+//. wenn der Kunde sich registrieren will, und unter 18 Jahren ist, kommt eine Störungsmeldung [andere Lösung ]
+//. wenn eine Zutat nicht zur Verfüfung steht ( oder nicht in ausreichender Menge), kommt eine Störungsmeldung 
+//. wenn in Lieferadresse ein Feld nicht ausgefüllt wird, kommt eine Fehlermeldung
+//. ( Kunde nicht zahlungsfähig)
+//. Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
 
 
 === Wesentliche Szenarios
@@ -49,16 +49,11 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-. erfolgreiche Bestellung 
-. erfolgreicher Cocktailzubereitung inklusive Versand
+Check Liste mit zu erfüllenden Aufgaben für den Admin ist erstellt
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== seitens Bestellabwicklung in Firma
-* Hygiene
-* Software- Organisation ( Bestellung darf nicht verloren gehen) 
-* Kontrolle ( ob Auftrag ausgeführt wurde und in passendem Umfang/ Qulität [Zutaten/ Menge] vorliegt)
-* 
+siehe <<System-Wide Requirements>>
 
 ==== Benutzeroberfläche
 * Impressum und AGBs auf Website
