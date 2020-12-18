@@ -1,0 +1,62 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 01: Kandidaten verwalten
+===	Kurzbeschreibung
+Das System ermöglicht es Kandidaten anzulegen, zu bearbeiten oder zu entfernen.  
+
+===	Kurzbeschreibung der Akteure
+==== Admin
+Ist für die Verwaltung zuständig
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Die Internetseite ist geöffnet
+* Der Admin muss angemeldet sein  
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+//. Der Use Case beginnt, wenn <Kunde> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Admin auf den Tap "Kandidaten" klickt
+. Der Admin kann wie unter dem Tap "Mitglieder" einen Kandidaten hinzufügen, indem er auf den Button "hinzufügen" klickt
+. Die nächste Maske ermöglicht es ihm einen Kandidaten mit allen bisherigen Informationen (genauso wie in "Mitglieder") hinzuzufügen. Dies wird noch mit einem Feld erweitert, in welchem man das Wahldatum eintragen kann.
+
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Alternativer Ablauf 1
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+//. "What can go wrong?"; "What options are available at this point?"
+ 
+//. wenn der Kunde sich registrieren will, und unter 18 Jahren ist, kommt eine Störungsmeldung [andere Lösung ]
+//. wenn eine Zutat nicht zur Verfüfung steht ( oder nicht in ausreichender Menge), kommt eine Störungsmeldung 
+//. wenn in Lieferadresse ein Feld nicht ausgefüllt wird, kommt eine Fehlermeldung
+//. ( Kunde nicht zahlungsfähig)
+//. Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
+. Wenn der Admin einen Kandidaten bearbeiten oder löschen möchte, geht ab Schritt 2. wie in der Maske "Mitglieder" vor.
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+==== Szenario 1
+. <Szenario 1, Schritt 1>
+. 	…
+. <Szenario 1, Schritt n>
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+
+==== Benutzeroberfläche
+
