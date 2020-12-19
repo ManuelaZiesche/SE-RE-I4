@@ -68,6 +68,13 @@ E3: Das Hoch/Runterladen der Dokumente muss zeitlich angemessen sein +
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
+W: Gute dokumentation +
+W: Gute Struktur
+W: IT der STura muss sich schnell zurecht finden 
+W: Bestimmte Programmiersprache? +
+W: wie lange muss System noch laufen/ betrieben werden?
+W: wie viele änderungen werden in der Zukunft noch gemacht?
+W: Änderung der Gesetze als Auswirkung auf die System
 
 
 == Zusätzliche Anforderungen
