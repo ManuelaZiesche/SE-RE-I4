@@ -15,12 +15,14 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 |===
 
 == Identifizierte Use Cases
-*_für Admins_* +
 
 *Use-Case 01*: Kandidaten verwalten +
 *Use-Case 02*: Stimmzettelgenerierung zum Ausdruck für die Wahlen +
 *Use-Case 03*: Aufnahme eines Kandidatens in Mitglieder +
-*Use-Case 04*: Übersichtliche Abarbeitung von Aufgaben  + 
+*Use-Case 04*: Übersichtliche Abarbeitung von Aufgaben (Check-Listen) + 
+
+*Wollen wir vllt die UC03 und UC04 zusammen machen? weil mit der Aufnahme eines Kandidaten erstellt sich automatich die Checkliste? Das hängt schon zusammen*
+
 *Use-Case 05*: E-Mail Export mittels Thunderbird +
 *Use-Case 06*: Einpflegung weiterer Informationen
 //Einbindung von Dokumenten
@@ -31,6 +33,8 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
+<<<
+include::use_case_01.inc.adoc[]
 //<<<
 //include::use_case_02.inc.adoc[]
 //<<<

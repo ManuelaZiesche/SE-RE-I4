@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 04: Check-Listen Generierung
+== Use-Case 04: Übersichtliche Abarbeitung von Aufgaben (Check-Listen)
 ===	Kurzbeschreibung
-Die Check-Liste wird nach Übernahme eines Kandidaten automatisch erstellt 
+Die Check-Liste wird nach Übernahme eines Kandidaten für den Admin automatisch erstellt 
 
 ===	Kurzbeschreibung der Akteure
 ==== Admin
@@ -12,7 +12,9 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 
 * Die Internetseite ist geöffnet
 * Der Admin muss angemeldet sein  
+* Der Kandidat hat der Übernahme in Mitglieder zugestimmt
 * Admin muss Kandidat als neues Mitglied bestätigen
+* Check-Liste-Template muss vorhanden sein
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -22,7 +24,10 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Das System erstellt automatisch unter "Checklisten" eine Checkliste mit allen Aufgaben für Admin
+. Die Anwendung erstellt automatisch unter "Checklisten" eine Checkliste mit Aufgaben für jeden neuen Mitglied, die der Admin erledigen/abhacken muss.
+. Die neue Checklisten werden am Anfang der Liste erscheinen???
+. Nach Erhaltung der Informationen (unterschriebene Datengeheimnis, Mitwirkungsordnung) von neuen Mitglieder per E-Mail - 
+Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; E-Mail   an neue Mitglieder *automatisch?* versenden; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf
 
 
 === Alternative Abläufe
@@ -33,17 +38,13 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. Der Use Case wird im Schritt <y> fortgesetzt.
 //. "What can go wrong?"; "What options are available at this point?"
  
-//. wenn der Kunde sich registrieren will, und unter 18 Jahren ist, kommt eine Störungsmeldung [andere Lösung ]
-//. wenn eine Zutat nicht zur Verfüfung steht ( oder nicht in ausreichender Menge), kommt eine Störungsmeldung 
-//. wenn in Lieferadresse ein Feld nicht ausgefüllt wird, kommt eine Fehlermeldung
-//. ( Kunde nicht zahlungsfähig)
-//. Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Szenario 1
-. <Szenario 1, Schritt 1>
+. Der Admin öffnet den Tap "Checklisten" 
+. Er sucht d
 . 	…
 . <Szenario 1, Schritt n>
 
