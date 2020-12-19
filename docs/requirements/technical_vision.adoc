@@ -128,7 +128,7 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|Kandidaten anlegen | Hoch | die Daten des Kandidaten (Name, Vorname, Wahldatum, Beschlussnummer) können angelegt werden | xx
+|einfach Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tap, in dem die Daten des Kandidaten (Name, Vorname, Wahldatum, Beschlussnummer) angelegt, bearbeitet oder gelöscht werden können | xx
 |wichtige Informationen werden für Mitglieder angezeigt| Hoch| Wahldatum der Kandidaten ist ersichtlich  |xx
 |Check-Listen für Admin automatisch anlegen/zuordnen | Hoch |für Admin des Stura werden einzelne Aufgaben automatisch nach Mitgliedsaufnahme angelegt, welche abgehakt werden können. Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; E-Mail  (Datengeheimnis, Mitwirkungsordnung unterschreiben) an neue Mitglieder *automatisch?* versenden; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf | xx
 |einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx

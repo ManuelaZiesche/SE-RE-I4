@@ -17,10 +17,10 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 == Identifizierte Use Cases
 *_für Admins_* +
 
-*Use-Case 01*: Anlegen der Kandidaten mit Daten: Name, Vorname, Wahldatum und Beschlussnummer +
+*Use-Case 01*: Kandidaten verwalten +
 *Use-Case 02*: Stimmzettelgenerierung zum Ausdruck für die Wahlen +
-*Use-Case 03*: Gewählte Kandidaten als Mitglied hinzufügen +
-*Use-Case 04*: Check-Listen Generierung + 
+*Use-Case 03*: Aufnahme eines Kandidatens in Mitglieder +
+*Use-Case 04*: Übersichtliche Abarbeitung von Aufgaben  + 
 *Use-Case 05*: E-Mail Export mittels Thunderbird +
 *Use-Case 06*: Einpflegung weiterer Informationen
 //Einbindung von Dokumenten
