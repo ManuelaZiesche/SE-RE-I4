@@ -1,0 +1,63 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 03: Aufnahme eines Kandidatens in Mitglieder
+===	Kurzbeschreibung
+Der Kandidat wird in Mitglied umgewandelt. 
+//Die Check-Liste wird nach Übernahme eines Kandidaten für den Admin automatisch erstellt 
+
+===	Kurzbeschreibung der Akteure
+==== Admin
+Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Die Internetseite ist geöffnet
+* Der Admin muss angemeldet sein  
+* Der Kandidat wurde laut den Wahlen gewählt
+* Der Kandidat hat der Übernahme in Mitglieder zugestimmt
+* Check-Liste-Template muss vorhanden sein
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+//. Der Use Case beginnt, wenn <Kunde> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+. Der Admin fügt den gewählten Kandidaten in "Mitglied"
+. Die Anwendung erstellt dabei automatisch unter "Checklisten" eine Checkliste mit Aufgaben für jeden neuen Mitglied, die der Admin erledigen/abhacken muss.
+. Die neue Checklisten werden am Anfang der Liste erscheinen???
+. Nach Erhaltung der Informationen (unterschriebene Datengeheimnis, Mitwirkungsordnung) von neuen Mitglieder per E-Mail - 
+Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Alternativer Ablauf 1
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+//. "What can go wrong?"; "What options are available at this point?"
+ 
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+==== Szenario 1
+. Der Admin öffnet den Tap "Checklisten" 
+. Er sucht d
+. 	…
+. <Szenario 1, Schritt n>
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+Check Liste mit zu erfüllenden Aufgaben für den Admin ist erstellt
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+
+==== Benutzeroberfläche
+* Impressum und AGBs auf Website
+* ?

@@ -13,7 +13,13 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
-|Check-Liste| -- | --
+|Beschluss | -- | --
+|Beschlussnummer | -- | --
+|Nutzer| Benutzt das System im Auftrag von Stura| Admin, Mitglied der StuRa
+|StuRa | Studentische Vertretung an der HTW Dresden | --
+|Mitglied | Mitglied der StuRa | --
+|Admin | Zuständig für die administrative Aufgaben der Webseite | --
+|Check-Liste| Liste, die der Admin abhacken muss. Bezieht sich auf die Erhaltung der Informationen von neu ausgewählten Mitgliedern und Zuordnung von Schlüsseln, Kartenleser | --
 |Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
 |--| --| --

@@ -120,20 +120,25 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 
 == Produkt-/Lösungsüberblick
 === Bedarfe und Hauptfunktionen
-//Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
+//Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an. 
+//Bedarf - was das System machen soll  
+
 
 
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|Kandidaten können angelegt  werden | Hoch |mittels Bedienoberfläche können Kandidaten angelegt werden  | xx
-|wichtige Informationen werden für Mitglieder angezeigt| Hoch|Wahldatum der Kandidaten ist ersichtlich  |xx
-|Check-Listen für Angestellte | Hoch |für Admin/Angestellte des Stura werden einzelne Aufgaben angelegt, welche abgehakt werden können. Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben der Schlüssel für die passenden Räume; E-Mail (Datengeheimnis, Mitwirkungsordnung unterschreiben) versenden; Kontrolle der hochgeladenen Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann; eintragen ob Telefonnummer weitergegeben werden darf  | xx
+|einfach Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tap, in dem die Daten des Kandidaten (Name, Vorname, Wahldatum, Beschlussnummer) angelegt, bearbeitet oder gelöscht werden können | xx
+|wichtige Informationen werden für Mitglieder angezeigt| Hoch| Wahldatum der Kandidaten ist ersichtlich  |xx
+|Check-Listen für Admin automatisch anlegen/zuordnen | Hoch |für Admin des Stura werden einzelne Aufgaben automatisch nach Mitgliedsaufnahme angelegt, welche abgehakt werden können.  | xx
 |einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx
-|spezielle Informationen/Features dürfen nur von Admins und nicht von Mitgliedern gesehen werden| Hoch |Checklisten nicht von Mitgliedern einsehbar; Telefonnumer von anderen Mitgliedern nicht einsehbar; | 
-|Automatisierung der Mitgliederaufnahme vor und nach der Wahl | Mittel |vor Wahl (eventuell) Stimmzettelgenerierung, nach Wahl können Kandidaten mit einem Knopfdruck als Mitglied aufgenommen werden | xx
+|spezielle Informationen/Features nur von Admins einsehbar | Hoch |Checklisten dürfen nur von Admins und nicht von Mitgliedern gesehen werden; Telefonnumer von anderen Mitgliedern nicht einsehbar; | xx
+|Automatische Stimmzettelgenerierung | Mittel | Stimmzettel eventuell ausdrucken |  xx
+|Automatisierung der Mitgliederaufnahme nach der Wahl | Mittel | übertragung des Kandidaten zum Mitglied | xx
 |Workload soll hinzugefügt werden| Hoch | -- | xx
 |Auszahlung des personelles Ausschusses für die Bearbeitung des Projekts (vllt gleich Workload)| Hoch | --| xx
+|Organigramm erstellen | Niedrig | die existierende Organigramm übersichtlicher gestalten | xx
+
 |===
 
 

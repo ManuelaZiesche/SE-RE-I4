@@ -15,28 +15,67 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt I4 Wei
 NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
 
 == Systemweite funktionale Anforderungen
-//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+// Functional: Fähigkeiten, Interoperabilität, Sicherheit. Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
-Ausarbeitung eines Datenschutzkonzeptes, welches die Anforderungen jederzeit erfüllt. --> Passwort bestimme Länge, Zeichen etc. + 
-Daten müssen verschlüsselt sein. 
+Ausarbeitung eines Datenschutzkonzeptes, welches die Anforderungen jederzeit erfüllt:
+
+F1: Zwecks Authentifizierung muss der Nutzer sich anmelden; +
+F2: Passwort muss folgenden Anforderungen entsprechen:
+
+. mindestens X Zeichen
+. mindestens eine Kleinebuchstabe
+. mindestens eine Großbuchstabe
+
+F3: Die Daten müssen verschlüsselt sein.
 
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
-//Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+//Usability: Bedienbarkeit, Verständlichkeit, Erlernbarkeit. Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet. 
+B1: Der Mitglied/Admin sollen die Bedingung innerhalb eines Tages erlernen. +
+//Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
+B2: Die Anzahl von Mausklicks soll maximal 5 sein (je nach Aufgabe) +
+B3: Der/Die Text/Meldungen müssen: +
+
+. klar formuliert sein 
+. passender Schriftgröse
+. gut lesbare Schriftart
+. kontraste Farbe von Hintergrund zu dem Schrift
+
 
 === Zuverlässigkeit (Reliability)
-// Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+// Reliability: Fehlertoleranz, Wiederherstellbarkeit. Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+
+Z1: Die Anwendung soll 95% pro Jahr verfügbar sein +
+Z2: Die Reaktionszeiten für Fehlerbehebung: + 
+
+. Sofort - 4 Stunden
+. Hoch - 1 Werktag
+. Mittel - 2 Werktage
+. Niedrig - 5 Werktage
+
 
 === Effizienz (Performance)
-// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+// Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+
+E1: Das System muss für eine gleichzeitige Nutzung von 100 Nutzern ausgelegt sein; +
+E2: Die Ladezeiten innerhalb der Anwendung müssen angemessen sein +
+E3: Das Hoch/Runterladen der Dokumente muss zeitlich angemessen sein +
 
 === Wartbarkeit (Supportability)
-// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+//Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+
+W: Gute dokumentation +
+W: Gute Struktur
+W: IT der STura muss sich schnell zurecht finden 
+W: Bestimmte Programmiersprache? +
+W: wie lange muss System noch laufen/ betrieben werden?
+W: wie viele änderungen werden in der Zukunft noch gemacht?
+W: Änderung der Gesetze als Auswirkung auf die System
+
 
 == Zusätzliche Anforderungen
 === Einschränkungen
@@ -44,7 +83,7 @@ Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
 * Ressourcenbegrenzungen
 * zu nutzende Komponenten / Bibliotheken / Frameworks
 * Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
+//* zu unterstützende Plattformen / Betriebssysteme
 * Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
 === Organisatorische Randbedingungen
