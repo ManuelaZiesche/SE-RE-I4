@@ -38,7 +38,7 @@ Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work It
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
-| Themensteller hat eine Woche lang nicht auf E-Mails reagiert | erledigt -> Themensteller hat sich gemeldet und wir haben einen neuen Termin für ein Meeting.| So lang wie wir kein neues Meeting mit dem Themensteller haben, kommen wir nicht weiter mit der Visionserstellung.
+| Themensteller hat eine Woche lang nicht auf E-Mails reagiert | erledigt | Durch das Nicht-Antworten ging uns eine Woche in der ersten Iteration praktisch gesehen verloren, da unsere Analysten keine Fragen stellen konnten.
 |===
 
 

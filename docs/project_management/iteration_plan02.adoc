@@ -1,6 +1,10 @@
 = Iteration Plan 02: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
 
 == Meilensteine
 

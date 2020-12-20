@@ -1,6 +1,9 @@
 = Projektplan: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
 Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
 
 == Einführung 
 
