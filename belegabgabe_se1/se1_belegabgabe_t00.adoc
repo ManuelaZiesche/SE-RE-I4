@@ -53,8 +53,7 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 //include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Domänenmodell
-<<<include::{docs-requirements}/domain_model.adoc[]>>
-<<<
+<<include::{docs-requirements}/domain_model.adoc[]>>
 
 = Projektdokumentation
 * Projektplan
