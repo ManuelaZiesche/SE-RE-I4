@@ -73,3 +73,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - Beurteilung im Vergleich zu den Bewertungskriterien
 - Andere Belange und Abweichungen
 
+== Essence Navigator Bild
+
+image::essence_navigator_images-Essence_Navigator_Iteration01.png[]
+
