@@ -1,6 +1,9 @@
 = Iteration Plan 01: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
 
 == Meilensteine
 
@@ -12,7 +15,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Erstes Meeting mit Mitglied aus letztem Jahr | 03.12.2020 |
 | Teammeeting | 07.12.2020 | 
 | Meeting mit Themenstellern | 11.12.2020 | Protokolllink
-| Teammeeting | 14.12.2020 | |
+| Teammeeting | 14.12.2020 | 
 | Teammeeting | 17.12.2020 | 
 | Ende der Iteration | 20.12.2020 |
 |===
@@ -29,9 +32,17 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Aufgabenzuordnung
 
-Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work Item List* zu finden. 
- <<link:work_item_list.adoc[]>>
+Die Aufgaben, welche in der ersten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:work_item_list.adoc[]>>
 
+|===
+| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
+| Use  Cases 
+| Essence Navigator | niedrig | 1 | fertiggestellt | Link bilder | alle Teammitglieder | 1
+| Risikoliste | mittel | | fertiggestellt für diese Iteration | <<link:risk_list.adoc[]>>  | Manuela | ?
+| Iterationsplan 02 | | | in arbeit | <<link:iteration_plan01.adoc[]>> | Manuela | ?
+
+|===
 
 == Probleme 
 
@@ -51,14 +62,14 @@ Die Aufgaben, welche in dieser Iteration bearbeitet werden, sind in der *Work It
 == Assessment
 
 |===
-|*Assessment Ziel* | *Das kann die gesamte Iteration oder eine spezifische Komponente sein*
-|Assessment Datum | 
-| Teilnehmer | 
+|*Assessment Ziel* | *Iteration 1 beenden*
+|Assessment Datum | 17.12.2020
+| Teilnehmer | alle
 | Projektstatus | rot, gelb, grün 
 |===
 
-- Beurteilung im Vergleich zu den Zielen
-- Geplante vs. erledigte Aufgaben
+- Beurteilung im Vergleich zu den Zielen: es wurden alle Ziele erreicht
+- Geplante vs. erledigte Aufgaben: 
 - Beurteilung im Vergleich zu den Bewertungskriterien
 - Andere Belange und Abweichungen
 

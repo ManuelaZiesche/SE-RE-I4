@@ -1,4 +1,4 @@
-= Iteration Plan 02: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+= Iteration Plan 03: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
 :toc: 
@@ -11,45 +11,41 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 .Meilensteine
 |===
 | *Meilenstein* | *Datum* | *Notizen*
-| Beginn der Iteration | 21.12.2020 | 
-| Teammeeting | 21.12.2020 | Protokolllink
+| Beginn der Iteration | 11.01.2021 | 
 | | |
 | | | 
-| Ende der  Iteration | |
+| Ende der  Iteration | 31.01.2021 |
 
 |===
 
 == Wesentliche Ziele
-- Architektur Entwicklung beginnen +
-- Anforderungen verfeinern +
-- erste Use Cases entwickeln +
-- System lokal zum Laufen bekommen +
-- erste Prototypen entwickeln +
-- Essence Navigator +
-- Work Item List fortführen +
-- Risk List aktualisieren +
+
 
 
 
 == Aufgabenzuordnung
 
-Die Aufgaben, welche in der zweiten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Die Aufgaben, welche in der dritten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
 Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:work_item_list.adoc[]>>
 
+
 |===
-| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
+| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator | niedrig | 1 | offen | Link zu Bilder | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | in Bearbeitung | Link | Sebastian, Benjamin | ? 
-| Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
+| Iterationsplan 04 | hoch | 3 | offen | <<link:iteration_plan03.adoc[]| Manuela | ?
 | Risikoliste | mittel | ? | offen | <<link:risk_list.adoc[]>> | Manuela | ?
-| 
+| Nichtfunktionale Anforderungen | mittel | 4 | offen | | | |
+|Dokumentation abgabefertig | hoch| 3 | offen | | | |
+| Test Cases ausarbeiten
 |===
+
+
 == Probleme 
 
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
-| 'Weihnachten' | - | Die Zeit um Weihnachten und den Jahreswechsel hindert den Projektverlauf wird nicht so produktiv genutzt. 
 |===
 
 
@@ -70,5 +66,3 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - Geplante vs. erledigte Aufgaben:
 - Beurteilung im Vergleich zu den Bewertungskriterien:
 - Andere Belange und Abweichungen: 
- 
-

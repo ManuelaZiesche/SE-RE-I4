@@ -1,8 +1,16 @@
 = Work Item List: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
 
 |===
-| *Name / Description* | *Priority* | *Size estimate (Points)* | *State* | *Target iteration* | *Assig-ned to* | *Effort estimate left (hours)* | *Hours worked* | *Reference material*
-| Produce draft vision | 1 | -- | in progress | 1 | Kristina, Erik| -- | 7 | --
-
+| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
+| Vision | 1 | -- | in Bearbeitung | | Kristina, Erik | 7
+| Use  Cases | | | | | |
+| Essence Navigator | niedrig | 1 | fertiggestellt | Link bilder | alle Teammitglieder | 1
+| Risikoliste | mittel | | fertiggestellt für diese Iteration | link | Manuela | ?
+| Iterationsplan 02 | | | in arbeit | link | Manuela | ?
+| | | | | | |
+| Essence Navigator | niedrig | 1 | offen | Link zu Bilder | alle Teammitglieder | 1 
+| Architecture Notebook | hoch | 6 | in Bearbeitung | Link | Sebastian, Benjamin | ? 
+| Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
+| Risikoliste | mittel | ? | offen | Link | Manuela | ?
 
 |===

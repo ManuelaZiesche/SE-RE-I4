@@ -5,7 +5,7 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 // --- 3. Abgabedatum --------------------------
 31. Januar 2020
 // ---------------------------------------------
-include::../docs/_includes/default-attributes.inc.adoc[]
+//include::../docs/_includes/default-attributes.inc.adoc[]
 :doctype: book
 :toc:
 :toclevels: 2
@@ -41,19 +41,19 @@ include::../docs/_includes/default-attributes.inc.adoc[]
 * Domänenmodel
 
 // Vision
-include::{docs-requirements}/technical_vision.adoc[]
+//include::{docs-requirements}/technical_vision.adoc[]
 <<<
 // Use Case Model (inkludiert selbst die einzelnen usecase_spec_x.adoc Dateien)
-include::{docs-requirements}/use_case-model.adoc[]
+//include::{docs-requirements}/use_case-model.adoc[]
 <<<
 // System-wide Requirements
-include::{docs-requirements}/system-wide_requirements.adoc[]
+//include::{docs-requirements}/system-wide_requirements.adoc[]
 <<<
 // Glossar
-include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
+//include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Domänenmodell
-include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<include::{docs-requirements}/domain_model.adoc[]>>
 <<<
 
 = Projektdokumentation
@@ -62,14 +62,12 @@ include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
 * Iteration Plan (für zwei ausgewählte Iterationen)
 
 // Projektplan
-include::{docs-project_management}/project_plan.adoc[]
+//include::{docs-project_management}/project_plan.adoc[]
 <<<
 // Risikoliste
-include::{docs-project-management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+
 // Iteration 1
-include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+
 // Iteration 2
 //include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
@@ -83,13 +81,9 @@ include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,level
 * Design
 
 // Architektur-Notizbuch
-include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+
 // Test Cases
-include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+
 // Design
-include::{docs-development}/design.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
 
 // ---------------------------------------------

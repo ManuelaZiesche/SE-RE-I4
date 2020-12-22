@@ -30,6 +30,14 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 - Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
 == Projektpraktiken
+- Iterationen 2 Wochen lang
+- Tools zur Dokumentation:
+    - GitHub
+- Tools zur Kommunikation:
+    - WhatsApp
+    - Discord
+- Tools zum Testen:
+
 
 == Meilensteine des Projektes
 
@@ -38,7 +46,9 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 |======
 | *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
 | Inception | M0 | - Lifecycle Objectives Milestone + 
-- Vision erstellen | 30.11.2020 | 20.12.2020 | 21 Tage | 
+- Vision erstellen + 
+- Erste Use Cases + 
+- Erster Termin mit den Stakeholdern + | 30.11.2020 | 20.12.2020 | 21 Tage | 
 | Elaboration | M1 | | 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
 | Elaboration | M2 | - Abgabe Dokumentation  - Lifecycle Architecture Milestone | 11.01.2021 | 31.01.2021 | 21 Tage  | 
 
