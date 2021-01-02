@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 03: Aufnahme eines Kandidatens in Mitglieder
+== Use-Case 03:  Mitgliedaufnahme
 ===	Kurzbeschreibung
-Der Kandidat wird in Mitglied umgewandelt. 
+Der Kandidat wird als Mitglied gewählt und im System als solcher übernommen. 
 //Die Check-Liste wird nach Übernahme eines Kandidaten für den Admin automatisch erstellt 
 
 ===	Kurzbeschreibung der Akteure
@@ -14,8 +14,9 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 * Die Internetseite ist geöffnet
 * Der Admin muss angemeldet sein  
 * Der Kandidat wurde laut den Wahlen gewählt
-* Der Kandidat hat der Übernahme in Mitglieder zugestimmt
-* Check-Liste-Template muss vorhanden sein
+* Der Kandidat hat der Übernahme als Mitglied zugestimmt
+* Check-Listen-Template muss für jede Organisationseinheit vorhanden sein 
+
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -25,10 +26,9 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Admin fügt den gewählten Kandidaten in "Mitglied"
-. Die Anwendung erstellt dabei automatisch unter "Checklisten" eine Checkliste mit Aufgaben für jeden neuen Mitglied, die der Admin erledigen/abhacken muss.
-. Die neue Checklisten werden am Anfang der Liste erscheinen???
-. Nach Erhaltung der Informationen (unterschriebene Datengeheimnis, Mitwirkungsordnung) von neuen Mitglieder per E-Mail - 
+. Der Admin fügt den gewählten Kandidaten in "Mitglied" mittels Plus- Button hinzu
+. Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen bzw. abhaken muss.
+. Die neue Checkliste wird am Ende aller offenen Checklisten aufgereiht 
 Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf
 
 

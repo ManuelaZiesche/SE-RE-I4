@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 01: Kandidaten verwalten
+== Use-Case 01: Kandidatenverwaltung
 ===	Kurzbeschreibung
 Das System ermöglicht es Kandidaten anzulegen, zu bearbeiten oder zu entfernen.  
 
@@ -38,17 +38,17 @@ Ist für die Verwaltung zuständig
 //. "What can go wrong?"; "What options are available at this point?"
  
 . Der Admin möchte einen Kandidaten bearbeiten. 
-. Der Admn klickt auf Zeichen "Stift" (Funktion - Bearbeiten).
-. In der Maske werden die Änderungen vorgenommen.
+. Der Admn klickt wie unter dem Tab "Mitglieder" auf das Stiftzeichen (Funktion - Bearbeiten).
+. In der Maske können die Änderungen vorgenommen werden.
 . Die Änderungen werden beim Klick auf "Speichern" gespeichert.
 
 ==== Alternativer Ablauf 2
-. Die Daten des Kandidaten sind nicht vollständig angegeben
-. Die Anwendeung lässt keine Speicherung zu. 
-. Der Admin wird auf die fehlende Information/Zeile verwiesen. 
+. Admin füllt Daten unvollständig aus.
+. Die Anwendung lässt wie unter dem Tab "Mitglieder" keine Speicherung zu. 
+. Der Admin wird wie unter dem Tab "Mitglieder" auf die fehlende Information/Zeile verwiesen. 
 
 ==== Alternativer Ablauf 3
-. Um einen Kandidaten zu löschen, Wählt der Admin einen Kandidaten und klickt auf Button "Entfernen" 
+. Um einen Kandidaten zu löschen, wählt der Admin wie unter dem Tab "Mitglieder" einen Kandidaten und klickt auf Button "Entfernen" 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
