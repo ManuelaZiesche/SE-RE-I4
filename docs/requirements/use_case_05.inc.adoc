@@ -22,9 +22,9 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Admin lädt die zugesendeten, unterschrieben Dokumente hoch
+. Der Admin lädt die zugesendeten, unterschriebenen Dokumente hoch
 . Desweiterem füllt er aus, ob die Telefonummer im Notfall an andere Mitglieder weitergegeben werden darf 
-
+. Zusätzlich hat er die Möglichkeit das Protokoll der jeweiligen Sitzung zu verlinken
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
@@ -42,9 +42,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Szenario 1
-. <Szenario 1, Schritt 1>
-. 	…
-. <Szenario 1, Schritt n>
+
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
@@ -56,5 +54,3 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 * Hochladen der Informationen muss in dazu angemessene Zeit erfolgen
 
 ==== Benutzeroberfläche
-* Impressum und AGBs auf Website
-* ?
