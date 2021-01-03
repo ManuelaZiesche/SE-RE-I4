@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 03:  Mitgliedaufnahme
+== Use-Case 03:  Mitgliederaufnahme
 ===	Kurzbeschreibung
 Der Kandidat wird als Mitglied gewählt und im System als solcher übernommen. 
 //Die Check-Liste wird nach Übernahme eines Kandidaten für den Admin automatisch erstellt 
@@ -15,6 +15,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 * Der Admin muss angemeldet sein  
 * Der Kandidat wurde laut den Wahlen gewählt
 * Der Kandidat hat der Übernahme als Mitglied zugestimmt
+* Der Kandidat hat die erforderlichen Dokumente unterschrieben und gesendet
 * Check-Listen-Template muss für jede Organisationseinheit vorhanden sein 
 
 
@@ -29,7 +30,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 . Der Admin fügt den gewählten Kandidaten in "Mitglied" mittels Plus- Button hinzu
 . Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen bzw. abhaken muss.
 . Die neue Checkliste wird am Ende aller offenen Checklisten aufgereiht 
-Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf
+
 
 
 === Alternative Abläufe
@@ -45,19 +46,14 @@ Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Szenario 1
-. Der Admin öffnet den Tap "Checklisten" 
-. Er sucht d
-. 	…
-. <Szenario 1, Schritt n>
+
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-Check Liste mit zu erfüllenden Aufgaben für den Admin ist erstellt
+Check Liste mit zu erfüllenden Aufgaben für den Admin wurde erstellt
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 
-==== Benutzeroberfläche
-* Impressum und AGBs auf Website
-* ?
+

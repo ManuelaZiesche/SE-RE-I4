@@ -24,9 +24,9 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 *Use-Case 05*: Einpflegung weiterer Informationen
 
 
-*Use-Case*: Workload erfassen +
-*Use-Case*: Aufwandsentschädigung berehnnung aufgrund des Workloads +
-*Use-Case*: Organigramm überarbeiten 
+(*Use-Case*: Workload erfassen +
+*Use-Case*: Aufwandsentschädigung Berechnung aufgrund des Workloads +
+*Use-Case*: Organigramm überarbeiten )
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
@@ -51,3 +51,6 @@ include::use_case_06.inc.adoc[]
 //include::use_case_09.inc.adoc[]
 //<<<
 //include::use_case_10.inc.adoc[]
+
+
+Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf

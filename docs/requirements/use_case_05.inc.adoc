@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 06: Einpflegung weiterer Informationen
+== Use-Case 05: Einpflegung weiterer Informationen
 ===	Kurzbeschreibung
 Administrator kann weitere Informationen für neu angelegte Mitglieder einpflegen
 
