@@ -57,7 +57,7 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 |====== 
 
 == Deployment
-
+Wie übergeben wir dem Stura am ende unser Projekt?
 
 == Erkenntnisse
 

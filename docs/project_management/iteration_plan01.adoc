@@ -37,7 +37,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
-| Use  Cases | sehr hoch | 8 | fertig | siehe in Requirements | Kristina und Erik |  ?
+| Vision | hoch | -- | in Bearbeitung | <<link:requirements-technical_vision.adoc>>  | Kristina, Erik | 7
+| Use  Cases | mittel | -- |  | siehe in Requirements | Kristina und Erik |  ?
 | Essence Navigator | niedrig | 1 | fertig | Link bilder | alle Teammitglieder | 1
 | Risikoliste | mittel | 2 | fertig| <<link:risk_list.adoc[]>>  | Manuela | 3
 | Iterationsplan 02 | hoch | 1 | fertig | <<link:iteration_plan02.adoc[]>> | Manuela | 2
@@ -75,5 +76,4 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 == Essence Navigator Bild
 
-image::essence_navigator_images-Essence_Navigator_Iteration01.png[]
-
+image::essence_navigator_images/Essence_Navigator_Iteration01.png[]

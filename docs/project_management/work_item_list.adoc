@@ -2,15 +2,19 @@
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
-| Vision | 1 | -- | in Bearbeitung | | Kristina, Erik | 7
-| Use  Cases | | | | | |
-| Essence Navigator | niedrig | 1 | fertiggestellt | Link bilder | alle Teammitglieder | 1
-| Risikoliste | mittel | | fertiggestellt für diese Iteration | link | Manuela | ?
-| Iterationsplan 02 | | | in arbeit | link | Manuela | ?
-| | | | | | |
+| *Iteration 01:* | | | | | |
+| Vision | hoch | -- | in Bearbeitung | <<link:requirements-technical_vision.adoc>>  | Kristina, Erik | 7
+| Use  Cases | mittel | -- | fertig | siehe in Requirements | Kristina, Erik |  ?
+| Essence Navigator | niedrig | 1 | fertig | Link bilder | alle Teammitglieder | 1
+| Risikoliste | mittel | 2 | fertig| <<link:risk_list.adoc[]>>  | Manuela | 3
+| Iterationsplan 02 | hoch | 1 | fertig | <<link:iteration_plan02.adoc[]>> | Manuela | 2
+| *Iteration 02:* | | | | | |
 | Essence Navigator | niedrig | 1 | offen | Link zu Bilder | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | in Bearbeitung | Link | Sebastian, Benjamin | ? 
 | Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
-| Risikoliste | mittel | ? | offen | Link | Manuela | ?
+| Risikoliste aktualisieren | mittel | 1 | erledigt | <<link:risk_list.adoc[]>> | Manuela | 2
+| Projektplan aktualisieren | niedrig | 2 | offen | <<link:project_plan.adoc[]>> | Manuela |
+| *Iteration 03:* | | | | | |
+
 
 |===
