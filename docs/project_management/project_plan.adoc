@@ -16,7 +16,7 @@ Außerdem gibt es für jede Iteration noch einen eigenen *Iterationsplan*:
  +
 <<link:iteration_plan01.adoc[]>> +
 <<link:iteration_plan02.adoc[]>> +
-//<<link:iteration_plan03.adoc[]>> +
+<<link:iteration_plan03.adoc[]>> +
 //<<link:iteration_plan04.adoc[]>> +
 
 == Projektorganisation
@@ -30,7 +30,7 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 - Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
 == Projektpraktiken
-- Iterationen 2 Wochen lang
+- Iterationen 3 Wochen lang
 - Tools zur Dokumentation:
     - GitHub
 - Tools zur Kommunikation:
@@ -49,7 +49,9 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 - Vision erstellen + 
 - Erste Use Cases + 
 - Erster Termin mit den Stakeholdern + | 30.11.2020 | 20.12.2020 | 21 Tage | 
-| Elaboration | M1 | | 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+| Elaboration | M1 | 
+- Use Cases weiterbarbeiten und evtl abschließen  +
+- Architecture Notebook +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
 | Elaboration | M2 | - Abgabe Dokumentation  - Lifecycle Architecture Milestone | 11.01.2021 | 31.01.2021 | 21 Tage  | 
 
 |====== 
@@ -59,3 +61,5 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 == Erkenntnisse
 
+- Rückmeldung Stakeholder fehlt
+- Aufgaben werden im Team nicht rechtzeitig bearbeitet

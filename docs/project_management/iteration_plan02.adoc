@@ -12,10 +12,10 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 21.12.2020 | 
-| Teammeeting | 21.12.2020 | Protokolllink
-| | |
-| | | 
-| Ende der  Iteration | |
+| Teammeeting | 21.12.2020 | 
+| Weihnachtsferien | 21.12.2020-03.01.2021| in der Zeit stagniert unser Projektfortschritt sicher etwas
+| Teammeeting | 04.01.2021 | 
+| Ende der  Iteration | 10.01.2021 | Assessment an dem Tag durchführen
 
 |===
 
@@ -30,19 +30,18 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - Risk List aktualisieren +
 
 
-
 == Aufgabenzuordnung
 
 Die Aufgaben, welche in der zweiten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
-Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:work_item_list.adoc[]>>
+Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt:  <<link:work_item_list.adoc[]>>
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
 | Essence Navigator | niedrig | 1 | offen | Link zu Bilder | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | in Bearbeitung | Link | Sebastian, Benjamin | ? 
 | Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
-| Risikoliste | mittel | ? | offen | <<link:risk_list.adoc[]>> | Manuela | ?
-| 
+| Risikoliste aktualisieren | mittel | 1 | erledigt | <<link:risk_list.adoc[]>> | Manuela | 2
+| Projektplan aktualisieren | niedrig | 2 | offen | <<link:project_plan.adoc[]>> | Manuela |
 |===
 == Probleme 
 

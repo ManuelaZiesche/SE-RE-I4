@@ -32,8 +32,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator | niedrig | 1 | offen | Link zu Bilder | alle Teammitglieder | 1 
-| Architecture Notebook | hoch | 6 | in Bearbeitung | Link | Sebastian, Benjamin | ? 
-| Iterationsplan 04 | hoch | 3 | offen | <<link:iteration_plan03.adoc[]| Manuela | ?
+| Iterationsplan 04 | hoch | 3 | offen | <<link:iteration_plan04.adoc[]| Manuela | ?
 | Risikoliste | mittel | ? | offen | <<link:risk_list.adoc[]>> | Manuela | ?
 | Nichtfunktionale Anforderungen | mittel | 4 | offen | | | |
 |Dokumentation abgabefertig | hoch| 3 | offen | | | |
