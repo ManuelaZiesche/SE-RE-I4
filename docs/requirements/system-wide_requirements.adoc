@@ -37,7 +37,7 @@ F3: Die Daten müssen verschlüsselt sein.
 
 B1: Der Mitglied/Admin sollen die Bedingung innerhalb eines Tages erlernen. +
 //Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
-B2: Die Anzahl von Mausklicks soll maximal 5 sein (je nach Aufgabe) +
+B2: Die Anzahl von Mausklicks um eine Afgabe zu erledigen soll maximal 5 sein (je nach schwierigkeit der Aufgabe) +
 B3: Der/Die Text/Meldungen müssen: +
 
 . klar formuliert sein 
@@ -68,13 +68,12 @@ E3: Das Hoch/Runterladen der Dokumente muss zeitlich angemessen sein +
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
-W: Gute dokumentation +
-W: Gute Struktur
-W: IT der STura muss sich schnell zurecht finden 
-W: Bestimmte Programmiersprache? +
-W: wie lange muss System noch laufen/ betrieben werden?
-W: wie viele änderungen werden in der Zukunft noch gemacht?
-W: Änderung der Gesetze als Auswirkung auf die System
+W1: Gute Dokumentation +
+W2: Quality of life features +
+W3: Klar strukturierte Programm +
+W4: Programmiersprache: Python, HTML? CSS, Python (Django), SQLite +
+W5: die Lauzeit so lang wie möglich (solange es von StuRa  gebraucht wird) +
+W6: Soll in der Zukunft einfach bearbeitbar sein +
 
 
 == Zusätzliche Anforderungen
