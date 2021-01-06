@@ -1,0 +1,127 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}User Documentation}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Working with Members (Mitglieder)}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Create a Member}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Alter a Member}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Delete a Member}{3}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Working with Organizational units (Organisationseinheiten)}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Add a new Organizational unit}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Alter an Organizational unit}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Delete an Organizational unit}{6}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Working with Subsections (Unterbereiche)}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Create a new Subsection}{7}{subsection.1.3.1}%
+\contentsline {subsubsection}{First Option via Organizational units}{7}{subsubsection*.3}%
+\contentsline {subsubsection}{Second Option via Subsections}{8}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {1.3.2}Alter a Subsection}{9}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Delete a Subsection}{9}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Working with Functions (Funktionen)}{10}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Add a new Function}{10}{subsection.1.4.1}%
+\contentsline {subsubsection}{Create a Function that belongs directly to an Organizational unit}{11}{subsubsection*.5}%
+\contentsline {subsubsection}{Create a Function that belongs to a Subsection of an Organizational unit}{11}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {1.4.2}Alter a Function}{12}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Delete a Function}{12}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Working with Checklists (Checklisten)}{13}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Create a new General Task}{13}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Create Right for a Function}{14}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Create a new Checklist}{16}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Delete a Checklist}{17}{subsection.1.5.4}%
+\contentsline {section}{\numberline {1.6}Working with Users and Admins}{18}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Create an User}{18}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Create a User (with Admin rights)}{19}{subsection.1.6.2}%
+\contentsline {chapter}{\numberline {2}Admin Documentation}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Deployment}{21}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Sources:}{21}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Requirements:}{21}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Basic configuration:}{21}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Adjust Django Project Settings:}{22}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Configure Apache2:}{23}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Solve some Permission Issues:}{23}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}Cronjobs}{24}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Update the Application}{25}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Update From GitHub with no changes in migrations:}{25}{subsection.2.3.1}%
+\contentsline {chapter}{\numberline {3}Developer Documentation}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction Development}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Clone the Git\sphinxhyphen {}Repository, install the requirements and fire up the Webserver for developement}{27}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}System Architecture}{28}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The V in MVC}{29}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Components}{33}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Database Structure}{35}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Activity Diagrams}{36}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Code Documentation}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Login}{39}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Views}{39}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Templates}{39}{subsection.4.1.2}%
+\contentsline {subsubsection}{login.html}{40}{subsubsection*.9}%
+\contentsline {section}{\numberline {4.2}Ämter}{40}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Models}{40}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Views}{52}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Templates}{52}{subsection.4.2.3}%
+\contentsline {subsubsection}{main\_screen.html}{52}{subsubsection*.194}%
+\contentsline {subsubsection}{department\_row.html}{52}{subsubsection*.195}%
+\contentsline {section}{\numberline {4.3}Historie}{52}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Abhängigkeiten}{53}{subsection.4.3.1}%
+\contentsline {subsubsection}{django\sphinxhyphen {}simple\sphinxhyphen {}history}{53}{subsubsection*.196}%
+\contentsline {subsection}{\numberline {4.3.2}Views}{53}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Templates}{54}{subsection.4.3.3}%
+\contentsline {subsubsection}{list.html}{54}{subsubsection*.200}%
+\contentsline {subsubsection}{tabs/*}{54}{subsubsection*.201}%
+\contentsline {subsubsection}{tabs/\_pagination.html}{54}{subsubsection*.202}%
+\contentsline {subsubsection}{row.html}{54}{subsubsection*.203}%
+\contentsline {subsubsection}{rowContent.html}{54}{subsubsection*.204}%
+\contentsline {subsubsection}{\_titleBuilder.html}{55}{subsubsection*.205}%
+\contentsline {subsubsection}{\_noResultsRow.html}{55}{subsubsection*.206}%
+\contentsline {subsubsection}{\_modalDataIncludes.html}{55}{subsubsection*.207}%
+\contentsline {subsubsection}{modalData/*}{55}{subsubsection*.208}%
+\contentsline {subsection}{\numberline {4.3.4}Template Tags}{55}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Mitglieder}{56}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Abhängigkeiten}{56}{subsection.4.4.1}%
+\contentsline {subsubsection}{simplejson}{56}{subsubsection*.212}%
+\contentsline {subsection}{\numberline {4.4.2}Views}{56}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Templates}{61}{subsection.4.4.3}%
+\contentsline {subsubsection}{aemter.html}{61}{subsubsection*.229}%
+\contentsline {subsubsection}{amt\_dropdown\_list\_options.html}{61}{subsubsection*.230}%
+\contentsline {subsubsection}{bereich\_dropdown\_list\_options.html}{61}{subsubsection*.231}%
+\contentsline {subsubsection}{email.html}{61}{subsubsection*.232}%
+\contentsline {subsubsection}{email\_input.html}{61}{subsubsection*.233}%
+\contentsline {subsubsection}{mitglieder.html}{61}{subsubsection*.234}%
+\contentsline {subsubsection}{mitglied\_erstellen\_bearbeiten.html}{61}{subsubsection*.235}%
+\contentsline {subsubsection}{modal.html}{61}{subsubsection*.236}%
+\contentsline {subsubsection}{row.html}{62}{subsubsection*.237}%
+\contentsline {section}{\numberline {4.5}Checklisten}{62}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Models}{62}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Views}{72}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Templates}{73}{subsection.4.5.3}%
+\contentsline {subsubsection}{main\_screen.html}{73}{subsubsection*.390}%
+\contentsline {subsubsection}{\_createModal.html}{73}{subsubsection*.391}%
+\contentsline {subsubsection}{\_deleteModal.html}{74}{subsubsection*.392}%
+\contentsline {subsubsection}{\_funktionSelectOptions.html}{74}{subsubsection*.393}%
+\contentsline {subsection}{\numberline {4.5.4}Template Tags}{74}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Importscripts}{74}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}How to use:}{74}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}CSV Data:}{74}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Functions:}{75}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Tests}{75}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Sources}{75}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Dependencies}{75}{subsection.4.7.2}%
+\contentsline {subsubsection}{selenium}{75}{subsubsection*.398}%
+\contentsline {subsubsection}{Webdriver for Firefox}{75}{subsubsection*.399}%
+\contentsline {subsection}{\numberline {4.7.3}MyTestCase}{76}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Helper Functions}{76}{subsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.7.5}Login Module Tests}{77}{subsection.4.7.5}%
+\contentsline {subsubsection}{Testcase 001}{77}{subsubsection*.400}%
+\contentsline {subsubsection}{Testcase 002}{78}{subsubsection*.401}%
+\contentsline {subsection}{\numberline {4.7.6}Mitglieder Module Tests}{78}{subsection.4.7.6}%
+\contentsline {subsubsection}{Testcase 003}{78}{subsubsection*.402}%
+\contentsline {subsubsection}{Testcase 004}{78}{subsubsection*.403}%
+\contentsline {subsubsection}{Testcase 005}{78}{subsubsection*.404}%
+\contentsline {subsubsection}{Testcase 006}{79}{subsubsection*.405}%
+\contentsline {subsection}{\numberline {4.7.7}Aemter Module Tests}{79}{subsection.4.7.7}%
+\contentsline {subsubsection}{Testcase 007}{79}{subsubsection*.406}%
+\contentsline {subsubsection}{Testcase 008}{80}{subsubsection*.407}%
+\contentsline {subsubsection}{Testcase 009}{80}{subsubsection*.408}%
+\contentsline {subsection}{\numberline {4.7.8}Latest test coverage report}{81}{subsection.4.7.8}%
+\contentsline {section}{\numberline {4.8}Commands}{83}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}delete\_old\_historie}{83}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}clean\_duplicate\_history}{83}{subsection.4.8.2}%
+\contentsline {chapter}{Python Module Index}{85}{section*.412}%
+\contentsline {chapter}{Index}{87}{section*.413}%
