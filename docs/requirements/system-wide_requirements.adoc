@@ -28,7 +28,7 @@ F1: Die Daten müssen verschlüsselt sein.
 === Benutzbarkeit (Usability)
 //Usability: Bedienbarkeit, Verständlichkeit, Erlernbarkeit. Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-B1: Der Mitglied/Admin sollen die Bedienung innerhalb eines (zwei) Tages erlernen. +
+B1: Das Mitglied/ Der Admin sollte die Bedienung innerhalb eines (zwei) Tages erlernen. +
 //Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
 
 
@@ -42,35 +42,21 @@ Z1: Die Anwendung soll 95% pro Jahr verfügbar sein  - Sophia fragen +
 // Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 E1: Das System muss für eine gleichzeitige Nutzung von 10 Nutzern ausgelegt sein +
-E2: Die Ladezeiten innerhalb der Anwendung müssen angemessen sein, unter der Voraussetzung einer 16Mbit/sek +
-E3: Das Hoch/Runterladen der Dokumente muss zeitlich angemessen sein, unter der Voraussetzung einer 16Mbit/sek +
+E2: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken, unter der Voraussetzung einer 16Mbit/sek Durchsatz der Internetleitung +
 
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
-
-W1: Gute Dokumentation +
-W2: Quality of life features +
-W3: Klar strukturierte Programm +
-W4: Programmiersprache: Python, HTML? CSS, Python (Django), SQLite +
-W5: die Lauzeit so lang wie möglich (solange es von StuRa  gebraucht wird) +
-W6: Soll in der Zukunft einfach bearbeitbar sein +
-
+ 
+W1: soll genutzt  werden, bis es Änderungen an der Vorhgehensweise des Stura gibt, die dieses System ablösen
 
 == Zusätzliche Anforderungen
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-//* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+* Ressourcenbegrenzungen - Speicherplatzbegrenzung -> Sophia fragen! +
+* Es muss  auf  Linux/Unix laufen +
 
-=== Organisatorische Randbedingungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
 * Datenschutz
+* Nutzung von freien Lizenzen (Open Source)
