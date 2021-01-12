@@ -15,12 +15,13 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Teammeeting | 21.12.2020 | 
 | Weihnachtsferien | 21.12.2020-03.01.2021| Stagnation des Projektfortschrittes
 | Teammeeting | 04.01.2021 | Coaching by Felix Müller
-| Teammeeting | 07.01.2021 | Architektur
-| Ende der  Iteration | 10.01.2021 | Assessment an dem Tag durchführen
+| Teammeeting | 07.01.2021 | Architektur besprochen
+| Ende der  Iteration 02 | 10.01.2021 | Assessment 
 
 |===
 
 == Wesentliche Ziele
+
 - Architektur Entwicklung beginnen +
 - Anforderungen verfeinern +
 - erste Use Cases entwickeln +
@@ -38,7 +39,7 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
-| Essence Navigator | niedrig | 1 | offen | LINK ZU BILD | alle Teammitglieder | 1 
+| Essence Navigator | niedrig | 1 | erledigt | essence_navigator_images/Essence_Navigator_Iteration02.png[] | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | in Bearbeitung | <<link:architecture:architecture_notebook.adoc[]>>| Sebastian, Benjamin | ? 
 | Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
 | Risikoliste aktualisieren | mittel | 3 | erledigt | <<link:risk_list.adoc[]>> | Manuela | 2
@@ -50,6 +51,7 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 |===
 | *Problem* | *Status* | *Notizen*
 | 'Weihnachten' | - | Die Zeit um Weihnachten und den Jahreswechsel hindert den Projektverlauf und wird nicht so produktiv genutzt, wie die restliche Zeit.
+| Architekut des Programms | - | Unsere Architekten haben mit der Entwicklung der Architektur 
 |===
 
 
@@ -78,6 +80,6 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
 <<link:essence_navigator_images[]>> 
 
-- Bild von der zweiten Iteration
+- Bild von der zweiten Iteration:
 
 image::essence_navigator_images/Essence_Navigator_Iteration02.png[]
