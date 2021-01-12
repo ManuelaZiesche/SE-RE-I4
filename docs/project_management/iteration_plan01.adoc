@@ -56,8 +56,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 == Bewertungskriterien
 
-- Gemeinsame Inspektion des Iterations-Ergebnisses mit den Themenstellern und dem gesamten Team ergibt positive Rückmeldungen 
-- Überprüfung der Programmziele mit den Themenstellern
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit gesamten Team ergibt positive Rückmeldungen 
+- Überprüfung der Programmziele
 
 
 == Assessment
@@ -69,7 +69,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | Projektstatus | grün 
 |===
 
-- Beurteilung im Vergleich zu den Zielen: es wurden alle Ziele erreicht
+- Beurteilung im Vergleich zu den Zielen: es wurden alle geplanten Ziele erreicht. 
 - Geplante vs. erledigte Aufgaben: Die geplanten Aufgaben wurden auch erledigt. 
 - Beurteilung im Vergleich zu den Bewertungskriterien: /
 - Andere Belange und Abweichungen: /

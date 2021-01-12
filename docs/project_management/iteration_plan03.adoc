@@ -20,7 +20,13 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Wesentliche Ziele
 
+- Architektur und Use Cases verfeinern +
+- erste Prototypen entwickeln +
 
+
+- Essence Navigator +
+- Work Item List fortführen +
+- Risk List aktualisieren +
 
 
 == Aufgabenzuordnung

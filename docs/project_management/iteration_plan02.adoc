@@ -15,6 +15,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Teammeeting | 21.12.2020 | 
 | Weihnachtsferien | 21.12.2020-03.01.2021| Stagnation des Projektfortschrittes
 | Teammeeting | 04.01.2021 | Coaching by Felix Müller
+| Teammeeting | 07.01.2021 | Architektur
 | Ende der  Iteration | 10.01.2021 | Assessment an dem Tag durchführen
 
 |===
@@ -40,7 +41,7 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 | Essence Navigator | niedrig | 1 | offen | LINK ZU BILD | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | in Bearbeitung | <<link:architecture:architecture_notebook.adoc[]>>| Sebastian, Benjamin | ? 
 | Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
-| Risikoliste aktualisieren | mittel | 1 | erledigt | <<link:risk_list.adoc[]>> | Manuela | 2
+| Risikoliste aktualisieren | mittel | 3 | erledigt | <<link:risk_list.adoc[]>> | Manuela | 2
 | Projektplan aktualisieren | niedrig | 2 | offen | <<link:project_plan.adoc[]>> | Manuela |
 |===
 == Probleme 
@@ -54,21 +55,22 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 
 == Bewertungskriterien
 
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit gesamten Team
+- 
 
 == Assessment
 
 .Assessment
 |===
 |*Assessment Ziel* | *Iteration 2 beenden*
-|Assessment Datum | 
+|Assessment Datum | 11.01.2021
 | Teilnehmer | alle
-| Projektstatus | rot, gelb, grün?
+| Projektstatus | grün
 |===
 
-- Beurteilung im Vergleich zu den Zielen:
-- Geplante vs. erledigte Aufgaben:
+- Beurteilung im Vergleich zu den Zielen: Soll-Zustand: wir wollen alle Ziele erreichen, Ist-Zustand: 87,5% erreicht -> ???
+- Geplante vs. erledigte Aufgaben: prinzipiell alle Ziele erreicht, nur keine Prototypen entwickelt
 - Beurteilung im Vergleich zu den Bewertungskriterien:
-- Andere Belange und Abweichungen: 
  
 
 == Essence Navigator Bild
@@ -78,4 +80,4 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 
 - Bild von der zweiten Iteration
 
-//image::essence_navigator_images/Essence_Navigator_Iteration02.png[]
+image::essence_navigator_images/Essence_Navigator_Iteration02.png[]
