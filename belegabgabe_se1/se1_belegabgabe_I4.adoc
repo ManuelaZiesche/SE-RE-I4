@@ -1,7 +1,7 @@
 // --- 1. Projektthema -------------------------
 = SE I - Belegabgabe: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 // --- 2. Teammitglieder -----------------------
-Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de>; Erik Würfel <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>
+Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de>; Erik Würfel <s00000@htw-dresden.de>; Vasco Schwarze <s00000@htw-dresden.de>; Kristina Lapatanova <s00000@htw-dresden.de>; Benjamamin Müller <s00000@htw-dresden.de>; Sebastian Mathäus, Bayu Anggi Saputra 
 // --- 3. Abgabedatum --------------------------
 31. Januar 2020
 // ---------------------------------------------
@@ -38,7 +38,7 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 * Use Case Model (inkl. Wireframes, sofern vorhanden)
 * System-wide Requirements
 * Glossar
-* Domänenmodel
+* Domänenmodel: <<include::{docs-requirements}/domain_model.adoc[]>>
 
 // Vision
 //include::{docs-requirements}/technical_vision.adoc[]
@@ -53,7 +53,7 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 //include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Domänenmodell
-<<include::{docs-requirements}/domain_model.adoc[]>>
+//<<include::{docs-requirements}/domain_model.adoc[]>>
 
 = Projektdokumentation
 * Projektplan
@@ -63,7 +63,8 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 // Projektplan
 //include::{docs-project_management}/project_plan.adoc[]
 <<<
-// Risikoliste
+// Risikoliste{docs-project_management}/risk_list.adoc[]
+//include::
 
 // Iteration 1
 
