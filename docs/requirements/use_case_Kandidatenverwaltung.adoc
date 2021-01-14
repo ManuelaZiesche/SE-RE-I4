@@ -22,9 +22,9 @@ Ist für die Verwaltung zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn der Admin auf den Tap "Kandidaten" klickt
+. Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
 . Der Admin kann wie unter dem Tap "Mitglieder" einen Kandidaten hinzufügen, indem er auf den Button "hinzufügen" klickt
-. Die nächste Maske ermöglicht es ihm einen Kandidaten mit Vorname, Name, Beschlussnummer und Wahldatum (ähnlich wie bei "Mitglieder") hinzuzufügen.
+. Die nächste Maske ermöglicht es ihm einen Kandidaten mit Vorname, Name, E-Mail, Beschlussnummer und Wahldatum (ähnlich wie bei "Mitglieder") hinzuzufügen.
 . Die Änderungen werden beim Klick auf "Speichern" gespeichert.
 . Der Use Case ist abgeschlossen.
 
@@ -38,7 +38,7 @@ Ist für die Verwaltung zuständig
 //. "What can go wrong?"; "What options are available at this point?"
  
 . Der Admin möchte einen Kandidaten bearbeiten. 
-. Der Admn klickt wie unter dem Tab "Mitglieder" auf das Stiftzeichen (Funktion - Bearbeiten).
+. Der Admin klickt wie unter dem Tab "Mitglieder" auf den Stiftbutton (welcher die Funktion hat die Maske "Kandidat Bearbeiten" aufzurufen).
 . In der Maske können die Änderungen vorgenommen werden.
 . Die Änderungen werden beim Klick auf "Speichern" gespeichert.
 

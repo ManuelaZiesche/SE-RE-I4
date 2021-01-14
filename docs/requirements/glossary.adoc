@@ -13,7 +13,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
-|Beschlussnummer |  | --
+|Beschlussnummer|wird jedem Antrag im StuRa zugeordnet |--
 |StuRa | Studentische Vertretung an der HTW Dresden | --
 |Nutzer| hat Zugriff auf das StuRa System | 
 |Mitglied | Mitglied des StuRa | --
@@ -21,7 +21,6 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Check-Liste| Liste, die Aufgaben enthält, die der Admin erledigen muss. | To-do-Liste, Erledigungs-Liste
 |Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
-|--| --| --
 |Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und Funktionen einzeln unterteilt sind| Abteile des StuRa 
 
 |===

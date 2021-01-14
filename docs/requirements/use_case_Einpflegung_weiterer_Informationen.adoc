@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 05: Einpflegung weiterer Informationen
+== Use-Case 03: Einpflegung weiterer Informationen
 ===	Kurzbeschreibung
 Administrator kann weitere Informationen für neu angelegte Mitglieder einpflegen
 
@@ -22,6 +22,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
 . Der Admin lädt die zugesendeten, unterschriebenen Dokumente hoch
 . Desweiterem füllt er aus, ob die Telefonummer im Notfall an andere Mitglieder weitergegeben werden darf 
 . Zusätzlich hat er die Möglichkeit das Protokoll der jeweiligen Sitzung zu verlinken
