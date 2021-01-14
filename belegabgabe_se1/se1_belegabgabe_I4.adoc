@@ -38,7 +38,7 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 * Use Case Model (inkl. Wireframes, sofern vorhanden)
 * System-wide Requirements
 * Glossar
-* Domänenmodel: <<include::{docs-requirements}/domain_model.adoc[]>>
+* Domänenmodel: include::{docs-requirements}/domain_model.adoc[]
 
 // Vision
 //include::{docs-requirements}/technical_vision.adoc[]
@@ -56,20 +56,19 @@ Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de
 //<<include::{docs-requirements}/domain_model.adoc[]>>
 
 = Projektdokumentation
-* Projektplan
-* Risikoliste
-* Iteration Plan (für zwei ausgewählte Iterationen)
+* Projektplan: <<include::{docs-project_management}/project_plan.adoc[]>> +
+* Risikoliste: <<include::{docs-project_management}/risk_list.adoc[]>> +
+* Iteration Plan 01: include::{docs-project-management}/iteration_plan_02.adoc
+* Iteration Plan 02: 
++ 
 
-// Projektplan
-//include::{docs-project_management}/project_plan.adoc[]
-<<<
-// Risikoliste{docs-project_management}/risk_list.adoc[]
-//include::
+
+
 
 // Iteration 1
 
 // Iteration 2
-//include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
+[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 3
 //include::{docs-project-management}/iteration_plan_03.adoc[lines=1..1;4..-1,leveloffset=+1]
