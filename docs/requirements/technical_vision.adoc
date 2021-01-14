@@ -94,7 +94,7 @@ Beispiel
 |HTW | Hochschule | --
 |Mitglieder der StuRa|Repräsentanten der Studenten| Nutzer des Produkts
 |Systembetreuer, Admin| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
-|Hacker | Jemand, der illegal in Computersysteme eindringt.| Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
+|Hacker | Jemand, der illegal in Computersysteme eindringt | Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
 |der Gesetzgeber|gibt rechtliche Rahmenbedingungen vor, z.B. durch Gesetze für Jugendschutz, Datenschutz und Fernabsatz | überwacht Gesetze und Regelungen
 hinsichtlich der Einhaltung des Telemediengesetzes
 
@@ -128,7 +128,7 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|einfache Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tap, in dem die Daten des Kandidaten (Name, Vorname, Wahldatum, Beschlussnummer) angelegt, bearbeitet oder gelöscht werden können | xx
+|einfache Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tab, in dem die Daten des Kandidaten angelegt, bearbeitet oder gelöscht werden können | xx
 |wichtige Informationen werden für Mitglieder angezeigt| Hoch| Wahldatum der Kandidaten ist ersichtlich  |xx
 |Check-Listen für Admin automatisch anlegen/zuordnen | Hoch |für Admin des Stura werden einzelne Aufgaben automatisch nach Mitgliedsaufnahme angelegt, welche abgehakt werden können.  | xx
 |einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx

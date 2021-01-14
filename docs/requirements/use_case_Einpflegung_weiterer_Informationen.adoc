@@ -34,14 +34,9 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. Der Use Case wird im Schritt <y> fortgesetzt.
 //. "What can go wrong?"; "What options are available at this point?"
 
-. wenn der Admin eine zu große Datei hochlädt, kommt eine Fehlermeldung [andere Lösung ]
+. wenn der Admin eine zu große Datei hochlädt, kommt eine Fehlermeldung [andere Lösung]
 
 //Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
-
-
-=== Wesentliche Szenarios
-//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== Szenario 1
 
 
 ===	Nachbedingungen
@@ -53,4 +48,4 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 * einfache Bedienbarkeit ermöglichen
 * Hochladen der Informationen muss in dazu angemessene Zeit erfolgen
 
-==== Benutzeroberfläche
+

@@ -60,9 +60,5 @@ Admin legt einen Kandidaten mit Daten Max Mustermann an.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
 
-=== Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-
-//==== Benutzeroberfläche
 

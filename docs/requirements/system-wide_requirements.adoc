@@ -47,7 +47,7 @@ E2: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken,
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
  
-W1: soll genutzt  werden, bis es Änderungen an der Vorhgehensweise des Stura gibt, die dieses System ablösen
+W1: soll genutzt werden, bis es Änderungen an der Vorhgehensweise des Stura gibt, die dieses System ablösen
 
 == Zusätzliche Anforderungen
 === Einschränkungen
