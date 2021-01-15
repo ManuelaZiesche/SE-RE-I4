@@ -1,8 +1,8 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 03: Einpflegung weiterer Informationen
+== Use-Case 03: Informationen zu Kandidaten pflegen
 ===	Kurzbeschreibung
 Administrator kann weitere Informationen für neu angelegte Mitglieder einpflegen
-
+Attribute plus Dokumente (später)
 ===	Kurzbeschreibung der Akteure
 ==== Admin
 Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig

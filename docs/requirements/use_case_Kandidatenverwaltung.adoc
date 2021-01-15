@@ -60,5 +60,6 @@ Admin legt einen Kandidaten mit Daten Max Mustermann an.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
 
-
+=== Hinweise
+Ablauf soll sich an Mitglieder Tab orientieren
 
