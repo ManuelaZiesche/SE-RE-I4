@@ -128,16 +128,15 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|einfache Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tap, in dem die Daten des Kandidaten (Name, Vorname, Wahldatum, E-Mail, Beschlussnummer) angelegt und bearbeitet werden können. Kandidaten können auch gelöscht werden. | xx
-|wichtige und neue Informationen werden unter dem Tab Kandidaten angezeigt| Hoch| Wahldatum und Beschlussnummer der Kandidaten sind ersichtlich  |xx
+|einfache Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tap, in dem die Daten des Kandidaten (Name, Vorname, Wahldatum, E-Mail, Beschlussnummer) angelegt und bearbeitet werden können. Kandidaten können auch gelöscht werden. Zusätzlich können relevante Informationen gepflegt werden. | xx
 |Aufgaben können übersichtlich abgearbeitet werden | Hoch |für Admin des Stura werden einzelne Aufgaben automatisch nach Mitgliedsaufnahme angelegt, welche abgehakt werden können. Zudem gibt es bei Kandidatenerstellung eine kleine Checkliste bevor Kandidat Mitglied werden kann.  | xx
 |einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx
-|spezielle Informationen/Features nur von Admins einsehbar | Hoch |"Checklisten" und "Kandidaten" Tabs dürfen nur von Admins und nicht von Mitgliedern gesehen werden; Telefonnumer von anderen Mitgliedern dürfen auch nur Admins angezeigt werden | xx
+|vertrauliche  Informationen können nur von Admins eingesehen werden  | Hoch |"Checklisten" und "Kandidaten" Tabs dürfen nur von Admins und nicht von Mitgliedern gesehen werden; Telefonnumer von anderen Mitgliedern dürfen auch nur Admins angezeigt werden | xx
 |Automatische Stimmzettelgenerierung | Mittel | Stimmzettel eventuell ausdrucken |  xx
 |Automatisierung der Mitgliederaufnahme nach der Wahl | Mittel | Übertragung des Kandidaten zum Mitglied | xx
-|Workload soll hinzugefügt werden| Hoch | -- | xx
-|Auszahlung des personelles Ausschusses für die Bearbeitung des Projekts (vllt gleich Workload)| Hoch | --| xx
-|Organigramm erstellen | Niedrig | das  existierende Organigramm übersichtlicher gestalten | xx
+|Workload soll hinzugefügt werden| Niedrig | -- | xx
+|Aufwandsentschädigungszahlung vereinfachen| Niedrig | --| xx
+|Organigramm aktualisieren | Niedrig | das  existierende Organigramm übersichtlicher gestalten | xx
 
 |===
 
