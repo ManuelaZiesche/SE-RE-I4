@@ -82,6 +82,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 <<link:essence_navigator_images[]>>
 
 - von der ersten Iteration:
+
 image::essence_navigator_images/Essence_Navigator_Iteration01.png[]
 
  
