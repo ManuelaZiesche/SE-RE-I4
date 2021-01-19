@@ -5,13 +5,17 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 :toc-title: Inhaltsverzeichnis
 :source-highlighter: highlightjs
 
+
+:docs-requirements: {docs}/requirements
+
+
 == Meilensteine
 
 .Meilensteine
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 30.11.2020 | 
-| Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:protocol_01.adoc[]>>
+| Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:protocol/protocol_01.adoc[]>>
 | Meeting mit Mitglied aus letztem Jahr | 03.12.2020 | 
 | Teammeeting | 07.12.2020 | 
 | Meeting mit Themenstellern | 11.12.2020 | Analysten haben detaillierte Fragen an Stakeholder
