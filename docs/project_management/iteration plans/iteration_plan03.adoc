@@ -3,6 +3,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
 :toc: 
 :toc-title: Inhaltsverzeichnis
+:sectnums:
 :source-highlighter: highlightjs
 
 
@@ -12,10 +13,12 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 11.01.2021 | 
-| Erstes Teammeting | 11.01.2021 |
-| Meeting | 14.01.2021 | 
-| Ende der  Iteration | 31.01.2021?|
-
+| Teammeting | 11.01.2021 |
+| Teammeeting | 14.01.2021 | 
+| Teammeeting | 19.01.2021 | 
+| Teammeeting | 26.01.2021 | 
+| Ende der  Iteration | 31.01.2021| Assessment
+| Abgabe der Dokumentation | 12.02.2021 |
 |===
 
 == Wesentliche Ziele
@@ -30,16 +33,16 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 == Aufgabenzuordnung
 
 Die Aufgaben, welche in der dritten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
-Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:work_item_list.adoc[]>>
+Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
 
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator | niedrig | 1 | offen | Link zu Bilder | alle Teammitglieder | 1 
-| Iterationsplan 04 | hoch | 3 | offen | <<link:iteration_plan04.adoc[]| Manuela | ?
-| Risikoliste | mittel | ? | offen | <<link:risk_list.adoc[]>> | Manuela | ?
+| Essence Navigator | niedrig | 1 | offen | //image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder | 1 
+| Iterationsplan 04 | hoch | 3 | offen | <<link:../iteration_plan04.adoc[]| Manuela | ?
+| Risikoliste | mittel | 2 | offen | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Nichtfunktionale Anforderungen | mittel | 4 | offen | | |
-|Dokumentation abgabefertig | hoch| 4 | offen | LINK???| Manuela |
+|Dokumentation abgabefertig | hoch| 4 | offen | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Manuela |
 | Test Cases ausarbeiten | mittel |  | | | 
 |===
 
@@ -53,6 +56,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 == Bewertungskriterien
 
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 
 == Assessment
 
@@ -72,8 +76,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 = Essence Navigator Bild
 
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
-<<link:essence_navigator_images[]>> 
+<<link:../essence_navigator_images[]>> 
 
 - Bild von der dritten Iteration
 
-//image::essence_navigator_images/Essence_Navigator_Iteration03.png[]
+//image::../essence_navigator_images/Essence_Navigator_Iteration03.png[]
