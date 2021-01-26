@@ -12,7 +12,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 30.11.2020 | 
-| Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:protocol/protocol_01.adoc[]>>
+| Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:../docs/project_management/protocol/protocol_01.adoc[]>>
 | Meeting mit Mitglied aus letztem Jahr | 03.12.2020 | 
 | Teammeeting | 07.12.2020 | 
 | Meeting mit Themenstellern | 11.12.2020 | Analysten haben detaillierte Fragen an Stakeholder
@@ -34,7 +34,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 == Aufgabenzuordnung
 
 Die Aufgaben, welche in der ersten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle: +
-Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:work_item_list.adoc[]>>
+Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../docs/project_management/work_item_list.adoc[]>>
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
