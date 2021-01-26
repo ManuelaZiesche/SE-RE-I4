@@ -3,11 +3,8 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
 :toc: 
 :toc-title: Inhaltsverzeichnis
+:sectnums:
 :source-highlighter: highlightjs
-
-
-:docs-requirements: {docs}/requirements
-
 
 == Meilensteine
 
