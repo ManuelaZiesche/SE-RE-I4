@@ -1,6 +1,7 @@
 = Use-Case Model: I4 Weiterentwicklung der Mitgliederdatenbank des StuRa
 Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wuerfel@t-online.de>;
 //include::../_includes/default-attributes.inc.adoc[]
+include::attributes.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -25,12 +26,20 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 *Use-Case 07*: Aufwandsentschädigung Berechnung aufgrund des Workloads +
  
 
+[#diagramm_use_case-model]
+[plantuml, "{diagramsdir}/diagramm_use_case-model", svg]
+....
+include::{plantumlsdir}/diagramm_use_case-model.puml[]
+....
+
+
+
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
 <<<
-include::use_case_Kandidatenverwaltung.adoc[]
+include::use_case_Kandidaten_verwalten.adoc[]
 <<<
-include::use_case_Mitgliederaufnahme.adoc[]
+include::use_case_Mitglieder_aufnehmen.adoc[]
 <<<
 include::use_case_Einpflegung_weiterer_Informationen.adoc[]
 //<<<

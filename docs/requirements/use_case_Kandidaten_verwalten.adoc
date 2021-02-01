@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 01: Kandidatenverwaltung
+== Use-Case 01: Kandidaten verwalten
 ===	Kurzbeschreibung
 Das System ermöglicht es Kandidaten anzulegen, zu bearbeiten oder zu entfernen.  
 

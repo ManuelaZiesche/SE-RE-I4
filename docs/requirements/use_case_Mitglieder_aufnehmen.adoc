@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 02:  Mitgliederaufnahme
+== Use-Case 02:  Mitglieder aufnehmen
 
 .Schematische Beschreibung der Mitgliederaufname
 image::images_use_case/mitgliederaufname.jpg[]
