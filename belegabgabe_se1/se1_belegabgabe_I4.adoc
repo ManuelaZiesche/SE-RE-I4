@@ -1,8 +1,16 @@
+
 SE I - Belegabgabe: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 // --- 2. Teammitglieder -----------------------
-Manuela Ziesche <s80485@htw-dresden.de>; Sabine Elisabeth Adam <s@htw-dresden.de>; Erik Würfel <s00000@htw-dresden.de>; Vasco Schwarze <s00000@htw-dresden.de>; Kristina Lapatanova <s00000@htw-dresden.de>; Benjamamin Müller <s00000@htw-dresden.de>; Sebastian Mathäus, Bayu Anggi Saputra 
+Sabine Elisabeth Adam <s80447@htw-dresden.de>; 
+Erik Würfel <s@htw-dresden.de>; 
+Vasco Schwarze <s80476@htw-dresden.de>; 
+Kristina Lapatanova <s79329@htw-dresden.de>; 
+Benjamamin Müller <benjamin.mueller@htw-dresden.de>; 
+Sebastian Mathäus <s80@htw-dresden.de>; 
+Bayu Anggi Saputra <s81212@htw-dresden.de>
+Manuela Ziesche <s80485@htw-dresden.de>;
 // --- 3. Abgabedatum --------------------------
-31. Januar 2020
+12. Feburar 2020
 // ---------------------------------------------
 //include::../docs/_includes/default-attributes.inc.adoc[]
 :doctype: book
