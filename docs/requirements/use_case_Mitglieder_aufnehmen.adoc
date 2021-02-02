@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 02:  Mitgliederaufnahme
+== Use-Case 02:  Mitglieder aufnehmen
 
 .Schematische Beschreibung der Mitgliederaufname
 image::images_use_case/mitgliederaufname.jpg[]
@@ -33,7 +33,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
-. Der Admin klickt auf den *** aussehenden Button
+. Der Admin klickt auf den Button "+Aufnahme"
 . Eine kleine Checkliste erscheint 
 . Der Admin hakt ab, dass er die Dokumente (insgesamt 3 Dokumente und damit 3 Aufgaben) hochgeladen hat 
 . Der Admin bestätigt mit dem "Bestätigen" Knopf, dass er alle Aufgaben erledigt hat und Kandidaten als Mitglied hinzufügen möchte 

@@ -1,0 +1,30 @@
+
+@startuml diagramm_use_case-model
+left to right direction
+
+title  Aufgaben des Admins
+
+actor Admin 
+
+
+rectangle "Webseite des STURA" {
+  "Kandidaten verwalten" as (uc01) #A9E2F3
+  "Mitglieder aufnehmen" as (uc02) #A9E2F3
+  "Einpflegung weiterer Informationen" as (uc03) #A9E2F3
+  "Mitglieder per E-Mail kontaktieren" as (uc04) #A9E2F3
+  "Stimmzettelgenerierung" as (uc05) #A9E2F3
+  "Workload erfassen" as (uc06) #A9E2F3
+  "Aufwandsentschädigung berechnen" as (uc07) #A9E2F3
+}
+
+
+Admin -- (uc01)
+Admin -- (uc02)
+Admin -- (uc03)
+Admin -- (uc04)
+Admin -- (uc05)
+Admin -- (uc06)
+Admin -- (uc07)
+
+
+@enduml
