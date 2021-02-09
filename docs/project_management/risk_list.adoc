@@ -13,6 +13,6 @@ Dabei werden folgende *Attribute* verwendet:
 
 == Risiken
 
-Die Risiken sind in folgender Tabelle (LINK ZU RISIKENTABELLE) dargestellt. 
+Die Risiken sind in folgender Tabelle dargestellt. 
 
 image::RiskList.png[]
