@@ -10,7 +10,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
  +
 Alle *Risiken* wurden in der <<link:risk_list.adoc[]>>  aufgeführt. +
-Die <<link:work_item_list.adoc[]>> beinhaltet alle *benutzten Tools und Werkzeuge*, die im Projekt gebraucht wurden.  + 
+Die <<link:Work_Item_List.adoc[]>> beinhaltet alle *benutzten Tools und Werkzeuge*, die im Projekt gebraucht wurden.  + 
 Die Dokumentation unseres Projektes umfassst ebenso *Protokolle* von Meetings. <<link:protocol[]>> +
 Außerdem gibt es für jede Iteration noch einen eigenen *Iterationsplan*. Alle Iterationspläne sind in dem Ordner zu finden:
 <<link:iteration_plans[]>>. +
