@@ -12,7 +12,9 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Weiterentwicklung der Mitgliederdatenbanken, das von SE/RE I4-Gruppe entwickelt wird. Das System wird es dem Studentenrat erlauben, seine Mitgliederdatenbank optimal darzustellen, um eine bessere Übersichtlichkeit und Benutzerfreundlichkeit zu erreichen.
+Dieses Visions-Dokument bezieht sich auf das Weiterentwicklung der Mitgliederdatenbanken, das von SE/RE I4-Gruppe entwickelt wird. Das System wird es dem Studentenrat erlauben, seine Mitgliederdatenbank optimal darzustellen, um eine bessere Benutzerfreundlichkeit zu erreichen.
+
+Benutzerfreundlichkeit: Ausführen einer Hauptfunktionalität darf nicht mehr als 10 Klicks beanspruchen. 
 
 === Definitionen, Akronyme und Abkürzungen
 siehe Glossar.

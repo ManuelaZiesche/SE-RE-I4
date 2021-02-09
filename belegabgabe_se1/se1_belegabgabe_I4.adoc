@@ -70,6 +70,7 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 * Iteration Plan 01
 * Iteration Plan 02
 
+include:: 
 // Projektplan
  include::docs/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
