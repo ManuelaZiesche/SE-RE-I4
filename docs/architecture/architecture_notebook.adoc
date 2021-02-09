@@ -1,0 +1,50 @@
+= Architecture Notebook: Projekt - Weiterentwicklung der Mitgliederdatenbank
+
+== 1. Zweck
+
+== 2. Architektonische Ziele und Philosophie
+
+Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den entwurf: +
+
+Ziele:
+
+- Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
+- Übersichtlichkeit (also das was wir in dem andern ding stehen hatten)
+- Anpassung der Datenbank //kann man das schöner schreiben?
+// - weitere Ziele
+
+
+== 3. Annahmen und Abhängigkeiten
+
+- Der Server auf dem die Webseite laufen soll bietet ausreichen Ressourcen
+- bisher verwendete Datenbankmodelle und Frameworks können weiter verwendet werden
+- die Mitgliederdatenbank wird in Zukunft funktional erweitert
+// - weitere Annahmen und Abhängigkeiten
+
+
+== 4. Architektonisch bedeutende Anforderungen
+
+== 5. Entscheidungen, Einschränkungen und Begründungen
+
+- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden
+- aus selben Grund wird Python Programmiersprache ebenso weiterverwendet
+//- weitere Entscheidungen, Nebenbedingungen und Begründungen 
+
+
+== 6. Architekturmechanismen
+// !!muss noch weiter ausgebaut werden!!
+=== Verfügbarkeit
+//haben wir da einfluss drauf?
+
+==== Datenspeicherung
+* Zweck [Link zu der anforderung wo das gebraucht wird]
+
+=== Webschnitstelle
+//ggf. Vasco fragen ob er weiß was und warum wir es nutzen
+
+== 7. Schlüsselabstraktionen
+
+== 8. Schichten oder Architektur-Framework
+// C4 Modell (liegt noch bei mir auf dem rechner)
+
+== 9. Architektursicht (Views)
