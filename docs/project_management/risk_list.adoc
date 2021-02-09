@@ -15,7 +15,4 @@ Dabei werden folgende *Attribute* verwendet:
 
 Die Risiken sind in folgender Tabelle (LINK ZU RISIKENTABELLE) dargestellt. 
 
-.Risiken
-|======
-|
-|======
+image::RiskList.png[]
