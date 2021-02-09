@@ -1,6 +1,7 @@
 = Architecture Notebook: Projekt - Weiterentwicklung der Mitgliederdatenbank
 
 == 1. Zweck
+Der Funktionsumfang bzgl. Organisation und Verwaltung wird erweitert.
 
 == 2. Architektonische Ziele und Philosophie
 
@@ -10,7 +11,8 @@ Ziele:
 
 - Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
 - Übersichtlichkeit (also das was wir in dem andern ding stehen hatten)
-- Anpassung der Datenbank //kann man das schöner schreiben?
+- Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  //kann man das schöner schreiben?
+
 // - weitere Ziele
 
 
