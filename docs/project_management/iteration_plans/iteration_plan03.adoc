@@ -28,7 +28,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - Essence Navigator +
 - Work Item List fortführen +
 - Risk List aktualisieren +
-
+- Wireframes erstellen
 
 == Aufgabenzuordnung
 
