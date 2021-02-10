@@ -1,7 +1,6 @@
 = Architecture Notebook: Projekt - Weiterentwicklung der Mitgliederdatenbank
 
 == 1. Zweck
-Der Funktionsumfang bzgl. Organisation und Verwaltung wird erweitert.
 
 Dieses Dokument beschreibt wesentliche  Elemente der Softwarearchitektur, sowie andere übergreifende Aspekte des Systems für die Mitgliederdatenbank des StuRa. Hier werden im Folgenden auf die Ziele, Annahmen, die Architektonische Bedeutung, unsere Entscheidungen bzw. Einschränkungen und weitere Dinge eingegangen und Dokumentiert.
 
