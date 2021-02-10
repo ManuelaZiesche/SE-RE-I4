@@ -2,10 +2,6 @@
 
 == 1. Zweck
 
-Dieses Dokument beschreibt wesentliche  Elemente der Softwarearchitektur, sowie andere übergreifende Aspekte des Systems für die Mitgliederdatenbank des StuRa. Hier werden im Folgenden auf die Ziele, Annahmen, die Architektonische Bedeutung, unsere Entscheidungen bzw. Einschränkungen und weitere Dinge eingegangen und Dokumentiert.
-
-Mit Hilfe von verschiedenen Modellen und Entwürfen für die Architektur, soll die spätere Weiterentwicklung und Anpassung einfacher gemacht werden.
-
 
 == 2. Architektonische Ziele und Philosophie
 
@@ -34,24 +30,26 @@ Ziele:
 
 - Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden
 - aus selben Grund wird Python Programmiersprache ebenso weiterverwendet
+
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
 
 == 6. Architekturmechanismen
 // !!muss noch weiter ausgebaut werden!!
+=== Verfügbarkeit
+//haben wir da einfluss drauf?
 
-=== 6.1 Datenspeicherung
-* Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
+==== Datenspeicherung
+* Zweck [Link zu der anforderung wo das gebraucht wird]
 
-=== 6.2 Webschnitstelle
-Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
-
-=== 6.3 Informationsvermittlung
-Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
+=== Webschnitstelle
+//ggf. Vasco fragen ob er weiß was und warum wir es nutzen
 
 == 7. Schlüsselabstraktionen
 
 == 8. Schichten oder Architektur-Framework
-// C4 Modell (liegt noch bei mir auf dem rechner)
+image::images/level1.png[level1,280,280]
+image::images/level2.png[level2,550,550]
+
 
 == 9. Architektursicht (Views)
