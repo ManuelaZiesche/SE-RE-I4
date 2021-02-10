@@ -30,14 +30,14 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 == Projektpraktiken
 - Iterationen 3 Wochen lang
-- Tools zur Organisation
-    - Trello
-    - Essence Navigator
-- Tools zur Dokumentation:
-    - GitHub
-- Tools zur Kommunikation:
-    - WhatsApp
-    - Discord
+- Tools zur Organisation: +
+    -> Trello +
+    -> Essence Navigator
+- Tools zur Dokumentation: +
+    -> GitHub +
+- Tools zur Kommunikation: +
+    -> WhatsApp + 
+    -> Discord + 
 
 == Meilensteine des Projektes
 
@@ -45,15 +45,11 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 |======
 | *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
-| Inception | M0 | - Lifecycle Objectives Milestone + 
-- Vision erstellen + 
-- Erste Use Cases + 
+| *Inception* | M0 | - *Lifecycle Objectives Milestone* +  
 - Erster Termin mit den Stakeholdern + | 30.11.2020 | 20.12.2020 | 21 Tage | 
-| Elaboration | M1 | 
-- Use Cases weiterbarbeiten und evtl abschließen  +
-- Architecture Notebook +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
-| Elaboration | M2 | - Dokumentation abgabefertig + 
-- Lifecycle Architecture Milestone | 11.01.2021 | 31.01.2021 | 21 Tage  | 
+| *Elaboration* | M1 | 
+- Use Cases und Architecture Notebook +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+| *Elaboration* | M2 | - *Lifecycle Architecture Milestone* | 11.01.2021 | 31.01.2021 | 21 Tage  | 
 
 |====== 
 
