@@ -38,12 +38,11 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator | niedrig | 1 | offen | //image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder | 1 
-| Iterationsplan 04 | hoch | 3 | offen | <<link:../iteration_plan04.adoc[]| Manuela | ?
-| Risikoliste | mittel | 2 | offen | <<link:../risk_list.adoc[]>> | Manuela | 2
-| Nichtfunktionale Anforderungen | mittel | 4 | offen | | |
-|Dokumentation abgabefertig | hoch| 4 | offen | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Manuela |
-| Test Cases ausarbeiten | mittel |  | | | 
+| Essence Navigator | niedrig | 1 | erledigt | image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder | 1 
+| Iterationsplan 04 | hoch | 2 | erledigt | <<link:../iteration_plan04.adoc[]| Manuela | 2
+| Risikoliste | mittel | 2 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
+| Nichtfunktionale Anforderungen | mittel | 4 | erledigt | | Erik, Kristina | 3
+|Dokumentation abgabefertig | hoch| 4 | offen | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Sabine, Manuela |
 |===
 
 == Probleme 
@@ -51,6 +50,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
+| In der Iteration sind keine Probleme aufgetreten. | | 
 |===
 
 
@@ -63,21 +63,21 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Assessment
 |===
 |*Assessment Ziel* | *Iteration 2 beenden*
-|Assessment Datum | 
+|Assessment Datum | 31.01.2021
 | Teilnehmer | alle
-| Projektstatus | rot, gelb, grün?
+| Projektstatus | grün
 |===
 
-- Beurteilung im Vergleich zu den Zielen:
+- Beurteilung im Vergleich zu den Zielen: Wir haben prinzipiell alle Aufgaben erledigt, die uns für die 3. Iteration wichtig erschienen. Die Prototypen haben wir als noch nicht notwendig erachtet und widmen uns diesen in der nächsten Interation. 
 - Geplante vs. erledigte Aufgaben:
 - Beurteilung im Vergleich zu den Bewertungskriterien:
-- Andere Belange und Abweichungen:/ 
+- Andere Belange und Abweichungen: / 
 
 = Essence Navigator Bild
 
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
 <<link:../essence_navigator_images[]>> 
 
-- Bild von der dritten Iteration
+- Bild von der dritten Iteration:
 
-//image::../essence_navigator_images/Essence_Navigator_Iteration03.png[]
+image::../essence_navigator_images/Essence_Navigator_Iteration03.png[]
