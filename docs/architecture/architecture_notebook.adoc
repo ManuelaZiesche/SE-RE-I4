@@ -14,8 +14,9 @@ Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit 
 Ziele:
 
 - Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
-- Übersichtlichkeit (also das was wir in dem andern ding stehen hatten)
-- Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  //kann man das schöner schreiben?
+- Übersichtlichkeit bzw. Intuitive Bedienbarkeit.
+- Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  
+//kann man das schöner schreiben?
 
 // - weitere Ziele
 
