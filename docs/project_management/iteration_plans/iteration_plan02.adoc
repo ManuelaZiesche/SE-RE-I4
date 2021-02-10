@@ -42,7 +42,7 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
 | Essence Navigator | niedrig | 1 | erledigt | essence_navigator_images/Essence_Navigator_Iteration02.png[] | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | in Bearbeitung | <<link:../../architecture/architecture_notebook.adoc[]>>| Sebastian, Benjamin | ? 
-| Iterationsplan 03 | hoch | 3 | offen | Link | Manuela | ?
+| Iterationsplan 03 | hoch | 2 | offen | Link | Manuela | 2
 | Risikoliste aktualisieren | mittel | 3 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Projektplan aktualisieren | niedrig | 1 | offen | <<link:../project_plan.adoc[]>> | Manuela | 2
 |===
@@ -58,7 +58,7 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 == Bewertungskriterien
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
-- 
+- Überprüfung der Ziele der zweiten Iteration - haben wir diese erreicht?
 
 
 == Assessment
@@ -71,9 +71,8 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 | Projektstatus | grün
 |===
 
-- Beurteilung im Vergleich zu den Zielen: Soll-Zustand: wir wollen alle Ziele erreichen, Ist-Zustand: 87,5% erreicht -> ???
-- Geplante vs. erledigte Aufgaben: prinzipiell alle Ziele erreicht, nur keine Prototypen entwickelt
-- Beurteilung im Vergleich zu den Bewertungskriterien:
+- Beurteilung im Vergleich zu den Zielen: Soll-Zustand: wir wollen alle Ziele erreichen, Ist-Zustand: 87,5% erreicht
+- Geplante vs. erledigte Aufgaben: prinzipiell alle Aufgaben erledigt, nur keine Prototypen entwickelt
  
 
 == Essence Navigator Bild
