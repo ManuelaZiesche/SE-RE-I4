@@ -40,14 +40,14 @@ Ziele:
 
 == 6. Architekturmechanismen
 // !!muss noch weiter ausgebaut werden!!
-=== Verfügbarkeit
-//haben wir da einfluss drauf?
+=== 6.1 Datenspeicherung
+* Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
 
-==== Datenspeicherung
-* Zweck [Link zu der anforderung wo das gebraucht wird]
+=== 6.2 Webschnitstelle
+Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
 
-=== Webschnitstelle
-//ggf. Vasco fragen ob er weiß was und warum wir es nutzen
+=== 6.3 Informationsvermittlung
+Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
 
 == 7. Schlüsselabstraktionen
 
