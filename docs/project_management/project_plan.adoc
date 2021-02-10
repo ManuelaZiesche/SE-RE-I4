@@ -59,5 +59,3 @@ Wie übergeben wir dem Stura am Ende unser Projekt? !!!
 
 == Erkenntnisse
 
-- Rückmeldung Stakeholder fehlt
-- Aufgaben werden im Team nicht rechtzeitig bearbeitet !!!
