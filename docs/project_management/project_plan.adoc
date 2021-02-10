@@ -20,6 +20,7 @@ Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Na
 
 == Projektorganisation
 
+
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
 
 - Projektmanagement: Manuela Ziesche + 
