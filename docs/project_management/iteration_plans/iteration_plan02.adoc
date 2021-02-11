@@ -15,7 +15,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Beginn der Iteration | 21.12.2020 | 
 | Teammeeting | 21.12.2020 | 
 | Weihnachtsferien | 21.12.2020-03.01.2021| Stagnation des Projektfortschrittes
-| Teammeeting | 04.01.2021 | Coaching by Felix Müller
+| Teammeeting | 04.01.2021 | Coaching von Felix Müller
 | Teammeeting | 07.01.2021 | Architektur besprochen
 | Ende der  Iteration 02 | 10.01.2021 | Assessment 
 
@@ -42,6 +42,7 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden*
 | Essence Navigator | niedrig | 1 | erledigt | essence_navigator_images/Essence_Navigator.png[] | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | erledigt | <<link:../../architecture/architecture_notebook.adoc[]>>| Sebastian, Benjamin | 8
+| System lokal zum Laufen bringen | hoch | 3 | | Vasco, Sabine | 2
 | Iterationsplan 03 | hoch | 2 | erledigt | <<link:iteration_plans/iteration_plan03.adoc[]>> | Manuela | 2
 | Risikoliste aktualisieren | mittel | 3 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Projektplan aktualisieren | niedrig | 1 | erledigt | <<link:../project_plan.adoc[]>> | Manuela | 2
