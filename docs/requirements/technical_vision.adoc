@@ -19,10 +19,6 @@ Benutzerfreundlichkeit: Ausführen einer Hauptfunktionalität darf nicht mehr al
 === Definitionen, Akronyme und Abkürzungen
 siehe Glossar.
 
-
-=== Referenzen
-(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
-
 == Positionierung
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
@@ -79,16 +75,10 @@ hinsichtlich der Einhaltung des Telemediengesetzes
 
 === Benutzerumgebung
 //Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
-
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren. Kontext
 
-* Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, nimmt eventuell mit der Zeit zu
-* Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
-
-//. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, nimmt mit der Zeit ab.
-//. Die Bearbeitung der Aufgabe dauert zwei Semester. Jede Iteration wird innerhalb von zwei Wochen abgeschlossen.
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, ändert sich mit der Zeit (voraussichtlich) nicht.
-. Die Bearbeitung der Aufgabe dauert unter 3 Min.
+. Die Bearbeitung der Aufgabe dauert unter 3 Min. 
 . Besondere Umgebungsbedingungen: 
 * Die Weiterentwicklung der Mitgliederdatenbank muss weiterhin eine responsive Webseite gewährleisten, damit die Beidienung auch unterwegs mit dem Handy funktioniert.  
 * Die Webseite muss jederzeit online sein. 
@@ -116,19 +106,8 @@ hinsichtlich der Einhaltung des Telemediengesetzes
 |Workload soll hinzugefügt werden| Niedrig | -- | xx
 |Aufwandsentschädigungszahlung vereinfachen| Niedrig | --| xx
 |Organigramm aktualisieren | Niedrig | das  existierende Organigramm übersichtlicher gestalten | xx
-
 |===
 
-
-== Zusätzliche Produktanforderungen
-//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-Hinweise:
-
-. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
-. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
-. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
-. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
-. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
 
 [%header, cols="4,1,1"]
 |===
