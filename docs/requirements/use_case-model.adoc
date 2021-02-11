@@ -56,6 +56,3 @@ include::use_case_Einpflegung_weiterer_Informationen.adoc[]
 //include::use_case_09.inc.adoc[]
 //<<<
 //include::use_case_10.inc.adoc[]
-
-
-Diese Aufgaben sind: die Einrichtung der Stura Karte für den Zugriff auf das A-Gebäude (Kartenleser); Ausgeben *Zuordnen?* der Schlüssel für die passenden Räume; Hochladen der ausgefüllten Unterlagen; Erfragung ob die Telefonnummer von neue Mitgliedern im Bedarfsfall weitergegeben werden kann. eintragen ob Telefonnummer weitergegeben werden darf
