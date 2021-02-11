@@ -37,6 +37,7 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 :docs-project_management-iteration_plans: {docs}/project_management/iteration_plan
 :docs-project_management: {docs}/project_management
 :docs-architecture: {docs}/architecture
+:docs-architecture-Wireframes: {docs}/architecture/Wireframes
 
 // --- 4. include Pfade anpassen ---------------
 
@@ -53,6 +54,15 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 <<<
 // Use Case Model (inkludiert selbst die einzelnen usecase_spec_x.adoc Dateien)
  include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// Wireframes 
+ include::{docs-architecture-Wireframes}/Kandidat_erstellen.jpg
+ <<<
+ include::{docs-architecture-Wireframes}/Kandidat_hinzufugen.jpg
+ <<<
+ include::{docs-architecture-Wireframes}/Kandidat_zu_Mitglied.jpg
+ <<<
+ include::{docs-architecture-Wireframes}/Mitgleider_bearbeiten_Dokumentenupload.jpg
 <<<
 // System-wide Requirements
  include::{docs-requirements}/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=+1]
@@ -71,7 +81,6 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 * Iteration Plan 02
 * Iteration Plan 03
 
-include:: 
 // Projektplan
  include::{docs-project_management-iteration_plans}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
@@ -87,6 +96,7 @@ include::
 // Iteration 3
  include::{docs-project_management-iteration_plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
+
 
 == Entwurfsdokumentation
 * Architektur-Notizbuch
