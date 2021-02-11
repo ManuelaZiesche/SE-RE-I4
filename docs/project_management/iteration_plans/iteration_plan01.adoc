@@ -15,7 +15,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Erstes Meeting mit Themenstellern | 30.11.2020 | <<link:../protocol/protocol_01.adoc[]>>
 | Meeting mit Mitglied aus letztem Jahr | 03.12.2020 | 
 | Teammeeting | 07.12.2020 | 
-| Meeting mit Themenstellern | 11.12.2020 | Analysten haben detaillierte Fragen an Stakeholder
+| Meeting mit Themenstellern | 11.12.2020 | Analysten haben detaillierte Fragen an Stakeholder gestellt
 | Teammeeting | 14.12.2020 | 
 | Teammeeting | 17.12.2020 | Assessment
 | Ende der Iteration | 20.12.2020 |
