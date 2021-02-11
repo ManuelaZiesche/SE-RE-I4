@@ -6,21 +6,17 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 :source-highlighter: highlightjs
 
 == Einführung 
-
 Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
  +
 Alle *Risiken* wurden in der <<link:risk_list.adoc[]>>  aufgeführt. +
 Die <<link:Work_Item_List.adoc[]>> beinhaltet alle *benutzten Tools und Werkzeuge*, die im Projekt gebraucht wurden.  + 
 Die Dokumentation unseres Projektes umfassst ebenso *Protokolle* von Meetings. <<link:protocol[]>> +
-Außerdem gibt es für jede Iteration noch einen eigenen *Iterationsplan*. Alle Iterationspläne sind in dem Ordner zu finden:
-<<link:iteration_plans[]>>. +
+Außerdem gibt es für jede Iteration noch einen eigenen *Iterationsplan*. Alle Iterationspläne sind in dem Ordner zu finden: <<link:iteration_plans[]>>. +
 Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Navigators hier festgehalten: 
 <<link:essence_navigator_images[]>>. + 
 
 
 == Projektorganisation
-
-
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
 
 - Projektmanagement: Manuela Ziesche + 
@@ -40,10 +36,10 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
     -> WhatsApp + 
     -> Discord + 
 
+
 == Meilensteine des Projektes
 
 .Iterationsphasen
-
 |======
 | *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
 | *Inception* | M0 | - *Lifecycle Objectives Milestone* +  
@@ -55,7 +51,7 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 |====== 
 
 == Deployment
-Wie übergeben wir dem Stura am Ende unser Projekt? !!!
+Wir laden das Projekt hoch und übergeben den Admins die Anmeldedaten. ?
 
 == Erkenntnisse
-
+- 
