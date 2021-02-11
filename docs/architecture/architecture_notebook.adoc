@@ -9,16 +9,13 @@ Mit Hilfe von verschiedenen Modellen und Entwürfen für die Architektur, soll d
 
 == 2. Architektonische Ziele und Philosophie
 
-Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den entwurf: +
+Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den Entwurf: +
 
 Ziele:
 
 - Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
-- Übersichtlichkeit bzw. Intuitive Bedienbarkeit.
+- Übersichtlichkeit bzw. intuitive Bedienbarkeit.
 - Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  
-//kann man das schöner schreiben?
-
-// - weitere Ziele
 
 
 == 3. Annahmen und Abhängigkeiten
@@ -38,11 +35,10 @@ Ziele:
 
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
-
 == 6. Architekturmechanismen
-// !!muss noch weiter ausgebaut werden!!
+
 === 6.1 Datenspeicherung
-* Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
+Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
 
 === 6.2 Webschnitstelle
 Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
