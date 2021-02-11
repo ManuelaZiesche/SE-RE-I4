@@ -11,18 +11,18 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 == Begriffe
 [%header]
 |===
-| Begriff | Definition und Erläuterung | Synonyme
+|Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
 |Beschlussnummer|wird jedem Antrag im StuRa zugeordnet |--
 |StuRa | Studentische Vertretung an der HTW Dresden | --
-|Nutzer| hat Zugriff auf das StuRa System | 
+|Nutzer| hat Zugriff auf das StuRa System | --
 |Mitglied | Mitglied des StuRa | --
 |Admin | Zuständig für die administrative Aufgaben der Webseite | Systemverwalter
-|Check-Liste| Liste, die Aufgaben enthält, die der Admin erledigen muss. | To-do-Liste, Erledigungs-Liste
+|Check-Liste| Liste, die Aufgaben enthält, die der Admin erledigen muss | To-do-Liste, Erledigungs-Liste
 |Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
-|Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und Funktionen einzeln unterteilt sind| Abteile des StuRa 
-|Dokumente der Kandidaten | Mitwirkungsordnung, Datengeheimnis, ??? | --
+|Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und einzelne Funktionen unterteilt sind| Abteile des StuRa 
+|Dokumente der Kandidaten | Datengeheimnis, Mitwirkungsordnung | --
 |===
 
 
@@ -33,14 +33,3 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 //|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung|
 | AE | Aufwandsentschädigung | siehe oben
 |===
-
-== Verzeichnis der Datenstrukturen
-
-//In der Informatik und Softwaretechnik ist eine Datenstruktur ein Objekt, welches zur Speicherung und Organisation von Daten dient. Es handelt sich um eine Struktur, weil die Daten in einer bestimmten Art und Weise angeordnet und verknüpft werden, um den Zugriff auf sie und ihre Verwaltung effizient zu ermöglichen. 
-[%header]
-|===
-|Bezeichnung|	Definition |	Format | Gültigkeitsregeln | Aliase
-|Anmeldedaten|Zusammensetzung von Benutzername und Passwort.|String|Emailadresse muss @-Zeichen und Punkt enthalten.|Login
-
-|===
-
