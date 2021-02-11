@@ -14,7 +14,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
 |Beschlussnummer|wird jedem Antrag im StuRa zugeordnet |--
-|StuRa | Studentische Vertretung an der HTW Dresden | --
+|Studentische Rat | Studentische Vertretung an der HTW Dresden | StuRa
 |Nutzer| hat Zugriff auf das StuRa System | --
 |Mitglied | Mitglied des StuRa | --
 |Admin | Zuständig für die administrative Aufgaben der Webseite | Systemverwalter
