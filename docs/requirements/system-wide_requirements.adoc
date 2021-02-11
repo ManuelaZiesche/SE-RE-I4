@@ -35,7 +35,7 @@ B1: Das Mitglied/ Der Admin sollte die Bedienung innerhalb eines (zwei) Tages er
 === Zuverlässigkeit (Reliability)
 // Reliability: Fehlertoleranz, Wiederherstellbarkeit. Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
-Z1: Die Anwendung soll 95% pro Jahr verfügbar sein  - Sophia fragen +
+Z1: Die Anwendung soll 90% des Jahres verfügbar sein.
 
 
 === Effizienz (Performance)
