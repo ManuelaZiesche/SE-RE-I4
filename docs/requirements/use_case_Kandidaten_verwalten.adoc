@@ -23,7 +23,7 @@ Ist für die Verwaltung zuständig
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
-. Der Admin kann wie unter dem Tap "Mitglieder" einen Kandidaten hinzufügen, indem er auf den Button "hinzufügen" klickt
+. Der Admin kann wie unter dem Tab "Mitglieder" einen Kandidaten hinzufügen, indem er auf den Button "hinzufügen" klickt
 . Die nächste Maske ermöglicht es ihm einen Kandidaten mit Vorname, Name, E-Mail, Beschlussnummer und Wahldatum (ähnlich wie bei "Mitglieder") hinzuzufügen.
 . Die Änderungen werden beim Klick auf "Speichern" gespeichert.
 . Der Use Case ist abgeschlossen.
@@ -50,10 +50,10 @@ Ist für die Verwaltung zuständig
 ==== Alternativer Ablauf 3
 . Um einen Kandidaten zu löschen, wählt der Admin wie unter dem Tab "Mitglieder" einen Kandidaten und klickt auf Button "Entfernen" 
 
-=== Wesentliche Szenarios
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== Szenario 1
-Admin legt einen Kandidaten mit Daten Max Mustermann an. 
+//==== Szenario 1
+//Admin legt einen Kandidaten mit Daten Max Mustermann an. 
 
 
 ===	Nachbedingungen
