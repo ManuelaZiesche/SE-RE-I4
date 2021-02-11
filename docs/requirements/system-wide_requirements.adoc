@@ -12,7 +12,7 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt I4 Wei
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
 * zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
 
-NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. <<link:use_case-model.adoc[]>>
 
 == Systemweite funktionale Anforderungen
 // Functional: Fähigkeiten, Interoperabilität, Sicherheit. Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
@@ -28,7 +28,7 @@ F1: Die Daten müssen verschlüsselt sein.
 === Benutzbarkeit (Usability)
 //Usability: Bedienbarkeit, Verständlichkeit, Erlernbarkeit. Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-B1: Das Mitglied/ Der Admin sollte die Bedienung innerhalb eines (zwei) Tages erlernen. +
+B1: Das Mitglied/ Der Admin sollte die Bedienung innerhalb eines Tages erlernen. +
 //Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
 
 
@@ -42,7 +42,7 @@ Z1: Die Anwendung soll 90% des Jahres verfügbar sein.
 // Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 E1: Das System muss für eine gleichzeitige Nutzung von 10 Nutzern ausgelegt sein +
-E2: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken, unter der Voraussetzung einer 16Mbit/sek Durchsatz der Internetleitung +
+E2: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken, unter der Voraussetzung einer 16Mbit/s-Anschlusses. +
 
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
@@ -52,8 +52,7 @@ W1: soll genutzt werden, bis es Änderungen an der Vorhgehensweise des Stura gib
 == Zusätzliche Anforderungen
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen - Speicherplatzbegrenzung -> Sophia fragen! +
-* Es muss  auf  Linux/Unix laufen +
+* Ressourcenbegrenzungen - Speicherplatzbegrenzung auf 5MB pro Dokument, welches hochgeladen wird.
 
 
 === Rechtliche Anforderungen
