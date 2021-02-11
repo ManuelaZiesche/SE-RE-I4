@@ -22,7 +22,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
 |Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und einzelne Funktionen unterteilt sind| Abteile des StuRa 
-|Dokumente der Kandidaten | Datengeheimnis, Mitwirkungsordnung | --
+|Dokumente der Kandidaten | Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten | --
 |===
 
 
