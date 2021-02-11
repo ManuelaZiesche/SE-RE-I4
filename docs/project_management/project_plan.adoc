@@ -21,8 +21,8 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 - Projektmanagement: Manuela Ziesche + 
 - Analyse: Kristina Lapatanova, Erik Würfel + 
-- Architektur: Benjamin Müller + 
-- Entwicklung: Leander  Vasco Schwarze, Sabine Elisabeth Adam +
+- Architektur: Benjamin Müller, Sebastian Matthäus + 
+- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam +
 - Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
 == Projektpraktiken
@@ -45,13 +45,14 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 | *Inception* | M0 | - *Lifecycle Objectives Milestone* +  
 - Erster Termin mit den Stakeholdern + | 30.11.2020 | 20.12.2020 | 21 Tage | 
 | *Elaboration* | M1 | 
-- Use Cases und Architecture Notebook +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+- Use Cases und Architektur +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
 | *Elaboration* | M2 | - *Lifecycle Architecture Milestone* | 11.01.2021 | 31.01.2021 | 21 Tage  | 
-
 |====== 
 
 == Deployment
-Wir laden das Projekt hoch und übergeben den Admins die Anmeldedaten. ?
+Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. 
 
 == Erkenntnisse
-- 
+- Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden
+- das Zusammentragen von Ideen in der Gruppe ist sinnvoll
+- ein/zwei wöchentliche Meetings sind praktisch um Fehler/Probleme frühzeitig anzusprechen
