@@ -15,4 +15,4 @@ Dabei werden folgende *Attribute* verwendet:
 
 Die Risiken sind in folgender Tabelle dargestellt. 
 
-image::RiskList.png[]
+image::../docs/project_management/risk_images/RiskList.png[]

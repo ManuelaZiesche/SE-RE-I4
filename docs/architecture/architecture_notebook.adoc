@@ -49,8 +49,8 @@ Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webs
 == 7. Schlüsselabstraktionen
 
 == 8. Schichten oder Architektur-Framework
-image::images/level1.png[level1,280,280]
-image::images/level2.png[level2,550,550]
+image::../docs/architecture/images/level1.png[level1,280,280]
+image::../docs/architecture/images/level2.png[level2,550,550]
 
 
 == 9. Architektursicht (Views)
