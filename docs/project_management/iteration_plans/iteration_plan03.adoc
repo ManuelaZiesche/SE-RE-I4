@@ -38,11 +38,11 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator | niedrig | 1 | erledigt | image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder | 1 
+| Essence Navigator | niedrig | 1 | erledigt | image::../essence_navigator_images/Essence_Navigator.png[] | alle Teammitglieder | 1 
 | Iterationsplan 04 | hoch | 2 | erledigt | <<link:../iteration_plan04.adoc[]| Manuela | 2
 | Risikoliste | mittel | 2 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Nichtfunktionale Anforderungen | mittel | 4 | erledigt | | Erik, Kristina | 3
-|Dokumentation abgabefertig | hoch| 4 | offen | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Sabine, Manuela |
+|Dokumentation abgabefertig | hoch| 4 | erledigt | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Sabine, Manuela | 3
 |===
 
 == Probleme 
