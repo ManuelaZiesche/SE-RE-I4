@@ -3,7 +3,9 @@
 ===	Kurzbeschreibung
 Administrator kann weitere Informationen für neu angelegte Mitglieder einpflegen
 Attribute plus Dokumente (später)
-===	Kurzbeschreibung der Akteure
+
+=== Kurzbeschreibung der Akteure
+
 ==== Admin
 Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 
@@ -24,7 +26,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
 . Der Admin lädt die zugesendeten, unterschriebenen Dokumente hoch
-. Desweiterem füllt er aus, ob die Telefonummer im Notfall an andere Mitglieder weitergegeben werden darf 
+. Desweiteren füllt er aus, ob die Telefonummer im Notfall an andere Mitglieder weitergegeben werden darf 
 . Zusätzlich hat er die Möglichkeit das Protokoll der jeweiligen Sitzung zu verlinken
 
 === Alternative Abläufe
@@ -35,7 +37,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. Der Use Case wird im Schritt <y> fortgesetzt.
 //. "What can go wrong?"; "What options are available at this point?"
 
-. wenn der Admin eine zu große Datei hochlädt, kommt eine Fehlermeldung [andere Lösung]
+. wenn der Admin eine zu große Datei hochlädt, kommt eine Fehlermeldung 
 
 //Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
 
@@ -47,6 +49,6 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 * einfache Bedienbarkeit ermöglichen
-* Hochladen der Informationen muss in dazu angemessene Zeit erfolgen
+* Hochladen der Informationen muss in dazu angemessener Zeit erfolgen
 
 

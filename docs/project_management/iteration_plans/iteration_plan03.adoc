@@ -24,11 +24,11 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 == Wesentliche Ziele
 
 - Architektur und Use Cases verfeinern +
-- erste Prototypen entwickeln +
 - Essence Navigator +
 - Work Item List fortführen +
 - Risk List aktualisieren +
-- Wireframes erstellen
+- Wireframes erstellen +
+- erste Prototypen entwickeln +
 
 == Aufgabenzuordnung
 
@@ -38,11 +38,11 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator | niedrig | 1 | erledigt | image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder | 1 
+| Essence Navigator | niedrig | 1 | erledigt | image::../essence_navigator_images/Essence_Navigator.png[] | alle Teammitglieder | 1 
 | Iterationsplan 04 | hoch | 2 | erledigt | <<link:../iteration_plan04.adoc[]| Manuela | 2
 | Risikoliste | mittel | 2 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Nichtfunktionale Anforderungen | mittel | 4 | erledigt | | Erik, Kristina | 3
-|Dokumentation abgabefertig | hoch| 4 | offen | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Sabine, Manuela |
+|Dokumentation abgabefertig | hoch| 4 | erledigt | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Sabine, Manuela | 3
 |===
 
 == Probleme 
@@ -57,6 +57,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 == Bewertungskriterien
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
+- Überprüfung der Ziele der dritten Iteration - haben wir diese erreicht?
 
 == Assessment
 
@@ -69,9 +70,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 
 - Beurteilung im Vergleich zu den Zielen: Wir haben prinzipiell alle Aufgaben erledigt, die uns für die 3. Iteration wichtig erschienen. Die Prototypen haben wir als noch nicht notwendig erachtet und widmen uns diesen in der nächsten Interation. 
-- Geplante vs. erledigte Aufgaben:
-- Beurteilung im Vergleich zu den Bewertungskriterien:
-- Andere Belange und Abweichungen: / 
+- Geplante vs. erledigte Aufgaben: wir haben fast alle geplanten Aufgaben erledigt.
 
 = Essence Navigator Bild
 

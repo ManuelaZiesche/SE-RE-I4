@@ -6,27 +6,23 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 :source-highlighter: highlightjs
 
 == Einführung 
-
 Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
  +
 Alle *Risiken* wurden in der <<link:risk_list.adoc[]>>  aufgeführt. +
 Die <<link:Work_Item_List.adoc[]>> beinhaltet alle *benutzten Tools und Werkzeuge*, die im Projekt gebraucht wurden.  + 
 Die Dokumentation unseres Projektes umfassst ebenso *Protokolle* von Meetings. <<link:protocol[]>> +
-Außerdem gibt es für jede Iteration noch einen eigenen *Iterationsplan*. Alle Iterationspläne sind in dem Ordner zu finden:
-<<link:iteration_plans[]>>. +
+Außerdem gibt es für jede Iteration noch einen eigenen *Iterationsplan*. Alle Iterationspläne sind in dem Ordner zu finden: <<link:iteration_plans[]>>. +
 Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Navigators hier festgehalten: 
 <<link:essence_navigator_images[]>>. + 
 
 
 == Projektorganisation
-
-
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
 
 - Projektmanagement: Manuela Ziesche + 
 - Analyse: Kristina Lapatanova, Erik Würfel + 
-- Architektur: Benjamin Müller + 
-- Entwicklung: Leander  Vasco Schwarze, Sabine Elisabeth Adam +
+- Architektur: Benjamin Müller, Sebastian Matthäus + 
+- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam +
 - Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
 == Projektpraktiken
@@ -40,22 +36,23 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
     -> WhatsApp + 
     -> Discord + 
 
+
 == Meilensteine des Projektes
 
 .Iterationsphasen
-
 |======
 | *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
 | *Inception* | M0 | - *Lifecycle Objectives Milestone* +  
 - Erster Termin mit den Stakeholdern + | 30.11.2020 | 20.12.2020 | 21 Tage | 
 | *Elaboration* | M1 | 
-- Use Cases und Architecture Notebook +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+- Use Cases und Architektur +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
 | *Elaboration* | M2 | - *Lifecycle Architecture Milestone* | 11.01.2021 | 31.01.2021 | 21 Tage  | 
-
 |====== 
 
 == Deployment
-Wie übergeben wir dem Stura am Ende unser Projekt? !!!
+Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. 
 
 == Erkenntnisse
-
+- Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden
+- das Zusammentragen von Ideen in der Gruppe ist sinnvoll
+- ein/zwei wöchentliche Meetings sind praktisch um Fehler/Probleme frühzeitig anzusprechen

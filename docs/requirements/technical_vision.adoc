@@ -6,13 +6,13 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Weiterentwicklung der Mitgliederdatenbanken zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das Weiterentwicklung der Mitgliederdatenbanken diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, den wesentlichen Bedarf und Funktionalitäten des Weiterentwicklung der Mitgliederdatenbanken zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden und der Begründung diesen Bedarfs. Die  Details, wie die Weiterentwicklung der Mitgliederdatenbank die diesen Bedarf erfüllt, werden in den Use-Cases beschrieben.
 
 === Zweck
-Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
+Der Zweck dieses Dokumentes ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Weiterentwicklung der Mitgliederdatenbanken, das von SE/RE I4-Gruppe entwickelt wird. Das System wird es dem Studentenrat erlauben, seine Mitgliederdatenbank optimal darzustellen, um eine bessere Benutzerfreundlichkeit zu erreichen.
+Dieses Visions-Dokument bezieht sich auf die Weiterentwicklung der Mitgliederdatenbank, die von der SE/RE I4-Gruppe entwickelt wird. Das System wird es dem Studentenrat erlauben, seine Mitgliederdatenbank optimal darzustellen, um eine bessere Benutzerfreundlichkeit zu erreichen.
 
 Benutzerfreundlichkeit: Ausführen einer Hauptfunktionalität darf nicht mehr als 10 Klicks beanspruchen. 
 
@@ -23,7 +23,7 @@ siehe Glossar.
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
-Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen Prozesse Excell-Tabellen. Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Beteiligten Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
+Die Mitglieder des Studentenrates benutzen für die internen organisatorischen Prozesse Excel-Tabellen. Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Beteiligten Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
 
 
 
@@ -34,9 +34,9 @@ Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen 
 [cols="1,3"]
 |===
 |Das Problem |	Unübersichtliche und unpraktische Art die Daten in Mitgliederdatenbank anzulegen/einzupflegen
-|betrifft |	Mitglieder der StuRa
+|betrifft |	Mitglieder des StuRa
 |die Auswirkung davon ist |	lange und fehleranfällige Bearbeitung der Daten 
-|eine erfolgreiche Lösung wäre | Einführung einer Software, die die Prozesse beschleunigt und die Bedienbarkeit verbessert
+|eine erfolgreiche Lösung wäre | Bearbeitung der vorhandenen Software, sodass die Prozesse beschleunigt werden und die Bedienbarkeit verbessert wird
 |===
 
 
@@ -48,11 +48,11 @@ Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen 
 [cols="1,3"]
 |===
 |Für|	Mitglieder des Studentenrates
-|deren | Daten anschaulich eingepflegt werden können.
+|deren | Daten anschaulich eingepflegt werden können
 |Das Produkt / die Lösung ist eine | Webseite
 |die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
 |Im Gegensatz zu | Excel-Tabellen 
-|Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar.
+|Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar
 |===
 
 
@@ -62,7 +62,7 @@ Die Mitglieder des Studentenrates benutzten für die internen orgenisatorischen 
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|HTW | Hochschule | --
+|HTW | Hochschule | stellt Studenten für StuRa, zahlt AE an die jeweiligen Studenten
 |Mitglieder der StuRa|Repräsentanten der Studenten| Nutzer des Produkts
 |Systembetreuer, Admin| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
 |Hacker | Jemand, der illegal in Computersysteme eindringt | Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl

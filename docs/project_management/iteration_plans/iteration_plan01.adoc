@@ -24,11 +24,11 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 == Wesentliche Ziele
 
 - Überblick über genutzte Tools/Projektumgebung verschaffen  +
-- Erstes Meeting mit den Themenstellern
+- Erstes Meeting mit den Themenstellern +
 - Aufgabenstellung analysieren, Vision entwerfen + 
-- Kennenlernen des Teams
-- Aufgabenverteilung untereinander 
-- allgemeines Verständnis der Anforderungen 
+- Kennenlernen des Teams +
+- Aufgabenverteilung untereinander +
+- allgemeines Verständnis der Anforderungen + 
 
 
 == Aufgabenzuordnung
@@ -65,7 +65,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 |*Assessment Ziel* | *Iteration 1 beenden*
-|  Assessment Datum | 17.12.2020
+| Assessment Datum | 17.12.2020
 | Teilnehmer | alle
 | Projektstatus | grün 
 |===
