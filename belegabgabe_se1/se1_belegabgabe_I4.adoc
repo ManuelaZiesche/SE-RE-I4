@@ -34,8 +34,8 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 // Folders
 :docs: ../docs
 :docs-requirements: {docs}/requirements
-:docs-project_management-iteration_plans: {docs}/project_management/iteration_plans
-:docs-project_management: {docs}/project_management
+:docs-project-management-iteration-plans: {docs}/project_management/iteration_plans
+:docs-project-management: {docs}/project_management
 :docs-architecture: {docs}/architecture
 :docs-architecture-Wireframes: {docs}/architecture/Wireframes
 
@@ -53,27 +53,24 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 <<<
 include::{docs-requirements}/technical_vision.adoc[lines=1..1;4..-1,leveloffset=+1]
 // Use Case Model (inkludiert selbst die einzelnen usecase_spec_x.adoc Dateien)
+// Domänenmodell
 <<<
 include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1]
 // Wireframes 
 <<<
-include::{docs-architecture-Wireframes}/Kandidat_erstellen.jpg[]
+image::{docs-architecture-Wireframes}/Kandidat_erstellen.jpg[]
 <<<
-include::{docs-architecture-Wireframes}/Kandidat_hinzufugen.jpg[]
+image::{docs-architecture-Wireframes}/Kandidat_hinzufugen.jpg[]
 <<<
-include::{docs-architecture-Wireframes}/Kandidat_zu_Mitglied.jpg[]
+image::{docs-architecture-Wireframes}/Kandidat_zu_Mitglied.jpg[]
 <<<
-include::{docs-architecture-Wireframes}/Mitglieder_bearbeiten_Dokumentenupload.jpg[]
+image::{docs-architecture-Wireframes}/Mitglieder_bearbeiten_Dokumentenupload.jpg[]
 // System-wide Requirements
 <<<
 include::{docs-requirements}/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Glossar
 include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-// Domänenmodell
-<<<
-include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 == Projektdokumentation
 
@@ -85,19 +82,19 @@ include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1
 
 // Projektplan
 <<<
-include::{docs-project_management}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Risikoliste
-include::{docs-project_management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 1
-include::{docs-project_management-iteration_plans}/iteration_plan01.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management-iteration-plans}/iteration_plan01.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 2
-include::{docs-project_management-iteration_plans}/iteration_plan02.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management-iteration-plans}/iteration_plan02.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 3
-include::{docs-project_management-iteration_plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management-iteration-plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 
 == Entwurfsdokumentation

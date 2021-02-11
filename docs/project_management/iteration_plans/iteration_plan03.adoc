@@ -79,4 +79,4 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Bild von der dritten Iteration:
 
-image::../essence_navigator_images/Essence_Navigator_Iteration03.png[]
+image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration03.png[]

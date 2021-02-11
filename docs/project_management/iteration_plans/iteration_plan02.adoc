@@ -83,4 +83,4 @@ Alle Aufgaben aus dem gesamten Projekt werden in der *Work Item List* vermerkt: 
 
 - Bild von der zweiten Iteration:
 
-image::../essence_navigator_images/Essence_Navigator_Iteration02.png[]
+image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration02.png[]
