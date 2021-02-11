@@ -34,7 +34,7 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 // Folders
 :docs: ../docs
 :docs-requirements: {docs}/requirements
-:docs-project_management-iteration_plans: {docs}/project_management/iteration_plan
+:docs-project_management-iteration_plans: {docs}/project_management/iteration_plans
 :docs-project_management: {docs}/project_management
 :docs-architecture: {docs}/architecture
 :docs-architecture-Wireframes: {docs}/architecture/Wireframes
@@ -85,19 +85,19 @@ include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1
 
 // Projektplan
 <<<
- include::{docs-project_management-iteration_plans}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project_management}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Risikoliste
- include::{docs-project_management-iteration_plans}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project_management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 1
- include::{docs-project_management-iteration_plans}/iteration_plan01.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project_management-iteration_plans}/iteration_plan01.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 2
- include::{docs-project_management-iteration_plans}/iteration_plan02.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project_management-iteration_plans}/iteration_plan02.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 3
- include::{docs-project_management-iteration_plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project_management-iteration_plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 
 == Entwurfsdokumentation
@@ -105,4 +105,4 @@ include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1
 
 // Architektur-Notizbuch
 <<<
- //include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
