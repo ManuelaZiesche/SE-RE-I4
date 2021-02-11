@@ -34,13 +34,8 @@ Manuela Ziesche <s80485@htw-dresden.de>;
 // Folders
 :docs: ../docs
 :docs-requirements: {docs}/requirements
-<<<<<<< HEAD
-:docs-project_management-iteration_plans: {docs}/project_management/iteration_plans
-:docs-project_management: {docs}/project_management
-=======
 :docs-project-management-iteration-plans: {docs}/project_management/iteration_plans
 :docs-project-management: {docs}/project_management
->>>>>>> d976418... korrekturen für pdf-generierung
 :docs-architecture: {docs}/architecture
 :docs-architecture-Wireframes: {docs}/architecture/Wireframes
 
@@ -87,21 +82,6 @@ include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 // Projektplan
 <<<
-<<<<<<< HEAD
-include::{docs-project_management}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-// Risikoliste
-include::{docs-project_management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-// Iteration 1
-include::{docs-project_management-iteration_plans}/iteration_plan01.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-// Iteration 2
-include::{docs-project_management-iteration_plans}/iteration_plan02.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-// Iteration 3
-include::{docs-project_management-iteration_plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
-=======
 include::{docs-project-management}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Risikoliste
@@ -115,7 +95,6 @@ include::{docs-project-management-iteration-plans}/iteration_plan02.adoc[lines=1
 <<<
 // Iteration 3
 include::{docs-project-management-iteration-plans}/iteration_plan03.adoc[lines=1..1;4..-1,leveloffset=+1]
->>>>>>> d976418... korrekturen für pdf-generierung
 
 
 == Entwurfsdokumentation
