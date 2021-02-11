@@ -18,10 +18,10 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Nutzer| hat Zugriff auf das StuRa System | --
 |Mitglied | Mitglied des StuRa | --
 |Admin | Zuständig für die administrative Aufgaben der Webseite | Systemverwalter
-|Check-Liste| Liste, die Aufgaben enthält, die der Admin erledigen muss. | To-do-Liste, Erledigungs-Liste
+|Check-Liste| Liste, die Aufgaben enthält, die der Admin erledigen muss | To-do-Liste, Erledigungs-Liste
 |Aufwandsentschädigung  | Bezahlung für die Abarbeitung der Aufgaben | --
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
-|Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und Funktionen einzeln unterteilt sind| Abteile des StuRa 
+|Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und einzelne Funktionen unterteilt sind| Abteile des StuRa 
 |Dokumente der Kandidaten | Datengeheimnis, Mitwirkungsordnung | --
 |===
 
@@ -32,6 +32,4 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Abkürzung|	Bedeutung|	Erläuterung
 //|UP|Unified Process|Vorgehensmodell für die Softwareentwicklung|
 | AE | Aufwandsentschädigung | siehe oben
-| xx | xx | xx
 |===
-
