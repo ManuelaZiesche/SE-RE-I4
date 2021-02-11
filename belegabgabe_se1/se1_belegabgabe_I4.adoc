@@ -1,5 +1,5 @@
 
-SE I - Belegabgabe: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+SE I - Belegabgabe: {I4 - Weiterentwicklung der Mitgliederdatenbank}
 // --- 2. Teammitglieder -----------------------
 Sabine Elisabeth Adam <s80447@htw-dresden.de>; 
 Erik Würfel <s77835@htw-dresden.de>; 
