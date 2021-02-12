@@ -26,31 +26,25 @@ Ziele:
 // - weitere Annahmen und Abhängigkeiten
 
 
-== 4. Architektonisch bedeutende Anforderungen
-
-== 5. Entscheidungen, Einschränkungen und Begründungen
+== 4. Entscheidungen, Einschränkungen und Begründungen
 
 - Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden
 - aus selben Grund wird Python Programmiersprache ebenso weiterverwendet
 
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
-== 6. Architekturmechanismen
-
-=== 6.1 Datenspeicherung
+== 5. Architekturmechanismen
+=== 5.1 Datenspeicherung
 Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
 
-=== 6.2 Webschnitstelle
+=== 5.2 Webschnitstelle
 Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
 
-=== 6.3 Informationsvermittlung
+=== 5.3 Informationsvermittlung
 Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
 
-== 7. Schlüsselabstraktionen
-
-== 8. Schichten oder Architektur-Framework
+== 6. Schichten oder Architektur-Framework
 image::../docs/architecture/images/level1.jpg[level1,280,280]
 image::../docs/architecture/images/level2.jpg[level2,550,550]
 
 
-== 9. Architektursicht (Views)
