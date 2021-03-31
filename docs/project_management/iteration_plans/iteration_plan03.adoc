@@ -13,10 +13,6 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 11.01.2021 | 
-| Teammeting | 11.01.2021 |
-| Teammeeting | 14.01.2021 | 
-| Teammeeting | 19.01.2021 | 
-| Teammeeting | 26.01.2021 | 
 | Ende der  Iteration | 31.01.2021| Assessment
 | Abgabe der Dokumentation | 12.02.2021 |
 |===

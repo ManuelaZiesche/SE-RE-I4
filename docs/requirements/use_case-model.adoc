@@ -17,13 +17,20 @@ include::attributes.adoc[]
 
 == Identifizierte Use Cases
 
+
+
 *Use-Case 01*: Kandidaten verwalten +
 *Use-Case 02*: Mitglieder aufnehmen +
-*Use-Case 03*: Einpflegung weiterer Informationen +
+*Use-Case 03*: Mitgliederinformationen einpflegen +
 *Use-Case 04*: Mitglieder per E-Mail kontaktieren +
-*Use-Case 05*: Stimmzettelgenerierung zum Ausdruck für die Wahlen +
+*Use-Case 05*: Stimmzettel generieren  +
 *Use-Case 06*: Workload erfassen +
-*Use-Case 07*: Aufwandsentschädigung Berechnung aufgrund des Workloads +
+*Use-Case 07*: Aufwandsentschädigung berechnen +
+
+Die wichtigsten Use-Cases sind 1-3 in unserem Projekt. Diese sind weiter unten auch näher spezifiziert.
+In Use-Case 4 geht es darum, dass Mitglieder bei Knopfdruck andere Mitglieder per E-Mail kontaktieren können. 
+Use-Case 5 beinhaltet das Generieren von Stimmzetteln mit allen Kandidaten, die sich zu einer Wahl aufstellen lassen. Diese Stimmzettel sollen als Dokument bereit gestellt werden.
+
  
 
 [#diagramm_use_case-model]

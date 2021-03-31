@@ -8,13 +8,14 @@ Kristina Lapatanova <kristina.lapatanova@htw-dresden.de>; Erik Würfel <erik.wue
 == Einführung
 Der Zweck dieses Dokuments ist es, den wesentlichen Bedarf und Funktionalitäten des Weiterentwicklung der Mitgliederdatenbanken zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden und der Begründung diesen Bedarfs. Die  Details, wie die Weiterentwicklung der Mitgliederdatenbank die diesen Bedarf erfüllt, werden in den Use-Cases beschrieben.
 
+
 === Zweck
 Der Zweck dieses Dokumentes ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
 Dieses Visions-Dokument bezieht sich auf die Weiterentwicklung der Mitgliederdatenbank, die von der SE/RE I4-Gruppe entwickelt wird. Das System wird es dem Studentenrat erlauben, seine Mitgliederdatenbank optimal darzustellen, um eine bessere Benutzerfreundlichkeit zu erreichen.
 
-Benutzerfreundlichkeit: Ausführen einer Hauptfunktionalität darf nicht mehr als 10 Klicks beanspruchen. 
+
 
 === Definitionen, Akronyme und Abkürzungen
 siehe Glossar.
@@ -23,7 +24,10 @@ siehe Glossar.
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
-Die Mitglieder des Studentenrates benutzen für die internen organisatorischen Prozesse Excel-Tabellen. Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Beteiligten Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
+Die Mitglieder des Studentenrates benutzen Excel-Tabellen für die Mitglieder- und Kandidatenverwaltung, beispielsweise zum Aufnehmen neuer Mitglieder oder Kandidaten und zum Pflegen der Mitgliederdaten sowie zur Berechnung der Aufwandsentschädigung. 
+Studenten, die für eine Wahl kandidieren, sollen ebenfalls in der Datenbank als Kandidaten verwaltet und nachdem sie gewählt wurden, direkt als Mitglied aufgenommen werden können. 
+Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Beteiligten Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
+
 
 
 
@@ -48,7 +52,7 @@ Die Mitglieder des Studentenrates benutzen für die internen organisatorischen P
 [cols="1,3"]
 |===
 |Für|	Mitglieder des Studentenrates
-|deren | Daten anschaulich eingepflegt werden können
+|deren | Daten efizienter verwaltet werden können
 |Das Produkt / die Lösung ist eine | Webseite
 |die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
 |Im Gegensatz zu | Excel-Tabellen 
@@ -78,7 +82,8 @@ hinsichtlich der Einhaltung des Telemediengesetzes
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren. Kontext
 
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, ändert sich mit der Zeit (voraussichtlich) nicht.
-. Die Bearbeitung der Aufgabe dauert unter 3 Min. 
+. Die Bearbeitung der Administrationsaufgaben (siehe Glossar) dauert unter 3 Min. ????
+. ?????????????????????
 . Besondere Umgebungsbedingungen: 
 * Die Weiterentwicklung der Mitgliederdatenbank muss weiterhin eine responsive Webseite gewährleisten, damit die Beidienung auch unterwegs mit dem Handy funktioniert.  
 * Die Webseite muss jederzeit online sein. 
@@ -88,19 +93,17 @@ hinsichtlich der Einhaltung des Telemediengesetzes
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 == Produkt-/Lösungsüberblick
-=== Bedarfe und Hauptfunktionen
+=== Bedarf und Hauptfunktionen
 //Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an. 
 //Bedarf - was das System machen soll  
-
-
 
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |einfache Verwaltung der Kandidaten | Hoch | eigener "Kandidaten" Tab, in dem die Daten des Kandidaten (Name, Vorname, Wahldatum, E-Mail, Beschlussnummer) angelegt und bearbeitet werden können. Kandidaten können auch gelöscht werden. Zusätzlich können relevante Informationen gepflegt werden. | xx
 |Aufgaben können übersichtlich abgearbeitet werden | Hoch |für Admin des Stura werden einzelne Aufgaben automatisch nach Mitgliedsaufnahme angelegt, welche abgehakt werden können. Zudem gibt es bei Kandidatenerstellung eine kleine Checkliste bevor Kandidat Mitglied werden kann.  | xx
-|einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx
 |vertrauliche  Informationen können nur von Admins eingesehen werden  | Hoch |"Checklisten" und "Kandidaten" Tabs dürfen nur von Admins und nicht von Mitgliedern gesehen werden; Telefonnumer von anderen Mitgliedern dürfen auch nur Admins angezeigt werden | xx
+|einfaches Mittel zur (Gruppen)-Kommunikation |Mittel |Mailverteiler oder Direktmail mittels Einbindung von Thunderbird| xx
 |Automatische Stimmzettelgenerierung | Mittel | Stimmzettel eventuell ausdrucken |  xx
 |Automatisierung der Mitgliederaufnahme nach der Wahl | Mittel | Übertragung des Kandidaten zum Mitglied | xx
 |Workload soll hinzugefügt werden| Niedrig | -- | xx

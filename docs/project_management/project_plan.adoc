@@ -19,11 +19,13 @@ Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Na
 == Projektorganisation
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
 
-- Projektmanagement: Manuela Ziesche + 
-- Analyse: Kristina Lapatanova, Erik Würfel + 
-- Architektur: Benjamin Müller, Sebastian Matthäus + 
-- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam +
-- Test: Bayu Anggi Saputra, Sebastian Matthäus + 
+- Projektmanagement: Manuela Ziesche (Backup: )+ 
+- Analyse: Kristina Lapatanova, Erik Würfel (Backup: )+ 
+- Architektur: Benjamin Müller, Sebastian Matthäus (Backup: )+ 
+- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam (Backup: )+
+- Test: Bayu Anggi Saputra, Sebastian Matthäus (Backup: )+ 
+
+Diese Einteilung ist durch die jeweiligen Interessen der Mitglieder zustande gekommen. Wir haben alle Bereiche mit zwei Leuten besetzt, um möglichen Ausfall abzudecken. 
 
 == Projektpraktiken
 - Iterationen 3 Wochen lang
@@ -42,15 +44,15 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 .Iterationsphasen
 |======
 | *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
-| *Inception* | M0 | - *Lifecycle Objectives Milestone* +  
-- Erster Termin mit den Stakeholdern + | 30.11.2020 | 20.12.2020 | 21 Tage | 
+| *Inception* | M0 | -  | 30.11.2020 | 20.12.2020 | 21 Tage | 
 | *Elaboration* | M1 | 
-- Use Cases und Architektur +| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
-| *Elaboration* | M2 | - *Lifecycle Architecture Milestone* | 11.01.2021 | 31.01.2021 | 21 Tage  | 
+-| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+| *Elaboration* | M2 | -  | 11.01.2021 | 31.01.2021 | 21 Tage  | 
 |====== 
 
 == Deployment
 Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. 
+online geht es, indem wir die schon bestehende Mitgliederverwaltung updaten?
 
 == Erkenntnisse
 - Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden

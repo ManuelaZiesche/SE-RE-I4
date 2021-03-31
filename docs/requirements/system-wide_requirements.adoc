@@ -29,6 +29,7 @@ F1: Die Daten müssen verschlüsselt sein.
 //Usability: Bedienbarkeit, Verständlichkeit, Erlernbarkeit. Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
 B1: Das Mitglied/ Der Admin sollte die Bedienung innerhalb eines Tages erlernen. +
+B2: Ausführen einer Hauptfunktionalität darf nicht mehr als 10 Klicks beanspruchen. 
 //Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
 
 
