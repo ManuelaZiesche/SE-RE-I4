@@ -13,15 +13,17 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 22.02.2021 |
-| 1.Teammeeting nach den Ferien |  |
+| Meeting mit Themenstellerin um Stand zu  präsentieren|  |
 |  |  |
 | Ende der Iteration |  |
 |===
 
 == Wesentliche Ziele
 
+- überarbeiten
 - erste Prototypen entwickeln
 - die ersten Test Cases 
+
 
 
 == Aufgabenzuordnung
@@ -32,9 +34,9 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator | niedrig | 1 | | image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder |  
-| Iterationsplan 04 | hoch | 2 |  | <<link:../iteration_plan04.adoc[]| Manuela | 
-| Risikoliste | mittel | 2 | | <<link:../risk_list.adoc[]>> | Manuela | 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | | image::../essence_navigator_images/Essence_Navigator_Iteration03.png[] | alle Teammitglieder |  
+| Iteration 04 planen | hoch | 2 |  | <<link:../iteration_plan04.adoc[]| Manuela | 
+| Risikoliste updaten (mit den Infos aus der Belegabgabe) | mittel | 2 | | <<link:../risk_list.adoc[]>> | Manuela | 
 |===
 
 == Probleme 
@@ -49,6 +51,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 - ersten Prototypen haben funktioniert
+- erste Tests wurden erstellt ?
 
 == Assessment
 
