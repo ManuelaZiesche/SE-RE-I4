@@ -18,16 +18,35 @@ Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Na
 
 == Projektorganisation
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
+* 3. Semester:
+- Projektmanagement: Manuela Ziesche + 
+- Analyse: Kristina Lapatanova, Erik Würfel + 
+- Architektur: Benjamin Müller, Sebastian Matthäus + 
+- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam +
+- Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 
-- Projektmanagement: Manuela Ziesche (Backup: )+ 
-- Analyse: Kristina Lapatanova, Erik Würfel (Backup: )+ 
-- Architektur: Benjamin Müller, Sebastian Matthäus (Backup: )+ 
-- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam (Backup: )+
-- Test: Bayu Anggi Saputra, Sebastian Matthäus (Backup: )+ 
+* 4. Semester:
+- Projektmanagement: Manuela Ziesche (Backup: Sabine Elisabeth Adam) + 
+- Deployment Engineer: Leander Vasco Schwarze (Backup: Sabine Elisabeth Adam)
+- Analyse: Sabine Elisabeth Adam, Manuela Ziesche
+- Architektur: Benjamin Müller, Sebastian Matthäus + 
+- Entwicklung: Leander Vasco Schwarze, Sabine Elisabeth Adam +
+- Test: Bayu Anggi Saputra, Sebastian Matthäus + 
+- Technical Writer: Manuela Ziesche (Backup: alle anderen)
 
-Diese Einteilung ist durch die jeweiligen Interessen der Mitglieder zustande gekommen. Wir haben alle Bereiche mit zwei Leuten besetzt, um möglichen Ausfall abzudecken. 
+Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitglieder zustande gekommen. Wir haben alle Bereiche mit zwei Leuten besetzt, um möglichen Ausfall abzudecken. 
 
 == Projektpraktiken
+* Management Practices:
+- Iterative Development 
+- Risk-Value Lifecycle
+- Whole Team
+
+* Technical Practices:
+- Shared Vision
+- Use Case Driven Development
+
+
 - Iterationen 3 Wochen lang
 - Tools zur Organisation: +
     -> Trello +
@@ -52,7 +71,7 @@ Diese Einteilung ist durch die jeweiligen Interessen der Mitglieder zustande gek
 
 == Deployment
 Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. 
-online geht es, indem wir die schon bestehende Mitgliederverwaltung updaten?
+
 
 == Erkenntnisse
 - Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden

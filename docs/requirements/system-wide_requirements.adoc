@@ -19,7 +19,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 Ausarbeitung eines Datenschutzkonzeptes, welches die Anforderungen jederzeit erfüllt:
 
-F1: Die Daten müssen verschlüsselt sein.
+F1: Die personenbezogenen Daten sollen vor unberechtigtem Zugriff geschützt sein.
 
 
 == Qualitätsanforderungen für das Gesamtsystem
@@ -32,13 +32,6 @@ B1: Das Mitglied/ Der Admin sollte die Bedienung innerhalb eines Tages erlernen.
 B2: Ausführen einer Hauptfunktionalität darf nicht mehr als 10 Klicks beanspruchen. 
 //Mit der Webseite wird eine intuitive Bedienung durch  gewährleistet.
 
-
-=== Zuverlässigkeit (Reliability)
-// Reliability: Fehlertoleranz, Wiederherstellbarkeit. Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
-
-Z1: Die Anwendung soll 90% des Jahres verfügbar sein.
-
-
 === Effizienz (Performance)
 // Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
@@ -48,7 +41,7 @@ E2: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken,
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
  
-W1: soll genutzt werden, bis es Änderungen an der Vorhgehensweise des Stura gibt, die dieses System ablösen
+W1: Das System soll einfach erweiterbar und wartbar sein. 
 
 == Zusätzliche Anforderungen
 === Einschränkungen
@@ -58,5 +51,4 @@ W1: soll genutzt werden, bis es Änderungen an der Vorhgehensweise des Stura gib
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Datenschutz
 * Nutzung von freien Lizenzen (Open Source)

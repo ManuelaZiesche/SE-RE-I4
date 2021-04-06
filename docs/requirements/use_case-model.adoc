@@ -30,7 +30,7 @@ include::attributes.adoc[]
 Die wichtigsten Use-Cases sind 1-3 in unserem Projekt. Diese sind weiter unten auch näher spezifiziert.
 In Use-Case 4 geht es darum, dass Mitglieder bei Knopfdruck andere Mitglieder per E-Mail kontaktieren können. 
 Use-Case 5 beinhaltet das Generieren von Stimmzetteln mit allen Kandidaten, die sich zu einer Wahl aufstellen lassen. Diese Stimmzettel sollen als Dokument bereit gestellt werden.
-
+Die Use-Cases 6 und 7 beschreiben die Erfassung der Arbeitszeit der Mitglieder des StuRa und die sich aus der Arbeitszeit berechnende Aufwandsentschädigung. 
  
 
 [#diagramm_use_case-model]

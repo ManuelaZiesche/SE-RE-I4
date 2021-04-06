@@ -12,7 +12,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 .Meilensteine
 |===
 | *Meilenstein* | *Datum* | *Notizen*
-| Beginn der Iteration | 22.02.2021 |
+| Beginn der Iteration | 29.03.2021 |
 | Meeting mit Themenstellerin um Stand zu  präsentieren|  |
 |  |  |
 | Ende der Iteration |  |
@@ -20,17 +20,14 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Wesentliche Ziele
 
-- überarbeiten
+- Beleg überarbeiten
 - erste Prototypen entwickeln
 - die ersten Test Cases 
-
-
 
 == Aufgabenzuordnung
 
 Die Aufgaben, welche in der dritten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
 Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
-
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 

@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case 03: Einpflegung weiterer Informationen 
+== Use-Case 03: Mitgliederinformationen einpflegen 
 ===	Kurzbeschreibung
 Administrator kann weitere Informationen für neu angelegte Mitglieder einpflegen
 Attribute plus Dokumente (später)
@@ -44,7 +44,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-. erfolgreiche Informationsimplementierung 
+. aktualisierte Informationen wurden hinterlegt
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

@@ -50,14 +50,25 @@ include::{docs-requirements}/technical_vision.adoc[lines=1..1;4..-1,leveloffset=
 <<<
 include::{docs-requirements}/use_case-model.adoc[lines=1..1;4..-1,leveloffset=+1]
 // Wireframes 
+
+=== Wireframes
 <<<
 image::{docs-architecture-Wireframes}/Kandidat_erstellen.jpg[]
+- zu Use-Case 01
+- Dieser Wireframe veranschaulicht das geplante Formular zur Erstellung eines Kandidaten.
 <<<
 image::{docs-architecture-Wireframes}/Kandidat_hinzufugen.jpg[]
+- zu Use-Case 01
+- Hier wird gezeigt, wie alle aktuellen Kandidaten in einer Liste dargestellt werden sollen.
 <<<
 image::{docs-architecture-Wireframes}/Kandidat_zu_Mitglied.jpg[]
+- zu Use-Case 02
+- Diese Bedingungen müssen erfüllt werden, damit der Kandidat als Mitglied aufgenommen werden kann.
 <<<
 image::{docs-architecture-Wireframes}/Mitglieder_bearbeiten_Dokumentenupload.jpg[]
+- zu Use-Case 03
+- Der Wireframe zeigt die geplante Maske zum Einpflegen von den aktualisierten Mitgliederdaten. 
+
 // System-wide Requirements
 <<<
 include::{docs-requirements}/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=+1]

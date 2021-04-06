@@ -23,6 +23,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Workload | Maß der Aktivität des Mitgliedes | Fortschritt
 |Organisationseinheit |Der StuRa ist in mehrere Organisationseinheiten aufgeteilt, welche dann noch in Bereiche und einzelne Funktionen unterteilt sind| Abteile des StuRa 
 |Dokumente der Kandidaten | Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten | --
+| Aufgaben des Admins | Kandidaten einpflegen, Kandiaten als Mitglieder aufnehmen, Aufwandsentschädigung berechnen, Mitgliederdaten bearbeiten/ergänzen | 
 |===
 
 
@@ -35,3 +36,16 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | StuRa | Studentenrat |
 | HTW | Hochschule für Technik und Wirtschaft Dresden |
 |===
+
+== Datenstrukturen 
+[%header]
+|===
+| Bezeichnung | Definition | Format | Gültigkeitsregeln | Aliase
+| Kandidatendaten | Vorname, Name, E-Mail, Beschlussnummer, Wahldatum |  |  | 
+| Mitgliederdaten | Vorname, Name, E-Mail, Anschrift, Telefonnummer, Funktion, Eintrittsdatum | | |
+| Anschrift | Straße, Hausnummer, Postleitzahl, Ort, Land | | Adresse |
+|===
+
+== Domänenmodell 
+
+- das bestehende aus der Gruppe davor überarbeiten
