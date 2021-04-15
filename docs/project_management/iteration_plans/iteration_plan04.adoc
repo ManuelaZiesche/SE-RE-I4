@@ -13,7 +13,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 29.03.2021 |
-| Meeting mit Themenstellerin um Stand zu  präsentieren|  |
+| Meeting mit Stakeholdern um Stand zu präsentieren| 15.04.2021 |
 |  |  |
 | Ende der Iteration |  |
 |===
@@ -21,6 +21,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 == Wesentliche Ziele
 
 - Beleg überarbeiten
+- Use Cases mit den Themenstellern abgleichen
 - erste Prototypen entwickeln
 - die ersten Test Cases 
 
