@@ -6,7 +6,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 :source-highlighter: highlightjs
 
 == Einführung 
-Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. + 
+Dieser Plan zeigt Inhalt, sowie Meilensteine des *'I4 - Weiterentwicklung der Mitgliederdatenbank des StuRa'* Projektes. Die Dokumente werden im Laufe der Projektumsetzung stetig erweitert oder um neue ergänzt. Der Projektplan dient zur Organisation und Transparenz innerhalb des Teams.
  +
 Alle *Risiken* wurden in der <<link:risk_list.adoc[]>>  aufgeführt. +
 Die <<link:Work_Item_List.adoc[]>> beinhaltet alle *benutzten Tools und Werkzeuge*, die im Projekt gebraucht wurden.  + 
@@ -17,6 +17,12 @@ Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Na
 
 
 == Projektorganisation
+=== Teammitglieder und Aufteilung
+Das Team besteht aus 9 Personen:
+| ===
+| Person | Alter | Informationen | Rolle
+| 
+
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
 * 3. Semester:
 - Projektmanagement: Manuela Ziesche + 
@@ -36,17 +42,7 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 
 Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitglieder zustande gekommen. Wir haben alle Bereiche mit zwei Leuten besetzt, um möglichen Ausfall abzudecken. 
 
-== Projektpraktiken
-* Management Practices:
-- Iterative Development 
-- Risk-Value Lifecycle
-- Whole Team
-
-* Technical Practices:
-- Shared Vision
-- Use Case Driven Development
-
-
+=== Arbeitsweise
 - Iterationen 3 Wochen lang
 - Tools zur Organisation: +
     -> Trello +
@@ -57,23 +53,49 @@ Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitgl
     -> WhatsApp + 
     -> Discord + 
 
+Wir organisieren unseren Ablauf über ein Trello Board, in welches wir alle Aufgaben unter To-Do, In Arbeit oder Bearbeitet unterteilen. Außerdem werden da  auch alle geplanten Termine festgehalten. 
+Zu kleineren Absprachen  oder Erinnerungen verwenden wir eine WhatsApp Gruppe. Dort werden auch neue Termine geplant, wenn wir dies nicht in einem eheren Meeting schon getan haben.
+Für unsere Meetings haben wir für Discord entschieden. Dort haben wir uns einen eigenen Server erstellt und halten im Sprachkanal alle wöchentlichen Meetings ab. Auch die Meetings mit den Stakeholdern oder mit unserem Coach laufen über diesen Server. Das hat sich als sehr sinnvoll erwiesen, da man über eine Bildschirmübertragung Fragen an Dokumenten gleich dem gesamtem Team stellen kann. Aber auch für Links bspw. vom Open UP landen da drin, damit nicht alle alleine suchen müssen. Das erspart uns wichtige Zeit.
+
+== Projektpraktiken
+
+* Management Practices:
+- Iterative Development 
+- Risk-Value Lifecycle
+- Whole Team
+
+* Technical Practices:
+- Shared Vision
+- Use Case Driven Development
+
+Wir arbeiten in dem gesamten Zeitraum   des Open Unified Process. Da wir eine agile Entwicklung nutzen sollen, haben wir die großen Zeiträume in kleinere Iterationen unterteilt und planen jede Iteration am Anfang gemeinsam. Wichtig hierbei sind unsere Ziele, 
+Wie bei der Arbeitsweise vorhin haben wir uns für Iterationslängen von 3 Wochen entschieden. Anfangs wollten wir auch jede Iteration zwei Wochen lang gehen lassen, doch uns ist aufgefallen, dass das für ein paar Ziele oder Aufgaben, die in der Iteration gemacht werden sollen, zu wenig Zeit ist. 
 
 == Meilensteine des Projektes
 
 .Iterationsphasen
 |======
 | *Phase* | *Iteration* | *Hauptziele* | *Iterationsstart* | *Iterationsende* | *Kalendertage* | *Notizen*
-| *Inception* | M0 | -  | 30.11.2020 | 20.12.2020 | 21 Tage | 
+| *Inception* | M0 | -Erstes Meeting mit den Stakeholdern - Organsisation des Teams und Kennenlernen - Auftrag analysieren| 30.11.2020 | 20.12.2020 | 21 Tage | 
 | *Elaboration* | M1 | 
--| 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
+- Visionserstellung | 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
 | *Elaboration* | M2 | -  | 11.01.2021 | 31.01.2021 | 21 Tage  | 
 |====== 
 
-== Deployment
-Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. 
+== Ziele 
+=== Kurzfristig
+- strukturierte und organisierte Arbeitsweise im Team 
+- Teammeetings für Aufgabenverteilung und Planung der weiteren Vorgehensweise nutzen
+=== Langfristig
+- Die Entwicklung einer funktionellen Datenbank, welche den Arbeitsprozess der Admins des StuRa sinnvoll vereinfacht.
+- Eine zufriedenstellende Belegabgabe.
+- durchgängig Spaß an dem Projekt/ der Bearbeitung der einzelnen Aufgaben
 
+== Deployment
+Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. ???
 
 == Erkenntnisse
-- Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden
+- Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden -> 4-Augen-Prinzip
 - das Zusammentragen von Ideen in der Gruppe ist sinnvoll
-- ein/zwei wöchentliche Meetings sind praktisch um Fehler/Probleme frühzeitig anzusprechen
+- Ein/zwei wöchentliche Meetings sind praktisch um Fehler/Probleme frühzeitig anzusprechen. 
+- "Stille" Arbeitsgruppen, d.h. 2-3 Personen treffen sich über einen Sprachkanal und bearbeiten getrennt Aufgaben. So kann man schneller wegen Formulierungsfragen oder Verständisproblemen einen Zweiten fragen und man motiviert sich gegenseitig. 
