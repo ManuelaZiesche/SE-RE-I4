@@ -18,9 +18,12 @@ Der Projektstand nach jeder Iteration wird durch einen Screenshot des Essence Na
 
 == Projektorganisation
 === Teammitglieder und Aufteilung
-Das Team besteht aus 9 Personen:
+Das Team bestand im 3. Semester aus 8 Personen, im 4. Semester sind Erik Würfel und Kristina Lapatanova nicht mehr im Projekt dabei. 
+Deswegen mussten die Stellen der Analysten neu besetzt werden.
+
 | ===
 | Person | Alter | Informationen | Rolle
+
 | 
 
 Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden.
@@ -53,9 +56,11 @@ Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitgl
     -> WhatsApp + 
     -> Discord + 
 
-Wir organisieren unseren Ablauf über ein Trello Board, in welches wir alle Aufgaben unter To-Do, In Arbeit oder Bearbeitet unterteilen. Außerdem werden da  auch alle geplanten Termine festgehalten. 
-Zu kleineren Absprachen  oder Erinnerungen verwenden wir eine WhatsApp Gruppe. Dort werden auch neue Termine geplant, wenn wir dies nicht in einem eheren Meeting schon getan haben.
-Für unsere Meetings haben wir für Discord entschieden. Dort haben wir uns einen eigenen Server erstellt und halten im Sprachkanal alle wöchentlichen Meetings ab. Auch die Meetings mit den Stakeholdern oder mit unserem Coach laufen über diesen Server. Das hat sich als sehr sinnvoll erwiesen, da man über eine Bildschirmübertragung Fragen an Dokumenten gleich dem gesamtem Team stellen kann. Aber auch für Links bspw. vom Open UP landen da drin, damit nicht alle alleine suchen müssen. Das erspart uns wichtige Zeit.
+Wir organisieren unseren Ablauf über ein Trello Board, in welches wir alle Aufgaben unter *To-Do*, *In Arbeit* oder *Bearbeitet* unterteilen. Außerdem werden da  auch alle geplanten Termine festgehalten. 
+Zu kleineren Absprachen oder Erinnerungen verwenden wir eine WhatsApp Gruppe. Dort werden auch neue Termine geplant, wenn wir dies nicht in einem eheren Meeting schon getan haben.
+Die  Terminfindung klären wir meistens im Gespräch, doch wenn das mal nicht so einfach funktioniert, erstellt Sebastian eine Umfrage, wonach wir dann beispielsweise einen neuen Termin für ein Meeting finden.
+Für diese Meetings haben wir uns für Discord entschieden. Dort hat Benjamin für unsere Gruppe einen eigenen Server erstellt und im Sprachkanal halten wir alle wöchentlichen Meetings ab. Auch die Meetings mit den Stakeholdern oder mit unserem Coach laufen über diesen Server. Das hat sich als sehr sinnvoll erwiesen, da man über eine Bildschirmübertragung Fragen an Dokumenten gleich dem gesamtem Team stellen kann. Aber auch Links landen da drin, damit nicht alle alleine suchen müssen. Das erspart uns innerhalb der Meetings wichtige Zeit.
+Protokolle schreibt Manuela händisch mit, sie speichert diese nur nicht im GitHub ab. Das wird ab der 4. Iteration auch geändert. Da sollen die Protokolle für alle Teammitglieder einsehbar sein. Dies klärt eventuell gleich offene, kleinere Fragen und man braucht in keine Diskussion zurückfallen.
 
 == Projektpraktiken
 
@@ -68,8 +73,9 @@ Für unsere Meetings haben wir für Discord entschieden. Dort haben wir uns eine
 - Shared Vision
 - Use Case Driven Development
 
-Wir arbeiten in dem gesamten Zeitraum   des Open Unified Process. Da wir eine agile Entwicklung nutzen sollen, haben wir die großen Zeiträume in kleinere Iterationen unterteilt und planen jede Iteration am Anfang gemeinsam. Wichtig hierbei sind unsere Ziele, 
-Wie bei der Arbeitsweise vorhin haben wir uns für Iterationslängen von 3 Wochen entschieden. Anfangs wollten wir auch jede Iteration zwei Wochen lang gehen lassen, doch uns ist aufgefallen, dass das für ein paar Ziele oder Aufgaben, die in der Iteration gemacht werden sollen, zu wenig Zeit ist. 
+Wir arbeiten in dem gesamten Zeitraum des Open Unified Process. Da wir eine agile Entwicklung nutzen sollen, haben wir die großen Zeiträume in kleinere Zeiträume, Iterationen unterteilt und planen jede Iteration am Anfang gemeinsam. Wichtig hierbei sind unsere Ziele und unsere Aufgaben in der Iteration. Diese werden direkt eingeteilt und am Ende überprüfen wir die erledigten Aufgaben und erfolgreich gemeisterten Ziele in einem Teammeeting. 
+In diesem gehen wir auch alle gemeinsam den Essence Navigator durch und bewerten die Iteration.
+Wir haben uns für Iterationslängen von 3 Wochen entschieden. Anfangs wollten wir auch Iteration von zwei Wochen machen, doch uns ist aufgefallen, dass das für ein paar Ziele oder Aufgaben, die in der Iteration gemacht werden sollen, zu wenig Zeit ist. Außerdem haben wir so weniger Organisationsaufgaben und können uns auf deren ordentlliche Ausführung und auf alle anderen konzentrieren (bspw. Prototypen Entwicklung), da die Orga-Meeting viel Zeit rauben.
 
 == Meilensteine des Projektes
 
@@ -80,6 +86,7 @@ Wie bei der Arbeitsweise vorhin haben wir uns für Iterationslängen von 3 Woche
 | *Elaboration* | M1 | 
 - Visionserstellung | 21.12.2020 | 10.01.2021 | 21 Tage | - Phase über Weihnachten und Silvester
 | *Elaboration* | M2 | -  | 11.01.2021 | 31.01.2021 | 21 Tage  | 
+| *Construction* | M3 | | 29.03.2021 | 19.04.2021| 21 Tage
 |====== 
 
 == Ziele 
@@ -99,3 +106,4 @@ Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zug
 - das Zusammentragen von Ideen in der Gruppe ist sinnvoll
 - Ein/zwei wöchentliche Meetings sind praktisch um Fehler/Probleme frühzeitig anzusprechen. 
 - "Stille" Arbeitsgruppen, d.h. 2-3 Personen treffen sich über einen Sprachkanal und bearbeiten getrennt Aufgaben. So kann man schneller wegen Formulierungsfragen oder Verständisproblemen einen Zweiten fragen und man motiviert sich gegenseitig. 
+- Protokollführung ist wichtig!

@@ -1,4 +1,4 @@
-= Iteration Plan 04: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+= Iteration Plan 05: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
 :toc: 
@@ -12,18 +12,17 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 .Meilensteine
 |===
 | *Meilenstein* | *Datum* | *Notizen*
-| Beginn der Iteration | 29.03.2021 |
-| Meeting mit Stakeholdern um Stand zu präsentieren| 15.04.2021 |
+| Beginn der Iteration | 19.04.2021 |
 | Meeting mit Coach um Stand abzuklären | 21.04.2021 |
-| Erneutes Meeting mit Stakeholdern | 26.04.2021 |
+| Meeting mit Stakeholdern um Stand zu präsentieren| 26.04.2021 |
 | Ende der Iteration |  |
 |===
 
 == Wesentliche Ziele
 
-- Beleg überarbeiten
-- Use Cases mit den Themenstellern abgleichen
-- erste Prototypen entwickeln
+- Requirements überarbeiten
+- Use Cases erneut mit den Themenstellern abgleichen
+- erste Prototypen entwickeln - Kandidatentabs
 - die ersten Test Cases 
 
 == Aufgabenzuordnung
@@ -46,8 +45,6 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
-| Die ersten Meetings der 4. Iteration waren zwar sinnvoll, um den fehlerhaften Stoff nachzuarbeiten, aber produktiv weitergekommen sind wir in dieser Zeit fast nicht. | offen | Wir versuchen in der nächsten Iteration komplett durchzuziehen, die Aufgaben direkt besser zu planen und uns gemeinsam einen guten Stand zu erarbeiten.
-| Das Problem der Erreichbarkeit der Themensteller ist immernoch da. | offen | Manuela ist jetzt Mitlgied im StuRa und kann schon Fragen klären. Aber auch sonst weiß Sie besser, wie und wann Sophia erreichbar ist.
 |===
 
 
