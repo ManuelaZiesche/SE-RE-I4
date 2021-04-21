@@ -1,0 +1,55 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 05: Workload erfassen
+===	Kurzbeschreibung
+Das System ermöglicht es die Aktivität der Mitglieder darzustellen, den sogenannten Workflow und daraus eine Aufwandentschädigung zu berechnen
+
+===	Kurzbeschreibung der Akteure
+==== Admin
+Ist dafür zuständig den Workflow in das System einzutragen.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Die Internetseite ist geöffnet
+* Der Admin muss angemeldet sein  
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+//. Der Use Case beginnt, wenn <Kunde> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Alternativer Ablauf 1
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+//. "What can go wrong?"; "What options are available at this point?"
+ 
+
+
+==== Alternativer Ablauf 2
+
+
+==== Alternativer Ablauf 3
+
+//=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+//==== Szenario 1
+//Admin legt einen Kandidaten mit Daten Max Mustermann an. 
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+
+=== Hinweise
+
+

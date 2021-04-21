@@ -1,0 +1,49 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case 04: Mitglieder per E-Mail kontaktieren 
+===	Kurzbeschreibung
+Über die Mitgliederdatenbank ist es angemeldeten Mitgliedern möglich via E-Mail Kontakt zu anderen Mitgliedern herzustellen
+
+=== Kurzbeschreibung der Akteure
+
+==== Mitglied des Stura
+Mitglieder des Stura sind in der Lage die, auf der Webseite der Mitgliederdatenbank, dargestellten Informationen einzusehen, die für sie freigegeben sind.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* Die Internetseite ist geöffnet
+* Das Mitglied muss angemeldet sein 
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+//. Der Use Case beginnt, wenn <Kunde> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn sich ein Mitglied dazu entscheidet Kontakt zu einem anderen Mitglied aufnehmen zu wollen
+. Dazu wird der "Mitglieder-Tab" ausgewählt, der eine gelistete Übersicht über alle Mitglieder enthält, die sich zu diesem Zeitpunkt in der Datenbank befinden
+. Anschließend wird das gewünschte Mitglied rausgesucht, zu dem der Kontakt aufgebaut werden soll
+. Durch das Auswählen des Mitgliedes öffnet sich ein Pop-Up Fenster, dass die Informationen zur jeweiligen Person darstellt
+. Unter Kontaktdaten befindet sich neben der E-Mail-Adresse in schriftlicher Form auch ein Button, der für die direkte Kontaktierung vorgesehen ist
+. Der Use Case ist abgeschlossen, wenn sich das Mitglied dazu entscheidet die ausgelesene E-Mail-Adresse für die Kontaktierung zu verwenden, oder der Button zu direkten Kontaktaufnahme betätigt wurde (infolgedessen öffnet sich ein externes Mailprogramm mit einer neuen E-Mail, welches die Mail-Adresse des ausgewählten Mitgliedes schon im Empfängerfeld stehen hat)
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Alternativer Ablauf 1
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+//. "What can go wrong?"; "What options are available at this point?"
+
+. ist das Mitglied, das kontaktiert werden möchte, nicht in der Übersicht zu finden, ist der Use Case vorzeitig abgeschlossen (in diesem Fall existieren keine Daten zur gewünschten Person in der Datenbank und eine Kontaktaufnahme ist nicht möglich)
+
+//Kunde beendet Bestellung nicht, dann kommt Meldung nach 1 h per email 
+
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+* ermöglicht eine zeitsparende Kontaktaufnahme
+
+
