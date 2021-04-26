@@ -5,7 +5,7 @@
 image::../docs/requirements/images_use_case/mitgliederaufname.jpg[]
 
 ===	Kurzbeschreibung
-Der Kandidat wird als Mitglied gewählt und im System als solcher übernommen. 
+Die kandidierende Person wird als Mitglied gewählt und im System als solches übernommen. 
 //Die Check-Liste wird nach Übernahme eines Kandidaten für den Admin automatisch erstellt 
 
 ===	Kurzbeschreibung der Akteure
@@ -17,12 +17,10 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 
 * Die Internetseite ist geöffnet
 * Der Admin muss angemeldet sein  
-* Der Kandidat wurde laut den Wahlen gewählt
+* Die kandidierende Person wurde laut den Wahlen gewählt
 * Der Kandidat hat der Übernahme als Mitglied zugestimmt
 * Der Kandidat hat die erforderlichen Dokumente unterschrieben und gesendet
 * Check-Listen-Template muss für jede Organisationseinheit vorhanden sein 
-
-
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -32,13 +30,13 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
-. Der Admin klickt auf den Button "+Aufnahme"
+. Der Use Case beginnt, wenn der Admin den Tab "Kandidaturen" auswählt
+. Der Admin wählt die Möglichkeit aus, die kandidierende Person als Mitglied aufzunehmen
 . Eine kleine Checkliste erscheint 
-. Der Admin hakt ab, dass er die Dokumente (Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten) hochgeladen hat 
-. Der Admin bestätigt mit dem "Bestätigen" Knopf, dass er alle Aufgaben erledigt hat und Kandidaten als Mitglied hinzufügen möchte 
+. Der Admin prüft, ob die benötigten Dokumente (Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten) hochgeladen worden sind
+. Der Admin bestätigt, dass er alle Aufgaben erledigt hat und die Kandidatur als Mitglied hinzufügen möchte 
 . Die Anwendung fügt den Kandidat mit all seinen Informationen als als Mitglied hinzu
-. Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen bzw. abhaken muss
+. Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen muss
 . Die neue Checkliste wird am Ende aller offenen Checklisten aufgereiht 
 
 ===	Nachbedingungen
