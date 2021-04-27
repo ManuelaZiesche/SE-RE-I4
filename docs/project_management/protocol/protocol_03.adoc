@@ -1,0 +1,32 @@
+= Protokoll vom 26.04.2021 - Fragenrunde mit Axel
+Sabine Adam
+1.0, 26.04.2021
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+= Fragen und Antworten
+. Wie soll das Deployment stattfinden? (Bzw. wie hat das mit der Gruppe vorher stattgefunden?)
+* Bildschirmpräsentation
+* Printversion -> bedienungsanleitung
+* Link zu Projekt
+* hochladen und dann durchgehen
+. Spezifikation des Servers (Betriebsystem, Speicherplatz,...)
+* admin@
+. Wireframes anschauen lassen
+* 
+. Sollen Backups der Datenbank gemacht werden? (bzw. wie oft?)
+* Backup 1 pro Woche max drei Versionen
+. Wie wird der Workload erfasst (Einheit) ?
+* 
+. Nachweis für Workload erforderlich ?
+* 
+
+== Notizen
+* Anträge -> Beschlüsse
+* Kandidaten geben Kandidatur bei Präsidium ab -> ins System
+* Kandidaturen -> Mitglied bearbeiten -> Details/Dokumente
+* Wahl angenommen: Mitgliederdokumente
+
+* Kandidaturen gewählt -> Aufnahme Button -> Mitglieder mit Übersicht welche Dokumente abgegeben wurden
+

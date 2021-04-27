@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case 01: Kandidaten verwalten
 ===	Kurzbeschreibung
-Das System ermöglicht es Kandidaten anzulegen, zu bearbeiten oder zu entfernen.  
+Das System ermöglicht es Kandidaturen anzulegen, zu bearbeiten oder zu entfernen.  
 
 ===	Kurzbeschreibung der Akteure
 ==== Admin
@@ -22,11 +22,13 @@ Ist für die Verwaltung zuständig
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn der Admin auf den Tab "Kandidaten" klickt
-. Der Admin kann wie unter dem Tab "Mitglieder" einen Kandidaten hinzufügen, indem er auf den Button "hinzufügen" klickt
-. Die nächste Maske ermöglicht es ihm einen Kandidaten mit Kandidatendaten hinzuzufügen.
-. Die Änderungen werden beim Klick auf "Speichern" gespeichert.
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Admin den Tab "Kandidaturen" auswählt
+. Der Admin entscheidet sich dazu eine neue Kandidatur anzulegen und teilt dies dem System mit
+. Daraufhin kann der Admin eine neue kandidatur anlegen, indem er die Daten der kandidierenden Person dem System übergibt
+//. Der Admin hat nun die Möglichkeit neue Kandidaturen hinzuzufügen
+//. Entscheidet sich der Admin dafür eine neue Kandidatur anzulegen, Die nächste Maske ermöglicht es ihm die Daten der kandidierenden Person
+//. Die Änderungen werden beim Klick auf "Speichern" gespeichert.
+. Der Use Case ist abgeschlossen, sobaldd die Eingaben abgespeichert wurden.
 
 
 === Alternative Abläufe
@@ -37,18 +39,24 @@ Ist für die Verwaltung zuständig
 //. Der Use Case wird im Schritt <y> fortgesetzt.
 //. "What can go wrong?"; "What options are available at this point?"
  
-. Der Admin möchte einen Kandidaten bearbeiten. 
-. Der Admin klickt wie unter dem Tab "Mitglieder" auf den Stiftbutton (welcher die Funktion hat die Maske "Kandidat Bearbeiten" aufzurufen).
-. In der Maske können die Änderungen vorgenommen werden.
-. Die Änderungen werden beim Klick auf "Speichern" gespeichert.
+. Der Admin möchte eine Kandidatur bearbeiten. 
+//. Der Admin klickt wie unter dem Tab "Mitglieder" auf den Stiftbutton (welcher die Funktion hat die Maske "Kandidat Bearbeiten" aufzurufen).
+. Der Admin wählt die Möglichleit der Bearbeitung der zu bearbeitenden Kandidatur aus
+. In der aufgerufenen Maske können die Änderungen vorgenommen werden.
+. Die Änderungen werden gespeichert.
 
 ==== Alternativer Ablauf 2
-. Admin füllt Daten unvollständig aus.
-. Die Anwendung lässt wie unter dem Tab "Mitglieder" keine Speicherung zu. 
-. Der Admin wird wie unter dem Tab "Mitglieder" auf die fehlende Information/Zeile verwiesen. 
+//. Admin füllt Daten unvollständig aus.
+. Der Admin hat nicht alle geforderten Daten angegeben
+//. Die Anwendung lässt wie unter dem Tab "Mitglieder" keine Speicherung zu.
+. Der Vorgang der Abspeicherung schlägt fehl
+//. Der Admin wird wie unter dem Tab "Mitglieder" auf die fehlende Information/Zeile verwiesen.
+. Dem Admin wird eine entsprechende Fehlermeldung ausgegeben
 
 ==== Alternativer Ablauf 3
-. Um einen Kandidaten zu löschen, wählt der Admin wie unter dem Tab "Mitglieder" einen Kandidaten und klickt auf Button "Entfernen" 
+//. Um eine Kandidatur zu löschen, wählt der Admin wie unter dem Tab "Mitglieder" einen Kandidaten und klickt auf Button "Entfernen" 
+. Der Admin hat die Intension eine Kandidatur zu löschen
+. Für die jeweilige kandidatur wählt er diese option aus, woraufhin sich der Löschvorgang einleitet
 
 //=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
@@ -58,8 +66,8 @@ Ist für die Verwaltung zuständig
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
+//Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
+Nach der Einplegung einer neuen Kandidatur, erscheint ein Teil dieser Daten in der Übersicht aller Kandidaturen
 
 === Hinweise
 Ablauf soll sich an Mitglieder Tab orientieren
-

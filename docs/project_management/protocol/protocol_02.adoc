@@ -1,0 +1,150 @@
+= Protokoll vom 21.04.2021 - Hinweise von Felix
+Sabine Adam
+1.0, 21.04.2021
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+== Vision
+	* Positionierung gegenüber den anderen Stackholdern
+	** Fachliche Motivation
+    *** warum ist bisherige Lsg schlecht 
+    *** wieso ist Exel nicht geeignet
+    *** warum vorherige Software erweitern
+	*** -> im Rahmen des Moduls (des Studiums)
+	** Beschreibung des Projektes
+    *** zu sehr auf DB ausgerichtet -> grafische Schnittstelle (single page application)
+	*** was löst unsere Entwicklungsarbeit ab ?
+	** Statement
+    *** was sind diese Daten -> Daten von Mitgliedern
+    ** Positionierung des Produktes ist gut
+	*** Wird nur einer Instaz gegenüber positioniert
+	**** Interessen Labor: dass wir keinen Schaden anrichten
+	**** Interessen Admin: Leicht wartbar, Verhalten bei Problemen
+	* Stackholder Beschreibung
+    ** Stackholder
+    *** fehlende: Prof Anke, unser Team, Laborbereich (der den Server stellt), Themensteller	
+	* Benutzerumgebung
+    ** nur aus einer Sicht
+	** wichtig die, die aktiv mit dem System interagieren
+	** Anzahl der Personen hinzufügen: Was nutzt der Admin + wie viele nutzen den Rest = Gesamtanzahl von Nutzern
+	** Webseite muss jederzeit online sein -> weg damit
+	*** Muss zu den Kernarbeitszeiten des Sturas online sein, oder zu Prozentanteil
+    * Produkt-/Lösungsüberblick
+	** Bedarfe und Hauptfunktionen
+    *** geplantes Release eintragen ( Woche, Monate, Iteration) -> finales Auslieferungsdatum
+	
+== Use-Case Model
+    * Allgemein
+	** Priorisierung der Use Cases (Text ist nicht toll) in Tabelle
+	** Use Case Diagramm ist okay
+	** Use Case Abläufe: UI Begriffe verwendet (nicht gut)
+	*** sollte unabhängig von Schnittstellen sein
+	*** allgemeiner formulieren
+	** Benennung der Use Cases und Cases im Model vereinheitlichen (wichtig für Abgabe) -> Konsistenz
+	* Mitglieder aufnehmen
+	** alternative Abläufe bei der Checkliste -> AXEL +
+	Was passiert, wenn die Dokumente nicht alle da sind?
+    * Mitgliederinfos einpflegen:
+	** Alternativer Ablauf -> Dateigröße dazuschreiben
+	** Besondere Anforderung: Quantifizierung
+	** AXEL: Was passiert, wenn zu viel Zeit vergeht?
+	
+== WF
+	* konkreten Use Cases/ Anforderungen zuordnen oder FURPS+
+	
+== System Wide Requirements
+	* Qualitätsanforderungen
+	** Definition und/oder Möglichkeit das zu testen +
+		Bsp: E1: 10 Leute die Software nutzen lassen
+    ** Z: Soll dB Backup machen ? -> Was passiert, wenn sie das nicht tut -> wünschenswert? Ne
+	** W: Ansprechen, was noch logisch sinnvoll wäre
+	*** Gewährleistung der Wartbarkeit
+	**** Webframework leicht erweiterbar
+	**** DB leicht erweiterbar
+	* Funktionale Anforderung	
+	** Persistenz der Daten (dauerhafte Speicherung)
+	** Daten werden walidiert +
+        Bsp: Datum auf Datumsformat prüfen
+== Projektplanung
+	* Risiko
+    ** Was tun zur Vermeidung und was tun um Risiko abzuwenden, wenn es eingetreten ist
+	
+== Architektur
+	* Struktur wird von den Vorgängern übernommen
+	* Django Framework: Model View Control
+	* -> detaillierter angehen!
+	
+== A-Notebook:
+    * Allgemein
+    ** Zusammenhang Anforderung und Architektur verdeutlichen	
+	** Intuitive Bedienbarkeit
+	** Max Anzahl klicks
+	* A-Ziel und Philosophie
+	** Verfügbarkeit
+	** paralelle Nutzbarkeit
+	** Anpassung an bestimmte Engeräte
+	** Daten/-Zugriffsschutz
+	* Annahmen und Abhängigkeiten
+	** Minimalanforderungen ?
+	** stabile Internetanbindung erwähnen
+	** Nutzer braucht aktuellen Browser
+    ** Ressourcen des Servers
+	*** Arbeitsspeicher
+	*** Prozessorleistung
+	*** Bertiebsystem
+	*** Festplatten (Massenspeicher)
+	** MitgliederDB soll erweitert werden in zukunft -> einen punkt weiter hinschreiben
+	* Entscheidungen
+	** Python weil leichte Systax
+	** SQL lite weil relationeles DB Schema -> passt zu Daten, die wir verarbeiten
+	** Django (Grund wiseo wir das verwenden)
+	** Gruppe verwendetet außerdem noch: Swinx und Selenium als Frameworks, Pythenmodul: simple irgendwas (Jason?)
+	* Punkt zur Verteilung fehlt: Teil der Software läuft auf server
+	* Internettechnologien: HTML/ CSS als grafische Schnittstelle
+	* Mechanismen
+	** ergeben sich aus A-relevanten Anforderungen
+	*** tabellarisch darstellen: Anforderung | Softwarekomponente, die das realisiert| Verweis zu Architekturmechanismus
+	** Datenspeicherung
+	*** wie viele Datensätze sind das, Summe der Daten
+	*** Wie identifiziert man den einzelnen Datensatz
+	**** Zugriffszeit
+	**** Latenzen
+	**** Ausfallsicherheit
+	** Webschnittstelle:
+	*** HTML/CSS/Jason
+	*** mehr ? Nutzerverwaltung -> Identitätentrennung?
+	*** Kommunikation des systems ?
+	*** Laufzeitumgebung:
+	**** BS
+	**** Pythonquellen zu Laufzeit oder zu binary?		
+	* Wesentliche Abstraktionen
+	** welche Objekte oder Personen git es --> Domänenmodell hilft (zeigt Tabellen für DB)
+	** Mitglied in DB
+	** Organisationseinheit des Sturas
+	* C4 Diagramme
+	** Legende --> Top=Datenbank, ..
+		
+== Deploymentstruktur im konkreten
+	* einmal sammeln und ausliefern ?
+	* USB/ Anleitung /legen Quellen auf den Server?
+	
+== Teststrategie
+	* Formatvorgaben setzen
+	* Pro Use Case ein Test Case Dokument
+	* Test Case
+	** gehört immer zu Use Case
+	** Testobjekt, welche Klasse soll überprüft werden
+	** Ablauf (Tester gibt was ein, System bestätigt was..)
+	** Eingabedaten (mit welchen Daten wird die Funktionalität überprüft?)
+		
+	** Gliederung wie bei Use Case
+	*** Was soll getestet werden
+	*** Vorbedingung
+	*** Ablauf
+	*** Welche Daten werden genutzt
+	*** was soll bei rauskommen
+		
+	** Vorbedingung
+	*** Internet da
+	*** angemeldet
