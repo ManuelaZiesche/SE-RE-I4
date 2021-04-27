@@ -14,9 +14,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 29.03.2021 |
 | Meeting mit Stakeholdern um Stand zu präsentieren| 15.04.2021 |
-| Meeting mit Coach um Stand abzuklären | 21.04.2021 |
-| Erneutes Meeting mit Stakeholdern | 26.04.2021 |
-| Ende der Iteration |  |
+| Ende der Iteration | 18.04.2021 |
 |===
 
 == Wesentliche Ziele
@@ -62,15 +60,18 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Assessment
 |===
 |*Assessment Ziel* | *Iteration 4 beenden*
-|Assessment Datum | 21.04.2021
+|Assessment Datum | 16.04.2021
 | Teilnehmer | alle
-| Projektstatus | rot, gelb, grün?
+| Projektstatus | gelb
 |===
 
 - Beurteilung im Vergleich zu den Zielen:
 - Geplante vs. erledigte Aufgaben:
 - Beurteilung im Vergleich zu den Bewertungskriterien:
 - Andere Belange und Abweichungen:/ 
+Beleg überarbeitet + Use Cases und Wireframes mit den Themenstellern abgeglichen
+Arbeit an Test Cases begonnen, aber es wurden noch nicht so viele geschafft, wie wir uns das am Anfang der Iteration erhofft hatten.
+Prototyp wird in die nächste iteration geschoben, da wir diesen durch die Abarbeitung der restlichen Aufgaben zeitlich nicht mehr geschafft haben.
 
 = Essence Navigator Bild
 

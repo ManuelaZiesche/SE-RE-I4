@@ -21,23 +21,25 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 == Wesentliche Ziele
 
 - Requirements überarbeiten
-- Use Cases erneut mit den Themenstellern abgleichen
-- erste Prototypen entwickeln - Kandidatentabs
-- die ersten Test Cases 
+- überarbeitete Wireframes mit den Themenstellern besprechen
+- erste Prototypen entwickeln - Kandidatentab
+- weitere Test Cases 
 
 == Aufgabenzuordnung
 
-Die Aufgaben, welche in der dritten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Die Aufgaben, welche in der fünften Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
 Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
-| Iteration 04 planen und managen | hoch | 2 |  | | Manuela | 
+| Iteration 05 planen und managen | hoch | 2 |  | | Manuela | 
 | Risikoliste updaten (mit den Infos aus der Belegabgabe) | mittel | 2 | |  | Manuela | 
 | Use Cases nach Wünschen der Themensteller überarbeiten | hoch | 2 | | | Sabine und Manuela | 2
 | Test Cases formulieren | mittel | | | | | 
 | Prototyp des Kandidatentabs erstellen | hoch | | | | Vasco | 
+| Vision, Use Cases und Requirements überarbeiten | mittel | | | | | 
+| Architecture Notebook überarbeiten | mittel | | | | | 
 |===
 
 == Probleme 
@@ -58,8 +60,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 .Assessment
 |===
-|*Assessment Ziel* | *Iteration 4 beenden*
-|Assessment Datum | 21.04.2021
+|*Assessment Ziel* | *Iteration 5 beenden*
+|Assessment Datum | 
 | Teilnehmer | alle
 | Projektstatus | rot, gelb, grün?
 |===
@@ -74,6 +76,6 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
 <<link:../essence_navigator_images[]>> 
 
-- Bild von der vierten Iteration
+- Bild von der fünften Iteration
 
 //image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration04.png[]
