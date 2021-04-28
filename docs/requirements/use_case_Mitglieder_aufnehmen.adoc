@@ -18,8 +18,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 * Die Internetseite ist geöffnet
 * Der Admin muss angemeldet sein  
 * Die kandidierende Person wurde laut den Wahlen gewählt
-* Der Kandidat hat der Übernahme als Mitglied zugestimmt
-* Der Kandidat hat die erforderlichen Dokumente unterschrieben und gesendet
+* Sie hat der Übernahme als Mitglied zugestimmt und hat alle erforderlichen Dokumente unterschrieben dem Admin zukommen lassen
 * Check-Listen-Template muss für jede Organisationseinheit vorhanden sein 
 
 === Standardablauf (Basic Flow)
@@ -42,8 +41,8 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 * Check Liste mit zu erfüllenden Aufgaben für den Admin wurde erstellt +
-* Kandidat wurde zu Mitglied umgewandelt +
-* Kandidat (jetzt Mitglied) taucht nicht mehr unter dem Tab "Kandidaten" auf
+* die Kandidatur wurde zum Mitglied umgewandelt +
+* Kandidatur (jetzt Mitglied) taucht nicht mehr unter dem Tab "Kandidaturen" auf
 
 
 
