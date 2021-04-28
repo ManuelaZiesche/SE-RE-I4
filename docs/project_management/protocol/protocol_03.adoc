@@ -14,13 +14,13 @@ Sabine Adam
 . Spezifikation des Servers (Betriebsystem, Speicherplatz,...)
 * admin@
 . Wireframes anschauen lassen
-* 
+* abgesegnet
 . Sollen Backups der Datenbank gemacht werden? (bzw. wie oft?)
 * Backup 1 pro Woche max drei Versionen
 . Wie wird der Workload erfasst (Einheit) ?
-* 
+* in Prozent, je nach Bereich
 . Nachweis für Workload erforderlich ?
-* 
+* wird erbracht
 
 == Notizen
 * Anträge -> Beschlüsse
