@@ -56,7 +56,7 @@ Ist für die Verwaltung zuständig
 ==== Alternativer Ablauf 3
 //. Um eine Kandidatur zu löschen, wählt der Admin wie unter dem Tab "Mitglieder" einen Kandidaten und klickt auf Button "Entfernen" 
 . Der Admin hat die Intension eine Kandidatur zu löschen
-. Für die jeweilige kandidatur wählt er diese option aus, woraufhin sich der Löschvorgang einleitet
+. Für die jeweilige Kandidatur wählt er diese Option aus, woraufhin sich der Löschvorgang einleitet
 
 //=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
@@ -67,7 +67,7 @@ Ist für die Verwaltung zuständig
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 //Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
-Nach der Einplegung einer neuen Kandidatur, erscheint ein Teil dieser Daten in der Übersicht aller Kandidaturen
+Nach der Einplegung einer neuen Kandidatur, erscheint ein Teil dieser Daten in der Übersicht aller gelisteten Kandidaturen
 
 === Hinweise
 Ablauf soll sich an Mitglieder Tab orientieren
