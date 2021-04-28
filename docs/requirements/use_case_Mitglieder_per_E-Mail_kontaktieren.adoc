@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case 04: Mitglieder per E-Mail kontaktieren 
 ===	Kurzbeschreibung
-Über die Mitgliederdatenbank ist es angemeldeten Mitgliedern möglich via E-Mail Kontakt zu anderen Mitgliedern herzustellen
+Über die Mitgliederdatenbank ist es angemeldeten Mitgliedern möglich, via E-Mail Kontakt zu anderen Mitgliedern herzustellen
 
 === Kurzbeschreibung der Akteure
 
@@ -26,8 +26,8 @@ Mitglieder des Stura sind in der Lage die, auf der Webseite der Mitgliederdatenb
 . Dazu wird der "Mitglieder-Tab" ausgewählt, der eine gelistete Übersicht über alle Mitglieder enthält, die sich zu diesem Zeitpunkt in der Datenbank befinden
 . Anschließend wird das gewünschte Mitglied rausgesucht, zu dem der Kontakt aufgebaut werden soll
 . Durch das Auswählen des Mitgliedes öffnet sich ein Pop-Up Fenster, dass die Informationen zur jeweiligen Person darstellt
-. Unter Kontaktdaten befindet sich neben der E-Mail-Adresse in schriftlicher Form auch ein Button, der für die direkte Kontaktierung vorgesehen ist
-. Der Use Case ist abgeschlossen, wenn sich das Mitglied dazu entscheidet die ausgelesene E-Mail-Adresse für die Kontaktierung zu verwenden, oder der Button zu direkten Kontaktaufnahme betätigt wurde (infolgedessen öffnet sich ein externes Mailprogramm mit einer neuen E-Mail, welches die Mail-Adresse des ausgewählten Mitgliedes schon im Empfängerfeld stehen hat)
+. Unter Kontaktdaten befindet sich neben der E-Mail-Adresse, in schriftlicher Form, auch eine Option, die für die direkte Kontaktierung vorgesehen ist
+. Der Use Case ist abgeschlossen, wenn sich das Mitglied dazu entscheidet die ausgelesene E-Mail-Adresse für die Kontaktierung zu verwenden, oder die option zur direkten Kontaktaufnahme betätigt wurde (infolgedessen öffnet sich ein externes Mailprogramm mit einer neuen E-Mail, welches die Mail-Adresse des ausgewählten Mitgliedes schon im Empfängerfeld stehen hat)
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
