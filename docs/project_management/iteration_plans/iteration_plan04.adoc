@@ -53,7 +53,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 - ersten Prototypen haben funktioniert
-- erste Tests wurden erstellt ?
+- erste Tests wurden erstellt
 
 == Assessment
 
@@ -80,4 +80,4 @@ Prototyp wird in die nächste iteration geschoben, da wir diesen durch die Abarb
 
 - Bild von der vierten Iteration
 
-//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration04.png[]
+image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration04.png[]
