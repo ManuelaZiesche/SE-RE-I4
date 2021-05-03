@@ -5,21 +5,34 @@
 | *Iteration 01:* | | | | | |
 | Vision | hoch | 4 | erledigt| <<link:../../requirements/technical_vision.adoc[]>>  | Kristina, Erik |5
 | Use  Cases | mittel | 7 | erledigt | <<link:../../requirements/use_case-model.adoc[]>> | Kristina und Erik |  6
-| Essence Navigator | niedrig | 1 | erledigt | <<link:../essence_navigator_images/Essence_Navigator_Iteration01.png[] | alle Teammitglieder | 1
+| Essence Navigator | niedrig | 1 | erledigt |  | alle Teammitglieder | 1
 | Risikoliste | mittel | 2 | erledigt | <<link:../risk_list.adoc[]>>  | Manuela | 3
 | Iterationsplan 02 | hoch | 1 | erledigt | <<link:iteration_plan02.adoc[]>> | Manuela | 2
 | *Iteration 02:* | | | | | |
-| Essence Navigator | niedrig | 1 | erledigt | essence_navigator_images/Essence_Navigator.png[] | alle Teammitglieder | 1 
+| Essence Navigator | niedrig | 1 | erledigt |  | alle Teammitglieder | 1 
 | Architecture Notebook | hoch | 6 | erledigt | <<link:../../architecture/architecture_notebook.adoc[]>>| Sebastian, Benjamin | 8
 | Iterationsplan 03 | hoch | 2 | erledigt | <<link:iteration_plans/iteration_plan03.adoc[]>> | Manuela | 2
 | Risikoliste aktualisieren | mittel | 3 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Projektplan aktualisieren | niedrig | 1 | erledigt | <<link:../project_plan.adoc[]>> | Manuela | 2
 | *Iteration 03:* | | | | | |
-| Essence Navigator | niedrig | 1 | erledigt | image::../essence_navigator_images/Essence_Navigator.png[] | alle Teammitglieder | 1 
+| Essence Navigator | niedrig | 1 | erledigt |  | alle Teammitglieder | 1 
 | Iterationsplan 04 | hoch | 2 | erledigt | <<link:../iteration_plan04.adoc[]| Manuela | 2
 | Risikoliste | mittel | 2 | erledigt | <<link:../risk_list.adoc[]>> | Manuela | 2
 | Nichtfunktionale Anforderungen | mittel | 4 | erledigt | | Erik, Kristina | 3
 |Dokumentation abgabefertig | hoch| 4 | erledigt | <<link:../../../belegabgabe_se1/se1_belegabgabe_I4.adoc[]>>| Sabine, Manuela | 3
 | *Iteration 04:* | | | | | |
-
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder | 1
+| Iteration 04 planen und managen | hoch | 2 | erledigt |  | Manuela | 
+| Risikoliste updaten (mit den Infos aus der Belegabgabe) | mittel | 2 | erledigt |  | Manuela + gesamte Team | 2
+| Use Cases nach Wünschen der Themensteller überarbeiten | hoch | 2 | erledigt | | Sabine und Manuela | 2
+| Test Cases formulieren | mittel | 4 | in Bearbeitung |  | alle Teammitglieder | 2
+| *Iteration 05:* | | | | | | 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
+| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
+| Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
+| Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
+| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 4 (bis jetzt)
+| Vision, Use Cases und Requirements überarbeiten | mittel | | | | sabine + Manuela| 
+| Architecture Notebook überarbeiten | mittel | | | | Benjamin + Sebastian | 
+| Domänenmodell erstellen | mittel | | | | Benjamin + Sebastian | 
 |===
