@@ -13,7 +13,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 |===
 | *Meilenstein* | *Datum* | *Notizen*
 | Beginn der Iteration | 29.03.2021 |
-| Meeting mit Stakeholdern um Stand zu präsentieren| 15.04.2021 |
+| Meeting mit Stakeholdern um Stand zu präsentieren | 15.04.2021 |
 | Ende der Iteration | 18.04.2021 |
 |===
 
@@ -31,12 +31,12 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
-| Iteration 04 planen und managen | hoch | 2 |  | | Manuela | 
-| Risikoliste updaten (mit den Infos aus der Belegabgabe) | mittel | 2 | |  | Manuela | 
-| Use Cases nach Wünschen der Themensteller überarbeiten | hoch | 2 | | | Sabine und Manuela | 2
-| Test Cases formulieren | mittel | | | | | 
-| Prototyp des Kandidatentabs erstellen | hoch | | | | Vasco | 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder | 1
+| Iteration 04 planen und managen | hoch | 2 | erledigt |  | Manuela | 
+| Risikoliste updaten (mit den Infos aus der Belegabgabe) | mittel | 2 | erledigt |  | Manuela + gesamte Team | 2
+| Use Cases nach Wünschen der Themensteller überarbeiten | hoch | 2 | erledigt | | Sabine und Manuela | 2
+| Test Cases formulieren | mittel | 4 | in Bearbeitung |  | alle Teammitglieder | 2
+| 
 |===
 
 == Probleme 
@@ -44,16 +44,15 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
-| Die ersten Meetings der 4. Iteration waren zwar sinnvoll, um den fehlerhaften Stoff nachzuarbeiten, aber produktiv weitergekommen sind wir in dieser Zeit fast nicht. | offen | Wir versuchen in der nächsten Iteration komplett durchzuziehen, die Aufgaben direkt besser zu planen und uns gemeinsam einen guten Stand zu erarbeiten.
-| Das Problem der Erreichbarkeit der Themensteller ist immernoch da. | offen | Manuela ist jetzt Mitlgied im StuRa und kann schon Fragen klären. Aber auch sonst weiß Sie besser, wie und wann Sophia erreichbar ist.
+| Die ersten Meetings der 4. Iteration waren zwar sinnvoll, um den fehlerhaften Stoff nachzubereiten, aber produktiv weitergekommen sind wir in dieser Zeit fast nicht. | offen | Wir versuchen in der nächsten Iteration komplett durchzuziehen, die Aufgaben direkt besser zu planen und uns gemeinsam einen guten Stand zu erarbeiten.
+| Das Problem der Erreichbarkeit der Themensteller ist immernoch da. | offen | Manuela ist jetzt Mitlgied im StuRa und kann schon Fragen klären. Außerdem unterstützt uns Axel bei der Beantwortung der Fragen.
 |===
 
 
 == Bewertungskriterien
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
-- ersten Prototypen haben funktioniert
-- erste Tests wurden erstellt
+- ersten Tests wurden erstellt
 
 == Assessment
 
@@ -65,13 +64,10 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | Projektstatus | gelb
 |===
 
-- Beurteilung im Vergleich zu den Zielen:
-- Geplante vs. erledigte Aufgaben:
-- Beurteilung im Vergleich zu den Bewertungskriterien:
-- Andere Belange und Abweichungen:/ 
-Beleg überarbeitet + Use Cases und Wireframes mit den Themenstellern abgeglichen
-Arbeit an Test Cases begonnen, aber es wurden noch nicht so viele geschafft, wie wir uns das am Anfang der Iteration erhofft hatten.
-Prototyp wird in die nächste iteration geschoben, da wir diesen durch die Abarbeitung der restlichen Aufgaben zeitlich nicht mehr geschafft haben.
+In der Iteration haben wir erfolgreich den Beleg überarbeitet und die Use Cases und Wireframes mit den Themenstellern abgeglichen. 
+So konnten wir 
+Die Arbeit an den Test Cases haben wir begonnen, aber es wurden noch nicht so viele geschafft, wie wir uns das am Anfang der Iteration erhofft hatten. Deswegen nehmen wir diese Aufgabe mit in die Iteration 05. 
+Die Erstellung des Prototypen des Kandidatentabs wird in die nächste Iteration geschoben, da wir diesen durch die Abarbeitung der restlichen Aufgaben zeitlich nicht mehr geschafft haben.
 
 = Essence Navigator Bild
 
