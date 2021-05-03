@@ -15,15 +15,16 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Beginn der Iteration | 19.04.2021 |
 | Meeting mit Coach um Stand abzuklären | 21.04.2021 |
 | Meeting mit Stakeholdern um Stand zu präsentieren| 26.04.2021 |
-| Ende der Iteration |  |
+| Ende der Iteration | 09.05.2021 |
 |===
 
 == Wesentliche Ziele
 
 - Requirements überarbeiten
 - überarbeitete Wireframes mit den Themenstellern besprechen
-- erste Prototypen entwickeln - Kandidatentab
-- weitere Test Cases 
+- ersten Prototypen entwickeln - Kandidatentab
+- weitere Test Cases erstellen
+
 
 == Aufgabenzuordnung
 
@@ -33,13 +34,13 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
-| Iteration 05 planen und managen | hoch | 2 |  | | Manuela | 
-| Risikoliste updaten (mit den Infos aus der Belegabgabe) | mittel | 2 | |  | Manuela | 
-| Use Cases nach Wünschen der Themensteller überarbeiten | hoch | 2 | | | Sabine und Manuela | 2
-| Test Cases formulieren | mittel | | | | | 
-| Prototyp des Kandidatentabs erstellen | hoch | | | | Vasco | 
-| Vision, Use Cases und Requirements überarbeiten | mittel | | | | | 
-| Architecture Notebook überarbeiten | mittel | | | | | 
+| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
+| Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
+| Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
+| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 4 (bis jetzt)
+| Vision, Use Cases und Requirements überarbeiten | mittel | | | | sabine + Manuela| 
+| Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian | 
+| Domänenmodell erstellen | mittel | | | | Benjamin + Sebastian |  
 |===
 
 == Probleme 
@@ -61,7 +62,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Assessment
 |===
 |*Assessment Ziel* | *Iteration 5 beenden*
-|Assessment Datum | 
+|Assessment Datum | 09.05.2021
 | Teilnehmer | alle
 | Projektstatus | rot, gelb, grün?
 |===
