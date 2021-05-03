@@ -1,9 +1,9 @@
-= Test Cases 
+= Test Cases zu Use Case 01 - Kandidaten verwalten
 
 == Allgemeine Informationen
 
 
-== TC 01: Kandidaten verwalten - Kandidat hinzufügen
+== TC 01: Kandidat hinzufügen
 Beschreibung: Der Admin möchte einen neuen Kandidaten  in die Datenbank einpflegen
 Vorbedingungen: 
 - Der Admin ist mit Administratorrechten eingeloggt. 
@@ -14,7 +14,7 @@ Nachbedingungen:
 Benötigte Daten:
 - Kandidatendaten
 
-== TC 02: Kandidaten verwalten  - Weitere Informationen hinzufügen
+== TC 02: Weitere Informationen hinzufügen
 Beschreibung: Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten.
 Vorbedingungen:
 - Der Kandidat ist bereits in der Datenbank vorhanden.
@@ -25,6 +25,5 @@ Nachbedingungen:
 Benötigte Daten:
 - die zu ergänzenden Kandidatendaten
 
-== TC 03: Mitgliederinformationen einpflegen
-Beschreibung: Der Admin 
+
 
