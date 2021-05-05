@@ -34,7 +34,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 . Eine kleine Checkliste erscheint 
 . Der Admin prüft, ob die benötigten Dokumente (Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten) hochgeladen worden sind
 . Der Admin bestätigt, dass er alle Aufgaben erledigt hat und die Kandidatur als Mitglied hinzufügen möchte 
-. Die Anwendung fügt den Kandidat mit all seinen Informationen als als Mitglied hinzu
+. Die Anwendung fügt den Kandidat mit all seinen Informationen als Mitglied hinzu
 . Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen muss
 . Die neue Checkliste wird am Ende aller offenen Checklisten aufgereiht 
 

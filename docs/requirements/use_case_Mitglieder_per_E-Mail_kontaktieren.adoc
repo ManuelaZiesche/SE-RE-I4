@@ -23,11 +23,11 @@ Mitglieder des Stura sind in der Lage die, auf der Webseite der Mitgliederdatenb
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn sich ein Mitglied dazu entscheidet Kontakt zu einem anderen Mitglied aufnehmen zu wollen
-. Dazu wird der "Mitglieder-Tab" ausgewählt, der eine gelistete Übersicht über alle Mitglieder enthält, die sich zu diesem Zeitpunkt in der Datenbank befinden
+. Dazu wird der "Mitglieder"-Tab ausgewählt, der eine gelistete Übersicht über alle Mitglieder enthält, die sich zu diesem Zeitpunkt in der Datenbank befinden
 . Anschließend wird das gewünschte Mitglied rausgesucht, zu dem der Kontakt aufgebaut werden soll
 . Durch das Auswählen des Mitgliedes öffnet sich ein Pop-Up Fenster, dass die Informationen zur jeweiligen Person darstellt
 . Unter Kontaktdaten befindet sich neben der E-Mail-Adresse, in schriftlicher Form, auch eine Option, die für die direkte Kontaktierung vorgesehen ist
-. Der Use Case ist abgeschlossen, wenn sich das Mitglied dazu entscheidet die ausgelesene E-Mail-Adresse für die Kontaktierung zu verwenden, oder die option zur direkten Kontaktaufnahme betätigt wurde (infolgedessen öffnet sich ein externes Mailprogramm mit einer neuen E-Mail, welches die Mail-Adresse des ausgewählten Mitgliedes schon im Empfängerfeld stehen hat)
+. Der Use Case ist abgeschlossen, wenn sich das Mitglied dazu entscheidet die ausgelesene E-Mail-Adresse für die Kontaktierung zu verwenden, oder die Option zur direkten Kontaktaufnahme betätigt wurde (infolgedessen öffnet sich ein externes Mailprogramm mit einer neuen E-Mail, welches die Mail-Adresse des ausgewählten Mitgliedes schon im Empfängerfeld stehen hat)
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
