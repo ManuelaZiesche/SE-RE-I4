@@ -20,7 +20,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Wesentliche Ziele
 
-- Requirements überarbeiten
+- Use Cases, Vision, Systemweite Anforderungen überarbeiten
 - überarbeitete Wireframes mit den Themenstellern besprechen
 - ersten Prototypen entwickeln - Kandidatentab
 - weitere Test Cases erstellen
@@ -38,7 +38,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
 | Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
 | Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 4 (bis jetzt)
-| Vision, Use Cases und Requirements überarbeiten | mittel | | | | sabine + Manuela| 
+| Vision, Use Cases und Requirements überarbeiten | mittel | | | | Sabine + Manuela| 
 | Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian | 
 | Domänenmodell erstellen | mittel | | | | Benjamin + Sebastian |  
 |===
@@ -56,6 +56,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 - ersten Prototypen haben funktioniert
 - erste Tests wurden erstellt ?
+- Belegnachbereitung ist abgeschlossen?
 
 == Assessment
 
@@ -79,4 +80,4 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Bild von der fünften Iteration
 
-//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration04.png[]
+//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration05.png[]

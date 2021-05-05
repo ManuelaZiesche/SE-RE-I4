@@ -43,7 +43,7 @@ Die Arbeit wird in folgende Bereiche aufgegliedert, die wie folgt besetzt wurden
 - Test: Bayu Anggi Saputra, Sebastian Matthäus + 
 - Technical Writer: Manuela Ziesche (Backup: alle anderen)
 
-Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitglieder zustande gekommen. Wir haben alle Bereiche mit zwei Leuten besetzt, um möglichen Ausfall abzudecken. 
+Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitglieder zustande gekommen. Wir haben alle Bereiche mit zwei Leuten besetzt, um einen möglichen Ausfall abzudecken. 
 
 === Arbeitsweise
 - Iterationen 3 Wochen lang
@@ -56,11 +56,13 @@ Diese Einteilung ist durch die jeweiligen Interessen und Vorkenntnisse der Mitgl
     -> WhatsApp + 
     -> Discord + 
 
-Wir organisieren unseren Ablauf über ein Trello Board, in welches wir alle Aufgaben unter *To-Do*, *In Arbeit* oder *Bearbeitet* unterteilen. Außerdem werden da  auch alle geplanten Termine festgehalten. 
+Wir organisieren unseren Ablauf über ein Trello Board, in welches wir alle Aufgaben unter *To-Do*, *In Arbeit* oder *Bearbeitet* unterteilen. Außerdem werden da auch alle geplanten Termine festgehalten. 
 Zu kleineren Absprachen oder Erinnerungen verwenden wir eine WhatsApp Gruppe. Dort werden auch neue Termine geplant, wenn wir dies nicht in einem eheren Meeting schon getan haben.
 Die  Terminfindung klären wir meistens im Gespräch, doch wenn das mal nicht so einfach funktioniert, erstellt Sebastian eine Umfrage, wonach wir dann beispielsweise einen neuen Termin für ein Meeting finden.
 Für diese Meetings haben wir uns für Discord entschieden. Dort hat Benjamin für unsere Gruppe einen eigenen Server erstellt und im Sprachkanal halten wir alle wöchentlichen Meetings ab. Auch die Meetings mit den Stakeholdern oder mit unserem Coach laufen über diesen Server. Das hat sich als sehr sinnvoll erwiesen, da man über eine Bildschirmübertragung Fragen an Dokumenten gleich dem gesamtem Team stellen kann. Aber auch Links landen da drin, damit nicht alle alleine suchen müssen. Das erspart uns innerhalb der Meetings wichtige Zeit.
-Protokolle schreibt Manuela händisch mit, sie speichert diese nur nicht im GitHub ab. Das wird ab der 4. Iteration auch geändert. Da sollen die Protokolle für alle Teammitglieder einsehbar sein. Dies klärt eventuell gleich offene, kleinere Fragen und man braucht in keine Diskussion zurückfallen.
+Protokolle schreiben Sabine und Manuela mit, die wichtigsten landen auch im GitHub. Das wird ab der 4. Iteration auch geändert. Da sollen die Protokolle für alle Teammitglieder einsehbar sein. Dies klärt eventuell gleich offene, kleinere Fragen und man braucht in keine Diskussion zurückfallen.
+
+In der fünften Iteration haben wir uns noch dazu entschieden, unseren Discord Server umzustrukturieren. Es gibt jetzt für alle Aufgabenbereiche jeweils Text- und Sprachkanal, um unseren Autausch organisierter zu halten. 
 
 == Projektpraktiken
 
@@ -96,7 +98,7 @@ Wir haben uns für Iterationslängen von 3 Wochen entschieden. Anfangs wollten w
 === Langfristig
 - Die Entwicklung einer funktionellen Datenbank, welche den Arbeitsprozess der Admins des StuRa sinnvoll vereinfacht.
 - Eine zufriedenstellende Belegabgabe.
-- durchgängig Spaß an dem Projekt/ der Bearbeitung der einzelnen Aufgaben
+- durchgängig Spaß an dem Projekt/der Bearbeitung der einzelnen Aufgaben
 
 == Deployment
 Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. ???

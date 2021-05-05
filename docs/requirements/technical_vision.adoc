@@ -24,10 +24,14 @@ siehe Glossar.
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
-Die Mitglieder des Studentenrates benutzen Excel-Tabellen für die Mitglieder- und Kandidatenverwaltung, beispielsweise zum Aufnehmen neuer Mitglieder oder Kandidaten und zum Pflegen der Mitgliederdaten sowie zur Berechnung der Aufwandsentschädigung. 
-Studenten, die für eine Wahl kandidieren, sollen ebenfalls in der Datenbank als Kandidaten verwaltet und nachdem sie gewählt wurden, direkt als Mitglied aufgenommen werden können. 
-Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Beteiligten Zeit zu sparen. Durch das professionellere Erscheinungsbild wird zusätzlich das Image verbessert. Für die Projektbearbeitung wurde unser Team SE/RE I4 ausgewählt.
+Im Rahmen des Moduls 'Software Engineering', welches sich über zwei Semester erstreckt, müssen Studierende verschiedener Studiengänge in Gruppen ein Softwarepprojekt erarbeiten, welches von richtigen Kunden(Themenstellern) genutzt werden soll.
+Unser Team I4 sollte sich mit der Weiterentwicklung der Mitgliederdatenbank des Studentenrates (StuRa) der HTW Dresden beschäftigen.
 
+Aktuell benutzen die Mitglieder des Studentenrates Excel-Tabellen für die Mitglieder- und Kandidatenverwaltung. Mitglieder und Kandidaten werden dort neu angelegt, verwaltet und gelöscht. Außerdem wird in einer weiteren Excel-Tabelle die Aufwandsentschädigung berechnet.
+Diese sind durch die häufige Überarbeitung verschiedener Mitglieder unübersichtlich geworden und sind der heutigen Zeit nicht mehr gerecht. 
+Aus diesem Grund soll die vom letzten Jahr entwickelte Mitgliederdatenbank von unserem Team I4 weiterentwickelt und optimiert werden, sodass nun auch Kandidaten angelegt und bearbeitet werden können, diese einfach zu Mitgliedern umgewandelt werden können sobald sie gewählt worden sind und Mitglieder andere Mitglieder per E-Mail kontaktieren können. Desweiteren soll der Arbeitsaufwand des Admins mittels Checkboxen verringert werden, die für mehr Übersichtlichkeit seiner Aufgaben sorgen sollen. 
+
+Allgemein sollen die Abläufe der Mitgliederdatenbank soweit optimiert werden, dass alle Beteiligten einen geringeren Zeitaufwand haben. Durch die intuitivere Benutzeroberfläche erhoffen wir uns außerdem, dass es zu einer erleichterten Interaktion mit den Daten kommt. 
 
 
 
@@ -65,12 +69,16 @@ Diese Abläufe sollen mit der Mitgliederdatenbank optimiert werden, um den Betei
 
 [%header, cols="1,3,3"]
 |===
-|Name|	Beschreibung	| Verantwortlichkeiten
-|HTW | Hochschule | stellt Studenten für StuRa, zahlt AE an die jeweiligen Studenten
-|Mitglieder der StuRa|Repräsentanten der Studenten| Nutzer des Produkts
-|Systembetreuer, Admin| Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
-|Hacker | Jemand, der illegal in Computersysteme eindringt | Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
-|der Gesetzgeber|gibt rechtliche Rahmenbedingungen vor, z.B. durch Gesetze für Jugendschutz, Datenschutz und Fernabsatz | überwacht Gesetze und Regelungen
+| Name | Beschreibung | Verantwortlichkeiten
+| HTW | Hochschule | stellt Studenten für StuRa, zahlt AE an die jeweiligen Studenten
+| Mitglieder der StuRa|Repräsentanten der Studenten| Nutzer des Produkts
+| Systembetreuer, Admin | Systemadministrator | Sind für die Funktionierung, Wartung und Aktualität der Mitgliederdatenbank verantwortlich
+| Herr Professor Anke | der Dozent | Betreut das Projekt und das Team I4, Ansprechpartner für das Team I4
+| Team I4 | Gruppe von Studierenden, die das Projekt übernehmen | Versuchen die Wünsche der Themensteller umzusetzen (das Projekt bearbeiten)
+| Laborbereich | Laborbereich der Hochschule | Diese stellen den Server, worauf die Datenbank laufen soll
+| Themensteller| unsere Aufgabensteller | Deren Ziel ist es, eine gut funktionierende und qualitativ hochwertige Datenbank zu erhalten. 
+| Hacker | Jemand, der illegal in Computersysteme eindringt | Stellt Gefahr für das System da: Fehlfunktionen, Datendiebstahl
+| der Gesetzgeber | Gibt rechtliche Rahmenbedingungen vor, z.B. durch Gesetze für Jugendschutz, Datenschutz und Fernabsatz | überwacht Gesetze und Regelungen
 hinsichtlich der Einhaltung des Telemediengesetzes
 
 
