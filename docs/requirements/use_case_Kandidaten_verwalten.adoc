@@ -24,11 +24,11 @@ Ist für die Verwaltung zuständig
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn der Admin den Tab "Kandidaturen" auswählt
 . Der Admin entscheidet sich dazu eine neue Kandidatur anzulegen und teilt dies dem System mit
-. Daraufhin kann der Admin eine neue kandidatur anlegen, indem er die Daten der kandidierenden Person dem System übergibt
+. Daraufhin kann der Admin eine neue Kandidatur anlegen, indem er die Daten der kandidierenden Person dem System übergibt
 //. Der Admin hat nun die Möglichkeit neue Kandidaturen hinzuzufügen
 //. Entscheidet sich der Admin dafür eine neue Kandidatur anzulegen, Die nächste Maske ermöglicht es ihm die Daten der kandidierenden Person
 //. Die Änderungen werden beim Klick auf "Speichern" gespeichert.
-. Der Use Case ist abgeschlossen, sobaldd die Eingaben abgespeichert wurden.
+. Der Use Case ist abgeschlossen, sobald die Eingaben abgespeichert wurden.
 
 
 === Alternative Abläufe
@@ -67,7 +67,7 @@ Ist für die Verwaltung zuständig
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 //Nach der Eingabe wird der Kandidat unter dem Reiter "Kandidat" erscheinen
-Nach der Einplegung einer neuen Kandidatur, erscheint ein Teil dieser Daten in der Übersicht aller gelisteten Kandidaturen
+Nach der Einpflegung einer neuen Kandidatur, erscheint ein Teil dieser Daten in der Übersicht aller gelisteten Kandidaturen
 
 === Hinweise
 Ablauf soll sich an Mitglieder Tab orientieren
