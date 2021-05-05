@@ -2,28 +2,51 @@
 
 {% block content %}
 
-<form id="mitgliedForm" action={% if mitglied %}"{% url 'mitglieder:speichern' mitglied.id %}"{% else %}"{% url 'mitglieder:erstellen' %}"{% endif %} method="post">
+                                                                      {% comment %}
+                                                                        Action muss noch umbenannt werden, um Kandidaturen-Views aufzurufen
+                                                                      {% endcomment %}
+<form id="mitgliedForm" action={% if kandidatur %}"{% url 'mitglieder:speichern' mitglied.id %}"{% else %}"{% url 'mitglieder:erstellen' %}"{% endif %} method="post">
 {% csrf_token %}
 <div>
   <div class="row">
     <div  class="col s12">
-      <h3>Mitglied {% if mitglied %}bearbeiten{% else %}erstellen{% endif %}</h3>
+      <h3>Kandidatur {% if kandidatur %}bearbeiten{% else %}erstellen{% endif %}</h3>
       <br />
     </div>
 
     <!-- Name & Vorname-->
     <div class="row">
       <div class="input-field col s12 m4 l3">
-        <input id="vorname" name="vorname" type="text" class="validate" {% if mitglied %}value="{{mitglied.vorname}}"{% endif %}>
+        <input id="vorname" name="vorname" type="text" class="validate" {% if kandidatur %}value="{{kandidatur.vorname}}"{% endif %}>
           <label for="vorname">Vorname</label>
       </div>
       <div class="input-field col s12 m4 l3">
-        <input id="nachname" name="nachname" type="text" class="validate" {% if mitglied %}value="{{mitglied.name}}"{% endif %}>
+        <input id="nachname" name="nachname" type="text" class="validate" {% if kandidatur %}value="{{kandidatur.name}}"{% endif %}>
         <label for="nachname">Nachname</label>
       </div>
       <div class="input-field col s12 m4 l3">
-        <input id="spitzname" name="spitzname" type="text" class="validate" {% if mitglied.spitzname %}value="{{mitglied.spitzname}}"{% endif %}>
+        <input id="spitzname" name="spitzname" type="text" class="validate" {% if kandidatur.spitzname %}value="{{kandidatur.spitzname}}"{% endif %}>
         <label for="spitzname">Spitzname</label>
+      </div>
+    </div>
+
+
+                                                         {% comment %}
+                                                         Datepicker initialisieren (im JS)
+                                                       {% endcomment %}
+    <!-- Wahldatum -->
+    <div class="row">
+      <div class="input-field col l2 m4">
+        <input id="whahldatum" name="whahldatum" type="text" class="datepicker" {% if kandidatur.wahldatum %}value="{{kandidatur.wahldatum|date:'d.m.Y'}}"{% endif %}>
+          <label id="whahldatum_label" for="whahldatum">Wahldatum</label>
+      </div>
+    </div>
+    
+    <!-- Beschlussnummer -->
+    <div class="row">
+      <div class="input-field col s12 m4 l3">
+        <input id="beschlussnummer" name="beschlussnummer" type="text" class="validate" {% if kandidatur.beschlussnummer %}value="{{kandidatur.beschlussnummer}}"{% endif %}>
+          <label for="beschlussnummer">Beschlussnummer</label>
       </div>
     </div>
 
@@ -33,23 +56,26 @@
         <h5>Funktionen </h5>
         <br />
         <div id="div_aemter">
-        {% if mitglied %}
-          {% for mitgliedamt in mitglied.mitgliedamt_set.all %}
-          {% with mitgliedamt.funktion as funktion %}
+        {% if kandidatur %}
+          {% for kandidaturamt in kandidatur.kandidaturamt_set.all %}
+          {% with kandidaturamt.funktion as funktion %}
           {% with forloop.counter as amtid %}
-            {% include 'mitglieder/aemter.html' %}
+            {% include 'kandidaturen/aemter.html' %}
           {% endwith %}
           {% endwith %}
           {% endfor %}
         {% else %}
           {% with 1 as amtid %}
-          {% include 'mitglieder/aemter.html' %}
+          {% include 'kandidaturen/aemter.html' %}
           {% endwith %}
         {% endif %}
         
       </div>
         <!-- Button (weiteres Amt hinzufuegen) -->
           <div class="col s12">
+                                                                                    {% comment %}
+                                                                                      URL noch Ändern
+                                                                                    {% endcomment %}
             <a id="addAmt" data-url="{% url 'mitglieder:aemter_html_laden' %}" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>Funktion hinzufügen</a>
           </div>
       </div>
@@ -61,13 +87,13 @@
         <h5>E-Mail-Adressen</h5>
         <br />
         <div id="div_emails">
-        {% if mitglied %}
-          {% for email in mitglied.mitgliedmail_set.all %}
-            {% include 'mitglieder/email.html' %}
+        {% if kandidatur %}
+          {% for email in kandidatur.kandidaturmail_set.all %}
+            {% include 'kandidaturen/email.html' %}
           {% endfor %}
         {% else %}
           {% with 1 as emailid %}
-          {% include 'mitglieder/email.html' %}
+          {% include 'kandidaturen/email.html' %}
           {% endwith %}
         {% endif %}
       </div>
@@ -75,6 +101,9 @@
         <div class="row">
           <div class="col s12">
             {% if forloop.last or mitglied.emails is None %}
+                                                                                    {% comment %}
+                                                                                      URL noch Ändern
+                                                                                    {% endcomment %}
               <a id="addEmailBtn" data-url="{% url 'mitglieder:email_html_laden' %}" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>E-Mail hinzufügen</a>
             {% endif %}
           </div>
@@ -82,42 +111,11 @@
       </div>
     </div>
 
-    <!-- Adresse -->
-    <div class="row">
-      <div class="col s12">
-        <h5>Anschrift und Kontaktdaten</h5>
-        <br />
-      </div>
-      <div class="input-field col s9 m5 l4">
-        <input id="strasse" name="strasse" type="text" class="validate" {% if mitglied.strasse %}value="{{mitglied.strasse}}"{% endif %}>
-        <label for="strasse">Straße</label>
-      </div>
-      <div class="input-field col s3 m3 l2">
-        <input id="hausnr" name="hausnr" type="text" class=" validate" {% if mitglied.hausnr %}value="{{mitglied.hausnr}}"{% endif %}>
-        <label for="hausnr">Hausnummer</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s4 m3 l2">
-        <input id="plz" name="plz" type="text" class="validate" {% if mitglied.plz %}value="{{mitglied.plz}}"{% endif %}>
-        <label for="plz">Postleitzahl</label>
-      </div>
-      <div class="input-field col s8 m5 l4">
-        <input id="ort" name="ort" type="text" class="validate" {% if mitglied.ort %}value="{{mitglied.ort}}"{% endif %}>
-        <label for="ort">Ort</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12 m8 l6">
-        <input id="telefon_mobil" name="telefon_mobil" type="text" class="validate" {% if mitglied.tel_mobil %}value="{{mitglied.tel_mobil}}"{% endif %}>
-        <label for="telefon_mobil">Telefon (mobil)</label>
-      </div>
-    </div>
     <!-- Buttons: Hinzufuegen, Abbrechen -->
     <div class="row">
         <div class="col s12">
           <a id="save_button" class="space waves-effect waves-light btn-large amber black-text"><i class="material-icons left">save</i>Speichern</a>
-          <a href="/mitglieder" class="waves-effect waves-light btn-large grey lighten-2 black-text">Abbrechen</a>
+          <a href="/kandidaturen" class="waves-effect waves-light btn-large grey lighten-2 black-text">Abbrechen</a>
         </div>
     </div>
   </div>
