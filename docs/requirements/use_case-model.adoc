@@ -17,20 +17,31 @@ include::attributes.adoc[]
 
 == Identifizierte Use Cases
 
+[cols="1,2,1,5"]
+|===
+| *Nr* | *Bezeichnung* | *Priorität* | *Kurzbeschreibung*
+| 01 | Kandidaten verwalten | hoch | Kandidaturen sollen angelegt, bearbeitet oder entfernt werden können.
+| 02 | Mitglieder aufnehmen | hoch | Die kandidierende Person wurde gewählt, ist nun Mitglied und soll unter dieser Bezeichnung im System zu finden sein.
+| 03 | Mitgliederinformationen einpflegen | hoch | Mitgliederdaten sollen ergänzt werden können.
+| 04 | Mitglieder per E-Mail kontaktieren | mittel | Mitglieder sollen andere Mitglieder per Mail kontaktieren können.
+| 06 | Workload erfassen | gering | Das Maß der Aktivität der Mitglieder soll vom System erfasst werden können.
+| 07 | Aufwandsentschädigung berechnen| gering | Anhand seiner Aktivität soll die Berechnung der Aufwandsentschädigung für das Mitglied erfolgen.
+| 05 | Stimmzettel generieren| sehr gering | Generierung von Stimmzetteln (als druckbares Dokument) mit allen Kandidaturen, die sich zu einer Wahl aufstellen lassen.
+|===
 
 
-*Use-Case 01*: Kandidaten verwalten +
-*Use-Case 02*: Mitglieder aufnehmen +
-*Use-Case 03*: Mitgliederinformationen einpflegen +
-*Use-Case 04*: Mitglieder per E-Mail kontaktieren +
-*Use-Case 05*: Stimmzettel generieren  +
-*Use-Case 06*: Workload erfassen +
-*Use-Case 07*: Aufwandsentschädigung berechnen +
+//*Use-Case 01*: Kandidaten verwalten +
+//*Use-Case 02*: Mitglieder aufnehmen +
+//*Use-Case 03*: Mitgliederinformationen einpflegen +
+//*Use-Case 04*: Mitglieder per E-Mail kontaktieren +
+//*Use-Case 05*: Stimmzettel generieren  +
+//*Use-Case 06*: Workload erfassen +
+//*Use-Case 07*: Aufwandsentschädigung berechnen +
 
-Die wichtigsten Use-Cases sind 1-3 in unserem Projekt. Diese sind weiter unten auch näher spezifiziert.
-In Use-Case 4 geht es darum, dass Mitglieder bei Knopfdruck andere Mitglieder per E-Mail kontaktieren können. 
-Use-Case 5 beinhaltet das Generieren von Stimmzetteln mit allen Kandidaten, die sich zu einer Wahl aufstellen lassen. Diese Stimmzettel sollen als Dokument bereit gestellt werden.
-Die Use-Cases 6 und 7 beschreiben die Erfassung der Arbeitszeit der Mitglieder des StuRa und die sich aus der Arbeitszeit berechnende Aufwandsentschädigung. 
+//Die wichtigsten Use-Cases sind 1-3 in unserem Projekt. Diese sind weiter unten auch näher spezifiziert.
+//In Use-Case 4 geht es darum, dass Mitglieder bei Knopfdruck andere Mitglieder per E-Mail kontaktieren können. 
+//Use-Case 5 beinhaltet das Generieren von Stimmzetteln mit allen Kandidaten, die sich zu einer Wahl aufstellen lassen. Diese Stimmzettel sollen als Dokument bereit gestellt werden.
+//Die Use-Cases 6 und 7 beschreiben die Erfassung der Arbeitszeit der Mitglieder des StuRa und die sich aus der Arbeitszeit berechnende Aufwandsentschädigung. 
  
 
 [#diagramm_use_case-model]
@@ -49,8 +60,8 @@ include::use_case_Kandidaten_verwalten.adoc[]
 include::use_case_Mitglieder_aufnehmen.adoc[]
 <<<
 include::use_case_Einpflegung_weiterer_Informationen.adoc[]
-//<<<
-//include::use_case_04.inc.adoc[]
+<<<
+include::use_case_Mitglieder_per_E-Mail_kontaktieren.adoc[]
 //<<<
 //include::use_case_05.inc.adoc[]
 //<<<
