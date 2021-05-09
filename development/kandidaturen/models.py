@@ -22,6 +22,8 @@ class Kandidatur(models.Model):
 class KandidaturAmt(models.Model):
     kandidatur = models.ForeignKey(Kandidatur, on_delete=models.CASCADE, null=False)
     funktion = models.ForeignKey(Funktion, on_delete=models.CASCADE, null=False)
+    amtszeit_beginn = models.DateField(null=True)
+    amtszeit_ende = models.DateField(null=True)
     history = HistoricalRecords()
     def __str__(self):
         return self.kandidatur.__str__() + ", " + self.funktion.__str__()

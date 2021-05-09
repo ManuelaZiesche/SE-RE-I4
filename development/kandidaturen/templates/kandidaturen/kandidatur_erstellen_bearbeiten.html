@@ -5,7 +5,7 @@
                                                                       {% comment %}
                                                                         Action muss noch umbenannt werden, um Kandidaturen-Views aufzurufen
                                                                       {% endcomment %}
-<form id="mitgliedForm" action={% if kandidatur %}"{% url 'mitglieder:speichern' mitglied.id %}"{% else %}"{% url 'mitglieder:erstellen' %}"{% endif %} method="post">
+<form id="mitgliedForm" action={% if kandidatur %}"{% url 'mitglieder:speichern' mitglied.id %}"{% else %}"{% url 'kandidaturen:erstellen' %}"{% endif %} method="post">
 {% csrf_token %}
 <div>
   <div class="row">
@@ -31,14 +31,11 @@
     </div>
 
 
-                                                         {% comment %}
-                                                         Datepicker initialisieren (im JS)
-                                                       {% endcomment %}
     <!-- Wahldatum -->
     <div class="row">
       <div class="input-field col l2 m4">
-        <input id="whahldatum" name="whahldatum" type="text" class="datepicker" {% if kandidatur.wahldatum %}value="{{kandidatur.wahldatum|date:'d.m.Y'}}"{% endif %}>
-          <label id="whahldatum_label" for="whahldatum">Wahldatum</label>
+        <input id="wahldatum" name="wahldatum" type="text" class="datepicker" {% if kandidatur.wahldatum %}value="{{kandidatur.wahldatum|date:'d.m.Y'}}"{% endif %}>
+          <label id="wahldatum_label" for="wahldatum">Wahldatum</label>
       </div>
     </div>
     
@@ -129,6 +126,10 @@
     <p>Die Löschfunktion dient nur zum Entfernen fehlerhaft gespeicherter Funktionen und entfernt diese endgülitg.<br>Fortfahren?</p>
   </div>
   <div class="modal-footer">
+                                                                          {% comment %}
+                                                                          URL noch Ändern
+                                                                        {% endcomment %}
+
     <a id="delamtconfirm" data-url="{% url 'mitglieder:amt_loeschen' %}" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
     <a class="left modal-action modal-close waves-effect waves-red btn-flat ">Abbrechen</a>
   </div>
@@ -180,8 +181,8 @@
 
 <script>
   var referat_bez;
-    var amt_num = {% if mitglied %}{{mitglied.mitgliedamt_set.count}}{% else %}1{% endif %};
-    var email_num = {% if mitglied %}{{mitglied.mitgliedmail_set.count}}{% else %}1{% endif %};
+    var amt_num = {% if kandidatur %}{{kandidatur.kandidaturamt_set.count}}{% else %}1{% endif %};
+    var email_num = {% if kandidatur %}{{kandidatur.kandidaturmail_set.count}}{% else %}1{% endif %};
   $(document).ready(function(){
   // Selects und Date Picker initialisieren, Event Listener fuer Dropdowns hinzufuegen
   initSelect();
@@ -244,35 +245,7 @@
     }
     // bei gueltigen Eingaben Daten an Server schicken
     if (valid_input) {
-        // check if MaxMembers is reached
-        $.ajax({
-            type: "POST",
-            {% if mitglied %}
-                url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=mitglied.id %}",
-                {% else %}
-                url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=0 %}",
-            {% endif %}
-            data: $('#mitgliedForm').serialize(),
-
-        success: function(data){
-          var ret = data['isValid'];
-          if(ret == true) {
-              $('#mitgliedForm').submit();
-          }
-          else {
-              window.scrollTo(0,0);
-              var modal = $("#modal-max-members");
-              var instance = M.Modal.getInstance(modal);
-              $("#list-max-members").html("");
-              var funktionen = data['funktion'];
-              console.log(funktionen);
-              funktionen.forEach(function appendtolist(currval) {
-                  $("#list-max-members").append("<li>" + currval + "</li>");
-              });
-              instance.open();
-          }
-        }
-        });
+      $('#mitgliedForm').submit();
     }
     else {
         window.scrollTo(0,0);
@@ -417,6 +390,9 @@
     });
 
     function amt_loeschen(amtid){
+                                                                                  {% comment %}
+                                                                                      URL noch Ändern
+                                                                                    {% endcomment %}
       var url = "{% url 'mitglieder:amt_loeschen' %}";
       $("#funktion" + amtid).remove();
 
@@ -509,6 +485,12 @@
     datum_beginn = mm + '\/' + dd + '\/' + yyyy;
     init_settings['minDate'] = new Date(datum_beginn);
     M.Datepicker.init(ende_datepicker, init_settings);
+
+    delete init_settings['onSelect'];
+    delete init_settings['minDate'];
+
+    var wahldatum_datepicker = document.getElementById("wahldatum");
+    M.Datepicker.init(wahldatum_datepicker, init_settings);
   }
 
   // Initialisieren des Modals

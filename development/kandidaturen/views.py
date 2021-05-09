@@ -2,8 +2,15 @@ from django.shortcuts import render
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
 from django.db.models.functions import Lower
-from .models import Kandidatur
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
+from .models import Kandidatur, KandidaturAmt, KandidaturMail
 from aemter.models import Funktion, Organisationseinheit, Unterbereich
+import datetime
+
+# Anzahl der Aemter bzw. E-Mails die gespeichert werden muessen
+aemternum = 0
+emailnum = 0
 
 def main_screen(request):
     """
@@ -68,3 +75,65 @@ def kandidaturErstellenView(request):
         template_name="kandidaturen/kandidatur_erstellen_bearbeiten.html",
         context={'referate':referate, 'amtid': aemternum, 'emailid': emailnum
                  })
+
+
+# Kandidatur erstellen
+def erstellen(request):
+
+    """
+    Speichert eine neue Kandidatur in der Datenbank.
+
+    Aufgaben:
+
+    * Speichern der Daten: Die Daten werden aus request gelesen und in die Datenbank eingefügt.
+    * Weiterleitung zur Kandidaturenansicht.
+    * Rechteeinschränkung: Nur Admins können die Funktion auslösen.
+
+    :param request: Die POST-Request, welche den Aufruf der Funktion ausgelöst hat. Enthält alle Daten zu einer Kandidatur.
+    :return: Weiterleitung zur Kandidaturenansicht.
+    """
+    if not request.user.is_authenticated:
+        messages.error(request, "Du musst angemeldet sein, um diese Seite sehen zu können.")
+        return redirect("/")
+    if not request.user.is_superuser:
+        return HttpResponse("Permission denied")
+
+    global aemternum, emailnum
+    if request.method == 'POST':
+        # Kandidatur
+        vorname = request.POST['vorname']
+        nachname = request.POST['nachname']
+        spitzname = request.POST['spitzname']
+        wahldatum_str = request.POST['wahldatum']
+        wahldatum = datetime.datetime.strptime(wahldatum_str, "%d.%m.%Y").date()
+        beschlussnummer = request.POST['beschlussnummer']
+        kandidatur = Kandidatur(name=nachname, vorname=vorname, spitzname=spitzname, wahldatum=wahldatum, beschlussnummer=beschlussnummer)
+        kandidatur.save()
+
+        # E-Mail
+        for i in range(1, emailnum+1):
+            email = request.POST['email'+str(i)]
+            kandidaturmail = KandidaturMail(email=email, kandidatur=kandidatur)
+            kandidaturmail.save()
+
+        # Funktion
+        for i in range(1, aemternum+1):
+            amt_id = request.POST['selectamt'+str(i)]
+            funktion = Funktion.objects.get(pk=amt_id)
+            amtszeit_beginn_str = request.POST['beginn_kandidatur'+str(i)]
+            if amtszeit_beginn_str:
+                amtszeit_beginn = datetime.datetime.strptime(amtszeit_beginn_str, "%d.%m.%Y").date()
+            else:
+                amtszeit_beginn = None
+            amtszeit_ende_str = request.POST['ende_kandidatur'+str(i)]
+            if amtszeit_ende_str:
+                amtszeit_ende = datetime.datetime.strptime(amtszeit_ende_str, "%d.%m.%Y").date()
+            else:
+                amtszeit_ende = None
+
+            kandidaturamt = KandidaturAmt(funktion=funktion, kandidatur=kandidatur, amtszeit_beginn=amtszeit_beginn, amtszeit_ende=amtszeit_ende)
+            kandidaturamt.save()
+
+        return HttpResponseRedirect(reverse('kandidaturen:homepage'))
+    else:
+        return HttpResponseRedirect('/kandidaturen/erstellen')
