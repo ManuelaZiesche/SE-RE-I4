@@ -16,6 +16,8 @@ Ziele:
 - Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
 - Übersichtlichkeit bzw. intuitive Bedienbarkeit.
 - Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  
+- Verfügbarkeit 
+
 
 
 == 3. Annahmen und Abhängigkeiten
@@ -28,8 +30,14 @@ Ziele:
 
 == 4. Entscheidungen, Einschränkungen und Begründungen
 
-- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden
-- aus selben Grund wird Python Programmiersprache ebenso weiterverwendet
+- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden, außerdem passt das Datenbank ASchema sehr gut zu unseren Daten, mit denen wir umgehen
+- Python als Prpgrammiersprache wird verwendet, da das eine objektorientierte Programmiersprache ist und diese eine verhältnismäßig leichte Syntax besitzt
+- Django weil Vorgänger verwendet
+- Swings Framework Python
+- Silenium
+- SimpleJason
+
+
 
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
@@ -48,3 +56,5 @@ image::../docs/architecture/images/level1.jpg[level1,280,280]
 image::../docs/architecture/images/level2.jpg[level2,550,550]
 
 
+== 7. Wesentliche Abstraktionen
+Objekte/Personen, die als Datensätze im System eingebunden sind

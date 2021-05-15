@@ -47,16 +47,36 @@ Allgemein sollen die Abläufe der Mitgliederdatenbank soweit optimiert werden, d
 |eine erfolgreiche Lösung wäre | Bearbeitung der vorhandenen Software, sodass die Prozesse beschleunigt werden und die Bedienbarkeit verbessert wird
 |===
 
+.IRGENDWAD MIT MITGLIEDERDATEN
+
 
 === Positionierung des Produkts
 //Ein Positionierung des Produkts beschreibt das Einsatzziel der Anwendung und die Bedeutung das Projekts an alle beteiligten Mitarbeiter.
-
-//Geben Sie in knapper Form übersichtsartig die Positionierung der angestrebten Lösung im Vergleich zu verfügbaren Alternativen dar. Das folgende Format kann dazu verwendet werden:
 
 [cols="1,3"]
 |===
 |Für|	Mitglieder des Studentenrates
 |deren | Daten efizienter verwaltet werden können
+|Das Produkt / die Lösung ist eine | Webseite
+|die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
+|Im Gegensatz zu | Excel-Tabellen 
+|Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar
+|===
+
+[cols="1,3"]
+|===
+|Für|	den Laborbereich der HTW Dresden
+|deren | Server für die Datenbank des StuRa verwedent werden. 
+|Das Produkt / die Lösung ist eine | Webseite
+|die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
+|Im Gegensatz zu | Excel-Tabellen 
+|Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar
+|===
+
+[cols="1,3"]
+|===
+|Für|	den Admin
+|der | 
 |Das Produkt / die Lösung ist eine | Webseite
 |die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
 |Im Gegensatz zu | Excel-Tabellen 
@@ -82,23 +102,19 @@ Allgemein sollen die Abläufe der Mitgliederdatenbank soweit optimiert werden, d
 hinsichtlich der Einhaltung des Telemediengesetzes
 
 
-//|[Benennung des Stakeholder-Typs.]	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 |===
 
 === Benutzerumgebung
-//Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
-//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren. Kontext
 
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, ändert sich mit der Zeit (voraussichtlich) nicht.
 . Die Bearbeitung der Administrationsaufgaben (siehe Glossar) dauert unter 3 Min. ????
-. ?????????????????????
+. Es muss gewährleistet werden, dass 6 Benutzer gleichzeitig mit dem Programm arbeiten können. Dazu zählen der Admin und die 5 Präsidiumsmitglieder
 . Besondere Umgebungsbedingungen: 
 * Die Weiterentwicklung der Mitgliederdatenbank muss weiterhin eine responsive Webseite gewährleisten, damit die Beidienung auch unterwegs mit dem Handy funktioniert.  
-* Die Webseite muss jederzeit online sein. 
-. Diese Systemplattformen werden heute und wahrscheinlich zukünftig weiterhin eingesetzt: Windows, Linux, iOS, Android. 
+* Die Webseite muss zu den Kernarbeitszeiten online sein. 
+. Diese Systemplattformen werden zukünftig weiterhin eingesetzt: Windows, Linux, iOS, Android. 
 . Thunderbird muss zur E-Mail Nutzung integriert werden.
 
-//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 == Produkt-/Lösungsüberblick
 === Bedarf und Hauptfunktionen

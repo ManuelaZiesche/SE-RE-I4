@@ -12,7 +12,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 .Meilensteine
 |===
 | *Meilenstein* | *Datum* | *Notizen*
-| Beginn der Iteration | 19.04.2021 |
+| Beginn der Iteration | 10.05.2021 |
 | Meeting mit Coach um Stand abzuklären | 21.04.2021 |
 | Meeting mit Stakeholdern um Stand zu präsentieren| 26.04.2021 |
 | Ende der Iteration | 09.05.2021 |
@@ -20,11 +20,12 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Wesentliche Ziele
 
-- Use Cases, Vision, Systemweite Anforderungen überarbeiten
-- überarbeitete Wireframes mit den Themenstellern besprechen
-- ersten Prototypen entwickeln - Kandidatentab
-- weitere Test Cases erstellen
-- Use-Case 1
+- Architecture Notebook überarbeiten
+- Kandidatentab beenden 
+- alle Test Cases zum Use Case 1 implementieren
+- Dokumentation starten
+
+
 
 
 == Aufgabenzuordnung
@@ -35,11 +36,9 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
-| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
-| Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
+| Iteration 06 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
 | Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
 | Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 6 (bis jetzt)
-| Vision, Use Cases und Requirements überarbeiten | mittel | | | | Sabine + Manuela| 
 | Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian | 
 | Domänenmodell erstellen | mittel | 2 | | | Benjamin + Sabine + Manuela| 3
 |===
@@ -56,8 +55,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 - ersten Prototypen haben funktioniert
-- erste Tests wurden erstellt ?
-- Belegnachbereitung ist abgeschlossen?
+- erste Tests wurden erstell
+- Belegnachbereitung ist abgeschlossen
 
 == Assessment
 
@@ -66,14 +65,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |*Assessment Ziel* | *Iteration 5 beenden*
 |Assessment Datum | 09.05.2021
 | Teilnehmer | alle
-| Projektstatus | grün
+| Projektstatus | rot, gelb, grün?
 |===
-
-
-- Beurteilung im Vergleich zu den Zielen:
-- Geplante vs. erledigte Aufgaben:
-- Beurteilung im Vergleich zu den Bewertungskriterien:
-- Andere Belange und Abweichungen:/ 
 
 
 
@@ -85,4 +78,4 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Bild von der fünften Iteration
 
-image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration05.png[]
+//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration05.png[]

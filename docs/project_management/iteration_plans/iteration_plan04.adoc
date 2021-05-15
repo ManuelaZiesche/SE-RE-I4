@@ -26,7 +26,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Aufgabenzuordnung
 
-Die Aufgaben, welche in der dritten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Die Aufgaben, welche in der vierten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
 Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
 
 |===
@@ -65,7 +65,6 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 
 In der Iteration haben wir erfolgreich den Beleg überarbeitet und die Use Cases und Wireframes mit den Themenstellern abgeglichen. 
-So konnten wir 
 Die Arbeit an den Test Cases haben wir begonnen, aber es wurden noch nicht so viele geschafft, wie wir uns das am Anfang der Iteration erhofft hatten. Deswegen nehmen wir diese Aufgabe mit in die Iteration 05. 
 Die Erstellung des Prototypen des Kandidatentabs wird in die nächste Iteration geschoben, da wir diesen durch die Abarbeitung der restlichen Aufgaben zeitlich nicht mehr geschafft haben.
 
