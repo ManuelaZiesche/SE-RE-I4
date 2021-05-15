@@ -24,6 +24,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - überarbeitete Wireframes mit den Themenstellern besprechen
 - ersten Prototypen entwickeln - Kandidatentab
 - weitere Test Cases erstellen
+- Use-Case 1
 
 
 == Aufgabenzuordnung
@@ -37,7 +38,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
 | Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
 | Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
-| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 4 (bis jetzt)
+| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 6 (bis jetzt)
 | Vision, Use Cases und Requirements überarbeiten | mittel | | | | Sabine + Manuela| 
 | Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian | 
 | Domänenmodell erstellen | mittel | | | | Benjamin + Sebastian |  
