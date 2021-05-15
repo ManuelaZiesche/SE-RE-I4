@@ -3,18 +3,128 @@
 == Allgemeine Informationen
 
 
-== TC 01: Kandidat hinzufügen
+== TC 04: Kandidat hinzufügen
+== Ziel : Neue Kandidat wird hinzugefügt
+== Methode/Objekte/Funktionen :  loginAsLukasAdmin() ; loginAsLukasUser() ; addMitglied() ; createAmt();  addMitgliedWithParameters()
 Beschreibung: Der Admin möchte einen neuen Kandidaten  in die Datenbank einpflegen
 Vorbedingungen: 
-- Der Admin ist mit Administratorrechten eingeloggt. 
+- Der Nutzer ist mit Administratorrechten eingeloggt. 
 - Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
 Nachbedingungen:
 - Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
 - Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+Einzelschrite :
+- Als Administrator einloggen
+- Ein neues Mitglied hinzufügen
+- Ausloggen und als normale Nutzer einloggen
+- Die Paginierung überprüfen, ob das neue Mitglied existieren
 Benötigte Daten:
 - Kandidatendaten
 
-== TC 02: Weitere Informationen hinzufügen
+== TC 05: Kandidat entfernen
+== Ziel : die Kandidat wird gelöscht
+== Methode/Objekte/Funktionen :  loginAsLukasAdmin() ; addMitglied () ; self.browser.find_element_by_xpath() / .click()
+Beschreibung: Der Admin möchte einen neuen Kandidaten  in die Datenbank löschen
+Vorbedingungen: 
+- Der Nutzer ist mit Administratorrechten eingeloggt. 
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+Nachbedingungen:
+- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
+- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+Einzelschrite :
+- Als Administrator einloggen
+- Neue Kandidat hinzufügen
+- Die Kandidat auswählen und einchecken
+- Entfernen klicken
+- Auf ja bestätigen
+Benötigte Daten:
+- Kandidatendaten
+
+== TC 06: Mitglied ändern
+== Ziel : die Information von dem Mitglied wird verändert
+== Methode/Objekte/Funktionen :  loginAsLukasAdmin() ; addMitglied () ; self.browser.find_element_by_xpath() / .click() ; send_keys()
+Beschreibung: Der Admin möchte die Information von einer neuen Kandidat  in die Datenbank ändern
+Vorbedingungen: 
+- Der Nutzer ist mit Administratorrechten eingeloggt. 
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+Nachbedingungen:
+- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
+- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+Einzelschrite :
+- Als Administrator einloggen
+- Neue Kandidat hinzufügen
+- Die Edit-Symbol klicken
+- Informationen ändern
+- Auf speichern drücken
+- Überprüfen ob die neue Daten getragen ist
+Benötigte Daten:
+- Kandidatendaten
+
+== TC 07 : Hinzufuegen
+== Ziel : ??
+== Methode/Objeckte/Funktionen : loginAsLukasAdmin() ; createUnterbereich() ;createReferat ();createAmt() ; self.browser.find_element_by_xpath() ;  click()
+Vorbedingungen: 
+- Der Nutzer ist mit Administratorrechten eingeloggt. 
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+Nachbedingungen:
+- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
+- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+Einzelschrite :
+- Als Administrator einloggen
+- Hinzufügen eines organisationseinheit
+- Hinzufügen eines Unterbereichs
+- Hinzufügen eines Amtes
+- Navigieren zu Mitglied hinzufügen
+- Auswahl des Referates, Unterbereices, Amts
+- Weitere Daten Hinzufügen
+- Speichern
+- Navigieren zur Ämterübersicht
+- Zu seite 3
+- Öffnen der collabseables
+- überprüfen ob Funktion da ist
+Benötigte Daten:
+- Kandidatendaten
+== TC 08 : Entfernen des??
+== Ziel : ??
+== Methode/Objeckte/Funktionen : loginAsLukasAdmin() ; createReferat() ; self.browser.find_element_by_xpath() ; createUnterbereich() ; self.assertTrue () ;  self.assertFalse () ; click()
+Vorbedingungen: 
+- Der Nutzer ist mit Administratorrechten eingeloggt. 
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+Nachbedingungen:
+- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
+- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+Einzelschrite :
+- Als Administrator einloggen
+- Hinzufügen eines organisationseinheit
+- Entfernen eines organisationseinheit
+- Überprüfen ob alles geklappt hat
+- Hinzufügen eines Amtes
+Benötigte Daten:
+- Kandidatendaten
+
+== TC 09 : Amt ändern
+== Ziel : ??
+== Methode/Objeckte/Funktionen : loginAsLukasAdmin() ; createReferat() ; self.browser.find_element_by_xpath() ; createUnterbereich() ;  self.assertTrue () ; self.assertFalse () ; click(); createAmt()
+Vorbedingungen: 
+- Der Nutzer ist mit Administratorrechten eingeloggt. 
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+Nachbedingungen:
+- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
+- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+Einzelschrite :
+- Als Administrator einloggen
+- Hinzufügen eines organisationseinheit
+- Ändern der Bezeichnung für test_referat
+- Entfernen eines organisationseinheit
+- Überprüfen ob alles geklappt hat
+- Hinzufügen eines Unterbereichs
+- Hinzufügen eines Amtes
+- Ändern der Bezeichnung für test_unterbereich
+- Ändern des Referates, dem der Bereich zugeordnet wurde
+Benötigte Daten:
+- Kandidatendaten
+
+== TC 10: Weitere Informationen hinzufügen
 Beschreibung: Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten.
 Vorbedingungen:
 - Der Kandidat ist bereits in der Datenbank vorhanden.
