@@ -67,7 +67,7 @@ Allgemein sollen die Abläufe der Mitgliederdatenbank soweit optimiert werden, d
 |===
 |Für|	den Laborbereich der HTW Dresden
 |deren | Server für die Datenbank des StuRa verwedent werden. 
-|Das Produkt / die Lösung ist eine | Webseite
+|Das Produkt / die Lösung  | Webseite
 |die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
 |Im Gegensatz zu | Excel-Tabellen 
 |Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar
@@ -77,7 +77,7 @@ Allgemein sollen die Abläufe der Mitgliederdatenbank soweit optimiert werden, d
 |===
 |Für|	den Admin
 |der | 
-|Das Produkt / die Lösung ist eine | Webseite
+|Das Produkt / die Lösung | am meisten nutzen wird.
 |die 	| die essenziellen Daten für die Mitglieder aufbereitet, zuordnet
 |Im Gegensatz zu | Excel-Tabellen 
 |Unser Produkt|	stellt nur die für den Nutzer relevanten Informationen komfortabel dar
@@ -108,7 +108,7 @@ hinsichtlich der Einhaltung des Telemediengesetzes
 
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind, ändert sich mit der Zeit (voraussichtlich) nicht.
 . Die Bearbeitung der Administrationsaufgaben (siehe Glossar) dauert unter 3 Min. ????
-. Es muss gewährleistet werden, dass 6 Benutzer gleichzeitig mit dem Programm arbeiten können. Dazu zählen der Admin und die 5 Präsidiumsmitglieder
+. Es muss gewährleistet werden, dass 10 Benutzer gleichzeitig mit dem Programm arbeiten können. 
 . Besondere Umgebungsbedingungen: 
 * Die Weiterentwicklung der Mitgliederdatenbank muss weiterhin eine responsive Webseite gewährleisten, damit die Beidienung auch unterwegs mit dem Handy funktioniert.  
 * Die Webseite muss zu den Kernarbeitszeiten online sein. 
