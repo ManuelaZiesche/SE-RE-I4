@@ -43,11 +43,9 @@ Die Anwendung ist eine weiterentwickelte Version des Projektes der Gruppe, von d
 - SimpleJason
 
 .neu: +
-. Wir nutzen Python als Programmiersprache, da
-.. 
-.. sie objektorientierte ist und eine verhältnismäßig leichte Syntax besitzt
-
-
+. Wir nutzen Python als Programmiersprache, da die bestehenden Teile der Anwendung in dieser Sprache programmiert wurden und wir einen Mehraufwand im Sinne einer Umstrukturierung vermeiden wollten. Außerdem ist sie objektorientierte und besitzt eine verhältnismäßig leichte Syntax.
+. Ebenso wie unsere Vorgänger nutzen wir Django als Framework. Es ist ebenfalls in Python verfasst und folgt einem Model-View-Presenter-Schema, welches wir ebenfalls so für unser System weiterführen werden.
+. SQLite wird als Programmierbibliothek aufgegriffen, da es standartmäßig von Django unterstützt wird und von der Syntax sehr dem SQL-Standard ähnelt, mit dem einige Gruppenmitglieder schon intensiveren Kontakt hatten. Abgesehen davon ist SQLite sowohl mit verschiedenen Betriebssystemen von Smartphones, sowie mit unterschiedlichsten Browsern kompatibel und unterstützt so das Erreichen von mehr Nutzern, die sich durch ihre verschiedenen Voraussetzungen auszeichnen.
 
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
