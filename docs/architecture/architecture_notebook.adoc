@@ -9,33 +9,43 @@ Mit Hilfe von verschiedenen Modellen und Entwürfen für die Architektur, soll d
 
 == 2. Architektonische Ziele und Philosophie
 
-Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den Entwurf: +
-
-Ziele:
+Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit angebundener Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den Entwurf: +
 
 - Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
 - Übersichtlichkeit bzw. intuitive Bedienbarkeit.
 - Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  
 - Verfügbarkeit 
 
+neu: +
+Das System ist eine bestehende Webanwendung zur Verwaltung der Kandidaten und Mitglider des Stura der HTW Dresden durch einen Admin. Offizielle Mitglieder erhalten über einen Login Zugang zur Anwedung und können verschiedene Informationen einsehen, aus diesem Grund muss eine parallele Nutzung von mindestens 10 Personen gewährleistet werden. Des Weiteren ist nicht bekannt auf welchem Endgerät die Nutzung der Anwendung erfolgen wird, wesshalb auf die Kompatibilität des Inhaltes mit deren Ansicht auf diversen Bildschirmgrößen geachtet werden muss. +
 
+Eine gute Bedienbarkeit wird durch eine übersichtliche und intuitive Benutzeroberfläche erzielt, welche zur Akzeptanz des Gesamtsystems durch die Mitglieder und des Admin beiträgt. +
+
+Die Anwendung ist eine weiterentwickelte Version des Projektes der Gruppe, von der wir das System übernommen haben. Andere Gruppen, aus zukünftigen Semestern, werden vermutlich ebenfalls an der Optimierung der sogennanten Mitgliederdatenbank arbeiten, sodass Aspekte, die unsere Gruppe im Rahmen des Projektes nicht umsetzten könnten, trotzdem umgesetzt werden können. Dazu zählen beispielsweise die Integrierung des Workloads der Mitglieder oder die Erstellung eines Organigramms aus den Mitgliedern der Dantenbank.
 
 == 3. Annahmen und Abhängigkeiten
 
-- Der Server auf dem die Webseite laufen soll bietet ausreichen Ressourcen
+*Annahmen:* +
+- Jeder Nutzer hat eine stabile Internetverbindung und nutzt Firefox oder Chrome als Browser
+- Der Server auf dem die Webseite laufen soll, bietet ausreichen Ressourcen
 - bisher verwendete Datenbankmodelle und Frameworks können weiter verwendet werden
-- die Mitgliederdatenbank wird in Zukunft funktional erweitert
-// - weitere Annahmen und Abhängigkeiten
-
+- die Mitgliederdatenbank wird in Zukunft funktional erweitert +
+*Abhängigkeiten:* +
+- Wir sind vom Laborbereich abhängig, der den server mit seinen Ressourcen stellt
 
 == 4. Entscheidungen, Einschränkungen und Begründungen
 
-- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden, außerdem passt das Datenbank ASchema sehr gut zu unseren Daten, mit denen wir umgehen
+- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden, außerdem passt das Datenbankschema sehr gut zu den Daten, die verwaltet werden sollen
 - Python als Prpgrammiersprache wird verwendet, da das eine objektorientierte Programmiersprache ist und diese eine verhältnismäßig leichte Syntax besitzt
 - Django weil Vorgänger verwendet
 - Swings Framework Python
 - Silenium
 - SimpleJason
+
+.neu: +
+. Wir nutzen Python als Programmiersprache, da
+.. 
+.. sie objektorientierte ist und eine verhältnismäßig leichte Syntax besitzt
 
 
 
