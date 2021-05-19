@@ -20,10 +20,10 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Wesentliche Ziele
 
-- Architecture Notebook überarbeiten
+- Architecture Notebook fertigstellen
 - Kandidatentab beenden 
 - alle Test Cases zum Use Case 1 implementieren
-- Dokumentation starten
+- Dokumentation starten 
 
 
 
