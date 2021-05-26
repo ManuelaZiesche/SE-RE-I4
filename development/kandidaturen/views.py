@@ -141,6 +141,99 @@ def erstellen(request):
         return HttpResponseRedirect('/kandidaturen/erstellen')
 
 
+@user_passes_test(lambda u: u.is_superuser)
+def kandidaturBearbeitenView(request, kandidatur_id):
+    """
+    View zum Bearbeiten einer Kandidatur.
+
+    Stellt Textfelder, Dropwdowns und Buttons zum Bearbeiten der Attribute bereit, welche mit derzeitigen Attributen der Kandidatur befüllt sind. Über Buttons können weitere Ämter und E-Mail-Adressen hinzugefügt oder bereits bestehende entfernt werden.
+
+    Mit Betätigung des Speichern-Buttons wird überprüft, ob Name, Vorname, Ämter und E-Mail-Adressen ausgefüllt wurden und ob alle E-Mail-Adressen gültig sind. Bei erfolgreicher Prüfung wird die Kandidatur gespeichert und der
+    Nutzer zu main_screen umgeleitet, ansonsten werden Felder mit fehlenden oder fehlerhaften Eingaben rot markiert.
+
+    Aufgaben:
+
+    * Zugriffsbeschränkung: Zugriff wird nur gewährt, wenn der Nutzer angemeldet UND Administrator ist.
+    * Bereitstellung der Daten: Die View holt Attribute einer Kandidatur aus der Datenbank und zeigt diese an.
+    * Rendern des Templates
+    * Speichern der Kandidatur in der Datenbank
+
+    :param request: Die HTML-Request, welche den Aufruf der View ausgelöst hat.
+    :param mitglied_id: ID der Kandidatur, die bearbeitet werden soll
+    :return: Die gerenderte View.
+    """
+    if not request.user.is_authenticated:
+        messages.error(request, "Du musst angemeldet sein, um diese Seite sehen zu können.")
+        return redirect("/")
+    global aemternum, emailnum
+
+    kandidatur = Kandidatur.objects.get(pk=kandidatur_id)
+    aemternum = kandidatur.kandidaturamt_set.all().count()
+    emailnum = kandidatur.kandidaturmail_set.all().count()
+    referate = Organisationseinheit.objects.order_by('bezeichnung')
+    funktionen = kandidatur.kandidaturamt_set
+
+    return render(
+        request=request,
+        template_name="kandidaturen/kandidatur_erstellen_bearbeiten.html",
+        context={
+            'kandidatur': kandidatur,
+            'funktionen': funktionen,
+            'funktionen': funktionen,
+            'referate': referate
+                 })
+
+
+# bearbeitetes Mitglied speichern
+def speichern(request, kandidatur_id):
+    """
+    Speichert eine bearbeitete Kandidatur in der Datenbank.
+
+    Aufgaben:
+
+    * Speichern der Daten: Die Daten werden aus request gelesen und in der Datenbank gespeichert. Ämter und E-Mails werden gespeichert, indem zunächst alle bereits vorhandenen Instanzen gelöscht werden
+      und anschließend alle Ämter und E-Mails aus request gespeichert werden.
+    * Weiterleitung zur Kandidaturenanischt.
+    * Rechteeinschränkung: Nur Admins können die Funktion auslösen.
+
+    :param request: Die POST-Request, welche den Aufruf der Funktion ausgelöst hat. Enthält alle Daten zu einem Mitglied.
+    :param mitglied_id: Die ID der Kandidatur, das bearbeitet wurde.
+    :return: Weiterleitung zur Mitgliederansicht.
+    """
+    if not request.user.is_authenticated:
+        return HttpResponse("Permission denied")
+    if not request.user.is_superuser:
+        return HttpResponse("Permission denied")
+
+    if request.method == 'POST':
+        kandidatur = Kandidatur.objects.get(id=kandidatur_id)
+        kandidatur.vorname = getValue(request, 'vorname')
+        kandidatur.name = getValue(request, 'nachname')
+        kandidatur.spitzname = getValue(request, 'spitzname')
+        kandidatur.email = getValue(request, 'email')
+        kandidatur.save()
+
+        # alle Aemter des Mitglieds loeschen
+        kandidatur.kandidaturamt_set.all().delete()
+
+        for i in range(1, aemternum + 1):
+            amt_id = request.POST['selectamt' + str(i)]
+            # print(amt_id)
+            funktion = Funktion.objects.get(pk=amt_id)
+            # print(funktion)
+
+            kandidaturamt = KandidaturAmt(funktion=funktion, kandidatur=kandidatur)
+            kandidaturamt.save()
+
+        # alle Mails loeschen und im Formular angegebene Mails angeben
+        kandidatur.kandidaturmail_set.all().delete()
+        for i in range(1, emailnum + 1):
+            email = request.POST['email' + str(i)]
+            kandidaturmail = KandidaturMail(email=email, kandidatur=kandidatur)
+            kandidaturmail.save()
+
+    return HttpResponseRedirect(reverse('kandidaturen:homepage'))
+
 
 def kandidatur_laden(request):
     """
@@ -165,7 +258,7 @@ def kandidatur_laden(request):
         .filter(Q(amtszeit_ende__isnull=False) & Q(amtszeit_ende__lt=date.today()))
     return render(
         request=request,
-        template_name='mitglieder/modal.html',
+        template_name='kandidaturen/modal.html',
         context={
             'kandidatur': kandidatur,
             'curr_funktionen': curr_funktionen,
