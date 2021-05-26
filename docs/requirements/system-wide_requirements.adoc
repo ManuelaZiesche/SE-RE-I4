@@ -37,7 +37,7 @@ U2: Ausführen einer Hauptfunktionalität darf nicht mehr als 10 Klicks beanspru
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
-R1: * Datenbank soll einmal die Woche ein Backup machen. Maximal drei Versionen der Datenbank sollen gespeichert werden.
+R1: Datenbank soll einmal die Woche ein Backup machen. Maximal drei Versionen der Datenbank sollen gespeichert werden.
 
 === Effizienz (Performance)
 // Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
