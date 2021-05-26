@@ -15,7 +15,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 | Beginn der Iteration | 10.05.2021 |
 | Meeting mit Coach um Stand abzuklären | 21.04.2021 |
 | Meeting mit Stakeholdern um Stand zu präsentieren| 26.04.2021 |
-| Ende der Iteration | 09.05.2021 |
+| Ende der Iteration | 30.05.2021 |
 |===
 
 == Wesentliche Ziele
@@ -24,6 +24,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - Kandidatentab beenden 
 - alle Test Cases zum Use Case 1 implementieren
 - Dokumentation starten 
+- Essense Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken
 
 
 
@@ -41,6 +42,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 6 (bis jetzt)
 | Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian | 
 | Domänenmodell erstellen | mittel | 2 | | | Benjamin + Sabine + Manuela| 3
+| mit der Dokumentation beschäftigen | mittel |  | | | | 
 |===
 
 == Probleme 
@@ -62,8 +64,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 .Assessment
 |===
-|*Assessment Ziel* | *Iteration 5 beenden*
-|Assessment Datum | 09.05.2021
+|*Assessment Ziel* | *Iteration 6 beenden*
+|Assessment Datum | 
 | Teilnehmer | alle
 | Projektstatus | rot, gelb, grün?
 |===

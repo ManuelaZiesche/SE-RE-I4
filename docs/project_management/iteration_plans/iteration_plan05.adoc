@@ -56,7 +56,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 - ersten Prototypen haben funktioniert
-- erste Tests wurden erstellt ?
+- erste Tests wurden erstellt 
 - Belegnachbereitung ist abgeschlossen?
 
 == Assessment
