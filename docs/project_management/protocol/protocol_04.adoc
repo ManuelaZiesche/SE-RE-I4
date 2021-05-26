@@ -1,0 +1,48 @@
+= Protokoll vom 20.05.2021 - FA - Entwurf
+Sabine Adam
+1.0, 20.05.2021
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+== zu Frage 1
+
+. jup
+
+== zu Frage 2
+
+. verständlichere Dokumentation anfertigen -> besser als Vorgängergruppe (für folgende Gruppen)
+. Domänmodell ist kein Entwurfsmodell
+. für die Zukunft: bestehende Modellteile grau, und um farbige (eigene) Komponenten ergänzen
+
+== zu Frage 3
+
+. C4-Modell: Single-Page Applicaton -> falsch
+.. Webanwendung mittels
+... HTML Output auf einem Server oder
+... Single Page, die auf Browser läuft
+.... bekommt Json Objekte
+.... werden einmal geladen
+.... ohne page reload
+.... Daten werden im Hintergrund ausgetauscht
+.. wir haben keine Single Page Application! -> abändern
+. Django Framework als Container (als Umgebung für Python)
+.. Model View Controler Struktur
+. Anforderung -> Systemkomponente, die das realisiert -> Code
+
+== zu Frage 4
+
+. Entwürfe bewerten -> Vorstellung vor der Gruppe
+. Funktionalitäten in Diagrammen darstellen -> Sequenzdiagramm
+.. Wo werden Daten eingegeben, verarbeitet, weitergegeben an Datenbank
+.. Gültigkeiten/ Berechnungen/ Fristen -> Funktionalität, die auf dem Server läuft
+.. Django Controler
+.. Datenbank
+. Überlegung wie Systemteile zusammenspielen um Funktionalität zu realisieren
+.. Validierung der Daten über js
+.. ...
+. -> diese Logik sichtbar machen, die hinter dem System stehen
+. 
+
+== WF
+. Beschlussnummer bitte mit doppel s

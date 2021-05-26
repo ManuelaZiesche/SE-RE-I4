@@ -1,13 +1,13 @@
 = Architecture Notebook: Projekt - Weiterentwicklung der Mitgliederdatenbank
 
-== 1. Zweck
+== Zweck
 
 Dieses Dokument beschreibt wesentliche  Elemente der Softwarearchitektur, sowie andere übergreifende Aspekte des Systems für die Mitgliederdatenbank des StuRa. Hier werden im Folgenden auf die Ziele, Annahmen, die Architektonische Bedeutung, unsere Entscheidungen bzw. Einschränkungen und weitere Dinge eingegangen und Dokumentiert.
 
 Mit Hilfe von verschiedenen Modellen und Entwürfen für die Architektur, soll die spätere Weiterentwicklung und Anpassung einfacher gemacht werden.
 
 
-== 2. Architektonische Ziele und Philosophie
+== Architektonische Ziele und Philosophie
 
 Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit angebundener Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den Entwurf: +
 
@@ -31,7 +31,7 @@ Betriebssystem: Linux
 Müsste nochmal nach der Prozessorleistung fragen
 
 
-== 3. Annahmen und Abhängigkeiten
+== Annahmen und Abhängigkeiten
 
 *Annahmen:* +
 - Jeder Nutzer hat eine stabile Internetverbindung und nutzt Firefox oder Chrome als Browser
@@ -41,7 +41,7 @@ Müsste nochmal nach der Prozessorleistung fragen
 *Abhängigkeiten:* +
 - Wir sind vom Laborbereich abhängig, der den Server mit seinen Ressourcen stellt
 
-== 4. Entscheidungen, Einschränkungen und Begründungen
+== Entscheidungen, Einschränkungen und Begründungen
 
 - Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden, außerdem passt das Datenbankschema sehr gut zu den Daten, die verwaltet werden sollen
 - Python als Prpgrammiersprache wird verwendet, da das eine objektorientierte Programmiersprache ist und diese eine verhältnismäßig leichte Syntax besitzt
@@ -51,28 +51,44 @@ Müsste nochmal nach der Prozessorleistung fragen
 - SimpleJason
 
 .neu: +
-. Wir nutzen Python als Programmiersprache, da
-.. 
-.. sie objektorientierte ist und eine verhältnismäßig leichte Syntax besitzt
+. Wir nutzen Python als Programmiersprache, da die bestehenden Teile der Anwendung in dieser Sprache programmiert wurden und wir einen Mehraufwand im Sinne einer Umstrukturierung vermeiden wollten. +
+Außerdem ist sie objektorientiert und besitzt eine verhältnismäßig leichte Syntax.
+. Ebenso wie unsere Vorgänger nutzen wir Django als Framework. Es ist ebenfalls in Python verfasst und folgt einem Model-View-Presenter-Schema, aus dem eine leichte Erweiterbarkeit resultiert.
+. SQLite wird als Programmierbibliothek aufgegriffen, da es standartmäßig von Django unterstützt wird und von der Syntax sehr dem SQL-Standard ähnelt, mit dem einige Gruppenmitglieder schon intensiveren Kontakt hatten. +
+Abgesehen davon ist SQLite sowohl mit verschiedenen Betriebssystemen von Smartphones, sowie mit unterschiedlichsten Browsern kompatibel und unterstützt so das Erreichen von mehr Nutzern, die sich durch ihre verschiedenen Voraussetzungen auszeichnen.
 
+== Architektur-relevante Anforderungen
+[cols="1,4,4"]
+|===
+| *Anforderung* | *Softwarekomponente* | *Architekturmechanismus*
 
+| F1 | Webanwendung | Zugriffsschutz
+| F2 | Datenbank | Persistenz
+| U1, U2 | Interface | Eingabelogik
+| R1 Backup| Webanwendung | 
+| P1 Nutzung 10 leute| Webanwendung | 
+| P2 schnell geladen |  | 
+| S1 einfach erweiterbar| Webanwendung | 
+|  |  | 
+
+|===
 
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
-== 5. Architekturmechanismen
-=== 5.1 Datenspeicherung
+== Architekturmechanismen
+=== Datenspeicherung
 Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
 
-=== 5.2 Webschnitstelle
+=== Webschnitstelle
 Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
 
-=== 5.3 Informationsvermittlung
+=== Informationsvermittlung
 Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
 
-== 6. Schichten oder Architektur-Framework
+== Schichten oder Architektur-Framework
 image::../docs/architecture/images/level1.jpg[level1,280,280]
 image::../docs/architecture/images/level2.jpg[level2,550,550]
 
 
-== 7. Wesentliche Abstraktionen
+== Wesentliche Abstraktionen
 Objekte/Personen, die als Datensätze im System eingebunden sind
