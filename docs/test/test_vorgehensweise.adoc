@@ -1,0 +1,30 @@
+
+
+
+= Test-Vorgehensweise
+
+
+
+== Einleitung Testverfahren
+
+[%header, cols="1,2,3"]
+|===
+|Testverfahren|Beschreibung|Benötigte Anforderungen
+|Black Box Testing|Beim Black Box Testing liegt das Augenmerk auf den Ein- und Ausgaben. Es ist kein Wissen zum Code oder dem Backend nötig, wichtig ist, das nach einer Eingabe die richtige Ausgabe zustande kommt.
+a| * Vordefinierte Testeingaben
+* Auswertungsbogen
+|===
+
+
+
+== Testarten
+
+=== Negativtests
+Beim Negativtest wird überprüft, ob bei einer fehlerhaften Eingabe in das Programm dieses richtig reagiert, z.B. mit einer Fehlermeldung. Er werden absichtlich ungültige Werte eingegeben oder Masken nicht vollständig ausgefüllt, um eventuelle Fehler zu erzeugen. Auch Bedienfehler sollten hier beachtet werden. Hierbei können auch eventuelle Verbesserungen der Benutzerfreundlichkeit festgestellt werden. 
+
+Wichtig: 
+
+* Erstellung einer möglichst vielseitigen Liste an möglichen Fehleingaben in verschiedenen Variationen 
+
+=== Testen durch User
+Besonders wichtig bei unserer Webanwendungs-Erweiterung ist die einfache Bedienung durch den Endbenutzer. Deshalb soll spezielles Augenmerk auf den Test durch einen Benutzer gelegt  werden. Auf Feedback soll gehört werden und eventuelle Anpassungen danach sollten mit Priorität umgesetzt werden.
