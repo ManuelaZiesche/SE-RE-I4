@@ -52,16 +52,24 @@ Müsste nochmal nach der Prozessorleistung fragen
 
 .neu: +
 . Wir nutzen Python als Programmiersprache, da die bestehenden Teile der Anwendung in dieser Sprache programmiert wurden und wir einen Mehraufwand im Sinne einer Umstrukturierung vermeiden wollten. +
-Außerdem ist sie objektorientierte und besitzt eine verhältnismäßig leichte Syntax.
-. Ebenso wie unsere Vorgänger nutzen wir Django als Framework. Es ist ebenfalls in Python verfasst und folgt einem Model-View-Presenter-Schema, welches wir ebenfalls so für unser System weiterführen werden.
+Außerdem ist sie objektorientiert und besitzt eine verhältnismäßig leichte Syntax.
+. Ebenso wie unsere Vorgänger nutzen wir Django als Framework. Es ist ebenfalls in Python verfasst und folgt einem Model-View-Presenter-Schema, aus dem eine leichte Erweiterbarkeit resultiert.
 . SQLite wird als Programmierbibliothek aufgegriffen, da es standartmäßig von Django unterstützt wird und von der Syntax sehr dem SQL-Standard ähnelt, mit dem einige Gruppenmitglieder schon intensiveren Kontakt hatten. +
 Abgesehen davon ist SQLite sowohl mit verschiedenen Betriebssystemen von Smartphones, sowie mit unterschiedlichsten Browsern kompatibel und unterstützt so das Erreichen von mehr Nutzern, die sich durch ihre verschiedenen Voraussetzungen auszeichnen.
 
 == Architektur-relevante Anforderungen
-
+[cols="1,4,4"]
 |===
 | *Anforderung* | *Softwarekomponente* | *Architekturmechanismus*
-|
+
+| F1 | Webanwendung | Zugriffsschutz
+| F2 | Datenbank | Persistenz
+| U1, U2 | Interface | Eingabelogik
+| R1 Backup| Webanwendung | 
+| P1 Nutzung 10 leute| Webanwendung | 
+| P2 schnell geladen |  | 
+| S1 einfach erweiterbar| Webanwendung | 
+|  |  | 
 
 |===
 
