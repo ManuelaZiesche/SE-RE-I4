@@ -397,17 +397,23 @@
       $("#funktion" + amtid).remove();
 
       // Veraendern von ids, for- und label-Attributen
+      /*
       var ids = ["funktion", "selectreferat", "div_selectbereich", "selectbereich", "selectamt", "div_selectamt", "amtdelbtns", "amtdelbtnl",
       "beginn_kandidatur", "beginn_kandidaturs", "ende_kandidatur", "ende_kandidaturs", "beginn_kandidatur_label", "ende_kandidatur_label",
       "beginn_kandidaturs_label", "ende_kandidaturs_label"];
       var forLabel = ["beginn_kandidatur", "ende_kandidatur", "beginn_kandidaturs", "ende_kandidaturs"]
+      */
+      var ids = ["funktion", "selectreferat", "div_selectbereich", "selectbereich", "selectamt", "div_selectamt", "amtdelbtns", "amtdelbtnl"];
+      //var forLabel = ["beginn_kandidatur", "ende_kandidatur", "beginn_kandidaturs", "ende_kandidaturs"]
       for (var i=parseInt(amtid)+1; i<=amt_num; i++){
         // Dekrementieren der ID-Nummer, die eine hoehere Nummer als das geloeschte Element haben
+        /*
         forLabel.forEach(function(item){
           var id = item + "_label" +  i.toString();
           var newattr = item + (i-1).toString();
           $("#" + id).attr("for", newattr);
         });
+        */
         ids.forEach(function(item){
           var oldid = item + i.toString();
           var newid = item + (i-1).toString();
@@ -453,8 +459,8 @@
   }
     // Date Picker initialisieren
   function initDatePicker(amtid){
-    var beginn_datepicker = document.querySelectorAll('#beginn_kandidatur' + amtid);
-    var ende_datepicker = document.querySelectorAll('#ende_kandidatur' + amtid);
+    //var beginn_datepicker = document.querySelectorAll('#beginn_kandidatur' + amtid);
+    //var ende_datepicker = document.querySelectorAll('#ende_kandidatur' + amtid);
     var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', showClearBtn: true, i18n: {
                 months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
                 monthsShort: ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
@@ -463,19 +469,25 @@
                 weekdaysAbbrev: ["M","D", "M", "D", "F", "S", "S"],
                 today: 'heute',
                 clear: 'löschen',
-                cancel: 'abbrechen',
-            },
+                cancel: 'abbrechen'
+            }
+            /*
             onSelect: function(selectedDate) {
               var instance = M.Datepicker.getInstance($('#ende_kandidatur' + amtid));
               instance.options.minDate = new Date(selectedDate);
             }
+            */
     };
+    /*
     M.Datepicker.init(beginn_datepicker, init_settings);
     delete init_settings['onSelect'];
     init_settings['onSelect'] = function(selectedDate){
       var instance = M.Datepicker.getInstance($('#beginn_kandidatur' + amtid));
       instance.options.maxDate = new Date(selectedDate);
+      
     };
+
+    /*
     // wenn Datepicker fuer Beginn Datum enthalt, dieses Datum als Minimum fuer das Ende der Amtszeit festlegen
     var datum_beginn = $("#beginn_kandidatur" + amtid).val();
     // dd.mm.yyyy -> mm/dd/yyyy
@@ -488,6 +500,7 @@
 
     delete init_settings['onSelect'];
     delete init_settings['minDate'];
+    */
 
     var wahldatum_datepicker = document.getElementById("wahldatum");
     M.Datepicker.init(wahldatum_datepicker, init_settings);
