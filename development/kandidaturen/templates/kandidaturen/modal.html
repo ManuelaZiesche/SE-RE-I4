@@ -1,0 +1,44 @@
+<div class="modal-content">
+    <h3>{{kandidatur.vorname}} {% if kandidatur.spitzname %}"{{kandidatur.spitzname}}"{% endif %} {{kandidatur.name}}</h3>
+    <div>
+        <br />
+        <p><b>Kandidatur-ID:</b> {{kandidatur.id}}</p>
+        {% if kandidatur.kandidaturamt_set.all %}
+        <p><b>Ämter:</b>
+            {% if curr_funktionen %}
+                <ul>
+                    {% for kandidaturamt in curr_funktionen %}
+                        <li>{{kandidaturamt.funktion}} (seit {{kandidaturamt.amtszeit_beginn|date:'d.m.Y'|default:"unbekanntem Datum"}})</li>
+                    {% endfor %}
+                </ul>
+            {% else %}-
+            {% endif %}
+        </p>
+        <p><b>Ehemalige Ämter:</b>
+            {% if prev_funktionen %}
+                <ul>
+                    {% for mitgliedamt in prev_funktionen %}
+                        <li>{{kandidaturamt.funktion}} ({{kandidaturamt.amtszeit_beginn|date:'d.m.Y'|default:"unbekannt"}} - {{kandidaturamt.amtszeit_ende|date:'d.m.Y'|default:"heute"}})</li>
+                    {% endfor %}
+                </ul>
+            {% else %}-
+            {% endif %}
+        </p>
+        {% endif %}
+        <br />
+        <h5>Kontaktdaten</h5>
+        {% if kandidatur.tel_mobil %}<p><b>Telefon:</b> {{kandidatur.tel_mobil}}</p>{% endif %}
+        {% if kandidatur.kandidaturmail_set.all %}
+        <p><b>E-Mails:</b>
+            <ul>
+            {% for mail in kandidatur.kandidaturmail_set.all %}
+            <li>{{mail.email}}</li>
+            {% endfor %}
+            </ul>
+        </p>
+        {% endif %}
+    </div>
+</div>
+<div class="modal-footer">
+    <a class="modal-action modal-close waves-effect waves-green btn-flat">Schließen</a>
+</div>

@@ -1,5 +1,6 @@
 from datetime import date
 from django.db import models
+from django.db.models import Q
 from simple_history.models import HistoricalRecords
 from aemter.models import Funktion
 
@@ -13,6 +14,28 @@ class Kandidatur(models.Model):
 
     def __str__(self):
         return self.vorname + " " + self.name
+
+    def curr_funktion_count(self):
+        """
+        Funktion that returns the number of the current funktions of the member.
+        """
+        return self.kandidaturamt_set\
+            .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
+            .count()
+
+    def curr_funktion_first(self):
+        """
+        Funktion that returns the first of the current funktions of the member
+        or None if the member has no current funktion.
+        """
+        if self.kandidaturamt_set\
+                .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today())):
+            return self.kandidaturamt_set\
+                .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
+                .first()\
+                .funktion
+        else:
+            return None
 
     class Meta:
         verbose_name = "Kandidatur"

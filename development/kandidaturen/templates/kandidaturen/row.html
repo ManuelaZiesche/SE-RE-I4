@@ -15,7 +15,7 @@
         <tbody>
             {% for entry in data %}
                 <!-- Zeile -->
-                <tr id="tr{{entry.id}}" class="mitglied" data-url="{% url 'mitglieder:mitglied_laden' %}" >
+                <tr id="tr{{entry.id}}" class="mitglied" data-url="{% url 'kandidaturen:kandidatur_laden' %}" >
                     <td>
                         <!-- Checkbox -->
                         {% if request.user.is_superuser %}
@@ -41,10 +41,10 @@
                         {% endif %}
                     </td>
                     <td class="mitglied-{{entry.id}} hide-on-small-only">
-                        {% if entry.mitgliedmail_set.all %}
+                        {% if entry.kandidaturmail_set.all %}
                         <ul style="margin-bottom: 0px">
-                            <li>{{entry.mitgliedmail_set.first.email}}</li>
-                            {% if entry.mitgliedmail_set.all.count > 1 %}
+                            <li>{{entry.kandidaturmail_set.first.email}}</li>
+                            {% if entry.kandidaturmail_set.all.count > 1 %}
                                 <li>...</li>
                             {% endif %}
                         </ul>

@@ -6,7 +6,9 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from .models import Kandidatur, KandidaturAmt, KandidaturMail
 from aemter.models import Funktion, Organisationseinheit, Unterbereich
-import datetime
+from datetime import date
+import simplejson, json
+from django.db.models import Q
 
 # Anzahl der Aemter bzw. E-Mails die gespeichert werden muessen
 aemternum = 0
@@ -137,3 +139,35 @@ def erstellen(request):
         return HttpResponseRedirect(reverse('kandidaturen:homepage'))
     else:
         return HttpResponseRedirect('/kandidaturen/erstellen')
+
+
+
+def kandidatur_laden(request):
+    """
+    Rendert ein Modal mit allen Daten einer aus der Tabelle gewählten Kandidatur.
+    Aufgaben:
+    * Bereitstellung der Daten: Die Mitglied-ID wird aus request gelesen und extrahieren aller Daten zur Kandidatur mit dieser ID
+    * Rendern des Templates
+    * Rechteeinschränkung: Nur angemeldete Nutzer können das gerenderte Template anfordern.
+    :param request: Die Ajax-Request, welche den Aufruf der Funktion ausgelöst hat. Enthält die Id des Mitglieds, dessen Daten angezeigt werden sollen.
+    :return: Das gerenderte Modal, das mit Daten des angeforderten Mitglieds ausgefüllt wurde
+    """
+
+    if not request.user.is_authenticated:
+        return HttpResponse("Permission denied")
+    # Extrahieren der Mitglied-Id aus der GET-Request
+    kandidatur_id = simplejson.loads(request.GET.get('mitgliedid'))
+    # Daten zur Kandidatur mit dieser Id an Frontend senden
+    kandidatur = Kandidatur.objects.get(pk=kandidatur_id)
+    curr_funktionen = kandidatur.kandidaturamt_set\
+        .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))
+    prev_funktionen = kandidatur.kandidaturamt_set\
+        .filter(Q(amtszeit_ende__isnull=False) & Q(amtszeit_ende__lt=date.today()))
+    return render(
+        request=request,
+        template_name='mitglieder/modal.html',
+        context={
+            'kandidatur': kandidatur,
+            'curr_funktionen': curr_funktionen,
+            'prev_funktionen': prev_funktionen
+        })
