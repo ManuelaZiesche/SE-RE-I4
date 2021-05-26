@@ -122,6 +122,7 @@ def erstellen(request):
         for i in range(1, aemternum+1):
             amt_id = request.POST['selectamt'+str(i)]
             funktion = Funktion.objects.get(pk=amt_id)
+            """
             amtszeit_beginn_str = request.POST['beginn_kandidatur'+str(i)]
             if amtszeit_beginn_str:
                 amtszeit_beginn = datetime.datetime.strptime(amtszeit_beginn_str, "%d.%m.%Y").date()
@@ -132,8 +133,10 @@ def erstellen(request):
                 amtszeit_ende = datetime.datetime.strptime(amtszeit_ende_str, "%d.%m.%Y").date()
             else:
                 amtszeit_ende = None
-
+            
             kandidaturamt = KandidaturAmt(funktion=funktion, kandidatur=kandidatur, amtszeit_beginn=amtszeit_beginn, amtszeit_ende=amtszeit_ende)
+            """
+            kandidaturamt = KandidaturAmt(funktion=funktion, kandidatur=kandidatur)
             kandidaturamt.save()
 
         return HttpResponseRedirect(reverse('kandidaturen:homepage'))
