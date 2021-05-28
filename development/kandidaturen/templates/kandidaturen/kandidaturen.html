@@ -53,10 +53,7 @@
         </ul>
       </div>
       <div class="modal-footer">
-                                                                      {% comment %}
-                                                                        Suche muss noch umbenannt werden, um die Kandidaten-View aufzurufen
-                                                                      {% endcomment %}
-        <a id="delmitgliederconfirm" data-url="{% url 'mitglieder:mitglieder_loeschen' %}" href="#!" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
+        <a id="delmitgliederconfirm" data-url="{% url 'kandidaturen:kandidaturen_loeschen' %}" href="#!" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
         <a href="#!" class="left modal-action modal-close waves-effect waves-red btn-flat ">Nein</a>
      </div>
     </div>
@@ -203,23 +200,23 @@
             }
           });
           if (selectedcheckboxes_num==1){
-            $("#bestaetigungsfrage").html("Sollen folgendes Mitglied wirklich endgültig gelöscht werden?");
+            $("#bestaetigungsfrage").html("Soll folgende Kandidatur wirklich endgültig gelöscht werden?");
           } else{
-            $("#bestaetigungsfrage").html("Sollen folgende Mitglieder wirklich endgültig gelöscht werden?");
+            $("#bestaetigungsfrage").html("Sollen folgende Kandidaturen wirklich endgültig gelöscht werden?");
           }
           instance.open();
         });
 
-        // Mitglied(er) loeschen
+        // Kandidatur(en) loeschen
         $('#delmitgliederconfirm').click(function(){
           var url = $("#"+this.id).attr('data-url');
-          var mitgliederids = [];
+          var kandidaturenids = [];
           $('input[type=checkbox]').each(function () {
             if (this.checked){
               this.checked = false;
-              var mitgliedid = this.id.substr(4);
-              $("#tr" + mitgliedid).remove();
-              mitgliederids.push(mitgliedid); 
+              var kandidaturid = this.id.substr(4);
+              $("#tr" + kandidaturid).remove();
+              kandidaturenids.push(kandidaturid); 
             }
           });
           
@@ -227,12 +224,12 @@
             type: 'POST',
             url: url,
             data: {
-              mitglieder:JSON.stringify(mitgliederids),
+              kandidaturen:JSON.stringify(kandidaturenids),
               csrfmiddlewaretoken: '{{ csrf_token }}',
             },
             success: function(data){
-              // Meldung, dass Mitglieder erfolgreich geloescht wurden
-              $("#notification").html("Mitglieder wurden erfolgreich gelöscht");
+              // Meldung, dass Kandidaturen erfolgreich geloescht wurden
+              $("#notification").html("Kandidaturen wurden erfolgreich gelöscht");
               selectedcheckboxes_num=0;
               // Deaktivieren des Loeschbuttonss
               $("#delbtnl").addClass("disabled");

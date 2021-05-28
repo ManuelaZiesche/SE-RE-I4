@@ -1,7 +1,6 @@
 from django.urls import path
 from . import views
 
-
 app_name = 'kandidaturen'  # here for namespacing of urls.
 
 urlpatterns = [
@@ -12,6 +11,7 @@ urlpatterns = [
      path("<int:kandidatur_id>/bearbeiten/speichern", views.speichern, name="speichern"),
 
      path('ajax/laden', views.kandidatur_laden, name='kandidatur_laden'),
+     path("ajax/kandidaturen-loeschen", views.kandidaturen_loeschen, name="kandidaturen_loeschen"),
      path('ajax/bereiche-laden', views.bereiche_laden, name='bereiche_laden'),
      path('ajax/funktionen-laden', views.funktionen_laden, name='aemter_laden'),
      path('ajax/funktionen-html-laden', views.funktionen_html_laden, name='aemter_html_laden'),

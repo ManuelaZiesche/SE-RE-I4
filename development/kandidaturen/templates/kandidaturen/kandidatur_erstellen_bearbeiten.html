@@ -162,7 +162,7 @@
   $(document).ready(function(){
   // Selects und Date Picker initialisieren, Event Listener fuer Dropdowns hinzufuegen
   initSelect();
-  for (var i=1; i<=amt_num; i++) initDatePicker(i);
+  initDatePicker();
   addReferatEventListener();
   addBereichEventListener();
 
@@ -431,7 +431,7 @@
     var instances = M.FormSelect.init(elems, options);
   }
     // Date Picker initialisieren
-  function initDatePicker(amtid){
+  function initDatePicker(){
     var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', showClearBtn: true, i18n: {
                 months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
                 monthsShort: ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
@@ -447,12 +447,12 @@
 
     var wahldatum_datepicker = document.getElementById("wahldatum");
     M.Datepicker.init(wahldatum_datepicker, init_settings);
+    console.log("datepicker init");
   }
 
   // Initialisieren des Modals
   var elems = document.querySelectorAll('.modal');
   var instance = M.Modal.init(elems, {dismissible: true});
 </script>
-
 
 {% endblock %}

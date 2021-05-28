@@ -264,6 +264,33 @@ def kandidatur_laden(request):
             'funktionen': funktionen,
         })
 
+
+# Entfernen von Kandidaturen aus der Datenbank
+def kandidaturen_loeschen(request):
+    """
+    Löscht ausgewählte Kandidaturen aus der Datenbank.
+
+    Aufgaben:
+
+    * Entfernen der Daten: Alle Daten der Kandidaturen werden aus der Datenbank entfernt.
+    * Rendern des Templates
+    * Rechteeinschränkung: Nur angemeldete Nutzer können Löschvorgänge auslösen
+
+    :param request: Die Ajax-Request, welche den Aufruf der Funktion ausgelöst hat. Enthält die IDs der Kandidaturen, die entfernt werden sollen
+    :return: HTTP Response
+    """
+    if not request.user.is_authenticated:
+        return HttpResponse("Permission denied")
+    if not request.user.is_superuser:
+        return HttpResponse("Permission denied")
+    # Extrahieren der Liste aller Kandidaturen-Ids und Entfernen der Kandidaturen aus Datenbank
+    kandidaturenids = request.POST.get('kandidaturen')
+    kandidaturenids = json.loads(kandidaturenids)
+    for kandidaturenid in kandidaturenids:
+        Kandidatur.objects.get(pk=kandidaturenid).delete()
+    return HttpResponse()
+
+
 # Unterbereiche eines Referats an das Frontend senden
 def bereiche_laden(request):
     """
