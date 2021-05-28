@@ -2,10 +2,8 @@
 
 {% block content %}
 
-                                                                      {% comment %}
-                                                                        Action muss noch umbenannt werden, um Kandidaturen-Views aufzurufen
-                                                                      {% endcomment %}
-<form id="mitgliedForm" action={% if kandidatur %}"{% url 'mitglieder:speichern' mitglied.id %}"{% else %}"{% url 'kandidaturen:erstellen' %}"{% endif %} method="post">
+
+<form id="mitgliedForm" action={% if kandidatur %}"{% url 'kandidaturen:speichern' kandidatur.id %}"{% else %}"{% url 'kandidaturen:erstellen' %}"{% endif %} method="post">
 {% csrf_token %}
 <div>
   <div class="row">
@@ -70,10 +68,7 @@
       </div>
         <!-- Button (weiteres Amt hinzufuegen) -->
           <div class="col s12">
-                                                                                    {% comment %}
-                                                                                      URL noch Ändern
-                                                                                    {% endcomment %}
-            <a id="addAmt" data-url="{% url 'mitglieder:aemter_html_laden' %}" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>Funktion hinzufügen</a>
+            <a id="addAmt" data-url="{% url 'kandidaturen:aemter_html_laden' %}" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>Funktion hinzufügen</a>
           </div>
       </div>
     </div>
@@ -97,11 +92,8 @@
         <!-- Button - E-Mail hinzufuegen -->
         <div class="row">
           <div class="col s12">
-            {% if forloop.last or mitglied.emails is None %}
-                                                                                    {% comment %}
-                                                                                      URL noch Ändern
-                                                                                    {% endcomment %}
-              <a id="addEmailBtn" data-url="{% url 'mitglieder:email_html_laden' %}" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>E-Mail hinzufügen</a>
+            {% if forloop.last or kandidatur.emails is None %}
+              <a id="addEmailBtn" data-url="{% url 'kandidaturen:email_html_laden' %}" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>E-Mail hinzufügen</a>
             {% endif %}
           </div>
         </div>
@@ -126,24 +118,8 @@
     <p>Die Löschfunktion dient nur zum Entfernen fehlerhaft gespeicherter Funktionen und entfernt diese endgülitg.<br>Fortfahren?</p>
   </div>
   <div class="modal-footer">
-                                                                          {% comment %}
-                                                                          URL noch Ändern
-                                                                        {% endcomment %}
-
-    <a id="delamtconfirm" data-url="{% url 'mitglieder:amt_loeschen' %}" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
+    <a id="delamtconfirm" data-url="{% url 'kandidaturen:amt_loeschen' %}" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
     <a class="left modal-action modal-close waves-effect waves-red btn-flat ">Abbrechen</a>
-  </div>
-</div>
-
-<!-- Modal für Max-Members in einer Funktion erreicht-->
-<div id="modal-max-members" class="modal">
-  <div class="modal-content">
-      <h4>Hinweis</h4>
-      <p>Die folgende/n Funktion/en hat/ben das Limit für die maximale Mitgliederanzahl erreicht.</p>
-      <ul id="list-max-members"></ul>
-  </div>
-  <div class="modal-footer">
-    <a id="confirm-max-members" class="left modal-action modal-close waves-effect waves-green btn-flat ">OK</a>
   </div>
 </div>
 
@@ -390,10 +366,7 @@
     });
 
     function amt_loeschen(amtid){
-                                                                                  {% comment %}
-                                                                                      URL noch Ändern
-                                                                                    {% endcomment %}
-      var url = "{% url 'mitglieder:amt_loeschen' %}";
+      var url = "{% url 'kandidaturen:amt_loeschen' %}";
       $("#funktion" + amtid).remove();
 
       // Veraendern von ids, for- und label-Attributen
@@ -459,8 +432,6 @@
   }
     // Date Picker initialisieren
   function initDatePicker(amtid){
-    //var beginn_datepicker = document.querySelectorAll('#beginn_kandidatur' + amtid);
-    //var ende_datepicker = document.querySelectorAll('#ende_kandidatur' + amtid);
     var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', showClearBtn: true, i18n: {
                 months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
                 monthsShort: ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
@@ -471,36 +442,8 @@
                 clear: 'löschen',
                 cancel: 'abbrechen'
             }
-            /*
-            onSelect: function(selectedDate) {
-              var instance = M.Datepicker.getInstance($('#ende_kandidatur' + amtid));
-              instance.options.minDate = new Date(selectedDate);
-            }
-            */
+            
     };
-    /*
-    M.Datepicker.init(beginn_datepicker, init_settings);
-    delete init_settings['onSelect'];
-    init_settings['onSelect'] = function(selectedDate){
-      var instance = M.Datepicker.getInstance($('#beginn_kandidatur' + amtid));
-      instance.options.maxDate = new Date(selectedDate);
-      
-    };
-
-    /*
-    // wenn Datepicker fuer Beginn Datum enthalt, dieses Datum als Minimum fuer das Ende der Amtszeit festlegen
-    var datum_beginn = $("#beginn_kandidatur" + amtid).val();
-    // dd.mm.yyyy -> mm/dd/yyyy
-    var dd = datum_beginn.substr(0,2);
-    var mm = datum_beginn.substr(3,2);
-    var yyyy = datum_beginn.substr(6,4);
-    datum_beginn = mm + '\/' + dd + '\/' + yyyy;
-    init_settings['minDate'] = new Date(datum_beginn);
-    M.Datepicker.init(ende_datepicker, init_settings);
-
-    delete init_settings['onSelect'];
-    delete init_settings['minDate'];
-    */
 
     var wahldatum_datepicker = document.getElementById("wahldatum");
     M.Datepicker.init(wahldatum_datepicker, init_settings);

@@ -20,20 +20,17 @@ class Kandidatur(models.Model):
         Funktion that returns the number of the current funktions of the member.
         """
         return self.kandidaturamt_set\
-            .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
             .count()
+            #.filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
 
     def curr_funktion_first(self):
         """
         Funktion that returns the first of the current funktions of the member
         or None if the member has no current funktion.
         """
-        if self.kandidaturamt_set\
-                .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today())):
-            return self.kandidaturamt_set\
-                .filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
-                .first()\
-                .funktion
+        if self.kandidaturamt_set.first():
+            return self.kandidaturamt_set.first().funktion
+                #.filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
         else:
             return None
 

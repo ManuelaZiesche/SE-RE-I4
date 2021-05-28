@@ -10,10 +10,7 @@
           <div class="col s12">
               <!-- Serch Entry -->
               <div class="input-field inline" style="margin-top: 27px">
-                                                                       {% comment %}
-                                                                        Suche muss noch umbenannt werden, um die Kandidaten-View aufzurufen
-                                                                      {% endcomment %}
-                  <input data-url="{% url 'mitglieder:suchen' %}" class="validate" type="text" id="search">
+                  <input data-url="{% url 'kandidaturen:suchen' %}" class="validate" type="text" id="search">
                   <label for="search">Suchen...</label>
               </div>
 
@@ -152,14 +149,14 @@
           do {
             event = event.parentNode;
           } while (event.tagName!="TR");
-          mitgliedid = event.id.substr(2);
+          kandidaturid = event.id.substr(2);
           url = event.getAttribute('data-url');
 
           $.ajax({
             type: 'GET',
             url: url,
             data: {
-              mitgliedid: JSON.stringify(mitgliedid),
+              kandidaturid: JSON.stringify(kandidaturid),
               csrfmiddlewaretoken: '{{ csrf_token }}',
             },
             success: function(data){

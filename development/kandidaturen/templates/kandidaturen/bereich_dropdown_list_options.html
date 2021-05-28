@@ -2,9 +2,9 @@
                                                                                {% comment %}
                                                                                URL noch Ändern ?? Ist das notwendig??
                                                                              {% endcomment %}
-    <select id="selectbereich{{amtid}}" data-url="{% url 'mitglieder:aemter_laden' %}" name="selectbereich{{amtid}}" class="selectbereich">
+    <select id="selectbereich{{amtid}}" data-url="{% url 'kandidaturen:aemter_laden' %}" name="selectbereich{{amtid}}" class="selectbereich">
         <option selected="selected" disabled selected>Bereich auswählen</option>
-        <!-- Zu Mitglied wurde bereits ein Unterbereich gespeichert-->
+        <!-- Zu Kandidatur wurde bereits ein Unterbereich gespeichert-->
         {% if funktion %}
             {% if funktion.organisationseinheit.funktionen_ohne_unterbereich_count > 0 %}
                 <option type="hidden" {% if not funktion.unterbereich %}selected="selected"{% endif %} value="-1">Keiner</option>

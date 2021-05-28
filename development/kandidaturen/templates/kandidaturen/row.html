@@ -7,7 +7,6 @@
             <th>Name</th>
             <th>Funktionen</th>
             <th class="hide-on-small-only">E-Mails</th>
-            <th class="hide-on-med-and-down">Telefon</th>
             <th></th>
             </tr>
         </thead>
@@ -52,13 +51,10 @@
                             -
                         {% endif %}
                     </td>
-                    <td class="mitglied-{{entry.id}} hide-on-med-and-down">
-                        {{entry.tel_mobil|default:'-'}}
-                    </td>
                     <!-- edit button (pencil) -->
                     {% if request.user.is_superuser %}
                     <td>
-                        <a href="{% url 'mitglieder:bearbeitenView' entry.id %}"><i class="material-icons black-text">create</i></a>
+                        <a href="{% url 'kandidaturen:bearbeitenView' entry.id %}"><i class="material-icons black-text">create</i></a>
                     </td>
                     {% endif %}
                 </tr>
