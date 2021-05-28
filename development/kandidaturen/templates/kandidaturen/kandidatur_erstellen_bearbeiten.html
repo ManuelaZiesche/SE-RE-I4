@@ -182,6 +182,12 @@
       console.log("name fehlt");
       valid_input = false;
     }
+    if($("#wahldatum").val()==""){
+      $("#wahldatum").addClass("invalid_input");
+      addInputEventListener("wahldatum");
+      valid_input = false;
+      console.log("Wahldatum fehlt");
+    }
     // Pruefen, ob alle E-Mail- und Amtfelder ausgefuellt sind
     console.log("anzahl emails: " + email_num.toString());
     for (var i=1; i<=email_num; i++){
