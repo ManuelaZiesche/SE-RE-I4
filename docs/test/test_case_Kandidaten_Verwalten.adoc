@@ -4,15 +4,59 @@
 
 == TC 01: Kandidat hinzufügen
 
-*Ziel:* Neue Kandidat wird hinzugefügt
+*Ziel:* Ein neuer Kandidat wird hinzugefügt
 
-*Beschreibung:* Der Admin möchte einen neuen Kandidaten  in die Datenbank einpflegen
+*Beschreibung:* Der Admin möchte einen neuen Kandidaten in die Datenbank einpflegen
 
 *Vorbedingungen:*
 
-- Der Admin ist mit Administratorrechten eingeloggt. 
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-- Die Eingabemaske (Kandidat-Hinzufügen) ist geöffnet.
+- Der Admin ist mit Administratorrechten eingeloggt.
+- Verbindung zur Datenbank ist vorhanden
+
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1
+|Wie  oben beschrieben
+
+|Button `+Hinzufügen+`
+
+| Mausklick
+|Button `+'Hinzufügen'+` klicken
+|Die Eingabemaske (Kandidat-Hinzufügen) ist geöffnet und bereit zur Dateneingabe.
+
+|2
+|Wie oben beschrieben
+
++ Kandidat(en) sind in DB vorhanden
+|Zeilen eines Kandidateneintrags
+|Mausklick
+|Zeilen eines Kandidateneintrags anklicken
+|Popup mit Knadiatinfo´s poppt auf
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+|===
+
+
+
+*Handlungen zur Durchführung des Tests:*
+
+Testbutton `+Hinzufügen+` klicken
+
+*Erwartetes Ergebnis:*
+
+
 
 *Nachbedingungen:*
 
@@ -25,13 +69,112 @@
 
 
 
+
+
+
+
+
+
+
+
+
+*Ziel:* Ein neuer Kandidat wird hinzugefügt
+
+*Beschreibung:* Der Admin möchte einen neuen Kandidaten in die Datenbank einpflegen
+
+*Vorbedingungen:*
+
+- Der Admin ist mit Administratorrechten eingeloggt.
+- Verbindung zur Datenbank ist vorhanden
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+
+*Testobjekt:*
+Button `+Hinzufügen+`
+
+*Handlungen zur Durchführung des Tests:*
+
+Testbutton `+Hinzufügen+` klicken
+
+Die Eingabemaske (Kandidat-Hinzufügen) wird geöffnet.
+
+*Nachbedingungen:*
+
+- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
+- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
+
+*Benötigte Daten:*
+- Alle erforderlichen Kandidatendaten (Vorname, Name, E-Mail, ...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 == TC 02: Weitere Informationen hinzufügen
 *Beschreibung:* Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten.
 
 *Vorbedingungen:*
 
-- Der Kandidat ist bereits in der Datenbank vorhanden.
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
+- Kandidat(en) bereits in Datenbank vorhanden
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
+
+
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1
+|Wie  oben beschrieben
+
+|Häckchenbox
+
+| Mausklick
+|Häckchen bei gewünschtem Kandidaten setzen
+
++ Löschbutton klicken
+
++ Lösch-Bestätigungsmöglichkeit bestätigen
+
++ Button `+'Löschen'+` klicken
+| Bestätigungsmeldung 'Kandidaturen wurden erfolgreich gelöscht' erscheint über Liste
+
+|2
+|Wie oben beschrieben
+
++ Kandidat(en) sind in DB vorhanden
+|Stift-Button
+|Mausklick
+|auf gewünschten Stift klicken
+|Popup mit Knadiatinfo´s poppt auf
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+|===
+
+
+
+
+
 
 *Nachbedingungen:*
 
@@ -194,4 +337,49 @@ Benötigte Daten:
 - die zu ergänzenden Kandidatendaten
 
 
+
+
+
+
+*Ziel:*
+
+*Beschreibung:*
+
+*Vorbedingungen:*
+
+*Testobjekt:*
+
+*Handlung en zur Durchführ ung des Tests:*
+
+*Nachbedingungen:*
+
+*Benötigte Daten:*
+
+
+
+
+
+
+[%header, cols="1,2,3,4,5,6"]
+|===
+|Testnr|Vorbedingungen
+|Testobjekt
+|Eingabedaten
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+|Cell in column 4, row 1
+|Cell in column 5, row 1
+|Cell in column 6, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|Cell in column 4, row 2
+|Cell in column 5, row 2
+|Cell in column 6, row 2
+|===
 

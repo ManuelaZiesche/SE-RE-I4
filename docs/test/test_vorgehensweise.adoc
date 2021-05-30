@@ -1,11 +1,62 @@
 
 
 
-= Test-Vorgehensweise
+= Allgemeine Informationen
 
 
 
-== Einleitung Testverfahren
+== Vorgehensweise zum Testverfahren/der Teststrategie
+
+Die folgenden Testverfahren sollen die Funktionalität der zu entwickelten Webanwendung überprüfen und sicherstellen.
+
+=== Unittests (Modultest/Komponententest)
+Kleinste prüfbare Funktionen unserer Webanwendung sollen einzeln und unabhängig voneinander auf ihren ordnungsgemäßen Betrieb hin untersucht werden.
+
+Die Tests sollen auf Grund ihrer Überschaubarkeit nicht automatisiert, sondern manuell durchgeführt werden.
+
+Das Hauptziel von Unit-Tests besteht somit darin, den zu testenden Code zu isolieren und festzustellen, ob er wie beabsichtigt funktioniert.
+
+Diese Testmethode ist die erste Stufe des Softwaretestens, die vor anderen Testmethoden wie bspw.  Integrationstests durchgeführt wird.
+
+=== Integrationstest
+(nach Komponententest)
+
+Einzelbausteine werden schrittweise zu größeren Einheiten zusammengesetzt
+(Integration) und sollten einem Integrationstest unterzogen werden.
+
+Voraussetzung: Die einzelnen Komponenten sind bereits getestet und mögl. Fehlerzustände  korrigiert.
+Das Ziel ist, Fehlerzustände in Schnittstellen und im Zusammenspiel
+zwischen integrierten Komponenten zu finden.
+
+Integrationstests sollen also prüfen, ob Gruppen von Komponenten wie im technischen Systementwurf vorgesehen, gut zusammen spielen.
+
+
+=== Abnahmetest (spezielle Form des Systemtests)
+
+Der Abnahmetest prüft, ob das System aus Kundensicht die vertraglich vereinbarten Leistungsmerkmale aufweist. Hierbei stehen die Sicht und das Urteil der Mitglieder und Anwender des StuRa´s im Vordergrund. Dabei zielt der Abnahmetest nicht auf das Finden von Fehlerzuständen ab. Vielmehr soll Vertrauen in das Produkt gewonnen werden sowie dessen Eignung
+für den beabsichtigten Einsatz (durch den Kunden!) beurteilt werden.
+
+
+.
+
+.
+
+.
+
+.
+
+
+
+
+
+
+
+
+= Kommt weg...
+
+
+
+
 
 [%header, cols="1,2,3"]
 |===
