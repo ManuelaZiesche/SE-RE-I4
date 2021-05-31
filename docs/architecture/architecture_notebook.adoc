@@ -78,16 +78,6 @@ Datenbank | Archivierung
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
 == Architekturmechanismen
-//=== Datenspeicherung
-//Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
-
-//=== Webschnitstelle
-//Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
-
-//=== Informationsvermittlung
-//Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
-
-//neu: +
 
 . *Archivierung*
 ** Zustand: Analysis
@@ -115,6 +105,16 @@ Datenbank | Archivierung
 ** Eigenschaften/ Attribute: Nicht jeder Nutzer ist dazu berechtigt alle daten einzusehen
 ** Funktion: Unterscheidung beim Login nach Mitglied Stura und Admin
 
+=== Datenspeicherung
+//Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
+Die Speicherung der Daten erfolg über die SQLite-Datenbank. Jeder Datensatz ist identifizierbar über einen Primärschlüssel in Form einer ID, die jedoch nicht durch die Webanwendung dem Admin oder dern Mitgliedern präsentiert wird. 
+
+=== Webschnitstelle
+Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu organisieren und zu verwalten.
+Die weboberfläche wurde mittels HTML/CSS erstellt.
+
+=== Informationsvermittlung
+Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
 
 == Wesentliche Abstraktionen
 * Objekte/Personen, die als Datensätze im System eingebunden sind
