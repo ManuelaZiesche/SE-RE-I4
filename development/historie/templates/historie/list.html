@@ -21,13 +21,15 @@
 <div class="row">
   <div class="col s12">
     <ul class="tabs">
-      <li class="tab col s3"><a class="tab-link active" data-tab="Mitglied" id="MitgliedTab" href="#mitgliederTab">Mitglieder</a></li>
-      <li class="tab col s3"><a class="tab-link" data-tab="Organisationseinheit" id="AmtTab" href="#aemterTab">Funktionen</a></li>
-      <li class="tab col s3"><a class="tab-link" data-tab="Checkliste" id="ChecklisteTab" href="#checklistenTab">Checklisten</a></li>
+      <li class="tab col s2"><a class="tab-link active" data-tab="Mitglied" id="MitgliedTab" href="#mitgliederTab">Mitglieder</a></li>
+      <li class="tab col s2"><a class="tab-link" data-tab="Kandidatur" id="KandidaturenTab" href="#kandidaturenTab">Kandidaturen</a></li>
+      <li class="tab col s2"><a class="tab-link" data-tab="Organisationseinheit" id="AmtTab" href="#aemterTab">Funktionen</a></li>
+      <li class="tab col s2"><a class="tab-link" data-tab="Checkliste" id="ChecklisteTab" href="#checklistenTab">Checklisten</a></li>
       <li class="tab col s3"><a class="tab-link" data-tab="User" href="#nutzerTab">Systemnutzer</a></li>
     </ul>
   </div>
   {% include 'historie/tabs/mitgliederTab.html' %}
+  {% include 'historie/tabs/kandidaturenTab.html' %}
   {% include 'historie/tabs/aemterTab.html' %}
   <!-- For some reason Django couldn't find the template, so the code for the Checklisten tab lives here now -->
   <div id="checklistenTab" class="col s12">
@@ -117,6 +119,15 @@
               break;
             case "MitgliedAmt":
               $("#mitgliederAemterTab").html(data);
+              break;
+            case "Kandidatur":
+              $("#kandidaturenStammdatenTab").html(data);
+              break;
+            case "KandidaturMail":
+              $("#kandidaturenMailsTab").html(data);
+              break;
+            case "KandidaturAmt":
+              $("#kandidaturenAemterTab").html(data);
               break;
             case "Organisationseinheit":
               $("#referateTab").html(data);

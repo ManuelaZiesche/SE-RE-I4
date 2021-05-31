@@ -1,5 +1,6 @@
 from django import template
 
+from kandidaturen.models import Kandidatur, KandidaturAmt, KandidaturMail
 from mitglieder.models import Mitglied, MitgliedMail, MitgliedAmt
 from aemter.models import Organisationseinheit, Unterbereich, Funktion, Recht, FunktionRecht
 from checklisten.models import Checkliste, ChecklisteAufgabe, ChecklisteRecht, Aufgabe
@@ -16,7 +17,7 @@ def get_associated_data(desiredInfo, queryType, primaryKey, timestamp):
     sowohl zum jetzigen Zeitpunkt als auch zu dem Zeitpunkt, zu dem der Historien-Eintrag angelegt wurde.
 
     :param desiredInfo: Der Name des Models, aus welchem die zusätzlichen Daten ermittelt werden sollen.
-        Zulässige Werte: "Mitglied", "Funktion", "Unterbereich", "Organisationseinheit", "Recht"
+        Zulässige Werte: "Mitglied", "Kandidatur", "Funktion", "Unterbereich", "Organisationseinheit", "Recht"
     :type desiredInfo: str
 
     :param queryType: Gibt an, ob die aktuellen Daten oder die Daten zum Zeitpunkt des Eintrags in die Historie ermittelt werden sollen.
@@ -35,6 +36,10 @@ def get_associated_data(desiredInfo, queryType, primaryKey, timestamp):
     """
     if(desiredInfo == "Mitglied"): foreignClass = Mitglied
     if(desiredInfo == "MitgliedAmt"): foreignClass = MitgliedAmt
+    if(desiredInfo == "MitgliedMail"): foreignClass = MitgliedMail
+    if(desiredInfo == "Kandidatur"): foreignClass = Kandidatur
+    if(desiredInfo == "KandidaturAmt"): foreignClass = KandidaturAmt
+    if(desiredInfo == "KandidaturMail"): foreignClass = KandidaturMail
     if(desiredInfo == "Funktion"): foreignClass = Funktion
     if(desiredInfo == "Unterbereich"): foreignClass = Unterbereich
     if(desiredInfo == "Organisationseinheit"): foreignClass = Organisationseinheit

@@ -4,17 +4,23 @@
 <p>
     <ul class="collection">
         {% for entry in data %}
-            {% if entry|to_class_name == "HistoricalMitgliedMail" or entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalCheckliste" %}
+            {% if entry|to_class_name == "HistoricalMitgliedMail" or entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalKandidaturMail" or entry|to_class_name == "HistoricalKandidaturAmt" or entry|to_class_name == "HistoricalCheckliste" %}
                 {% get_associated_data "Mitglied" "latest" entry.mitglied_id None as latestMitglied %}
                 {% get_associated_data "Mitglied" "historical" entry.mitglied_id entry.history_date as historicalMitglied %}
+
+                {% get_associated_data "Kandidatur" "latest" entry.kandidatur_id None as latestKandidatur %}
+                {% get_associated_data "Kandidatur" "historical" entry.kandidatur_id entry.history_date as historicalKandidatur %}
 
                 {% if entry.history_type == "~" %}
                     {% get_associated_data "Mitglied" "latest" entry.prev_record.mitglied_id None as latestMitgliedAlt %}
                     {% get_associated_data "Mitglied" "historical" entry.prev_record.mitglied_id entry.history_date as historicalMitgliedAlt %}
+                    
+                    {% get_associated_data "Kandidatur" "latest" entry.prev_record.kandidatur_id None as latestKandidaturAlt %}
+                    {% get_associated_data "Kandidatur" "historical" entry.prev_record.kandidatur_id entry.history_date as historicalKandidaturAlt %}
                 {% endif %}
             {% endif %}
 
-            {% if entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalFunktionRecht" %}
+            {% if entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalKandidaturAmt" or entry|to_class_name == "HistoricalFunktionRecht" %}
                 {% get_associated_data "Funktion" "latest" entry.funktion_id None as latestAmt %}
                 {% get_associated_data "Funktion" "historical" entry.funktion_id entry.history_date as historicalAmt %}
 
@@ -24,7 +30,7 @@
                 {% endif %}
             {% endif %}
 
-            {% if entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalFunktionRecht" %}
+            {% if entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalKandidaturAmt" or entry|to_class_name == "HistoricalFunktionRecht" %}
                 {% get_associated_data "Organisationseinheit" "latest" latestAmt.organisationseinheit_id None as latestReferat %}
                 {% get_associated_data "Organisationseinheit" "historical" historicalAmt.organisationseinheit_id entry.history_date as historicalReferat %}
 
@@ -34,7 +40,7 @@
                 {% endif %}
             {% endif %}
 
-            {% if entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalFunktionRecht" %}
+            {% if entry|to_class_name == "HistoricalMitgliedAmt" or entry|to_class_name == "HistoricalKandidaturAmt" or entry|to_class_name == "HistoricalFunktionRecht" %}
                 {% get_associated_data "Unterbereich" "latest" latestAmt.unterbereich_id None as latestUnterbereich %}
                 {% get_associated_data "Unterbereich" "historical" historicalAmt.unterbereich_id entry.history_date as historicalUnterbereich %}
 

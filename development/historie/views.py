@@ -6,6 +6,7 @@ from django.core.paginator import Paginator
 
 from datetime import datetime
 
+from kandidaturen.models import Kandidatur, KandidaturMail, KandidaturAmt
 from mitglieder.models import Mitglied, MitgliedMail, MitgliedAmt
 from aemter.models import Organisationseinheit, Unterbereich, Funktion, Recht, FunktionRecht
 from checklisten.models import Checkliste, ChecklisteAufgabe, ChecklisteRecht
@@ -38,6 +39,10 @@ def list(request):
     mitgliederMails = MitgliedMail.history.all()
     mitgliederAemter = MitgliedAmt.history.all()
 
+    kandidaturen = Kandidatur.history.all()
+    kandidaturenMails = KandidaturMail.history.all()
+    kandidaturenAemter = KandidaturAmt.history.all()
+
     referate = Organisationseinheit.history.all()
     unterbereiche = Unterbereich.history.all()
     aemter = Funktion.history.all()
@@ -57,6 +62,10 @@ def list(request):
     mitgliederMailsPaginator = Paginator(mitgliederMails, 15)
     mitgliederAemterPaginator = Paginator(mitgliederAemter, 15)
 
+    kandidaturenPaginator = Paginator(kandidaturen, 15)
+    kandidaturenMailsPaginator = Paginator(kandidaturenMails, 15)
+    kandidaturenAemterPaginator = Paginator(kandidaturenAemter, 15)
+
     referatePaginator = Paginator(referate, 15)
     unterbereichePaginator = Paginator(unterbereiche, 15)
     aemterPaginator = Paginator(aemter, 15)
@@ -73,6 +82,10 @@ def list(request):
     mitgliederPage = mitgliederPaginator.get_page(page_number)
     mitgliederMailsPage = mitgliederMailsPaginator.get_page(page_number)
     mitgliederAemterPage = mitgliederAemterPaginator.get_page(page_number)
+
+    kandidaturenPage = kandidaturenPaginator.get_page(page_number)
+    kandidaturenMailsPage = kandidaturenMailsPaginator.get_page(page_number)
+    kandidaturenAemterPage = kandidaturenAemterPaginator.get_page(page_number)
 
     referatePage = referatePaginator.get_page(page_number)
     unterbereichePage = unterbereichePaginator.get_page(page_number)
@@ -91,6 +104,9 @@ def list(request):
                   context={"mitglieder": mitgliederPage,
                            "mitgliederMails": mitgliederMailsPage,
                            "mitgliederAemter": mitgliederAemterPage,
+                           "kandidaturen": kandidaturenPage,
+                           "kandidaturenMails": kandidaturenMailsPage,
+                           "kandidaturenAemter": kandidaturenAemterPage,
                            "referate": referatePage,
                            "unterbereiche": unterbereichePage,
                            "aemter": aemterPage,
@@ -140,7 +156,7 @@ def fetch_entries(request):
     # Get indvidiual search terms
     searchterms = None
     if searchterm:
-        searchterms = searchterm.split(',')
+        searchterms = searchterm.split(' ')
         for term in searchterms:
             term = term.strip()
     
@@ -161,6 +177,22 @@ def fetch_entries(request):
         data = MitgliedAmt.history.none()
         for term in searchterms:
             data = data | MitgliedAmt.history.filter(Q(mitglied__id__icontains=term) | Q(mitglied__vorname__icontains=term) | Q(mitglied__name__icontains=term) 
+                | Q(funktion__id__icontains=term) | Q(funktion__bezeichnung__icontains=term) 
+                | Q(funktion__organisationseinheit__bezeichnung__icontains=term)
+                | Q(funktion__unterbereich__bezeichnung__icontains=term))
+
+    if selected_tab == "Kandidaturen":
+        data = Kandidatur.history.none()
+        for term in searchterms:
+            data = data | Kandidatur.history.filter(Q(id__icontains=term) | Q(vorname__icontains=term) | Q(name__icontains=term))
+    if selected_tab == "KandidaturMail":
+        data = KandidaturMail.history.none()
+        for term in searchterms:
+            data =  data | KandidaturMail.history.filter(Q(kandidatur__id__icontains=term) | Q(kandidatur__vorname__icontains=term) | Q(kandidatur__name__icontains=term) | Q(email__icontains=term))
+    if selected_tab == "KandidaturAmt":
+        data = KandidaturAmt.history.none()
+        for term in searchterms:
+            data = data | KandidaturAmt.history.filter(Q(kandidatur__id__icontains=term) | Q(kandidatur__vorname__icontains=term) | Q(kandidatur__name__icontains=term) 
                 | Q(funktion__id__icontains=term) | Q(funktion__bezeichnung__icontains=term) 
                 | Q(funktion__organisationseinheit__bezeichnung__icontains=term)
                 | Q(funktion__unterbereich__bezeichnung__icontains=term))
