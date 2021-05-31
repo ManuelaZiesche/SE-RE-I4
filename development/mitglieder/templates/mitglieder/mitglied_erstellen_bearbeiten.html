@@ -481,15 +481,15 @@
   function initDatePicker(amtid){
     var beginn_datepicker = document.querySelectorAll('#beginn_kandidatur' + amtid);
     var ende_datepicker = document.querySelectorAll('#ende_kandidatur' + amtid);
-    var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', showClearBtn: true, i18n: {
+    var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', firstDay: 1, showClearBtn: true, i18n: {
                 months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
                 monthsShort: ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
-                weekdays: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
-                weekdaysShort: ["Mo","Di", "Mi", "Do", "Fr", "Sa", "So"],
-                weekdaysAbbrev: ["M","D", "M", "D", "F", "S", "S"],
+                weekdays: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+                weekdaysShort: ["So", "Mo","Di", "Mi", "Do", "Fr", "Sa"],
+                weekdaysAbbrev: ["S", "M","D", "M", "D", "F", "S"],
                 today: 'heute',
                 clear: 'löschen',
-                cancel: 'abbrechen',
+                cancel: 'abbrechen'
             },
             onSelect: function(selectedDate) {
               var instance = M.Datepicker.getInstance($('#ende_kandidatur' + amtid));

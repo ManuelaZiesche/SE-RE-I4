@@ -18,7 +18,6 @@
               <a id="searchbtn" class="btn-floating waves-effect waves-light amber">
                 <i class="material-icons black-text">search</i>
               </a>
-              {% if request.user.is_superuser %}
               <div class="right hide-on-med-and-down" style="margin-top: 29px">
                 <a href="/kandidaturen/erstellen" class="waves-effect waves-light btn amber black-text"><i class="material-icons left">add</i>Hinzufügen</a>
                 <a id="delbtnl" class="delmitglieder disabled waves-effect waves-light btn amber black-text"><i class="material-icons left">delete</i>Entfernen</a>
@@ -27,7 +26,6 @@
                 <a href="/kandidaturen/erstellen" class="btn-floating waves-effect waves-light amber"><i class="material-icons black-text">add</i></a>
                 <a id="delbtns" class="delmitglieder disabled btn-floating waves-effect waves-light amber"><i class="material-icons black-text">delete</i></a>
               </div>
-              {% endif %}
           </div>
         </div>
     </div>

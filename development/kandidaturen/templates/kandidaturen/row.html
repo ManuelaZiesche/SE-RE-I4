@@ -6,7 +6,8 @@
             <th></th>
             <th>Name</th>
             <th>Funktionen</th>
-            <th class="hide-on-small-only">E-Mails</th>
+            <!--<th class="hide-on-small-only">E-Mails</th>-->
+            <th></th>
             <th></th>
             </tr>
         </thead>
@@ -39,6 +40,9 @@
                         {% else %}-
                         {% endif %}
                     </td>
+
+                <!-- Removed E-Mail to make room for "Aufnahme" and "E-Mail" buttons
+
                     <td class="mitglied-{{entry.id}} hide-on-small-only">
                         {% if entry.kandidaturmail_set.all %}
                         <ul style="margin-bottom: 0px">
@@ -51,12 +55,19 @@
                             -
                         {% endif %}
                     </td>
+                -->
+                    <td>
+                                                        {% comment %}
+                                                            URL ändern
+                                                        {% endcomment %}
+                            <a href="/kandidaturen" class="hide-on-xl-and-down waves-effect waves-light btn amber black-text" ><i class="material-icons left">add</i>Aufnahme</a>
+                           
+                            <a href="/kandidaturen" class="hide-on-xxl btn-floating waves-effect waves-light amber"><i class="material-icons black-text">add</i></a>
+                    </td>
                     <!-- edit button (pencil) -->
-                    {% if request.user.is_superuser %}
                     <td>
                         <a href="{% url 'kandidaturen:bearbeitenView' entry.id %}"><i class="material-icons black-text">create</i></a>
                     </td>
-                    {% endif %}
                 </tr>
             {% endfor %}
         </tbody>

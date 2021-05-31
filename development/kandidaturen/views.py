@@ -19,11 +19,6 @@ from .funktions import *
 
 
 
-
-
-
-
-
 # Anzahl der Aemter bzw. E-Mails die gespeichert werden muessen
 aemternum = 0
 emailnum = 0
