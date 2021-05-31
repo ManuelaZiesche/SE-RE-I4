@@ -66,6 +66,7 @@ Abgesehen davon ist SQLite sowohl mit verschiedenen Betriebssystemen von Smartph
 |===
 | *Anforderung* | *Systemkomponente* | *Architekturmechanismen*
 
+| UC03 | Webanwendung | Erlernbarkeit
 | F1 | Webanwendung | Zugriffsschutz
 | F2 | Datenbank | Persistenz
 | U1, U2 | Interface | Erlernbarkeit
