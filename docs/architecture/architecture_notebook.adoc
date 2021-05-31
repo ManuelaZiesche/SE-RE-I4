@@ -53,7 +53,7 @@ Die Anwendung ist eine weiterentwickelte Version des Projektes der Gruppe, von d
 //- Silenium
 //- SimpleJason
 
-.neu: +
+//.neu: +
 . Wir nutzen Python als Programmiersprache, da die bestehenden Teile der Anwendung in dieser Sprache programmiert wurden und wir einen Mehraufwand im Sinne einer Umstrukturierung vermeiden wollten. +
 Außerdem ist sie objektorientiert und besitzt eine verhältnismäßig leichte Syntax.
 . Ebenso wie unsere Vorgänger nutzen wir Django als Framework. Es ist ebenfalls in Python verfasst und folgt einem Model-View-Presenter-Schema, aus dem eine leichte Erweiterbarkeit resultiert.
@@ -88,17 +88,33 @@ Datenbank | Archivierung
 //Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
 
 //neu: +
-[cols="1,1,4,4,4"]
-|===
-| Mechanismus | Zustand | Zweck | Eigenschaften | Funktion
 
-| Archivierung | Analysis | Daten dürfen bei Systemausfällen nicht verloren gehen. | Pro Woche soll ein Backup erstellt werden. Es sollen nie mehr als 3 Backups vorhanden sein. | Bachup der Datenbank wird auf dem Server angelegt.
-| Dokumentation | Implementation | Die Anwendung soll erweiterbar sein/bleiben. | verständlich | Framework Django wird verwendet. Dokumentationen werden angefertigt.
-| Erlernbarkeit | Implementation | Eine intuitive Nutzung soll erzielt werden. | einfach unkompliziert | Nutzerfreundliches Interface wird beibehalten.
-| Persistenz | Implementation | Daten müssen zur Verfügung stehen für den Admin und die Mitglieder des Stura. | SQLite-Datenbank | Alle zu speichernden Daten müssen Platz in der Datenbakn finden.
-| Zugriffsschutz | Implementation (Vorgängersystem) | Login | Nicht jeder Nutzer ist dazu berechtigt alle daten einzusehen. | Unterscheidung beim Login nach Mitglied Stura und Admin.
+. *Archivierung*
+** Zustand: Analysis
+** Zweck: Daten dürfen bei Systemausfällen nicht verloren gehen
+** Eigenschaften/ Attribute: Pro Woche soll ein Backup erstellt werden. Es sollen nie mehr als 3 Backups vorhanden sein
+** Funktion: Backup der Datenbank wird auf dem Server angelegt
+. *Dokumentation*
+** Zustand: Implementation
+** Zweck: Die Anwendung soll erweiterbar sein/bleiben
+** Eigenschaften/ Attribute: verständlich
+** Funktion: Framework Django wird verwendet. Dokumentationen werden angefertigt
+. *Erlernbarkeit*
+** Zustand: Implementation
+** Zweck: Eine intuitive Nutzung soll erzielt werden
+** Eigenschaften/ Attribute: einfach unkompliziert
+** Funktion: Nutzerfreundliches Interface wird beibehalten
+. *Persistenz*
+** Zustand: Implementation
+** Zweck: Daten müssen zur Verfügung stehen für den Admin und die Mitglieder des Stura
+** Eigenschaften/ Attribute: SQLite-Datenbank
+** Funktion: Alle zu speichernden Daten müssen Platz in der Datenbakn finden
+. *Zugriffsschutz*
+** Zustand: Implementation (Vorgängersystem)
+** Zweck: Login
+** Eigenschaften/ Attribute: Nicht jeder Nutzer ist dazu berechtigt alle daten einzusehen
+** Funktion: Unterscheidung beim Login nach Mitglied Stura und Admin
 
-|===
 
 == Wesentliche Abstraktionen
 * Objekte/Personen, die als Datensätze im System eingebunden sind
