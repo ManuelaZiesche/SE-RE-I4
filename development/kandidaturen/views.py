@@ -42,8 +42,13 @@ def main_screen(request):
     :param request: Die HTML-Request, welche den Aufruf der View ausgelöst hat.
     :return: Die gerenderte View.
     """
+    
     if not request.user.is_authenticated:
         messages.error(request, "Du musst angemeldet sein, um diese Seite sehen zu können.")
+        return redirect("/")
+
+    if not request.user.is_superuser:
+        messages.error(request, "Du hast keine Berechtigung für diesen Zugriff!")
         return redirect("/")
 
     # Paginate data

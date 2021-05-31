@@ -42,7 +42,9 @@
                     </a>
                     {% if request.user.is_authenticated %}
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      {% if request.user.is_superuser %}
                         <li><a href="/kandidaturen">Kandidaturen</a></li>
+                      {% endif %}
                         <li><a href="/mitglieder">Mitglieder</a></li>
                         <li><a href="/aemter">Funktionen</a></li>
                         <li><a href="/checklisten">Checklisten</a></li>
