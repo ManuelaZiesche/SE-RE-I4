@@ -58,7 +58,7 @@ def main_screen(request):
         context={"data": queryset_page
                  })
 
-@user_passes_test(lambda u: u.is_superuser)
+@user_passes_test(lambda u: u.is_superuser, login_url="/")
 def kandidaturErstellenView(request):
     """
     View zum Erstellen einer Kandidatur.
@@ -145,7 +145,7 @@ def erstellen(request):
         return HttpResponseRedirect('/kandidaturen/erstellen')
 
 
-@user_passes_test(lambda u: u.is_superuser)
+@user_passes_test(lambda u: u.is_superuser, login_url="/")
 def kandidaturBearbeitenView(request, kandidatur_id):
     """
     View zum Bearbeiten einer Kandidatur.
@@ -168,6 +168,7 @@ def kandidaturBearbeitenView(request, kandidatur_id):
     """
     if not request.user.is_authenticated:
         messages.error(request, "Du musst angemeldet sein, um diese Seite sehen zu können.")
+        print("redirect")
         return redirect("/")
     global aemternum, emailnum
 
