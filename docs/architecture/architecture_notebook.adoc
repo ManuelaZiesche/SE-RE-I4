@@ -101,12 +101,15 @@ neu: +
 |===
 
 == Wesentliche Abstraktionen
-Objekte/Personen, die als Datensätze im System eingebunden sind
+* Objekte/Personen, die als Datensätze im System eingebunden sind
 
 == Schichten oder Architektur-Framework
 
-=== Model-View-Controller (MVC)
+=== Model-View-Presenter (MVP)
 * ergibt sich aus Django Framework
+* *Model:* betreibt die Ansicht und ist für die Logig der Ansicht zuständig
+* *View* (Ansicht)*:* für Ein- und Ausgaben verantwortlich
+* *Presenter:* Verbindung zwischen Model und View
 
 == Architekturschichten (Views)
 
@@ -115,11 +118,5 @@ image::../docs/architecture/images/level1.jpg[level1,280,280]
 image::../docs/architecture/images/level2.jpg[level2,550,550]
 
 === Use Cases
-
-[#diagramm_use_case-model]
-[plantuml, "../requirements/{diagramsdir}/diagramm_use_case-model", svg]
-....
-include::{plantumlsdir}/diagramm_use_case-model.puml[]
-....
 
 
