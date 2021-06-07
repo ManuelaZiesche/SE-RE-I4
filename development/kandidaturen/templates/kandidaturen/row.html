@@ -41,28 +41,10 @@
                         {% endif %}
                     </td>
 
-                <!-- Removed E-Mail to make room for "Aufnahme" and "E-Mail" buttons
-
-                    <td class="mitglied-{{entry.id}} hide-on-small-only">
-                        {% if entry.kandidaturmail_set.all %}
-                        <ul style="margin-bottom: 0px">
-                            <li>{{entry.kandidaturmail_set.first.email}}</li>
-                            {% if entry.kandidaturmail_set.all.count > 1 %}
-                                <li>...</li>
-                            {% endif %}
-                        </ul>
-                        {% else %}
-                            -
-                        {% endif %}
-                    </td>
-                -->
                     <td>
-                                                        {% comment %}
-                                                            URL ändern
-                                                        {% endcomment %}
-                            <a href="/kandidaturen" class="hide-on-xl-and-down waves-effect waves-light btn amber black-text" ><i class="material-icons left">add</i>Aufnahme</a>
+                            <a id="adm-{{entry.id}}" class="admitkandidaturen hide-on-xl-and-down waves-effect waves-light btn amber black-text" ><i class="material-icons left">add</i>Aufnahme</a>
                            
-                            <a href="/kandidaturen" class="hide-on-xxl btn-floating waves-effect waves-light amber"><i class="material-icons black-text">add</i></a>
+                            <a id="adm-{{entry.id}}" class="admitkandidaturen hide-on-xxl btn-floating waves-effect waves-light amber"><i class="material-icons black-text">add</i></a>
                     </td>
                     <!-- edit button (pencil) -->
                     <td>

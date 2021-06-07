@@ -532,3 +532,31 @@ def suchen(request):
                   context={
                       "data": kandidaturen_matches_page
                   })
+
+
+def kandidatur_aufnehmen(request):
+    """
+    Nimmt eine Kandidatur als Mitglied auf.
+
+    Aufgaben:
+
+    * Übernahme der Kandidaturendaten in ein neues Mitglied und speichern in der Datenbank.
+    * Löschen der alten Kandidatur.
+    * Rechteeinschränkung: Nur Admins können die Funktion auslösen.
+
+    :param request: Die Ajax-Request, welche den Aufruf der Funktion ausgelöst hat. Enthält die ID der Kandidatur, die aufgenommen werden soll
+    :return: HTTP Response
+    """
+
+    ###### NICHT FINALER CODE!!!! #####
+
+    if not request.user.is_authenticated:
+        return HttpResponse("Permission denied")
+    if not request.user.is_superuser:
+        return HttpResponse("Permission denied")
+    # Extrahieren der Liste aller Kandidaturen-Ids und Entfernen der Kandidaturen aus Datenbank
+    kandidaturenids = request.POST.get('kandidaturen')
+    kandidaturenids = json.loads(kandidaturenids)
+    for kandidaturenid in kandidaturenids:
+        Kandidatur.objects.get(pk=kandidaturenid).delete()
+    return HttpResponse()

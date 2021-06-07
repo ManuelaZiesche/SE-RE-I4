@@ -39,10 +39,10 @@
       </div>
     </div>
 
-    <!-- Modal fuer Kandidatur -->
+    <!-- Modal für Kandidatur -->
     <div id="modal" class="modal"></div>
 
-    <!-- Modal fuer Loeschbestaetigung von Kandidatur(en) -->
+    <!-- Modal für Aufnahmebestätigung von einer Kandidatur -->
     <div id="modal-delete" class="modal">
       <div class="modal-content">
         <h4>Kandidaturen löschen</h4>
@@ -52,6 +52,20 @@
       </div>
       <div class="modal-footer">
         <a id="delmitgliederconfirm" data-url="{% url 'kandidaturen:kandidaturen_loeschen' %}" href="#!" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
+        <a href="#!" class="left modal-action modal-close waves-effect waves-red btn-flat ">Nein</a>
+     </div>
+    </div>
+
+    <!-- Modal für Aufnahmebestätigung von einer Kandidatur -->
+    <div id="modal-admission" class="modal">
+      <div class="modal-content">
+        <h4>Kandidatur aufnehmen</h4>
+        <p id="bestaetigungsfrage">Soll folgende Kandidatur wirklich als Mitglied aufgenommen werden?</p>
+        <ul id="kandidaturen-modal-admission">
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a id="admissionkandidaturconfirm" data-url="{% url 'kandidaturen:kandidatur_aufnehmen' %}" href="#!" class="left modal-action modal-close waves-effect waves-green btn-flat ">Ja</a>
         <a href="#!" class="left modal-action modal-close waves-effect waves-red btn-flat ">Nein</a>
      </div>
     </div>
@@ -185,7 +199,7 @@
         });
         }
 
-        // Bestaetigung, dass Mitglieder geloescht werden sollen ueber Oeffnen eines Modals
+        // Bestaetigung, dass Kandidaturen geloescht werden sollen über Öffnen eines Modals
         $('.delmitglieder').click(function(event){
           var modal = $("#modal-delete");
           var instance = M.Modal.getInstance(modal)
@@ -204,6 +218,22 @@
           }
           instance.open();
         });
+
+
+        // Bestaetigung, dass Kandidaturen aufgenommen werden sollen über Öffnen eines Modals
+        $('.admitkandidaturen').click(function(event){
+          var modal = $("#modal-admission");
+          var instance = M.Modal.getInstance(modal)
+          $("#kandidaturen-modal-admission").html("");
+
+          var kandidaturid = this.id.substr(4);
+          var kandidaturname = $("#mitgliedname-"+kandidaturid).text();
+          $("#kandidaturen-modal-admission").append("<li>" + kandidaturname + "</li>");
+          $("#admissionkandidaturconfirm").attr('kandidatur-id', kandidaturid);
+
+          instance.open();
+        });
+
 
         // Kandidatur(en) loeschen
         $('#delmitgliederconfirm').click(function(){
@@ -235,6 +265,33 @@
             }
           });
         });
+
+
+
+        // Kandidatur aufnehmen
+        $('#admissionkandidaturconfirm').click(function(){
+          var url = $("#"+this.id).attr('data-url');
+          var kandidaturid = $("#"+this.id).attr('kandidatur-id');
+          $("#tr" + kandidaturid).remove();
+
+          $.ajax({
+            type: 'POST',
+            url: url,
+            data: {
+              kandidatur: kandidaturid,
+              csrfmiddlewaretoken: '{{ csrf_token }}',
+            },
+            success: function(data){
+              // Meldung, dass Kandidatur erfolgreich aufgenommen wurde
+              $("#notification").html("Kandidatur wurde erfolgreich aufgenommen");
+            }
+          });
+        });
+
+
+
+
+
       });
     </script>
 {% endblock %}

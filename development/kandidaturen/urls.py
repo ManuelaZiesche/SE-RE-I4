@@ -19,4 +19,5 @@ urlpatterns = [
      path('ajax/email-html-laden', views.email_html_laden, name='email_html_laden'),
      path('ajax/email-loeschen', views.email_loeschen, name='email_loeschen'),
      path('ajax/suchen', views.suchen, name="suchen"),
+     path('ajax/kandidatur-aufnehmen', views.kandidatur_aufnehmen, name="kandidatur_aufnehmen")
 ]
