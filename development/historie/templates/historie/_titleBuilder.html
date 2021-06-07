@@ -13,6 +13,19 @@ Zuordnung von Funktion {{entry.funktion_id}} ({{latestAmt.bezeichnung}}
 zu Mitglied {{entry.mitglied_id}} ({{latestMitglied.vorname}} {{latestMitglied.name}})
 {% endif %}
 
+{% if entry|to_class_name == "HistoricalKandidatur" %}
+Kandidatur {{entry.id}} ({{entry.vorname}} {{entry.name}})
+{% endif %}
+{% if entry|to_class_name == "HistoricalKandidaturMail" %}
+E-Mail-Adresse zu Kandidatur {{entry.kandidatur_id}} ({{latestKandidatur.vorname}} {{latestKandidatur.name}})
+{% endif %}
+{% if entry|to_class_name == "HistoricalKandidaturAmt" %}
+Zuordnung von Funktion {{entry.funktion_id}} ({{latestAmt.bezeichnung}}
+{% if latestUnterbereich.bezeichnung %}{{latestUnterbereich.bezeichnung}} {% endif %}
+{{latestReferat.bezeichnung}})
+zu Kandidatur {{entry.kandidatur_id}} ({{latestKandidatur.vorname}} {{latestKandidatur.name}})
+{% endif %}
+
 {% if entry|to_class_name == "HistoricalOrganisationseinheit" %}
 Organisationseinheit {{entry.id}} ({{entry.bezeichnung}})
 {% endif %}

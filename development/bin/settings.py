@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'login',
     'mitglieder',
     'checklisten',
-    'checklisten.templatetags.t_checklisten'
+    'checklisten.templatetags.t_checklisten',
+    'kandidaturen'
 ]
 
 MIDDLEWARE = [

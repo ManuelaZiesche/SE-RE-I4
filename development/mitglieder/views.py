@@ -56,7 +56,7 @@ def main_screen(request):
                  })
 
 
-@user_passes_test(lambda u: u.is_superuser)
+@user_passes_test(lambda u: u.is_superuser, login_url="/")
 def mitgliedErstellenView(request):
     """
     View zum Erstellen eines Mitglieds.
@@ -155,7 +155,7 @@ def erstellen(request):
         return HttpResponseRedirect('/mitglieder/erstellen')
 
 
-@user_passes_test(lambda u: u.is_superuser)
+@user_passes_test(lambda u: u.is_superuser, login_url="/")
 def mitgliedBearbeitenView(request, mitglied_id):
     """
     View zum Bearbeiten eines Mitglieds.

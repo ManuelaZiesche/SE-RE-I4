@@ -10,6 +10,16 @@
 {% include 'historie/modalData/mitgliedAmtModalData.html' %}
 {% endif %}
 
+{% if entry|to_class_name == "HistoricalKandidatur" %}
+{% include 'historie/modalData/kandidaturModalData.html' %}
+{% endif %}
+{% if entry|to_class_name == "HistoricalKandidaturMail" %}
+{% include 'historie/modalData/kandidaturMailModalData.html' %}
+{% endif %}
+{% if entry|to_class_name == "HistoricalKandidaturAmt" %}
+{% include 'historie/modalData/kandidaturAmtModalData.html' %}
+{% endif %}
+
 {% if entry|to_class_name == "HistoricalOrganisationseinheit" %}
 {% include 'historie/modalData/referatModalData.html' %}
 {% endif %}
