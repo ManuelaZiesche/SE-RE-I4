@@ -1,5 +1,58 @@
 = Test Cases zu Use Case 01 - Kandidaten verwalten
 
+==Testcases Ideensammlung
+
+•	Kandidaturentab in der oberen Menüleiste wird geklickt-> Kandidaturenliste öffnet sich.
+o	Hinzufügebutton funktioniert und es öffnet sich die Eingabemaske
+o	Pflichtfelder der Eingabemaske werden richtig bereitgestellt. (Vorname, Nachname, Funktion, Wahldatum, E-Mail-Adresse)
+	Bei Name/Vorname können nur Buchstaben eingegeben werden. 
+	Beschlussnummer wird nicht als Pflichtfeld (rot unterstrichen) angezeigt
+	Organisationseinheit wird gewählt -> Auswahlliste öffnet sich
+•	Bereich wird gewählt -> Auswahlliste öffnet sich
+•	Funktion wird gewählt -> Auswahlliste öffnet sich
+o	Löschbutton wird gedrückt -> Organisationsfelder werden leer
+•	3 Felder der Organisationseinheit müssen gewählt werden
+Wahldatum wird angeklickt -> Popup mit Kalender erscheint
+	Wahldatum muss in der Zukunft liegen (bzw. realistisch sein)
+•	Darum kann gewählt werden (Kalendernavigation funktioniert)
+	„Löschen“, „Abbrechen“ wird geklickt -> Popup schließt sich/nichts ist passiert
+	„OK“ wird geklickt
+•	Datum wurde richtig übernommen
+o	Speicherbutton wird bestätigt (Pflichtfelder aber leer) -> Pflichtfelder werden rot unterstrichen
+o	Speicherbutton wird bestätigt
+	Info über erfolgreiche Speicherung erscheint?!
+o	und Eintrag erscheint in Liste
+
+•	Suchfunktion funktioniert und gibt auch richtige/sinnvolle Ergebnisse aus	
+•	Häckchen lässt sich links von einem Namen anklicken
+Entfernbutton wird farbig
+		Wird Ent.-Button gedrückt -> J/N-Bestätigung erscheint im Popup
+			„Ja“-Fkt. funktioniert
+..und entfernt Eintrag
+..Löschbestätigung erscheint über Liste „K. wurde erfolgreich gelöscht“
+	„Nein“-Fkt. funktioniert
+		Einträge vorhanden
+•	Mehrere Häckchen lassen sich links von einem Namen anklicken
+	Entfernbutton wird farbig
+		Wird Ent.-Button gedrückt -> J/N-Bestätigung erscheint im Popup
+			„Ja“-Fkt. funktioniert
+..und entfernt Eintrag
+..und entfernt Einträge
+..Löschbestätigung erscheint über Liste „K.(en) wurden erfolgreich gelöscht“
+	„Nein“-Fkt. funktioniert
+		Einträge vorhanden
+•	Wenn sich bereits 15 Einträge (15 Kandidaten) in der Liste befinden, dann erscheint nach einem Neueintrag Seite „2“ (Pagination) mit dem Neueintrag
+	Wenn 16 oder mehr Einträge vorhanden sind (also auch mehrere Seiten)
+-> Seitennavigation 1, 2, 3….
+•	Stift rechts der E-Mail eines Kandidateneintrages wird geklickt -> Eingabemaske (MIT Einträgen) öffnet sich.
+
+•	Ein Kandidateneintrag wird angeklickt -> Popup mit Kandidat-spezifischen Einträgen ploppt auf.
+o	Die richtigen Kandidat-spezifischen Einträgen werden angezeigt
+o	Schließenbutton wird auf Pop-Up gedrückt -> Popup schließt sich.
+
+
+
+
 == Allgemeine Informationen
 
 == TC 01: Kandidat hinzufügen
@@ -12,6 +65,7 @@
 
 - Der Admin ist mit Administratorrechten eingeloggt.
 - Verbindung zur Datenbank ist vorhanden
+- (Kandidat(en) sind in DB vorhanden)
 
 [%header, cols="1,2,3,4,5,6"]
 |===
@@ -33,10 +87,8 @@
 
 |2
 |Wie oben beschrieben
-
-+ Kandidat(en) sind in DB vorhanden
-|Zeilen eines Kandidateneintrags
-|Mausklick
+|Zeichenfelder eines Kandidaten-Neu-eintrags
+|Mausklick bzw. 
 |Zeilen eines Kandidateneintrags anklicken
 |Popup mit Knadiatinfo´s poppt auf
 
@@ -46,6 +98,43 @@
 |Cell in column 4, row 3
 |Cell in column 5, row 3
 |Cell in column 6, row 3
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+
+|3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|Cell in column 4, row 3
+|Cell in column 5, row 3
+|Cell in column 6, row 3
+
+
 |===
 
 
