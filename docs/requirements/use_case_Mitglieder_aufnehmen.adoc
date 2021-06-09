@@ -45,8 +45,7 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-* Die Kandidatur wurde zum Mitglied umgewandelt und kann unter dem Tab "Mitglieder" bearbeitet werden +
-* In der Eingabemaske erscheint unter anderem eine Checkliste mit zu erfüllenden Aufgaben für den Admin
+* Die Kandidatur wurde zum Mitglied umgewandelt und kann unter dem Tab "Mitglieder" bearbeitet werden
 
 
 
