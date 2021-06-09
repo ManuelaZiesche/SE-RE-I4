@@ -1,57 +1,5 @@
 = Test Cases zu Use Case 01 - Kandidaten verwalten
 
-==Testcases Ideensammlung
-
-•	Kandidaturentab in der oberen Menüleiste wird geklickt-> Kandidaturenliste öffnet sich.
-o	Hinzufügebutton funktioniert und es öffnet sich die Eingabemaske
-o	Pflichtfelder der Eingabemaske werden richtig bereitgestellt. (Vorname, Nachname, Funktion, Wahldatum, E-Mail-Adresse)
-	Bei Name/Vorname können nur Buchstaben eingegeben werden. 
-	Beschlussnummer wird nicht als Pflichtfeld (rot unterstrichen) angezeigt
-	Organisationseinheit wird gewählt -> Auswahlliste öffnet sich
-•	Bereich wird gewählt -> Auswahlliste öffnet sich
-•	Funktion wird gewählt -> Auswahlliste öffnet sich
-o	Löschbutton wird gedrückt -> Organisationsfelder werden leer
-•	3 Felder der Organisationseinheit müssen gewählt werden
-Wahldatum wird angeklickt -> Popup mit Kalender erscheint
-	Wahldatum muss in der Zukunft liegen (bzw. realistisch sein)
-•	Darum kann gewählt werden (Kalendernavigation funktioniert)
-	„Löschen“, „Abbrechen“ wird geklickt -> Popup schließt sich/nichts ist passiert
-	„OK“ wird geklickt
-•	Datum wurde richtig übernommen
-o	Speicherbutton wird bestätigt (Pflichtfelder aber leer) -> Pflichtfelder werden rot unterstrichen
-o	Speicherbutton wird bestätigt
-	Info über erfolgreiche Speicherung erscheint?!
-o	und Eintrag erscheint in Liste
-
-•	Suchfunktion funktioniert und gibt auch richtige/sinnvolle Ergebnisse aus	
-•	Häckchen lässt sich links von einem Namen anklicken
-Entfernbutton wird farbig
-		Wird Ent.-Button gedrückt -> J/N-Bestätigung erscheint im Popup
-			„Ja“-Fkt. funktioniert
-..und entfernt Eintrag
-..Löschbestätigung erscheint über Liste „K. wurde erfolgreich gelöscht“
-	„Nein“-Fkt. funktioniert
-		Einträge vorhanden
-•	Mehrere Häckchen lassen sich links von einem Namen anklicken
-	Entfernbutton wird farbig
-		Wird Ent.-Button gedrückt -> J/N-Bestätigung erscheint im Popup
-			„Ja“-Fkt. funktioniert
-..und entfernt Eintrag
-..und entfernt Einträge
-..Löschbestätigung erscheint über Liste „K.(en) wurden erfolgreich gelöscht“
-	„Nein“-Fkt. funktioniert
-		Einträge vorhanden
-•	Wenn sich bereits 15 Einträge (15 Kandidaten) in der Liste befinden, dann erscheint nach einem Neueintrag Seite „2“ (Pagination) mit dem Neueintrag
-	Wenn 16 oder mehr Einträge vorhanden sind (also auch mehrere Seiten)
--> Seitennavigation 1, 2, 3….
-•	Stift rechts der E-Mail eines Kandidateneintrages wird geklickt -> Eingabemaske (MIT Einträgen) öffnet sich.
-
-•	Ein Kandidateneintrag wird angeklickt -> Popup mit Kandidat-spezifischen Einträgen ploppt auf.
-o	Die richtigen Kandidat-spezifischen Einträgen werden angezeigt
-o	Schließenbutton wird auf Pop-Up gedrückt -> Popup schließt sich.
-
-
-
 
 == Allgemeine Informationen
 
@@ -85,57 +33,299 @@ o	Schließenbutton wird auf Pop-Up gedrückt -> Popup schließt sich.
 |Button `+'Hinzufügen'+` klicken
 |Die Eingabemaske (Kandidat-Hinzufügen) ist geöffnet und bereit zur Dateneingabe.
 
-|2
-|Wie oben beschrieben
-|Zeichenfelder eines Kandidaten-Neu-eintrags
-|Mausklick bzw. 
-|Zeilen eines Kandidateneintrags anklicken
-|Popup mit Knadiatinfo´s poppt auf
+|21
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Pflicht -und sonstige Zeichenfelder der Eingabemaske
+(Pflichtfelder: Vorname, Nachname, Funktion, Wahldatum, E-Mail-Adresse)
+|Mausklick, Hotkey bzw. Zeicheneingabe
+|Eins oder mehrere Pflichtfelder leer lassen
++
+Speicherbutton betätigen
+|Leergebliebene Pflichtfelder werden rot markiert
+
+|2.2
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Pflicht -und sonstige Zeichenfelder der Eingabemaske
+(Pflichtfelder: Vorname, Nachname, Funktion)
+|Numerische Zeichen
+|Bei Name, Vorname nur Zahlen und/oder alphanumerische Zeichen eingeben
++
+Speicherbutton betätigen
+|Warnung wird ausgegeben, dass nur Buchstaben eingegeben werden dürfen.
+
+Leergebliebene Pflichtfelder werden rot markiert.
+
+|2.3
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Pflicht -und sonstige Zeichenfelder der Eingabemaske
+(Pflichtfelder: Vorname, Nachname, Wahldatum bereits ordnungsgemäß eingetragen)
+|Numerische Zeichen
+|Bei Name, Vorname nur Zahlen und/oder alphanumerische Zeichen eingeben
++
+Speicherbutton betätigen
+|Warnung wird ausgegeben, dass nur Buchstaben eingegeben werden dürfen.
+
+Leergebliebene Pflichtfelder werden rot markiert.´
+
+|2.4
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum, Funktion bereits in Eingabemaske eingetragen
+|E-Mail-Adressen-Feld
+|regulärer Struktur-Ausdruck einer E-Mail-Adresse
+|Falsche Struktur einer E-Mail-Adresse eingeben Bsp: abc@.de
++
+Speicherbutton betätigen
+|Negativtest:
+Warnung wird ausgegeben, dass Struktur der eingegebene E-Mail-Adresse falsch ist
+
+E-Mail-Adressen-Pflichtfelder wird rot markiert
+
+|2.4.1
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum, Funktion bereits in Eingabemaske eingetragen
+|E-Mail-Adressen-Feld
+|reguläre E-Mail-Adresse mit Umlaut
+|Falsche Struktur der E-Mail-Adresse *mit* Umlauten 
+Bsp: matthäus@htw-dresden.de
++
+Speicherbutton betätigen
+|Negativtest:
+Warnung wird ausgegeben, dass Struktur der eingegebene E-Mail-Adresse falsch ist
+
+E-Mail-Adressen-Pflichtfelder wird rot markiert
+
+
+|2.4.2
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Wahldatum-Feld
+|Mauseingabe
+|Mausklick in Wahldatum-Feld
+|Positivtest: Popup mit Kalender öffnet sich -> Eingaben können getätigt werden
+
+
+
+|2.4.3
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
+|Pfeiltasten und/oder Tag des KalendersPopups
+|Mauseingabe
+|<- -> Butten und/oder Kalendertag auswählen + mit OK bestätigen
+|Positivtest: Das ausgewählte Datum befindet sich nun im Wahldatumsfeld (Datum wurde richtig übernommen)
+
+
+
+|2.4.4
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
+|Button „Löschen“, „Abbrechen“, „OK“ des Popups
+|Mauseingabe
+|„Löschen“, „Abbrechen“, „OK“ oder neben das Popup klicken
+|Positivtest: Popup schließt sich
+
+
+
+|2.4.5
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Funktion bereits in Eingabemaske eingetragen
+|Wahldatum-Feld
+|Zukünftiges (realistisches) Wahldatum
+|Zukünftiges (realistisches) Wahldatum wählen/eingeben
+|Negativtest:
+Warnung wird ausgegeben, falls Wahldatum in der Vergangenheit liegt.
+
+Wahldatum-Pflichtfelder wird rot markiert
+
+|2.5.1
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
+|Funktion-Pflichtfelder
+|Vorgegebene Funktionen der Funktions-Pflichtfelder
+|1. Feld wurde gewählt, 2. Feld leer, 3. Feld wurde gewählt
+|Negativtest:
+Warnung wird ausgegeben, dass Funktion-Pflichtfeld nicht ordnungsgemäß eingetragen wurde
+
+Funktionen-Pflichtfelder wird rot markiert
+
+|2.5.2
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
+|Funktion´s-Feld
+|Vorgegebene Funktionen der Funktions-Pflichtfelder
+|Feld 1, 2, 3 wurde gewählt + zusätzliche Funktion soll gewählt werden-> Feld 1, 2, 3 bleiben leer
+|Negativtest:
+Warnung wird ausgegeben, dass 2. Organisationseinheit nicht ordnungsgemäß eingetragen wurde
+
+Funktionen-Pflichtfelder wird rot markiert
+
+
+|2.6.
+|Wie oben beschrieben + 15 Einträge befinden sich in der Liste
+|Pagination
+|Ein neuer Eintrag erweitert die Pagination um eine Seite
+|Einen oder mehrere neuen Kandidateneinträge erzeugen
+|Positivtest: Eine neue Listenseite erscheint in der Pagination
+
 
 |3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
-|Cell in column 4, row 3
-|Cell in column 5, row 3
-|Cell in column 6, row 3
-
-|3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
-|Cell in column 4, row 3
-|Cell in column 5, row 3
-|Cell in column 6, row 3
-
-|3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
-|Cell in column 4, row 3
-|Cell in column 5, row 3
-|Cell in column 6, row 3
-
-|3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
-|Cell in column 4, row 3
-|Cell in column 5, row 3
-|Cell in column 6, row 3
-
-|3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
-|Cell in column 4, row 3
-|Cell in column 5, row 3
-|Cell in column 6, row 3
-
-|3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
-|Cell in column 4, row 3
-|Cell in column 5, row 3
-|Cell in column 6, row 3
-
+|Wie oben beschrieben + alle Pflichtfelder wurden ordnungsgemäß befüllt
+|Speicherbutton
+|Mausklick auf Speicherbutton
+|Speicherbutton betätigen
+|Positivtest: Der gewünschte Kandidat befindet sich nun in der Kandidatenliste
 
 |===
+
+
+== TC 0X: Weitere Informationen hinzufügen/bearbeiten/löschen
+*Beschreibung:* Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten oder löschen
+
+*Vorbedingungen:*
+
+- Kandidat(en) bereits in Datenbank vorhanden
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
+
+
+
+
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1.1.1
+|Wie  oben beschrieben
+|Häckchenbox links einer Kandidatenzeile
+| Mausklick
+|Häckchen bei gewünschtem Kandidaten setzen
++ Löschbutton klicken
+|Positivtest: Löschbestätigung erscheint
+
+
+
+|1.1.2
+|Wie  oben beschrieben
+|Häckchenbox(en) links mehrerer Kandidatenzeilen
+|Mausklick
+|Mehrere Häckchen bei gewünschten Kandidaten setzen
++ Löschbutton klicken + Löschbestätigung bestätigen
+|Positivtest: Markierte Einträge sind nach dem löschen nicht mehr in der Liste vorhanden
+
+
+
+|1.2
+|Wie  oben beschrieben + Popup mit Löschbestätigung ist zu sehen
+|"Ja"-Button
+| Mausklick
+|Löschbestätigung mit "ja" bestätigen
+
+|Positivtest: Löschbestätigung "Kandidaturen wurden erfolgreich gelöscht" erscheint über der Liste der Kandidaten + Kandidat ist aus der Liste verschwunden
+
+
+|1.3
+|Wie  oben beschrieben + Popup mit Löschbestätigung ist zu sehen
+|"Nein"-Button
+|Mausklick
+|Löschbestätigung mit "nein" bestätigen
+
+|Positivtest: Popup verschwindet + Kandidaten steht weiterhin in der Liste
+
+
+
+|2
+|Wie oben beschrieben
+
++ Kandidat(en) sind in DB vorhanden
+|Stift-Button
+|Mausklick
+|auf gewünschten Stift klicken
+|Positivtest: Popup mit Knadiatinfo´s poppt auf und Textfelder sind in der Eingabemaske gefüllt.. es kann nun bearbeitet werden..
+
+|===
+
+
+
+
+
+
+
+
+
+== TC 0X: Informationen suchen
+*Beschreibung:* Der Admin möchte bereits vorhandenen Kandidaten durchsuchen
+
+*Vorbedingungen:*
+
+- Kandidat(en) bereits in Datenbank vorhanden
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
+
+
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1.1
+|Wie  oben beschrieben
+|Suchfeld über der Kandidatenliste
+|Der zu suchende Ausdruck
+|Suchfeld aktivieren, Suchausdruck eingeben und suche mit *Enter* ausführen
+|*Positivtest:* Ergebnisse werden lt. des Suchausdrucks gefunden, welche sich in der Datenbank befunden haben
+
+*Negativtest:* Ergebnisse werden lt. des Suchausdrucks *nicht* gefunden, trotz passender Daten in der Datenbank
+
+|===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
