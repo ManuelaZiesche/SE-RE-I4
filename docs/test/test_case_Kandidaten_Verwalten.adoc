@@ -15,9 +15,13 @@
 - Verbindung zur Datenbank ist vorhanden
 - (Kandidat(en) sind in DB vorhanden)
 
-[%header, cols="1,2,3,4,5,6"]
+
+
+.*Unittests*
+[%header, cols="1,2,3,4,5,6", ]
+
 |===
-|T.-Nr.
+|T.-Nr.{set:cellbgcolor:#f4f4e9}
 |Vorbedingungen
 |Testobjekt
 |Eingabe(daten)
@@ -33,7 +37,7 @@
 |Button `+'Hinzufügen'+` klicken
 |Die Eingabemaske (Kandidat-Hinzufügen) ist geöffnet und bereit zur Dateneingabe.
 
-|21
+|2.1
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |Pflicht -und sonstige Zeichenfelder der Eingabemaske
 (Pflichtfelder: Vorname, Nachname, Funktion, Wahldatum, E-Mail-Adresse)
@@ -169,7 +173,7 @@ Funktionen-Pflichtfelder wird rot markiert
 |===
 
 
-== TC 0X: Weitere Informationen hinzufügen/bearbeiten/löschen
+== TC 02: Weitere Informationen bearbeiten/löschen
 *Beschreibung:* Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten oder löschen
 
 *Vorbedingungen:*
@@ -181,10 +185,10 @@ Funktionen-Pflichtfelder wird rot markiert
 
 
 
-
+.*Unittests*
 [%header, cols="1,2,3,4,5,6"]
 |===
-|T.-Nr.
+|T.-Nr.{set:cellbgcolor:#f4f4e9}
 |Vorbedingungen
 |Testobjekt
 |Eingabe(daten)
@@ -257,10 +261,10 @@ Funktionen-Pflichtfelder wird rot markiert
 - Kandidat(en) bereits in Datenbank vorhanden
 - Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
 
-
+.*Unittests*
 [%header, cols="1,2,3,4,5,6"]
 |===
-|T.-Nr.
+|T.-Nr.{set:cellbgcolor:#f4f4e9}
 |Vorbedingungen
 |Testobjekt
 |Eingabe(daten)

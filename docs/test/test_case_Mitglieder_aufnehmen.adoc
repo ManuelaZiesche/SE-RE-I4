@@ -1,5 +1,89 @@
 
-= Test Cases zu Use Case 02 - Mitglieder aufnehmen
+= TC 02 - Mitglieder aufnehmen
+*Beschreibung:* Der Admin möchte bereits vorhandenen Kandidaten zu einem Mitglied machen
+
+*Vorbedingungen:*
+
+- Kandidat(en), welche als Mitglied übernommen werden sollen, befinden sich bereits in der Datenbank
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
+
+.*Unittests*
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.{set:cellbgcolor:#f4f4e9}
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1.1
+|Wie  oben beschrieben
+|Gelber Plusbutton (links vom Stift)
+|Mausklick
+|*Plus*-Button des Kandidats, welche als Mitglied übernommen werden soll, wird geklickt
+|Popup mit "*JA*/*NEIN*-Bestätigungsdialog" ploppt auf
+
+|1.2
+|Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
+|*JA*-Button 3.+^.^|*siehe Integrationstest*
+
+
+
+|1.3
+|Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
+|*NEIN*-Button
+|Mausklick
+|Klick auf *NEIN*-Button
+|Kandidat nach wie vor in der Kandidaturenliste zu sehen
+
+|===
+
+
+
+
+
+.*Integrationstests*
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.{set:cellbgcolor:#eaf1f5}
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1. 
+|Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
+|*JA*-Button
+|Mausklick
+|Klick auf *JA*-Button
+|Kandidat nicht mehr in der Kandidaturenliste zu sehen + jetzt als Mitglied als Eintrag in Mitgliedsliste 
+
+
+
+
+|===
+
+
+
+
+
+
+
+
+
+
+
+
+2-3 Stück
+Popup
+Ja-Bestätigung
+
+
+Integrationstest
+
+
 
 Beschreibung:
 
