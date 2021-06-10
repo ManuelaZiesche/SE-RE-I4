@@ -51,6 +51,11 @@ main {
   background-color: #ffc107;
 }
 
+.btn-amber, .btn-amber:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
 .dropdown-content li > span {
   color: #000;
 }

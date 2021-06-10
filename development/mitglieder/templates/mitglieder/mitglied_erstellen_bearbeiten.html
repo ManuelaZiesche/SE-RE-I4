@@ -113,6 +113,59 @@
         <label for="telefon_mobil">Telefon (mobil)</label>
       </div>
     </div>
+
+
+    <!-- Checkliste für neu hinzugefügte Mitglieder -->
+    <div class="row">
+      <div class="col s12">
+        <h5>Checkliste</h5>
+        <br />
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk1-{{entry.id}}">
+          <input type="checkbox"  id="chk1-{{entry.id}}"/>
+          <span>Wahl angenommen</span>
+        </label>
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk2-{{entry.id}}">
+          <input type="checkbox" class="" id="chk2-{{entry.id}}"/>
+          <span>Kenntnisnahme der Ordnungen</span>
+        </label>
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk3-{{entry.id}}">
+          <input type="checkbox" class="checkbox-amber" id="chk3-{{entry.id}}"/>
+          <span>Verpflichtung auf das Datengeheimnis</span>
+        </label>
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk4-{{entry.id}}">
+          <input type="checkbox" class="checkbox-amber" id="chk4-{{entry.id}}"/>
+          <span>Stammdatenblatt</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Dateiuploadfeld -->
+    <div class="row">
+      <div class="file-field input-field col s12 m12 l9">
+        <div class="btn btn-amber" style="border-radius: 7%;">
+          <span>
+            <i class="material-icons">file_upload</i>
+          </span>
+          <input type="file" multiple>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Lade eine oder mehrere Dateien hoch">
+        </div>
+      </div>
+    </div>
+
     <!-- Buttons: Hinzufuegen, Abbrechen -->
     <div class="row">
         <div class="col s12">
@@ -120,6 +173,7 @@
           <a href="/mitglieder" class="waves-effect waves-light btn-large grey lighten-2 black-text">Abbrechen</a>
         </div>
     </div>
+
   </div>
 </div>
 </form>
