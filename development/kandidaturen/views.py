@@ -1,19 +1,14 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
 from django.db.models.functions import Lower
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
-from django.views import generic
-from django.core import serializers
 from .models import Kandidatur, KandidaturAmt, KandidaturMail
 from aemter.models import Funktion, Organisationseinheit, Unterbereich
-from django.template import RequestContext
-from datetime import date
 import datetime
 import simplejson, json
-from django.db.models import Q
 import re
 from .funktions import *
 

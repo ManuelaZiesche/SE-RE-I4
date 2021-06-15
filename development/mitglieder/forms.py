@@ -1,6 +1,4 @@
 from django import forms
-from mitglieder.models import Mitglied, MitgliedAmt, MitgliedMail
-from aemter.models import Funktion, Unterbereich, Organisationseinheit
 
 class MitgliedForm(forms.Form):
     vorname = forms.CharField(required=True)

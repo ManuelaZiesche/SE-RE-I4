@@ -1,23 +1,18 @@
 from datetime import date
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
-from django.views import generic
-from django.core import serializers
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
 from django.db.models.functions import Lower
 from .models import Mitglied, MitgliedAmt, MitgliedMail
 from aemter.models import Funktion, Organisationseinheit, Unterbereich
-from mitglieder.forms import MitgliedForm
 import datetime
 import simplejson, json
 # string splitting
 import re
-from django.template import RequestContext
 from django.db.models import Q
-from .forms import MitgliedForm
 from .funktions import *
 
 # Anzahl der Aemter bzw. E-Mails die gespeichert werden muessen

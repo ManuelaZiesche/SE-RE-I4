@@ -1,4 +1,3 @@
-from datetime import date
 from django.db import models
 from django.db.models import Q
 from simple_history.models import HistoricalRecords

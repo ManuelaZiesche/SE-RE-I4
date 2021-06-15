@@ -1,5 +1,3 @@
-
-
 # Attribut attr (string) wird aus request (POST-Request) entnommen und zurueckgegeben
 # bei einem KeyError oder leerem String wird None zurueckgegeben
 def getValue(request, attr):
