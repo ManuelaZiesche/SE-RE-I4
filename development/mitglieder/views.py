@@ -123,7 +123,29 @@ def erstellen(request):
         plz = request.POST['plz']
         ort = request.POST['ort']
         telefon_mobil = request.POST['telefon_mobil']
-        mitglied = Mitglied(name=nachname, vorname=vorname, spitzname=spitzname, strasse=strasse, hausnr=hausnr, plz=plz, ort=ort, tel_mobil=telefon_mobil)
+
+        if getValue(request, 'wahl_angenommen') == 'on':
+            wahl_angenommen = True
+        else:
+            wahl_angenommen = False
+
+        if getValue(request, 'kenntnis_ordn') == 'on':
+            kenntnis_ordn = True
+        else:
+            kenntnis_ordn = False
+
+        if getValue(request, 'verpfl_datengeheimnis') == 'on':
+            verpfl_datengeheimnis = True
+        else:
+            verpfl_datengeheimnis = False
+
+        if getValue(request, 'stammdatenblatt') == 'on':
+            stammdatenblatt = True
+        else:
+            stammdatenblatt = False
+
+        mitglied = Mitglied(name=nachname, vorname=vorname, spitzname=spitzname, strasse=strasse, hausnr=hausnr, plz=plz, ort=ort, tel_mobil=telefon_mobil,
+                         wahl_angenommen=wahl_angenommen, kenntnis_ordn=kenntnis_ordn, verpfl_datengeheimnis=verpfl_datengeheimnis, stammdatenblatt=stammdatenblatt)
         mitglied.save()
 
         # E-Mail
@@ -230,6 +252,27 @@ def speichern(request, mitglied_id):
         mitglied.plz = getValue(request, 'plz')
         mitglied.ort = getValue(request, 'ort')
         mitglied.tel_mobil = getValue(request, 'telefon_mobil')
+
+        if getValue(request, 'wahl_angenommen') == 'on':
+            mitglied.wahl_angenommen = True
+        else:
+            mitglied.wahl_angenommen = False
+
+        if getValue(request, 'kenntnis_ordn') == 'on':
+            mitglied.kenntnis_ordn = True
+        else:
+            mitglied.kenntnis_ordn = False
+
+        if getValue(request, 'verpfl_datengeheimnis') == 'on':
+            mitglied.verpfl_datengeheimnis = True
+        else:
+            mitglied.verpfl_datengeheimnis = False
+
+        if getValue(request, 'stammdatenblatt') == 'on':
+            mitglied.stammdatenblatt = True
+        else:
+            mitglied.stammdatenblatt = False
+
         mitglied.save()
 
         # alle Aemter des Mitglieds loeschen

@@ -124,28 +124,28 @@
 
       <div class="col s12">
         <label style="color:#000" for="chk1-{{entry.id}}">
-          <input type="checkbox"  id="chk1-{{entry.id}}"/>
+          <input type="checkbox" name="wahl_angenommen"  id="chk1-{{entry.id}}" {% if mitglied.wahl_angenommen %}checked{% endif %}/>
           <span>Wahl angenommen</span>
         </label>
       </div>
 
       <div class="col s12">
         <label style="color:#000" for="chk2-{{entry.id}}">
-          <input type="checkbox" class="" id="chk2-{{entry.id}}"/>
+          <input type="checkbox" name="kenntnis_ordn" id="chk2-{{entry.id}}" {% if mitglied.kenntnis_ordn %}checked{% endif %}/>
           <span>Kenntnisnahme der Ordnungen</span>
         </label>
       </div>
 
       <div class="col s12">
         <label style="color:#000" for="chk3-{{entry.id}}">
-          <input type="checkbox" class="checkbox-amber" id="chk3-{{entry.id}}"/>
+          <input type="checkbox" name="verpfl_datengeheimnis" id="chk3-{{entry.id}}" {% if mitglied.verpfl_datengeheimnis %}checked{% endif %}/>
           <span>Verpflichtung auf das Datengeheimnis</span>
         </label>
       </div>
 
       <div class="col s12">
         <label style="color:#000" for="chk4-{{entry.id}}">
-          <input type="checkbox" class="checkbox-amber" id="chk4-{{entry.id}}"/>
+          <input type="checkbox" name="stammdatenblatt" id="chk4-{{entry.id}}" {% if mitglied.stammdatenblatt %}checked{% endif %}/>
           <span>Stammdatenblatt</span>
         </label>
       </div>
@@ -248,7 +248,7 @@
   // Speicherbutton geklickt
   $("#save_button").click(function(){
     var valid_input = true;
-    // Pruefen, ob Vor- und Nachname angegeben sind
+    // Prüfen, ob Vor- und Nachname angegeben sind
     if ($("#vorname").val()==""){
       $("#vorname").addClass("invalid_input");
       addInputEventListener("vorname");
@@ -261,7 +261,7 @@
       console.log("name fehlt");
       valid_input = false;
     }
-    // Pruefen, ob alle E-Mail- und Amtfelder ausgefuellt sind
+    // Prüfen, ob alle E-Mail- und Amtfelder ausgefüllt sind
     console.log("anzahl emails: " + email_num.toString());
     for (var i=1; i<=email_num; i++){
       var email = $("#email"+i.toString()).val();
@@ -273,10 +273,10 @@
       }
     }
     for (var i=1; i<=amt_num; i++){
-      // Select fuer Amt existiert nocht nicht (weil kein Organisationseinheit oder Bereich ausgewaehlt wurde) => rot markieren
+      // Select für Amt existiert nocht nicht (weil kein Organisationseinheit oder Bereich ausgewählt wurde) => rot markieren
       if (!$("#selectamt"+i.toString()).length){
         console.log("selectamt" + i.toString());
-        // Dropdown fuer Bereich existiert => rot markieren, ansonsten Dropdown fuer Organisationseinheit rot markieren
+        // Dropdown für Bereich existiert => rot markieren, ansonsten Dropdown für Organisationseinheit rot markieren
         if ($("#selectbereich" + i.toString()).length){
           console.log("Bereich wurde nicht ausgewaehlt")
           $("#div_selectbereich"+i.toString()).addClass("invalid_input");
@@ -289,7 +289,7 @@
         console.log("Kein Bereich oder Organisationseinheit ausgewahelt");
         valid_input = false;
       }
-      // Organisationseinheit und Bereich, aber kein Amt ausgewaehlt => Amt rot markieren
+      // Organisationseinheit und Bereich, aber kein Amt ausgewählt => Amt rot markieren
       if ($("#selectamt" + i.toString() + " option:selected").prop("disabled")==true){
         console.log("Ein Amt wurde nicht ausgewaehlt");
         valid_input = false;
@@ -302,32 +302,32 @@
     if (valid_input) {
         // check if MaxMembers is reached
         $.ajax({
-            type: "POST",
-            {% if mitglied %}
-                url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=mitglied.id %}",
-                {% else %}
-                url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=0 %}",
-            {% endif %}
-            data: $('#mitgliedForm').serialize(),
+          type: "POST",
+          {% if mitglied %}
+              url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=mitglied.id %}",
+              {% else %}
+              url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=0 %}",
+          {% endif %}
+          data: $('#mitgliedForm').serialize(),
 
-        success: function(data){
-          var ret = data['isValid'];
-          if(ret == true) {
-              $('#mitgliedForm').submit();
+          success: function(data){
+            var ret = data['isValid'];
+            if(ret == true) {
+                $('#mitgliedForm').submit();
+            }
+            else {
+                window.scrollTo(0,0);
+                var modal = $("#modal-max-members");
+                var instance = M.Modal.getInstance(modal);
+                $("#list-max-members").html("");
+                var funktionen = data['funktion'];
+                console.log(funktionen);
+                funktionen.forEach(function appendtolist(currval) {
+                    $("#list-max-members").append("<li>" + currval + "</li>");
+                });
+                instance.open();
+            }
           }
-          else {
-              window.scrollTo(0,0);
-              var modal = $("#modal-max-members");
-              var instance = M.Modal.getInstance(modal);
-              $("#list-max-members").html("");
-              var funktionen = data['funktion'];
-              console.log(funktionen);
-              funktionen.forEach(function appendtolist(currval) {
-                  $("#list-max-members").append("<li>" + currval + "</li>");
-              });
-              instance.open();
-          }
-        }
         });
     }
     else {

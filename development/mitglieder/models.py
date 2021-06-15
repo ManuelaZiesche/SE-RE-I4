@@ -13,6 +13,12 @@ class Mitglied(models.Model):
     plz = models.CharField(max_length=5, null=True)
     ort = models.CharField(max_length=50, null=True)
     tel_mobil = models.CharField(max_length=15, null=True)
+
+    wahl_angenommen = models.BooleanField(default=False, null=False)
+    kenntnis_ordn = models.BooleanField(default=False, null=False)
+    verpfl_datengeheimnis = models.BooleanField(default=False, null=False)
+    stammdatenblatt = models.BooleanField(default=False, null=False)
+
     history = HistoricalRecords()
 
     def __str__(self):
