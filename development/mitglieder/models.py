@@ -46,6 +46,14 @@ class Mitglied(models.Model):
         else:
             return None
 
+    def admission_data_complete(self):
+        if self.wahl_angenommen and self.kenntnis_ordn and self.verpfl_datengeheimnis and self.stammdatenblatt:
+            print("true")
+            return True
+        else:
+            print("false")
+            return False
+
     class Meta:
         verbose_name = "Mitglied"
         verbose_name_plural = "Mitglieder"

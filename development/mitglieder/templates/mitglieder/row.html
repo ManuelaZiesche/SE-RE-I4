@@ -4,6 +4,7 @@
         <thead>
             <tr>
             <th></th>
+            <th></th>
             <th>Name</th>
             <th>Funktionen</th>
             <th class="hide-on-small-only">E-Mails</th>
@@ -16,9 +17,9 @@
             {% for entry in data %}
                 <!-- Zeile -->
                 <tr id="tr{{entry.id}}" class="mitglied" data-url="{% url 'mitglieder:mitglied_laden' %}" >
-                    <td>
+                    <td>                  
+                    {% if request.user.is_superuser %}
                         <!-- Checkbox -->
-                        {% if request.user.is_superuser %}
                         <form method="post" style="margin-bottom: 0px; margin-top: 4px; padding-left: 7px; padding-right: 7px;">
                             {% csrf_token %}
                             <label for="chk-{{entry.id}}">
@@ -26,6 +27,14 @@
                                 <span style="padding-left: 7px; padding-right: 7px;"></span>
                             </label>
                         </form>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if request.user.is_superuser %}
+                            <!-- Attention symbol-->
+                            {% if not entry.admission_data_complete %}
+                                <i class="material-icons red-text">priority_high</i>
+                            {% endif %}
                         {% endif %}
                     </td>
                     <td id="mitgliedname-{{entry.id}}" class="mitglied-{{entry.id}}">{{entry.vorname}} {{entry.name}}</td>
