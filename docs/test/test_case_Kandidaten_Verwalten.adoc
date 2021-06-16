@@ -28,6 +28,7 @@
 |Handlungen zur Durchführung des Tests
 |Erwartetes Ergebnis
 
+
 |1
 |Wie  oben beschrieben
 
@@ -217,6 +218,46 @@ Funktionen-Pflichtfelder wird rot markiert
 |Positivtest: Der gewünschte Kandidat befindet sich nun in der Kandidatenliste
 
 |===
+
+
+
+
+
+
+
+
+
+
+
+*Wann sollte getestet werden?:* Am Ende einer jeden Iteration oder nach Implement. neuer Features
+
+
+.*Testdokumentation*
+[%header, cols="1,2,3,4,5,6", ]
+
+
+
+|===
+|T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Name TestCase
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1  
+|TestCase XY
+|15.6.21
+|Hanswurst
+|nu
+|-
+|===
+
+*Auswertung fehlgeschlagener Test´s:* _Wer kümmert sich wann,..um die Dinge, die Fehlgeschlagen sind?! -> Ursachenanalyse_
+
+*Protokoll:*
+
 
 
 == TC 02: Weitere Informationen bearbeiten/löschen
