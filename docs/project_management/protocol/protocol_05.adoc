@@ -1,0 +1,76 @@
+= Protokoll vom 28.05.21 - Tests
+Sabine Adam
+1.0, 28.05.21
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+== Tests
+
+* Unit Test
+** wiederverwendbar
+** als Quellcode
+
+* Integrationstest
+** Kooperatives Verhalten von mehreren Komonenten
+** als manueller Test sinnvoll
+** Test von mehreren Modulen
+** verhalten sich die Funktionen richtig ?
+** Bsp
+*** Modul was speichert plus Komponente die was anzeigt
+*** Eingabe, in Maske dann Test, ob Daten in DB ankommen
+** Schnitstelle, die Daten irgendwo hin sendet
+
+* Akzeptanztest
+** weniger Arbeit
+** durch Themensteller machbar
+** prüft, ob Kunden zufrieden sind, mit dem, was wir gebaut haben
+*** Meeting -> Mit Sophia/.. Zeigen Prototypen, lässt sie rumtesten
+**** ja, Test bestanden
+**** nein, Änderungen vornehmen
+
+== Dokumentation
+
+* Unit Tests
+** erzeugen automatisch Dateien, in denen die wesentlichen Sachen drin stehen
+** XML Dateien mit Namen der Fkt, Laufzeit, Feld ja/nein bestanden
+** Testobjekt, Eingabedaten, Verlauf, Erwartung, Ergebnis
+
+* Integrationstest
+
+* Akzeptanztest
+** Gesprächsprotokoll mit dem Kunden
+** 1 zu 1 Gespräch, max 1h
+
+== Notizen Testcases
+* ein Doc pro Testcase
+* was wird getestet (Klasse, Funktion)
+* mit welchen Eingabedaten (sinvoll für die Funktion/..)
+* Testverlauf mit Ergebnis
+** Unit Tests eine Zeile
+** Integrationstest mehr
+* wan hat man den Test durchgeführt (Tabelle mit Datum und Ergebnis) 
+
+== Tipps
+* 15-40 Unit Tests
+* 1 Integrationstest
+* 1-2 Akzeptanztests, kommt auf Benutzergruppenanzahl an
+* Teststrategie dokumentieren
+** mit was sind die verschiedenen Testtypen (nicht mehr als 5 Zeilen, jeweils) , welche nutzen wir, verlinken zu den Testbeschreigungen
+* Tabelle mit Test, Datum, Tester
+
+== Selenium (Mensch-Roboter-Bsp)
+* Test Benutzerinteraktion
+* Folge von Interaktionen werden aufgenommen und von Selenium gespeichert, Folge von Anweisungen
+* "Aufnahme" kann abgespielt werden und Ergebnis angesehen werden
+* wiederverwendbar
+* wird vermittet per Programmiersprache
+
+-> große Anwendungen über lange Zeit, ginge bei uns ggf auch ohne
+
+* wir machen das manuel: Komponententests
+* manuell die Webseite testen eben
+* erste Testebene -> Testebenen definieren
+
+== O.o
+* Endergebnis 80-120 Seiten

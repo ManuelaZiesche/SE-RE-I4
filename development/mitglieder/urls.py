@@ -10,7 +10,6 @@ urlpatterns = [
     path("<int:mitglied_id>/bearbeiten", views.mitgliedBearbeitenView, name="bearbeitenView"),
     path("<int:mitglied_id>/bearbeiten/speichern", views.speichern, name="speichern"),
 
-    # ajax
     path('ajax/laden', views.mitglied_laden, name='mitglied_laden'),
     path("ajax/mitglieder-loeschen", views.mitglieder_loeschen, name="mitglieder_loeschen"),
     path('ajax/bereiche-laden', views.bereiche_laden, name='bereiche_laden'),

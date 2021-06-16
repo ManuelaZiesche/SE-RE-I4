@@ -54,12 +54,16 @@ include::{plantumlsdir}/diagramm_use_case-model.puml[]
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
+
 <<<
 include::use_case_Kandidaten_verwalten.adoc[]
+
 <<<
 include::use_case_Mitglieder_aufnehmen.adoc[]
+
 <<<
 include::use_case_Einpflegung_weiterer_Informationen.adoc[]
+
 <<<
 include::use_case_Mitglieder_per_E-Mail_kontaktieren.adoc[]
 //<<<

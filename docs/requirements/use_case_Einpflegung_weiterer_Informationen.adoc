@@ -13,7 +13,7 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 
 * Die Internetseite ist geöffnet
 * Der Admin muss angemeldet sein  
-* Die unterschriebenen Dokumente und Einwilligung bzw. der Widerspruch wurden von den neuen Mitgliedern zugesendet. 
+* Die unterschriebenen Dokumente und Einwilligung bzw. der Widerspruch wurden von den neuen Mitgliedern dem Admin zugesendet. 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -24,8 +24,10 @@ Ist für die Aufnahme und Bearbeitung der zusätzlichen Informationen zuständig
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn der Admin den Tab "Mitglieder" auswählt
-. Der Admin lädt die zugesendeten, unterschriebenen Dokumente hoch
-. Desweiteren gibt er an, ob die Telefonummer des neuen Mitgliedes im Notfall an andere Mitglieder weitergegeben werden darf 
+. Der Admin wählt ein Mitglied, dass bearbeitet werden muss aus
+. Eine Checkliste gibt Auskunft über noch offene Aufgaben, die der Admin bearbeiten muss
+.. unterschriebene Dokumente hochladen (Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdatenblatt) 
+.. er gibt an, ob die Telefonummer des neuen Mitgliedes im Notfall an andere Mitglieder weitergegeben werden darf
 . Zusätzlich hat er die Möglichkeit das Protokoll der jeweiligen Sitzung zu verlinken
 
 === Alternative Abläufe
