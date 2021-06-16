@@ -27,22 +27,20 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - Essense Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken
 
 
-
-
 == Aufgabenzuordnung
 
-Die Aufgaben, welche in der fünften Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Die Aufgaben, welche in der sechsten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
 Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
 
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
-| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
-| Iteration 06 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
-| Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
-| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 6 (bis jetzt)
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
+| Iteration 06 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch |  |  | | Manuela | 
+| Test Cases formulieren | mittel | | | | Sebastian, Bayu| 
+| Prototyp des Kandidatentabs fertigstellen | hoch | | in Bearbeitung | | Vasco |
 | Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian | 
 | Domänenmodell erstellen | mittel | 2 | | | Benjamin + Sabine + Manuela| 3
-| mit der Dokumentation beschäftigen | mittel |  | | | | 
+| mit der Dokumentation beschäftigen | mittel |  | | | Sabine, Manuela | 6
 |===
 
 == Probleme 
@@ -56,8 +54,8 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 == Bewertungskriterien
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
-- ersten Prototypen haben funktioniert
-- erste Tests wurden erstell
+- ersten Prototypen haben funktioniert 
+- erste Tests wurden erstellt
 - Belegnachbereitung ist abgeschlossen
 
 == Assessment
@@ -65,10 +63,16 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Assessment
 |===
 |*Assessment Ziel* | *Iteration 6 beenden*
-|Assessment Datum | 
+|Assessment Datum | 31.05.2021
 | Teilnehmer | alle
-| Projektstatus | rot, gelb, grün?
+| Projektstatus | grün
 |===
+
+Die 6. Iteration erhält von unserem Team einen grünen Projektstatus, da wir alle Ziele erreicht haben. 
+Der erste Prototyp des Kandidatentabs wurde fertiggestellt. Der Beleg wurde komplett nachbereitet und die Test Cases zu dem Use Case 1 alle schriftlich notiert. 
+Die Implementierung dieser wurde angefangen sowie die Dokumentationen. 
+
+AN durch sabine durch - grafiken fehlen
 
 
 
@@ -78,6 +82,6 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
 <<link:../essence_navigator_images[]>> 
 
-- Bild von der fünften Iteration
+- Bild von der sechsten Iteration
 
-//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration05.png[]
+//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration06.png[]

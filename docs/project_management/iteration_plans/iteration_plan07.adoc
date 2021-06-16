@@ -1,0 +1,83 @@
+= Iteration Plan 06: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+Manuela Ziesche <manuela.ziesche@htw-dresden.de>
+{localdatetime}
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:sectnums:
+:source-highlighter: highlightjs
+
+
+== Meilensteine
+
+.Meilensteine
+|===
+| *Meilenstein* | *Datum* | *Notizen*
+| Beginn der Iteration | 31.05.2021 |
+| Meeting mit Stakeholdern um Stand zu präsentieren| 10.06.2021 |
+| Ende der Iteration | 20.06.2021 |
+|===
+
+== Wesentliche Ziele
+
+- Kandidaten zu Mitgliedern aufnehmen - fertigstellen
+- E-Mail Buttons UC 3 (mitglieder kontaktieren)
+- (backups datenbank?)
+- Level 4 des C4 Modells
+- Sequenzdiagramm 'Wie Daten verarbeitet werden' - Benni
+- Test Cases zu UC 2 schriftlich festhalten
+- alle Tests zu UC 1 und 2 durchtesten
+- Projektbericht 'Planung' beenden, 'Durchführung' 75% und 'Ergebnisse' anfangen
+- Anwenderdokumentation 75%
+- Test-, Entwickler- und Betriebsdokumentation zu 75% fertigstellen
+- Reflexionen anfangen
+- Akzeptanztests mit Axel 
+
+
+
+== Aufgabenzuordnung
+
+Die Aufgaben, welche in der fünften Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
+
+|===
+| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
+| Iteration 07 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
+| Test Cases formulieren | mittel | | | | Sebastian, Bayu | 
+| Domänenmodell erstellen | mittel | 2 | | | Benjamin + Sabine + Manuela| 3
+|===
+
+== Probleme 
+
+.Probleme
+|===
+| *Problem* | *Status* | *Notizen*
+|===
+
+
+== Bewertungskriterien
+
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
+
+
+== Assessment
+
+.Assessment
+|===
+|*Assessment Ziel* | *Iteration 7 beenden*
+|Assessment Datum | 
+| Teilnehmer | alle
+| Projektstatus | rot, gelb, grün?
+|===
+
+
+
+
+= Essence Navigator Bild
+
+- alle Bilder aus den gesamten Iterationen finden Sie hier: +
+<<link:../essence_navigator_images[]>> 
+
+- Bild von der siebten Iteration
+
+//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration07.png[]

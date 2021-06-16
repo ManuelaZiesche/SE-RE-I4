@@ -23,6 +23,7 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 - Use Cases mit den Themenstellern abgleichen
 - erste Prototypen entwickeln
 - die ersten Test Cases 
+- Unter Opportunity 'Adressed'
 
 == Aufgabenzuordnung
 
@@ -65,7 +66,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 
 In der Iteration haben wir erfolgreich den Beleg überarbeitet und die Use Cases und Wireframes mit den Themenstellern abgeglichen. 
-Die Arbeit an den Test Cases haben wir begonnen, aber es wurden noch nicht so viele geschafft, wie wir uns das am Anfang der Iteration erhofft hatten. Deswegen nehmen wir diese Aufgabe mit in die Iteration 05. 
+Die Arbeit an den Test Cases haben wir begonnen, aber es wurden noch nicht so viel geschafft, wie wir uns das am Anfang der Iteration erhofft hatten. Deswegen nehmen wir diese Aufgabe mit in die Iteration 05. 
 Die Erstellung des Prototypen des Kandidatentabs wird in die nächste Iteration geschoben, da wir diesen durch die Abarbeitung der restlichen Aufgaben zeitlich nicht mehr geschafft haben.
 
 = Essence Navigator Bild
