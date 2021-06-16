@@ -1,0 +1,55 @@
+= Protokoll vom 17.06.2021
+Sabine Adam
+1.0, 11.06.2021
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+= Algemeine Angaben
+
+[cols="2,2,1,2"]
+|====
+
+| *Datum* | 17.06.2021 | *Thema* | 1. Akzeptanztest
+| *Teilnehmer (Rolle)* 3+^|
+ Axel (Admin) +
+ (Stura) +
+ Vasco Schwarze (Entwickler) +
+ Sabine Adam (Protokoll) 
+
+|====
+
+= Funktionstest
+
+[cols="4,1,7"]
+|====
+| Funktionen | UC | Bemerkungen
+
+| Kandidatur anlegen .3+^.^| UC01 
+| - bla bla +
+- bla bla
+| Kandidatur bearbeiten 
+| - bla bla +
+- bla bla
+| Kandidatur löschen 
+| - bla bla +
+- bla bla
+
+| Kandidatur aufnehmen zu Mitglied | UC02 
+| - bla bla +
+- bla bla
+
+| Mitglied bearbeiten | UC03 
+| - bla bla +
+- bla bla
+
+| Mitglieder per Mail kontaktieren | UC04 
+| - bla bla +
+- bla bla
+
+|====
+
+= Hinweise/ Wünsche
+
+* ii
+* ii
