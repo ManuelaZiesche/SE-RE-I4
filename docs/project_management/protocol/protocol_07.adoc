@@ -19,6 +19,13 @@ Sabine Adam
 
 |====
 
+= Ablauf
+
+* Webseite aufrufen (https://sturadb.herokuapp.com/)
+* Anmelden (admin: DBadmin123)
+* einzelne Funktionen testen
+* Feedback geben
+
 = Funktionstest
 
 [cols="4,1,7"]
