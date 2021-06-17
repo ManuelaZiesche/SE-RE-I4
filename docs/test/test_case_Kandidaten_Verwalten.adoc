@@ -38,7 +38,7 @@
 |Button `+'Hinzufügen'+` klicken
 |Die Eingabemaske (Kandidat-Hinzufügen) ist geöffnet und bereit zur Dateneingabe.
 
-|2.1
+|2
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |Pflicht -und sonstige Zeichenfelder der Eingabemaske
 (Pflichtfelder: Vorname, Nachname, Funktion, Wahldatum, E-Mail-Adresse)
@@ -48,7 +48,7 @@
 Speicherbutton betätigen
 |Leergebliebene Pflichtfelder werden rot markiert
 
-|2.2
+|3
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |Pflicht -und sonstige Zeichenfelder der Eingabemaske
 (Pflichtfelder: Vorname, Nachname, Funktion)
@@ -60,7 +60,7 @@ Speicherbutton betätigen
 
 Leergebliebene Pflichtfelder werden rot markiert.
 
-|2.3
+|4
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |Pflicht -und sonstige Zeichenfelder der Eingabemaske
 (Pflichtfelder: Vorname, Nachname, Wahldatum bereits ordnungsgemäß eingetragen)
@@ -72,7 +72,7 @@ Speicherbutton betätigen
 
 Leergebliebene Pflichtfelder werden rot markiert.´
 
-|2.4
+|5
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum, Funktion bereits in Eingabemaske eingetragen
 |E-Mail-Adressen-Feld
 |regulärer Struktur-Ausdruck einer E-Mail-Adresse
@@ -87,7 +87,7 @@ Warnung wird ausgegeben, dass Struktur der eingegebene E-Mail-Adresse falsch ist
 
 E-Mail-Adressen-Pflichtfelder wird rot markiert
 
-|2.4.1
+|6
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum, Funktion bereits in Eingabemaske eingetragen
 |E-Mail-Adressen-Feld
 |reguläre E-Mail-Adresse mit Umlaut(en) +
@@ -106,7 +106,7 @@ Speicherbutton betätigen
 E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 
-|2.4.2
+|7
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |Wahldatum-Feld
 |Mauseingabe
@@ -115,7 +115,7 @@ E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 
 
-|2.4.3
+|8
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
 |Pfeiltasten und/oder Tag des KalendersPopups
 |Mauseingabe
@@ -124,28 +124,28 @@ E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 
 
-|2.4.4.1
+|9
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
 |Button „Löschen“ des Popups
 |Mauseingabe
 |„Löschen“-Button das Popup klicken
 |Popup schließt sich + Eingabemaske ist zu sehen
 
-|2.4.4.2
+|10
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
 |Button „Abbrechen“ des Popups
 |Mauseingabe
 |„Abbrechen“-Button das Popup klicken
 |Popup schließt sich + Eingabemaske ist zu sehen
 
-|2.4.4.3
+|11
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
 |Button „OK“ des Popups
 |Mauseingabe
 |„OK“-Button das Popup klicken
 |Popup schließt sich + gewählte Eingabe ist in Eingabemaske zu sehen
 
-|2.4.4.4
+|12
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
 |Leere Fläche neben dem Popups
 |Mauseingabe
@@ -156,7 +156,7 @@ E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 
 
-|2.4.5.1
+|13
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Funktion bereits in Eingabemaske eingetragen
 |Wahldatum-Feld
 |Zukünftiges (realistisches) Wahldatum
@@ -167,7 +167,7 @@ E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 Wahldatum wurde korrekt in Datepicker/Kalender übernommen + Eingabemaske ist zu sehen
 
-|2.4.5.2
+|14
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Funktion bereits in Eingabemaske eingetragen
 |Wahldatum-Feld
 |Zukünftiges (realistisches) Wahldatum
@@ -178,21 +178,21 @@ Wahldatum wurde korrekt in Datepicker/Kalender übernommen + Eingabemaske ist zu
 
 Wahldatum-Pflichtfelder wird rot markiert
 
-|2.5.1.1
+|15
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
 |Funktion-Pflichtfelder
 |Vorgegebene Funktionen der Funktions-Pflichtfelder
 |Funktions-Pflichtfelder: 1. Feld wurde gewählt, 2. Feld leer, 3. Feld wurde gewählt
 |Warnung wird ausgegeben, dass Funktion-Pflichtfeld nicht ordnungsgemäß eingetragen wurde
 
-|2.5.1.2
+|16
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
 |Funktion-Pflichtfelder
 |Vorgegebene Funktionen der Funktions-Pflichtfelder
 |1., 2., 3.-Feld wurde gewählt
 |Es erscheint keine Fehlermeldung nach dem betätigen des Speicherbuttons
 
-|2.5.2
+|17
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
 |Funktion´s-Feld
 |Vorgegebene Funktionen der Funktions-Pflichtfelder
@@ -202,7 +202,7 @@ Wahldatum-Pflichtfelder wird rot markiert
 Funktionen-Pflichtfelder wird rot markiert
 
 
-|2.6.
+|18
 |Wie oben beschrieben + 15 Einträge befinden sich in der Liste
 |Pagination
 |Ein neuer Eintrag erweitert die Pagination um eine Seite
@@ -210,7 +210,7 @@ Funktionen-Pflichtfelder wird rot markiert
 |Eine neue Listenseite erscheint in der Pagination
 
 
-|3
+|19
 |Wie oben beschrieben + alle Pflichtfelder wurden ordnungsgemäß befüllt
 |Speicherbutton
 |Mausklick auf Speicherbutton
@@ -282,7 +282,7 @@ Funktionen-Pflichtfelder wird rot markiert
 |Handlungen zur Durchführung des Tests
 |Erwartetes Ergebnis
 
-|1.1.1
+|20
 |Wie  oben beschrieben
 |Häckchenbox links einer Kandidatenzeile
 | Mausklick
@@ -292,7 +292,7 @@ Funktionen-Pflichtfelder wird rot markiert
 
 
 
-|1.1.2
+|21
 |Wie  oben beschrieben
 |Häckchenbox(en) links mehrerer Kandidatenzeilen
 |Mausklick
@@ -302,7 +302,7 @@ Funktionen-Pflichtfelder wird rot markiert
 
 
 
-|1.2
+|22
 |Wie  oben beschrieben + Popup mit Löschbestätigung ist zu sehen
 |"Ja"-Button
 | Mausklick
@@ -313,7 +313,7 @@ Funktionen-Pflichtfelder wird rot markiert
 Kandidat ist aus der Liste verschwunden
 
 
-|1.3
+|23
 |Wie  oben beschrieben + Popup mit Löschbestätigung ist zu sehen
 |"Nein"-Button
 |Mausklick
@@ -323,7 +323,7 @@ Kandidat ist aus der Liste verschwunden
 
 
 
-|2
+|24
 |Wie oben beschrieben
 
 + Kandidat(en) sind in DB vorhanden
@@ -360,7 +360,7 @@ Kandidat ist aus der Liste verschwunden
 |Handlungen zur Durchführung des Tests
 |Erwartetes Ergebnis
 
-|1.1
+|25
 |Wie  oben beschrieben
 |Suchfeld über der Kandidatenliste
 |Der zu suchende Ausdruck
