@@ -12,8 +12,10 @@ Sabine Adam
 
 | *Datum* | 17.06.2021 | *Thema* | 1. Akzeptanztest
 | *Teilnehmer (Rolle)* 3+^|
+ Sophia (Auftraggeberin) +
  Axel (Admin) +
- (Stura) +
+ Hannes (Stura) +
+ Benni (Architekt)
  Vasco Schwarze (Entwickler) +
  Sabine Adam (Protokoll) 
 
@@ -32,33 +34,30 @@ Sabine Adam
 
 [cols="4,1,7"]
 |====
-| Funktionen | UC | Bemerkungen
+| Funktionen | UC | Anmerkungen
 
 | Kandidatur anlegen .3+^.^| UC01 
-| - bla bla +
-- bla bla
+| angenommen
 | Kandidatur bearbeiten 
-| - bla bla +
-- bla bla
+| angenommen
 | Kandidatur löschen 
-| - bla bla +
-- bla bla
+| angenommen
 
 | Kandidatur aufnehmen zu Mitglied | UC02 
-| - bla bla +
-- bla bla
+| - Wahldatum automatisch als Amtsbeginn übernehmen, aber abänderbar lassen 
 
 | Mitglied bearbeiten | UC03 
-| - bla bla +
-- bla bla
+| angenommen
 
 | Mitglieder per Mail kontaktieren | UC04 
-| - bla bla +
-- bla bla
+| angenommen
 
 |====
 
 = Hinweise/ Wünsche
 
-* ii
-* ii
+* Weitergabe der Telefonnummer
+** Checkbox, ob sie weitergegeben werden darf an normale Mitglieder oder nur für den Admin sichtbar ist
+* Checkliste vollständig abgehagt -> soll sichtbar bleiben
+* Kandidaturentab nur für Admin sichtbar -> ja
+* Mitgliederliste als Exelliste exportieren
