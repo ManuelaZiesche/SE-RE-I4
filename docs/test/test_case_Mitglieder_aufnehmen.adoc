@@ -4,8 +4,46 @@
 
 *Vorbedingungen:*
 
-- Kandidat(en), welche als Mitglied übernommen werden sollen, befinden sich bereits in der Datenbank
+- Kandidat (Datensatz 1), welcher als Mitglied übernommen werden soll, befindet sich bereits in der Datenbank
 - Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
+
+
+.*Testdaten*
+[%header, cols="1,2,3,4,5", ]
+|===
+|Nr.
+|Name
+|Vorname
+|Spitzname
+|Wahldatum
+
+|1
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+|===
+
+.*Testdaten fortgesetzt*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Nr.
+|Beschlussnummer
+|Organisationseinheit
+|Bereich
+|Funktion
+|E-Mail-Adresse
+
+|1
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|sterni@gmail.com
+|===
+
+
+
 
 .*Unittests*
 [%header, cols="1,2,3,4,5,6"]
@@ -17,26 +55,20 @@
 |Handlungen zur Durchführung des Tests
 |Erwartetes Ergebnis
 
-|1.1
+|1
 |Wie  oben beschrieben
 |Gelber Plusbutton (links vom Stift)
 |Mausklick
 |*Plus*-Button des Kandidats, welche als Mitglied übernommen werden soll, wird geklickt
 |Popup mit "*JA*/*NEIN*-Bestätigungsdialog" ploppt auf
 
-|1.2
-|Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
-|*JA*-Button 3.+^.^|*siehe Integrationstest*
 
-
-
-|1.3
+|2
 |Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
 |*NEIN*-Button
 |Mausklick
 |Klick auf *NEIN*-Button
-|Kandidat nach wie vor in der Kandidaturenliste zu sehen
-
+|Kandidat nach wie vor in der Kandidaturenliste zu sehen + Popup schließt sich
 |===
 
 
@@ -57,12 +89,8 @@
 |Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
 |*JA*-Button
 |Mausklick
-|Klick auf *JA*-Button
+|Klick auf *JA*-Button + Wechsel in das Mitgliedertab
 |Kandidat nicht mehr in der Kandidaturenliste zu sehen + jetzt als Mitglied als Eintrag in Mitgliedsliste 
-
-
-
-
 |===
 
 

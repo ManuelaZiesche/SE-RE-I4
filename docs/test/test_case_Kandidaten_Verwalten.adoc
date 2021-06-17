@@ -3,7 +3,7 @@
 
 == Allgemeine Informationen
 
-== TC 01: Kandidat hinzufügen
+== Kandidat hinzufügen
 
 *Ziel:* Ein neuer Kandidat wird hinzugefügt
 
@@ -15,6 +15,106 @@
 - Verbindung zur Datenbank ist vorhanden
 - (Kandidat(en) sind in DB vorhanden)
 
+
+.*Testdaten*
+[%header, cols="1,2,3,4,5", ]
+|===
+|Nr.
+|Name
+|Vorname
+|Spitzname
+|Wahldatum
+
+|1
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+
+|2
+|Stern
+|Stefan
+|Sterni
+|[leer]
+
+|3
+|Stern
+|Stefan1
+|Sterni
+|01.08.2021
+
+|4
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+
+|5
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+
+|6
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+
+|===
+
+.*Testdaten fortgesetzt*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Nr.
+|Beschlussnummer
+|Organisationseinheit
+|Bereich
+|Funktion
+|E-Mail-Adresse
+
+|1
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|sterni@gmail.com
+
+|2
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|sterni@gmail.com
+
+|3
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|sterni@gmail.com
+
+|4
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|abc@.de
+
+|5
+|2021-07-03
+|Referat Soziales
+|[leer]
+|[leer]
+|sterni@gmail.com
+
+|6
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|matthäus@web.de
+|===
 
 
 .*Unittests*
@@ -31,122 +131,97 @@
 
 |1
 |Wie  oben beschrieben
-
 |Button `+Hinzufügen+`
-
 |Mauseingabe
 |Button `+'Hinzufügen'+` klicken
 |Die Eingabemaske (Kandidat-Hinzufügen) ist geöffnet und bereit zur Dateneingabe.
 
 |2
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
-|Pflicht -und sonstige Zeichenfelder der Eingabemaske
-(Pflichtfelder: Vorname, Nachname, Funktion, Wahldatum, E-Mail-Adresse)
-|Mausklick, Hotkey bzw. Zeicheneingabe
-|Eins oder mehrere Pflichtfelder leer lassen
-+
-Speicherbutton betätigen
-|Leergebliebene Pflichtfelder werden rot markiert
+|Gesamtes Eingabeformular
+|Testdatensatz 1
+|Testdatensatz 1 eingeben + Speicherbutton betätigen
+|Keine Fehler wird angezeigt + Weiterleitung zu Kandidatenliste
+
 
 |3
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
-|Pflicht -und sonstige Zeichenfelder der Eingabemaske
-(Pflichtfelder: Vorname, Nachname, Funktion)
-|Numerische Zeichen
-|Bei Name, Vorname nur Zahlen und/oder alphanumerische Zeichen eingeben
+|Datenvalidierung der Pflichtfelder
+|Testdatensatz 2
+|Testdatensatz 2 eingeben
 +
 Speicherbutton betätigen
-|Warnung wird ausgegeben, dass nur Buchstaben eingegeben werden dürfen.
-
-Leergebliebene Pflichtfelder werden rot markiert.
+|Wahldatumsfeld wird rot markiert
 
 |4
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet
-|Pflicht -und sonstige Zeichenfelder der Eingabemaske
-(Pflichtfelder: Vorname, Nachname, Wahldatum bereits ordnungsgemäß eingetragen)
-|Numerische Zeichen
-|Bei Name, Vorname nur Zahlen und/oder alphanumerische Zeichen eingeben
+|Datenvalidierung der Pflichtfelder
+|Testdatensatz 3
+|Testdatensatz 3 eingeben
 +
 Speicherbutton betätigen
-|Warnung wird ausgegeben, dass nur Buchstaben eingegeben werden dürfen.
+|Vornamens-Feld wird rot markiert
 
-Leergebliebene Pflichtfelder werden rot markiert.´
+
 
 |5
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum, Funktion bereits in Eingabemaske eingetragen
-|E-Mail-Adressen-Feld
-|regulärer Struktur-Ausdruck einer E-Mail-Adresse
-|E-Mail-Adresse mit der provozierten falsche Struktur wird eingeben +
-
-*Testdaten 1:* abc@.de
-*Testdaten 2:* info.de@ +
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Validierung der E-Mail-Adresse
+|Testdatensatz 4
+|Testdatensatz 4 eingeben
 +
 Speicherbutton betätigen
-|Negativtest:
-Warnung wird ausgegeben, dass Struktur der eingegebene E-Mail-Adresse falsch ist
+|E-Mail-Adressen-Pflichtfeld wird rot markiert
 
-E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 |6
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum, Funktion bereits in Eingabemaske eingetragen
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |E-Mail-Adressen-Feld
-|reguläre E-Mail-Adresse mit Umlaut(en) +
-
-
-*Testdaten 1:*
-matthäus@htw-dresden.de
-
-
-|Falsche Struktur der E-Mail-Adresse *mit* Umlauten wird in E-Mail-Feld eingegeben
-
+|Testdatensatz 6
+|Testdatensatz 6 eingeben
 +
 Speicherbutton betätigen
-|Warnung wird ausgegeben, dass Struktur der eingegebene E-Mail-Adresse falsch ist +
-+ +
-E-Mail-Adressen-Pflichtfelder wird rot markiert
+|E-Mail-Adressen-Pflichtfeld wird rot markiert
 
 
 |7
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
-|Wahldatum-Feld
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Datensatz 1 wurde bereits eingegeben
+|E-Mail-Feld
 |Mauseingabe
-|Mausklick in Wahldatum-Feld
-|Positivtest: Popup mit Kalender öffnet sich -> Eingaben können getätigt werden
-
+|neue zusätztliche E-Mail hinzufügen (Feld bleibt leer!)
+|2. E-Mail-Feld wird rot markiert
 
 
 |8
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
-|Pfeiltasten und/oder Tag des KalendersPopups
-|Mauseingabe
-|<- -> Butten und/oder Kalendertag auswählen + mit OK bestätigen
-|Positivtest: Das ausgewählte Datum befindet sich nun im Wahldatumsfeld (Datum wurde richtig übernommen)
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Wahldatum-Feld
+|Datumswahl mit Maus
+|Klicken auf das Wahldatumsfeld +
++ Auswahl des 15.7.2021 mit Maus +
++ Klick auf OK
+|Popup schließt sich + 15.07.2021 ist im Wahldatumsfeld eingetragen
 
 
 
 |9
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld ist zu sehen
++
+15.07.2021 steht bereits im Wahldatumsfeld
 |Button „Löschen“ des Popups
 |Mauseingabe
 |„Löschen“-Button das Popup klicken
-|Popup schließt sich + Eingabemaske ist zu sehen
+|Popup schließt sich + Wahldatumsfeld ist leer
 
 |10
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld ist zu sehen
 |Button „Abbrechen“ des Popups
 |Mauseingabe
 |„Abbrechen“-Button das Popup klicken
 |Popup schließt sich + Eingabemaske ist zu sehen
 
-|11
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
-|Button „OK“ des Popups
-|Mauseingabe
-|„OK“-Button das Popup klicken
-|Popup schließt sich + gewählte Eingabe ist in Eingabemaske zu sehen
 
-|12
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld´s ist zu sehen
+|11
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Popup mit Kalender des Wahldatum-Feld ist zu sehen
 |Leere Fläche neben dem Popups
 |Mauseingabe
 |In die leere Fläche neben dem Popups klicken
@@ -155,67 +230,32 @@ E-Mail-Adressen-Pflichtfelder wird rot markiert
 
 
 
+|12
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Funktion-Pflichtfelder
+|Vorgegebene Funktionen der Funktions-Pflichtfelder
+|Eintragen des Testdatensatz 5 + auf Speichern klicken
+|Fehlendes Bereitsfeld wird rot markiert
+
+
+
 
 |13
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Funktion bereits in Eingabemaske eingetragen
-|Wahldatum-Feld
-|Zukünftiges (realistisches) Wahldatum
-
-*Testdaten:* 1.11.2021
-|Zukünftiges (realistisches) Wahldatum wählen/eingeben
-|
-
-Wahldatum wurde korrekt in Datepicker/Kalender übernommen + Eingabemaske ist zu sehen
-
-|14
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Funktion bereits in Eingabemaske eingetragen
-|Wahldatum-Feld
-|Zukünftiges (realistisches) Wahldatum
-
-*Testdaten:* 2.12.2020
-|Zukünftiges (realistisches) Wahldatum wählen (Testdaten eingeben)
-|Warnung wird ausgegeben, dass das Wahldatum in der Vergangenheit liegt.
-
-Wahldatum-Pflichtfelder wird rot markiert
-
-|15
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
-|Funktion-Pflichtfelder
-|Vorgegebene Funktionen der Funktions-Pflichtfelder
-|Funktions-Pflichtfelder: 1. Feld wurde gewählt, 2. Feld leer, 3. Feld wurde gewählt
-|Warnung wird ausgegeben, dass Funktion-Pflichtfeld nicht ordnungsgemäß eingetragen wurde
-
-|16
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
-|Funktion-Pflichtfelder
-|Vorgegebene Funktionen der Funktions-Pflichtfelder
-|1., 2., 3.-Feld wurde gewählt
-|Es erscheint keine Fehlermeldung nach dem betätigen des Speicherbuttons
-
-|17
-|Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Vorname, Nachname, Wahldatum bereits in Eingabemaske eingetragen
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
 |Funktion´s-Feld
 |Vorgegebene Funktionen der Funktions-Pflichtfelder
-|Feld 1, 2, 3 wurde gewählt + zusätzliche Funktion soll gewählt werden-> Feld 1, 2, 3 bleiben leer
-|Warnung wird ausgegeben, dass komplette 2. Organisationseinheit nicht ordnungsgemäß eingetragen wurde
-
-Funktionen-Pflichtfelder wird rot markiert
+|Testdatensatz 1 eingeben + neue zusätztliche Funktion hinzufügen (Felder bleiben leer!)
+|Organisationseinheitsfeld der 2. Funktion wird rot markiert
 
 
-|18
+
+|14
 |Wie oben beschrieben + 15 Einträge befinden sich in der Liste
 |Pagination
-|Ein neuer Eintrag erweitert die Pagination um eine Seite
-|Einen oder mehrere neue & fehlerfreie Kandidateneinträge erzeugen
-|Eine neue Listenseite erscheint in der Pagination
+|Testdatensatz 1
+|Testdatensatz 1 eingeben + Speichern drucken
+|Button "2"  erscheint unter der Kandidatenliste, der auf 2. Kandidatenseite verlinkt
 
-
-|19
-|Wie oben beschrieben + alle Pflichtfelder wurden ordnungsgemäß befüllt
-|Speicherbutton
-|Mausklick auf Speicherbutton
-|Speicherbutton betätigen
-|Positivtest: Der gewünschte Kandidat befindet sich nun in der Kandidatenliste
 
 |===
 
@@ -234,9 +274,6 @@ Funktionen-Pflichtfelder wird rot markiert
 
 .*Testdokumentation*
 [%header, cols="1,2,3,4,5,6", ]
-
-
-
 |===
 |T.-Nr.{set:cellbgcolor:#e6f2d5}
 |Name TestCase
@@ -260,15 +297,13 @@ Funktionen-Pflichtfelder wird rot markiert
 
 
 
-== TC 02: Weitere Informationen bearbeiten/löschen
+== Weitere Informationen bearbeiten/löschen
 *Beschreibung:* Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten oder löschen
 
 *Vorbedingungen:*
 
-- Kandidat(en) bereits in Datenbank vorhanden
+- Kandidat (Testdatensatz 1) ist vorhanden
 - Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
-
-
 
 
 
@@ -282,55 +317,34 @@ Funktionen-Pflichtfelder wird rot markiert
 |Handlungen zur Durchführung des Tests
 |Erwartetes Ergebnis
 
-|20
+|15
 |Wie  oben beschrieben
-|Häckchenbox links einer Kandidatenzeile
-| Mausklick
+|Löschen eines Kandidaten
+|Mausklick
 |Häckchen bei gewünschtem Kandidaten setzen
 + Löschbutton klicken
-|Löschbestätigung erscheint
+|Löschbestätigung erscheint + Markierter Eintrag ist nach dem löschen nicht mehr in der Liste vorhanden
 
 
 
-|21
-|Wie  oben beschrieben
-|Häckchenbox(en) links mehrerer Kandidatenzeilen
+|16
+|3 Kandidaten mit Datensatz 1 befinden sich bereits in der Liste
+|Löschen mehrerer Kandidaten
 |Mausklick
-|Mehrere Häckchen bei gewünschten Kandidaten setzen
+|Häckchen bei allen 3 gewünschten Kandidaten setzen
 + Löschbutton klicken + Löschbestätigung bestätigen
-|Markierte Einträge sind nach dem löschen nicht mehr in der Liste vorhanden
+|Löschbestätigung erscheint + Markierte Einträge sind nach dem löschen nicht mehr in der Liste vorhanden
 
 
 
-|22
-|Wie  oben beschrieben + Popup mit Löschbestätigung ist zu sehen
-|"Ja"-Button
-| Mausklick
-|Löschbestätigung mit "ja" bestätigen
 
-|Löschbestätigung "Kandidaturen wurden erfolgreich gelöscht" erscheint über der Liste der Kandidaten +
-+
-Kandidat ist aus der Liste verschwunden
-
-
-|23
+|17
 |Wie  oben beschrieben + Popup mit Löschbestätigung ist zu sehen
 |"Nein"-Button
 |Mausklick
-|Löschbestätigung mit "nein" bestätigen
+|Löschbestätigung mit "nein" ablehnen
+|Popup verschwindet + Kandidat steht weiterhin in der Liste
 
-|Popup verschwindet + Kandidaten steht weiterhin in der Liste
-
-
-
-|24
-|Wie oben beschrieben
-
-+ Kandidat(en) sind in DB vorhanden
-|Stift-Button
-|Mausklick
-|auf gewünschten Stift klicken
-|Popup mit Knadiatinfo´s poppt auf und Textfelder sind in der Eingabemaske gefüllt.. es kann nun bearbeitet werden..
 
 |===
 
@@ -339,52 +353,44 @@ Kandidat ist aus der Liste verschwunden
 
 
 
-
-
-
-== TC 0X: Informationen suchen
+== Integrationstests
 *Beschreibung:* Der Admin möchte bereits vorhandenen Kandidaten durchsuchen
 
 *Vorbedingungen:*
 
-- Kandidat(en) bereits in Datenbank vorhanden
+- Kandidat (Testdatensatz 1) ist vorhanden
 - Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
 
-.*Unittests*
+.*Integrationstests*
 [%header, cols="1,2,3,4,5,6"]
 |===
-|T.-Nr.{set:cellbgcolor:#f4f4e9}
+|T.-Nr.{set:cellbgcolor:#eaf1f5}
 |Vorbedingungen
 |Testobjekt
 |Eingabe(daten)
 |Handlungen zur Durchführung des Tests
 |Erwartetes Ergebnis
 
-|25
+|18
+|Wie oben beschrieben
+|Stift-Button
+|Mausklick
+|auf Stift neben Kandidaten klicken
+|Eingabemaske öffnet sich mit den Kandidatendaten
+
+|19
+|Wie oben beschrieben + Eingabemaske ist bereits geöffnet
+|Gesamtes Eingabeformular
+|Testdatensatz 1
+|Testdatensatz 1 eingeben + Speicherbutton betätigen
+|Keine Fehler wird angezeigt + Weiterleitung zu Kandidatenliste + Angelegter Kandidat wird in Liste angezeigt
+
+|20
 |Wie  oben beschrieben
 |Suchfeld über der Kandidatenliste
-|Der zu suchende Ausdruck
-
-*Testeingaben 1:*
-Max Mustermann
-
-*Testeingaben 2:*
-Maxima Musterfrau
-
-*Testeingaben 3:*
-Andi Kadur
-
-
-|Suchfeld aktivieren (mit Shortcut oder Maus), Gewünschte Testeingaben eingeben und suche mit *Enter* bestätigen/ausführen
-|Ergebnisse werden lt. des gewählten Suchausdrucks gefunden
-
-*Ergebnisse abhängig der gewählte Testeingaben:* +
-*1:* _Max Mustermann_ erscheint in der Suchergebnisliste
-
-*2:* _Maxima Musterfrau_ erscheint in der Suchergebnisliste
-
-*3:* _Andi Kadur_ erscheint in der Suchergebnisliste
-
+|Der zu suchende Ausdruck: "Stern"
+|"Stern" in das Suchfeld eingeben und suche mit *Enter* bestätigen
+|Kandidat (Datensatz 1) wird in der Liste angezeigt
 |===
 
 .
