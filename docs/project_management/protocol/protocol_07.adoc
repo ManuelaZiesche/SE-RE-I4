@@ -58,6 +58,6 @@ Sabine Adam
 
 * Weitergabe der Telefonnummer
 ** Checkbox, ob sie weitergegeben werden darf an normale Mitglieder oder nur für den Admin sichtbar ist
-* Checkliste vollständig abgehagt -> soll sichtbar bleiben
+* Checkliste vollständig abgehakt -> soll sichtbar bleiben
 * Kandidaturentab nur für Admin sichtbar -> ja
 * Mitgliederliste als Exelliste exportieren
