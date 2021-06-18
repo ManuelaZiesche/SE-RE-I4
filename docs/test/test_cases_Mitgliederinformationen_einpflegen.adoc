@@ -2,4 +2,112 @@
 
 == Allgemeine Informationen
 
-== TC ??: 
+*Vorbedingungen:*
+
+- Mitglied (Datensatz 1),  befindet sich bereits in der Datenbank
+- Das Mitgliedertab ist geöffnet und die Liste der Mitglieder ist sichtbar
+
+
+.*Testdaten*
+[%header, cols="1,2,3,4,5", ]
+|===
+|Nr.
+|Name
+|Vorname
+|Spitzname
+|Wahldatum
+
+|1
+|Gleidus
+|Matt
+|Matti
+|01.09.2021
+|===
+
+.*Testdaten fortgesetzt*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Nr.
+|Beschlussnummer
+|Organisationseinheit
+|Bereich
+|Funktion
+|E-Mail-Adresse
+
+|1
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|matti@gmail.com
+|===
+
+
+
+
+.*Unittests*
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.{set:cellbgcolor:#f4f4e9}
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+
+
+|1
+|Wie  oben beschrieben
+|Ausrufezeichen-Funktion (Checkliste vollständig abgearbeitet)
+|Mausklick
+|Auf den Stift (bearbeiten) in der Zeile des Mitglieds klicken +
++ alle Häkchen der Checkliste auswählen +
++ auf Speichern klicken
+|Es ist [.underline]#kein# rotes Ausrufezeichen in der Zeile des Mitglieds (Siehe Datensatz 1) zu sehen
+
+
+|2
+|Wie  oben beschrieben
+|Ausrufezeichen-Funktion (Checkliste unvollständig)
+|Mausklick
+|Auf den Stift (bearbeiten) in der Zeile des Mitglieds klicken +
++ das erste Häckchen (_Wahl angenommen_) markieren +
++ auf Speichern klicken
+|Rotes Ausrufezeichen erscheint links neben dem Namen in der Zeile des Mitglieds
+
+
+|3
+|Wie  oben beschrieben + In der Checkliste sind bereits die ersten 2 Häkchen (_Wahl angenommen_, _Kenntnisname der Ordnung_) gesetzt
+|Speicherfunktion des Zustandes der Checkliste
+|Mausklick
+|Auf den Stift (bearbeiten) in der Zeile des Mitglieds klicken
+|In der Maske sind alle Felder ausgefüllt (Siehe Datensatz 1) +
++ Häkchen (_Wahl angenommen_, _Kenntnisname der Ordnung_) der Checkliste werden markiert dargestellt
+
+|===
+
+
+
+
+
+.*Integrationstests*
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.{set:cellbgcolor:#eaf1f5}
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1
+|Wie  oben beschrieben
+|Ausrufezeichen-Funktion (Checkliste vollständig abgearbeitet)
+|Mausklick
+|Auf den Stift (bearbeiten) in der Zeile des Mitglieds klicken +
++ alle Häkchen der Checkliste auswählen +
++ auf Speichern klicken
+|Es ist [.underline]#kein# Ausrufezeichen in der Zeile des Mitglieds (Siehe Datensatz 1) zu sehen
+|===
+
