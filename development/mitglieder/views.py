@@ -139,7 +139,12 @@ def erstellen(request):
         else:
             stammdatenblatt = False
 
-        mitglied = Mitglied(name=nachname, vorname=vorname, spitzname=spitzname, strasse=strasse, hausnr=hausnr, plz=plz, ort=ort, tel_mobil=telefon_mobil,
+        if getValue(request, 'tel_weitergabe') == 'on':
+            tel_weitergabe = True
+        else:
+            tel_weitergabe = False
+
+        mitglied = Mitglied(name=nachname, vorname=vorname, spitzname=spitzname, strasse=strasse, hausnr=hausnr, plz=plz, ort=ort, tel_mobil=telefon_mobil, tel_weitergabe=tel_weitergabe,
                          wahl_angenommen=wahl_angenommen, kenntnis_ordn=kenntnis_ordn, verpfl_datengeheimnis=verpfl_datengeheimnis, stammdatenblatt=stammdatenblatt)
         mitglied.save()
 
@@ -267,6 +272,11 @@ def speichern(request, mitglied_id):
             mitglied.stammdatenblatt = True
         else:
             mitglied.stammdatenblatt = False
+
+        if getValue(request, 'tel_weitergabe') == 'on':
+            mitglied.tel_weitergabe = True
+        else:
+            mitglied.tel_weitergabe = False
 
         mitglied.save()
 

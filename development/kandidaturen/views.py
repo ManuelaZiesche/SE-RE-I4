@@ -559,7 +559,7 @@ def kandidatur_aufnehmen(request):
     mitglied.save()
 
     for kandidaturamt in kandidatur.kandidaturamt_set.all(): 
-        mitgliedamt = MitgliedAmt(funktion=kandidaturamt.funktion, mitglied = mitglied)
+        mitgliedamt = MitgliedAmt(funktion=kandidaturamt.funktion, mitglied = mitglied, amtszeit_beginn=kandidatur.wahldatum)
         mitgliedamt.save()
         kandidaturamt.delete()
 
