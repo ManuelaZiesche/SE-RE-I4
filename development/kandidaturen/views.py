@@ -555,18 +555,15 @@ def kandidatur_aufnehmen(request):
     vorname = kandidatur.vorname
     spitzname = kandidatur.spitzname
 
-    #TODO: Ämter und Emails ermitteln und fürs Speichern zum Mitglied vorbereiten
-
-
     mitglied = Mitglied(name=name, vorname=vorname, spitzname=spitzname)
     mitglied.save()
 
-    for kandidaturamt in kandidatur.kandidaturamt_set.all():   #evt.:   .all()   ?
+    for kandidaturamt in kandidatur.kandidaturamt_set.all(): 
         mitgliedamt = MitgliedAmt(funktion=kandidaturamt.funktion, mitglied = mitglied)
         mitgliedamt.save()
         kandidaturamt.delete()
 
-    for kandidaturmail in kandidatur.kandidaturmail_set.all():  #evt.:   .all()   ?
+    for kandidaturmail in kandidatur.kandidaturmail_set.all():
         mitgliedmail = MitgliedMail(email=kandidaturmail.email, mitglied=mitglied)
         mitgliedmail.save()
         kandidaturmail.delete()

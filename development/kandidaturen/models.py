@@ -20,7 +20,6 @@ class Kandidatur(models.Model):
         """
         return self.kandidaturamt_set\
             .count()
-            #.filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
 
     def curr_funktion_first(self):
         """
@@ -29,7 +28,6 @@ class Kandidatur(models.Model):
         """
         if self.kandidaturamt_set.first():
             return self.kandidaturamt_set.first().funktion
-                #.filter(Q(amtszeit_ende__isnull=True) | Q(amtszeit_ende__gte=date.today()))\
         else:
             return None
 
