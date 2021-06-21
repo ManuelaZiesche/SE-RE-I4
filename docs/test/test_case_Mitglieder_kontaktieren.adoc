@@ -88,6 +88,32 @@
 |===
 
 
+.*Testdokumentation zu Use-Case 04: "Mitglieder per E-Mail kontaktieren"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1
+|-
+|-
+|-
+|-
+|-
+
+|2
+|-
+|-
+|-
+|-
+|-
+
+|===
 
 
 
@@ -102,6 +128,26 @@
 |Erwartetes Ergebnis
 
 |1. 
+|-
+|-
+|-
+|-
+|-
+|===
+
+
+.*Testdokumentation Integrationstests zu Use-Case 04: "Mitglieder per E-Mail kontaktieren"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1
 |-
 |-
 |-

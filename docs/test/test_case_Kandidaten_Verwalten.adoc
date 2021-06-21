@@ -3,6 +3,22 @@
 
 == Allgemeine Informationen
 
+
+
+
+*Farben:*
+[%header, width="60%", cols="1,2,3,4"]
+|===
+|Test-Datensätze{set:cellbgcolor:FF0000}
+|Unittests{set:cellbgcolor:#f4f4e9}
+|Integrationstest{set:cellbgcolor:#eaf1f5}
+|Testdokumentation{set:cellbgcolor:#e6f2d5}
+|===
+
+
+
+
+
 == Kandidat hinzufügen
 
 *Ziel:* Ein neuer Kandidat wird hinzugefügt
@@ -13,13 +29,13 @@
 
 - Der Admin ist mit Administratorrechten eingeloggt.
 - Verbindung zur Datenbank ist vorhanden
-- (Kandidat(en) sind in DB vorhanden)
+- Kandidat(en) sind in DB vorhanden
 
 
 .*Testdaten*
 [%header, cols="1,2,3,4,5", ]
 |===
-|Nr.
+|Nr.{set:cellbgcolor:FF0000}
 |Name
 |Vorname
 |Spitzname
@@ -56,6 +72,12 @@
 |01.08.2021
 
 |6
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+
+|7
 |Stern
 |Stefan
 |Sterni
@@ -114,6 +136,14 @@
 |Freizeit
 |Leitung
 |matthäus@web.de
+
+|7
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|[leer]
+
 |===
 
 
@@ -141,7 +171,7 @@
 |Gesamtes Eingabeformular
 |Testdatensatz 1
 |Testdatensatz 1 eingeben + Speicherbutton betätigen
-|Keine Fehler wird angezeigt + Weiterleitung zu Kandidatenliste
+|Weiterleitung zu Kandidatenliste + Kandidat (Testdatensatz 1) befindet sich in der Liste (Keine Fehler werden angezeigt)
 
 
 |3
@@ -188,7 +218,7 @@ Speicherbutton betätigen
 |Wie oben beschrieben + Eingabemaske ist bereits geöffnet + Datensatz 1 wurde bereits eingegeben
 |E-Mail-Feld
 |Mauseingabe
-|neue zusätztliche E-Mail hinzufügen (Feld bleibt leer!)
+|neue zusätztliche E-Mail hinzufügen (2. E-Mail-Feld bleibt leer!)
 |2. E-Mail-Feld wird rot markiert
 
 
@@ -272,11 +302,11 @@ Speicherbutton betätigen
 *Wann sollte getestet werden?:* Am Ende einer jeden Iteration oder nach Implement. neuer Features
 
 
-.*Testdokumentation*
+.*Testdokumentation zu Use Case 01 - Kandidaten verwalten*
 [%header, cols="1,2,3,4,5,6", ]
 |===
-|T.-Nr.{set:cellbgcolor:#e6f2d5}
-|Name TestCase
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
 |Datum
 |Verantwortlicher +
 (Wer hat getestet?)
@@ -284,14 +314,119 @@ Speicherbutton betätigen
 |Kommentar (Was ist aufgefallen?)
 
 |1  
-|TestCase XY
-|15.6.21
-|Hanswurst
-|nu
+|1
+|29.05.2021
+|Sebastian, Vasco
+|nein
+|-
+
+|1  
+|2
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|2
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|3
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|4
+|1
+|18.06.2021
+|Sebastian
+|nein
+|-
+
+|4
+|2
+|
+|
+|
+|
+
+|5
+|1
+|18.06.2021
+|Sebastian
+|ja
+|Nutzer weiß ggf. nicht, warum es rot markiert wird?!
+
+|6
+|1
+|18.06.2021
+|Sebastian
+|ja
+|Nutzer weiß ggf. nicht, warum es rot markiert wird?!
+
+|7
+|1
+|18.06.2021
+|Sebastian
+|ja
+|Test überflüssig, weil Integrationstest (Siehe I.-Test 19)
+
+|8
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|9
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|10
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|11
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|12
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|13
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|14
+|1
+|18.06.2021
+|Sebastian
+|ja
 |-
 |===
 
-*Auswertung fehlgeschlagener Test´s:* _Wer kümmert sich wann,..um die Dinge, die Fehlgeschlagen sind?! -> Ursachenanalyse_
+*Auswertung fehlgeschlagener Test´s:* _Wer kümmert sich wann,..um die Dinge, die Fehlgeschlagen sind?! -> Ursachenanalyse_ (Entwicklung)
 
 *Protokoll:*
 
@@ -322,7 +457,7 @@ Speicherbutton betätigen
 |Löschen eines Kandidaten
 |Mausklick
 |Häckchen bei gewünschtem Kandidaten setzen
-+ Löschbutton klicken
++ ENTFERNEN-Button klicken
 |Löschbestätigung erscheint + Markierter Eintrag ist nach dem löschen nicht mehr in der Liste vorhanden
 
 
@@ -332,7 +467,7 @@ Speicherbutton betätigen
 |Löschen mehrerer Kandidaten
 |Mausklick
 |Häckchen bei allen 3 gewünschten Kandidaten setzen
-+ Löschbutton klicken + Löschbestätigung bestätigen
++ ENTFERNEN-Button klicken + Löschbestätigung bestätigen
 |Löschbestätigung erscheint + Markierte Einträge sind nach dem löschen nicht mehr in der Liste vorhanden
 
 
@@ -344,9 +479,47 @@ Speicherbutton betätigen
 |Mausklick
 |Löschbestätigung mit "nein" ablehnen
 |Popup verschwindet + Kandidat steht weiterhin in der Liste
-
-
 |===
+
+
+
+
+.*Testdokumentation zu - "Weitere Informationen bearbeiten/löschen"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|15
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|16
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+
+|17
+|1
+|18.06.2021
+|Sebastian
+|ja
+|-
+|===
+
+
+
+
 
 
 
@@ -393,230 +566,42 @@ Speicherbutton betätigen
 |Kandidat (Datensatz 1) wird in der Liste angezeigt
 |===
 
-.
 
-.
 
 
-.
 
-
-.
-
-
-.
-
-.
-
-
------------------------
-
-
-
-*Nachbedingungen:*
-
-- Der Datensatz für den Kandidaten ist mit den geänderten Kandidatendaten gespeichert.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-
-*Benötigte Daten:*
-- die zu ergänzenden Kandidatendaten
-
-== TC 03: Kandidaten verwalten - Dokumente hochladen
-
-*Beschreibung:* Der Admin möchte kandidatenspezifisch Dokumente in das System hochladen, welche gespeichert werden sollen.
-
-*Vorbedingungen:* Einzelne oder alle geforderten Dokumente sind vorhanden/liegen vor.
-
-*Nachbedingungen:*
-Hochgeladene(s) Dokument/Dokumente wurden gespeichert.
-
-*Benötigte Daten:*
-Dokumente des Kandidaten
-
-
-
-
-
-
-== TC 05: Kandidat entfernen
-*Ziel:* Der Kandidat wird gelöscht
-
-
-*Beschreibung:* Der Admin möchte einen Kandidaten in der Datenbank löschen
-
-*Vorbedingungen:*
-- Der Nutzer ist mit Administratorrechten eingeloggt.
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-
-*Nachbedingungen:*
-- Der gelöschte Datensatz befindet sich nicht mehr in der Datenbank.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-
-*Einzelschritte:*
-- Als Administrator einloggen
-- Den zu löschenden Kandidaten auswählen (`+Häkchen+` setzen)
-- Entfernen klicken
-- Auf ja bestätigen
-
-*Benötigte Daten:*
-- Kandidatendaten
-
-
-
-
-[TIP]
---
-Was ist das? ->:: Methode/Objekte/Funktionen :  loginAsLukasAdmin() ; addMitglied () ; self.browser.find_element_by_xpath() / .click()
---
-
-
-
-
-
-
-== TC 06: Mitglied ändern....ab hier überhaupt sinnvoll?! (Wurde nur übernommen)
-*Ziel:* Daten eines Mitglied´s werden verändert
-
-*Beschreibung:* Der Admin möchte die Information von einer neuen Kandidat  in die Datenbank ändern
-
-*Vorbedingungen:*
-- Der Nutzer ist mit Administratorrechten eingeloggt. 
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-
-*Nachbedingungen:*
-- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-
-*Einzelschrite:*
-- Als Administrator einloggen
-- Neue Kandidat hinzufügen
-- Die Edit-Symbol klicken
-- Informationen ändern
-- Auf speichern drücken
-- Überprüfen ob die neue Daten getragen ist
-
-*Benötigte Daten:*
-- Kandidatendaten
-
-== TC 07 : Hinzufuegen
-== Ziel : ??
-== Methode/Objeckte/Funktionen : loginAsLukasAdmin() ; createUnterbereich() ;createReferat ();createAmt() ; self.browser.find_element_by_xpath() ;  click()
-Vorbedingungen: 
-- Der Nutzer ist mit Administratorrechten eingeloggt. 
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-Nachbedingungen:
-- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-Einzelschrite :
-- Als Administrator einloggen
-- Hinzufügen eines organisationseinheit
-- Hinzufügen eines Unterbereichs
-- Hinzufügen eines Amtes
-- Navigieren zu Mitglied hinzufügen
-- Auswahl des Referates, Unterbereices, Amts
-- Weitere Daten Hinzufügen
-- Speichern
-- Navigieren zur Ämterübersicht
-- Zu seite 3
-- Öffnen der collabseables
-- überprüfen ob Funktion da ist
-Benötigte Daten:
-- Kandidatendaten
-== TC 08 : Entfernen des??
-== Ziel : ??
-== Methode/Objeckte/Funktionen : loginAsLukasAdmin() ; createReferat() ; self.browser.find_element_by_xpath() ; createUnterbereich() ; self.assertTrue () ;  self.assertFalse () ; click()
-Vorbedingungen: 
-- Der Nutzer ist mit Administratorrechten eingeloggt. 
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-Nachbedingungen:
-- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-Einzelschrite :
-- Als Administrator einloggen
-- Hinzufügen eines organisationseinheit
-- Entfernen eines organisationseinheit
-- Überprüfen ob alles geklappt hat
-- Hinzufügen eines Amtes
-Benötigte Daten:
-- Kandidatendaten
-
-== TC 09 : Amt ändern
-== Ziel : ??
-== Methode/Objeckte/Funktionen : loginAsLukasAdmin() ; createReferat() ; self.browser.find_element_by_xpath() ; createUnterbereich() ;  self.assertTrue () ; self.assertFalse () ; click(); createAmt()
-Vorbedingungen: 
-- Der Nutzer ist mit Administratorrechten eingeloggt. 
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-Nachbedingungen:
-- Ein neuer Datensatz für den Kandidaten ist mit den richtigen Daten in der Datenbank vorhanden.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-Einzelschrite :
-- Als Administrator einloggen
-- Hinzufügen eines organisationseinheit
-- Ändern der Bezeichnung für test_referat
-- Entfernen eines organisationseinheit
-- Überprüfen ob alles geklappt hat
-- Hinzufügen eines Unterbereichs
-- Hinzufügen eines Amtes
-- Ändern der Bezeichnung für test_unterbereich
-- Ändern des Referates, dem der Bereich zugeordnet wurde
-Benötigte Daten:
-- Kandidatendaten
-
-== TC 10: Weitere Informationen hinzufügen
-Beschreibung: Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten.
-Vorbedingungen:
-- Der Kandidat ist bereits in der Datenbank vorhanden.
-- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar.
-Nachbedingungen:
-- Der Datensatz für den Kandidaten ist mit den geänderten Kandidatendaten gespeichert.
-- Der Benutzer befindet sich wieder im Kandidatentab und die Liste der Kandidaten ist sichbar.
-Benötigte Daten:
-- die zu ergänzenden Kandidatendaten
-
-
-
-
-
-
-*Ziel:*
-
-*Beschreibung:*
-
-*Vorbedingungen:*
-
-*Testobjekt:*
-
-*Handlung en zur Durchführ ung des Tests:*
-
-*Nachbedingungen:*
-
-*Benötigte Daten:*
-
-
-
-
-
-
-[%header, cols="1,2,3,4,5,6"]
+.*Testdokumentation (Integrationstests) zu Use Case 01 - Kandidaten verwalten*
+[%header, cols="1,2,3,4,5,6", ]
 |===
-|Testnr|Vorbedingungen
-|Testobjekt
-|Eingabedaten
-|Handlungen zur Durchführung des Tests
-|Erwartetes Ergebnis
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
 
-|Cell in column 1, row 1
-|Cell in column 2, row 1
-|Cell in column 3, row 1
-|Cell in column 4, row 1
-|Cell in column 5, row 1
-|Cell in column 6, row 1
+|18
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
 
-|Cell in column 1, row 2
-|Cell in column 2, row 2
-|Cell in column 3, row 2
-|Cell in column 4, row 2
-|Cell in column 5, row 2
-|Cell in column 6, row 2
+|19
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
+
+|20
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
 |===
+
+
 

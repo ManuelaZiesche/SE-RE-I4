@@ -84,8 +84,29 @@
 |Auf den Stift (bearbeiten) in der Zeile des Mitglieds klicken
 |In der Maske sind alle Felder ausgefüllt (Siehe Datensatz 1) +
 + Häkchen (_Wahl angenommen_, _Kenntnisname der Ordnung_) der Checkliste werden markiert dargestellt
-
 |===
+
+
+
+.*Testdokumentation zu Use Case 03 - "Mitglieder informationen einpflegen"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1
+|-
+|-
+|-
+|-
+|-
+|===
+
 
 
 
@@ -109,5 +130,24 @@
 + alle Häkchen der Checkliste auswählen +
 + auf Speichern klicken
 |Es ist [.underline]#kein# Ausrufezeichen in der Zeile des Mitglieds (Siehe Datensatz 1) zu sehen
+|===
+
+.*Testdokumentation Integrationstests zu Use Case 03 - "Mitglieder informationen einpflegen"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1
+|-
+|-
+|-
+|-
+|-
 |===
 

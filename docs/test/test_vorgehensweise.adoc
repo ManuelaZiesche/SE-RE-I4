@@ -18,6 +18,8 @@ Das Hauptziel von Unit-Tests besteht somit darin, den zu testenden Code zu isoli
 
 Diese Testmethode ist die erste Stufe des Softwaretestens, die vor anderen Testmethoden wie bspw.  Integrationstests durchgeführt wird.
 
+
+
 === Integrationstest
 (nach Komponententest)
 
@@ -31,47 +33,14 @@ zwischen integrierten Komponenten zu finden.
 Integrationstests sollen also prüfen, ob Gruppen von Komponenten wie im technischen Systementwurf vorgesehen, gut zusammen spielen.
 
 
+
 === Abnahmetest (spezielle Form des Systemtests)
 
 Der Abnahmetest prüft, ob das System aus Kundensicht die vertraglich vereinbarten Leistungsmerkmale aufweist. Hierbei stehen die Sicht und das Urteil der Mitglieder und Anwender des StuRa´s im Vordergrund. Dabei zielt der Abnahmetest nicht auf das Finden von Fehlerzuständen ab. Vielmehr soll Vertrauen in das Produkt gewonnen werden sowie dessen Eignung
 für den beabsichtigten Einsatz (durch den Kunden!) beurteilt werden.
 
 
-.
 
-.
-
-.
-
-.
-
-
-
-
-
-
-
-
-= Kommt weg...
-
-
-
-
-
-[%header, cols="1,2,3"]
-|===
-|Testverfahren|Beschreibung|Benötigte Anforderungen
-|Black Box Testing|Beim Black Box Testing liegt das Augenmerk auf den Ein- und Ausgaben. Es ist kein Wissen zum Code oder dem Backend nötig, wichtig ist, das nach einer Eingabe die richtige Ausgabe zustande kommt.
-a| * Vordefinierte Testeingaben
-* Auswertungsbogen
-|===
-
-
-
-== Testarten
-
-=== Negativtests
-Beim Negativtest wird überprüft, ob bei einer fehlerhaften Eingabe in das Programm dieses richtig reagiert, z.B. mit einer Fehlermeldung. Er werden absichtlich ungültige Werte eingegeben oder Masken nicht vollständig ausgefüllt, um eventuelle Fehler zu erzeugen. Auch Bedienfehler sollten hier beachtet werden. Hierbei können auch eventuelle Verbesserungen der Benutzerfreundlichkeit festgestellt werden. 
 
 Wichtig: 
 

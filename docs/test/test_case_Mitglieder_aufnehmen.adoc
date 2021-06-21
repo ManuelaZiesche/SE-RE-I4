@@ -1,5 +1,6 @@
 
 = TC 02 - Mitglieder aufnehmen
+
 *Beschreibung:* Der Admin möchte bereits vorhandenen Kandidaten zu einem Mitglied machen
 
 *Vorbedingungen:*
@@ -57,9 +58,9 @@
 
 |1
 |Wie  oben beschrieben
-|Gelber Plusbutton (links vom Stift)
+|AUFNAHME-Button (links vom Stift)
 |Mausklick
-|*Plus*-Button des Kandidats, welche als Mitglied übernommen werden soll, wird geklickt
+|*Plus*-Button des Kandidats, welche als Mitglied übernommen werden soll (Datensatz 1), wird geklickt
 |Popup mit "*JA*/*NEIN*-Bestätigungsdialog" ploppt auf
 
 
@@ -71,6 +72,36 @@
 |Kandidat nach wie vor in der Kandidaturenliste zu sehen + Popup schließt sich
 |===
 
+
+
+
+
+.*Testdokumentation - "Mitglieder aufnehmen"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
+
+|2
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
+
+|===
 
 
 
@@ -90,35 +121,7 @@
 |*JA*-Button
 |Mausklick
 |Klick auf *JA*-Button + Wechsel in das Mitgliedertab
-|Kandidat nicht mehr in der Kandidaturenliste zu sehen + jetzt als Mitglied als Eintrag in Mitgliedsliste 
+|Anzeige "Kandidatur wurde erfolgreich aufgenommen" ist über Kandidaturenliste zu sehen + Kandidat nicht mehr in der Kandidaturenliste  + Kandidat jetzt als Mitglied in der Mitgliedsliste zu sehen (Datensatz 1)
 |===
 
 
-
-
-
-
-
-
-
-
-
-----------------
-2-3 Stück
-Popup
-Ja-Bestätigung
-
-
-Integrationstest
-
-
-
-Beschreibung:
-
-Vorbedingungen:
-
-Nachbedingungen:
-
-Benötigte Daten:
-
-== Allgemeine Informationen
