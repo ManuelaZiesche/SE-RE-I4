@@ -11,7 +11,7 @@
             {% if request.user.is_superuser %}
             <th class="hide-on-med-and-down">Telefon</th>
             {% endif %}
-            <th></th>
+            <th></th><th></th>
             </tr>
         </thead>
 
@@ -68,6 +68,13 @@
                         {{entry.tel_mobil|default:'-'}}
                     </td>
                     {% endif %}
+                    
+                    <td>
+                        {% if entry.mitgliedmail_set.all %}
+                        <!-- email button -->
+                        <a href="mailto:{{entry.mitgliedmail_set.first.email}}"><i class="material-icons black-text">email</i></a>
+                        {% endif %}
+                    </td>
                     
                     {% if request.user.is_superuser %}
                     <!-- edit button (pencil) -->

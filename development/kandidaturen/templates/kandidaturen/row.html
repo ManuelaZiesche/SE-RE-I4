@@ -18,7 +18,6 @@
                 <tr id="tr{{entry.id}}" class="mitglied" data-url="{% url 'kandidaturen:kandidatur_laden' %}" >
                     <td>
                         <!-- Checkbox -->
-                        {% if request.user.is_superuser %}
                         <form method="post" style="margin-bottom: 0px; margin-top: 4px; padding-left: 7px; padding-right: 7px;">
                             {% csrf_token %}
                             <label for="chk-{{entry.id}}">
@@ -26,7 +25,6 @@
                                 <span style="padding-left: 7px; padding-right: 7px;"></span>
                             </label>
                         </form>
-                        {% endif %}
                     </td>
                     <td id="mitgliedname-{{entry.id}}" class="mitglied-{{entry.id}}">{{entry.vorname}} {{entry.name}}</td>
                     <td class="mitglied-{{entry.id}}">
@@ -46,6 +44,14 @@
                            
                             <a id="adm-{{entry.id}}" class="admitkandidaturen hide-on-xxl btn-floating waves-effect waves-light amber"><i class="material-icons black-text">add</i></a>
                     </td>
+
+                    <td>
+                        {% if entry.kandidaturmail_set.all %}
+                        <!-- email button -->
+                        <a href="mailto:{{entry.kandidaturmail_set.first.email}}"><i class="material-icons black-text">email</i></a>
+                        {% endif %}
+                    </td>
+
                     <!-- edit button (pencil) -->
                     <td>
                         <a href="{% url 'kandidaturen:bearbeitenView' entry.id %}"><i class="material-icons black-text">create</i></a>
