@@ -285,9 +285,7 @@ def speichern(request, mitglied_id):
 
         for i in range(1, aemternum + 1):
             amt_id = request.POST['selectamt' + str(i)]
-            # print(amt_id)
             funktion = Funktion.objects.get(pk=amt_id)
-            # print(funktion)
             # Beginn und Ende Amtszeit
             amtszeit_beginn_str = request.POST['beginn_kandidatur' + str(i)]
             if amtszeit_beginn_str:

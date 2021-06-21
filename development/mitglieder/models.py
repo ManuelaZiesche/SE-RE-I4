@@ -49,10 +49,8 @@ class Mitglied(models.Model):
 
     def admission_data_complete(self):
         if self.wahl_angenommen and self.kenntnis_ordn and self.verpfl_datengeheimnis and self.stammdatenblatt:
-            print("true")
             return True
         else:
-            print("false")
             return False
 
     class Meta:
