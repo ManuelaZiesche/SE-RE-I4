@@ -8,7 +8,9 @@
             <th>Name</th>
             <th>Funktionen</th>
             <th class="hide-on-small-only">E-Mails</th>
+            {% if request.user.is_superuser %}
             <th class="hide-on-med-and-down">Telefon</th>
+            {% endif %}
             <th></th>
             </tr>
         </thead>
@@ -61,11 +63,14 @@
                             -
                         {% endif %}
                     </td>
+                    {% if request.user.is_superuser %}
                     <td class="mitglied-{{entry.id}} hide-on-med-and-down">
                         {{entry.tel_mobil|default:'-'}}
                     </td>
-                    <!-- edit button (pencil) -->
+                    {% endif %}
+                    
                     {% if request.user.is_superuser %}
+                    <!-- edit button (pencil) -->
                     <td>
                         <a href="{% url 'mitglieder:bearbeitenView' entry.id %}"><i class="material-icons black-text">create</i></a>
                     </td>

@@ -35,7 +35,9 @@
             {% endif %}
         {% endif %}
         <h5>Kontaktdaten</h5>
+        {% if request.user.is_superuser %}
         {% if mitglied.tel_mobil %}<p><b>Telefon:</b> {{mitglied.tel_mobil}}</p>{% endif %}
+        {% endif %}
         {% if mitglied.mitgliedmail_set.all %}
         <p><b>E-Mails:</b>
             <ul>
