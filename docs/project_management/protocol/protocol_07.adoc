@@ -15,7 +15,7 @@ Sabine Adam
  Sophia (Auftraggeberin) +
  Axel (Admin) +
  Hannes (Stura) +
- Benni (Architekt)
+ Benni (Architekt) +
  Vasco Schwarze (Entwickler) +
  Sabine Adam (Protokoll) 
 
