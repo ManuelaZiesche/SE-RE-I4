@@ -1,0 +1,74 @@
+= Iteration Plan 08: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+Manuela Ziesche <manuela.ziesche@htw-dresden.de>
+{localdatetime}
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:sectnums:
+:source-highlighter: highlightjs
+
+
+== Meilensteine
+
+.Meilensteine
+|===
+| *Meilenstein* | *Datum* | *Notizen*
+| Beginn der Iteration | 21.06.2021 |
+| Ende der Iteration | 04.07.2021 |
+|===
+
+== Wesentliche Ziele
+
+- restlichen Reflexionen schreiben 
+- Projektbericht abschließen
+- Dokumentationen fertigstellen
+- alle Projektmanagement Sachen fertigstellen   
+
+== Aufgabenzuordnung
+
+Die Aufgaben, welche in der fünften Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
+
+|===
+| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
+| Iteration 08 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 3
+| Testdokumentation | hoch | | | | Sebastian, Bayu | 
+| Anwenderdokumentation fertigstellen | hoch| 2 | | | Benjamin + Sabine + Manuela| 
+| Betriebsdokumentation | hoch | | | | Vasco | 
+| Softwaredokumentation der Entwicklerdokumentation | hoch | | | | Vasco | 
+| Entwurfsdokumentation der Entwicklerdokumentation | hoch | | | | Sabine| 
+| Durchführung des Projektberichtes | hoch| | | | Manuela| 
+| Ergebnisse des Projektberichtes | hoch| | | | Sabine | 
+|===
+
+== Probleme 
+
+.Probleme
+|===
+| *Problem* | *Status* | *Notizen*
+|===
+
+
+== Bewertungskriterien
+
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
+
+
+== Assessment
+
+.Assessment
+|===
+|*Assessment Ziel* | *Iteration 8 beenden*
+|Assessment Datum | 02.07.2021
+| Teilnehmer | alle
+| Projektstatus | grün?
+|===
+
+
+
+
+== Essence Navigator Bild
+
+- Bild von der achten Iteration
+
+//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration08.png[]

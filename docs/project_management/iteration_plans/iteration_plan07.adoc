@@ -1,4 +1,4 @@
-= Iteration Plan 06: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+= Iteration Plan 07: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
 Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 {localdatetime}
 :toc: 
@@ -19,18 +19,12 @@ Manuela Ziesche <manuela.ziesche@htw-dresden.de>
 
 == Wesentliche Ziele
 
-- Kandidaten zu Mitgliedern aufnehmen - fertigstellen
-- E-Mail Buttons UC 3 (mitglieder kontaktieren)
-- (backups datenbank?)
-- Level 4 des C4 Modells
-- Sequenzdiagramm 'Wie Daten verarbeitet werden' - Benni
-- Test Cases zu UC 2 schriftlich festhalten
-- alle Tests zu UC 1 und 2 durchtesten
-- Projektbericht 'Planung' beenden, 'Durchführung' 75% und 'Ergebnisse' anfangen
-- Anwenderdokumentation 75%
+- Use Cases 2 und 3 implementieren -> Entwicklung zu 95% abschließen
+- Use Cases 1-3 (Test CAses ...) durchtesten (Akzeptanztests mit Axel)
+- Sequenzdiagramm 'Wie Daten verarbeitet werden' -benni
 - Test-, Entwickler- und Betriebsdokumentation zu 75% fertigstellen
-- Reflexionen anfangen
-- Akzeptanztests mit Axel 
+- Projektbericht größtenteils fertigstellen
+
 
 
 
@@ -43,8 +37,14 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
 | Iteration 07 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
-| Test Cases formulieren | mittel | | | | Sebastian, Bayu | 
-| Domänenmodell erstellen | mittel | 2 | | | Benjamin + Sabine + Manuela| 3
+| Testen der Use Cases 1-3 -> Akzeptanztests mit Stakeholdern | hoch |  | erledigt | | Vasco, Sabine, Benjamin, Sebastian | 
+| C4 Model beenden | mittel |  | | | Benjamin | 
+| Projektbericht 'Planung' beenden | mittel |  | | | Manuela | 
+| Projektbericht 'Durchführung' zu circa 75% fertigstellen | mittel |  | | | Manuela | 
+| Projektbericht 'Ergebnisse' anfangen | mittel |  | erledigt | | Sabine | 
+| Anwenderdokumentation zu circa 75% fertigstellen | mittel |  | erledigt | | Sabine | 
+| Kandidaten zu Mitgliedern aufnehmen - fertigstellen | hoch|  | erledigt | | Vasco | 
+| E-Mail Buttons zu UseCase 3 implementieren (Mitglieder kontaktieren) | hoch|  | erledigt | | Vasco | 
 |===
 
 == Probleme 
@@ -52,12 +52,17 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Probleme
 |===
 | *Problem* | *Status* | *Notizen*
+| Axel Schiller musste unseren eigentlichen Termin für die Akzeptanztests aufgrund von Krankheit absagen | erledigt | Wir haben diese dann eine Woche später durchgeführt. 
+| Bei den Akzeptanztests sind den Stakeholdern erneut Dinge aufgefallen, die wir noch implementieren könnten. | erledigt | Es waren zum Glück Kleinigkeiten, die unser Entwickler sofort umgesetzt hat.
+| Die restlichen Use Cases 4,5,6 können nicht mehr implementiert werden, da uns einfach die Zeit fehlt. | offen | 
 |===
 
 
 == Bewertungskriterien
 
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
+- alle Ziele erreicht?
+- Akzeptanztests mit den Stakeholdern erfolgreich?
 
 
 == Assessment
@@ -65,19 +70,19 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 .Assessment
 |===
 |*Assessment Ziel* | *Iteration 7 beenden*
-|Assessment Datum | 
+|Assessment Datum | 21.06.2021
 | Teilnehmer | alle
-| Projektstatus | rot, gelb, grün?
+| Projektstatus | grün
 |===
 
+Wir haben in dieser Iteration alle geplanten Ziele erreicht und alle Aufgaben umgesetzt. Beim Projektbericht haben sogar schon die ersten angefangen ihre Reflexion zu schreiben, das heißt wir sind da schon weiter als wir uns am Anfang der Iteration erhofft hatten. Die Akzeptanztests mit den Stakeholdern waren sehr erfolgreich. Unseres Erachtens nach wirkten Sie sehr glüchlich und zufrieden mit dem bisher Geschafftem. Auch Herr Anke hat uns bei dem Projektaustauch im Bereich Dokumentation positive Worte hinterlassen, dass wir mit dieser Dokumentation und dem Projektbericht auf einem guten Weg sind.
 
 
-
-= Essence Navigator Bild
+== Essence Navigator Bild
 
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
 <<link:../essence_navigator_images[]>> 
 
 - Bild von der siebten Iteration
 
-//image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration07.png[]
+image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration07.png[]

@@ -68,7 +68,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - Beurteilung im Vergleich zu den Zielen: Wir haben prinzipiell alle Aufgaben erledigt, die uns für die 3. Iteration wichtig erschienen. Die Prototypen haben wir als noch nicht notwendig erachtet und widmen uns diesen in der nächsten Interation. 
 - Geplante vs. erledigte Aufgaben: wir haben fast alle geplanten Aufgaben erledigt.
 
-= Essence Navigator Bild
+== Essence Navigator Bild
 
 - alle Bilder aus den gesamten Iterationen finden Sie hier: +
 <<link:../essence_navigator_images[]>> 
