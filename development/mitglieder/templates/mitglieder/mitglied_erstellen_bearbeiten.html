@@ -251,7 +251,7 @@
     var amt_num = {% if mitglied %}{{mitglied.mitgliedamt_set.count}}{% else %}1{% endif %};
     var email_num = {% if mitglied %}{{mitglied.mitgliedmail_set.count}}{% else %}1{% endif %};
   $(document).ready(function(){
-  // Selects und Date Picker initialisieren, Event Listener fuer Dropdowns hinzufuegen
+  // Selects und Date Picker initialisieren, Event Listener für Dropdowns hinzufügen
   initSelect();
   for (var i=1; i<=amt_num; i++) initDatePicker(i);
   addReferatEventListener();
@@ -260,14 +260,14 @@
   // Speicherbutton geklickt
   $("#save_button").click(function(){
     var valid_input = true;
-    // Prüfen, ob Vor- und Nachname angegeben sind
-    if ($("#vorname").val()==""){
+    // Prüfen, ob Vor- und Nachname angegeben sind und ob sie Zahlen enthalten
+    if ($("#vorname").val()=="" || /\d/.test($("#vorname").val())){
       $("#vorname").addClass("invalid_input");
       addInputEventListener("vorname");
       valid_input = false;
       console.log("vorname fehlt");
     } else $("#vorname").removeClass("invalid_input");
-    if ($("#nachname").val()==""){
+    if ($("#nachname").val()=="" || /\d/.test($("#nachname").val())){
       $("#nachname").addClass("invalid_input");
       addInputEventListener("nachname");
       console.log("name fehlt");
