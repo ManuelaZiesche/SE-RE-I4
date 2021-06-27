@@ -1,23 +1,18 @@
 from datetime import date
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
-from django.views import generic
-from django.core import serializers
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
 from django.db.models.functions import Lower
 from .models import Mitglied, MitgliedAmt, MitgliedMail
 from aemter.models import Funktion, Organisationseinheit, Unterbereich
-from mitglieder.forms import MitgliedForm
 import datetime
 import simplejson, json
 # string splitting
 import re
-from django.template import RequestContext
 from django.db.models import Q
-from .forms import MitgliedForm
 from .funktions import *
 
 # Anzahl der Aemter bzw. E-Mails die gespeichert werden muessen
@@ -123,7 +118,34 @@ def erstellen(request):
         plz = request.POST['plz']
         ort = request.POST['ort']
         telefon_mobil = request.POST['telefon_mobil']
-        mitglied = Mitglied(name=nachname, vorname=vorname, spitzname=spitzname, strasse=strasse, hausnr=hausnr, plz=plz, ort=ort, tel_mobil=telefon_mobil)
+
+        if getValue(request, 'wahl_angenommen') == 'on':
+            wahl_angenommen = True
+        else:
+            wahl_angenommen = False
+
+        if getValue(request, 'kenntnis_ordn') == 'on':
+            kenntnis_ordn = True
+        else:
+            kenntnis_ordn = False
+
+        if getValue(request, 'verpfl_datengeheimnis') == 'on':
+            verpfl_datengeheimnis = True
+        else:
+            verpfl_datengeheimnis = False
+
+        if getValue(request, 'stammdatenblatt') == 'on':
+            stammdatenblatt = True
+        else:
+            stammdatenblatt = False
+
+        if getValue(request, 'tel_weitergabe') == 'on':
+            tel_weitergabe = True
+        else:
+            tel_weitergabe = False
+
+        mitglied = Mitglied(name=nachname, vorname=vorname, spitzname=spitzname, strasse=strasse, hausnr=hausnr, plz=plz, ort=ort, tel_mobil=telefon_mobil, tel_weitergabe=tel_weitergabe,
+                         wahl_angenommen=wahl_angenommen, kenntnis_ordn=kenntnis_ordn, verpfl_datengeheimnis=verpfl_datengeheimnis, stammdatenblatt=stammdatenblatt)
         mitglied.save()
 
         # E-Mail
@@ -230,6 +252,32 @@ def speichern(request, mitglied_id):
         mitglied.plz = getValue(request, 'plz')
         mitglied.ort = getValue(request, 'ort')
         mitglied.tel_mobil = getValue(request, 'telefon_mobil')
+
+        if getValue(request, 'wahl_angenommen') == 'on':
+            mitglied.wahl_angenommen = True
+        else:
+            mitglied.wahl_angenommen = False
+
+        if getValue(request, 'kenntnis_ordn') == 'on':
+            mitglied.kenntnis_ordn = True
+        else:
+            mitglied.kenntnis_ordn = False
+
+        if getValue(request, 'verpfl_datengeheimnis') == 'on':
+            mitglied.verpfl_datengeheimnis = True
+        else:
+            mitglied.verpfl_datengeheimnis = False
+
+        if getValue(request, 'stammdatenblatt') == 'on':
+            mitglied.stammdatenblatt = True
+        else:
+            mitglied.stammdatenblatt = False
+
+        if getValue(request, 'tel_weitergabe') == 'on':
+            mitglied.tel_weitergabe = True
+        else:
+            mitglied.tel_weitergabe = False
+
         mitglied.save()
 
         # alle Aemter des Mitglieds loeschen
@@ -237,9 +285,7 @@ def speichern(request, mitglied_id):
 
         for i in range(1, aemternum + 1):
             amt_id = request.POST['selectamt' + str(i)]
-            # print(amt_id)
             funktion = Funktion.objects.get(pk=amt_id)
-            # print(funktion)
             # Beginn und Ende Amtszeit
             amtszeit_beginn_str = request.POST['beginn_kandidatur' + str(i)]
             if amtszeit_beginn_str:
@@ -430,7 +476,11 @@ def funktionen_html_laden(request):
 # Überprüfen ob Max-Members in einer Funktion schon erreicht ist
 def funktionen_max_member_ueberpruefen(request, mitglied_id):
     """
+    Überprüft, ob die maximale Anzahl an Mitgliedern in einer Funktion bereits erreicht ist.
 
+    :param request: Die Ajax-Request, welche den Aufruf der Funktion ausgelöst hat.
+    :param mitglied_id: Die Id des Mitglieds, das bearbeitet wird.
+    :return: Eine JsonResponse, die als Key 'is_valid' enthält, und als Wert entweder True oder False.
     """
     if not request.user.is_authenticated:
         return HttpResponse("Permission denied")

@@ -1,0 +1,35 @@
+var hierarchy =
+[
+    [ "aemter.models.Funktion.Meta", "classaemter_1_1models_1_1_funktion_1_1_meta.html", null ],
+    [ "aemter.models.FunktionRecht.Meta", "classaemter_1_1models_1_1_funktion_recht_1_1_meta.html", null ],
+    [ "aemter.models.Organisationseinheit.Meta", "classaemter_1_1models_1_1_organisationseinheit_1_1_meta.html", null ],
+    [ "aemter.models.Recht.Meta", "classaemter_1_1models_1_1_recht_1_1_meta.html", null ],
+    [ "aemter.models.Unterbereich.Meta", "classaemter_1_1models_1_1_unterbereich_1_1_meta.html", null ],
+    [ "checklisten.models.Aufgabe.Meta", "classchecklisten_1_1models_1_1_aufgabe_1_1_meta.html", null ],
+    [ "checklisten.models.Checkliste.Meta", "classchecklisten_1_1models_1_1_checkliste_1_1_meta.html", null ],
+    [ "checklisten.models.ChecklisteAufgabe.Meta", "classchecklisten_1_1models_1_1_checkliste_aufgabe_1_1_meta.html", null ],
+    [ "checklisten.models.ChecklisteRecht.Meta", "classchecklisten_1_1models_1_1_checkliste_recht_1_1_meta.html", null ],
+    [ "kandidaturen.models.Kandidatur.Meta", "classkandidaturen_1_1models_1_1_kandidatur_1_1_meta.html", null ],
+    [ "kandidaturen.models.KandidaturAmt.Meta", "classkandidaturen_1_1models_1_1_kandidatur_amt_1_1_meta.html", null ],
+    [ "kandidaturen.models.KandidaturMail.Meta", "classkandidaturen_1_1models_1_1_kandidatur_mail_1_1_meta.html", null ],
+    [ "mitglieder.models.Mitglied.Meta", "classmitglieder_1_1models_1_1_mitglied_1_1_meta.html", null ],
+    [ "mitglieder.models.MitgliedAmt.Meta", "classmitglieder_1_1models_1_1_mitglied_amt_1_1_meta.html", null ],
+    [ "mitglieder.models.MitgliedMail.Meta", "classmitglieder_1_1models_1_1_mitglied_mail_1_1_meta.html", null ],
+    [ "models.Model", null, [
+      [ "aemter.models.Funktion", "classaemter_1_1models_1_1_funktion.html", null ],
+      [ "aemter.models.FunktionRecht", "classaemter_1_1models_1_1_funktion_recht.html", null ],
+      [ "aemter.models.Organisationseinheit", "classaemter_1_1models_1_1_organisationseinheit.html", null ],
+      [ "aemter.models.Recht", "classaemter_1_1models_1_1_recht.html", null ],
+      [ "aemter.models.Unterbereich", "classaemter_1_1models_1_1_unterbereich.html", null ],
+      [ "checklisten.models.Aufgabe", "classchecklisten_1_1models_1_1_aufgabe.html", null ],
+      [ "checklisten.models.Checkliste", "classchecklisten_1_1models_1_1_checkliste.html", null ],
+      [ "checklisten.models.ChecklisteAufgabe", "classchecklisten_1_1models_1_1_checkliste_aufgabe.html", null ],
+      [ "checklisten.models.ChecklisteRecht", "classchecklisten_1_1models_1_1_checkliste_recht.html", null ],
+      [ "kandidaturen.models.Kandidatur", "classkandidaturen_1_1models_1_1_kandidatur.html", null ],
+      [ "kandidaturen.models.KandidaturAmt", "classkandidaturen_1_1models_1_1_kandidatur_amt.html", null ],
+      [ "kandidaturen.models.KandidaturMail", "classkandidaturen_1_1models_1_1_kandidatur_mail.html", null ],
+      [ "mitglieder.models.Mitglied", "classmitglieder_1_1models_1_1_mitglied.html", null ],
+      [ "mitglieder.models.MitgliedAmt", "classmitglieder_1_1models_1_1_mitglied_amt.html", null ],
+      [ "mitglieder.models.MitgliedMail", "classmitglieder_1_1models_1_1_mitglied_mail.html", null ]
+    ] ]
+];

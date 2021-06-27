@@ -9,7 +9,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """
-        This command deletes all entries from the Historie of Mitglied, MitgliedAmt and MitgliedMail that
+        This command deletes all entries from the history of Mitglied, MitgliedAmt and MitgliedMail that
 
         * are at least 1 year old if the referenced Mitglied does not exist in the database anymore
         * are at least 5 years old otherwise

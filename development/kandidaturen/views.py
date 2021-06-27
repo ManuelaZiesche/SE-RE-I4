@@ -1,19 +1,15 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
 from django.db.models.functions import Lower
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
-from django.views import generic
-from django.core import serializers
 from .models import Kandidatur, KandidaturAmt, KandidaturMail
 from aemter.models import Funktion, Organisationseinheit, Unterbereich
-from django.template import RequestContext
-from datetime import date
+from mitglieder.models import Mitglied, MitgliedAmt, MitgliedMail
 import datetime
 import simplejson, json
-from django.db.models import Q
 import re
 from .funktions import *
 
@@ -183,7 +179,6 @@ def kandidaturBearbeitenView(request, kandidatur_id):
         template_name="kandidaturen/kandidatur_erstellen_bearbeiten.html",
         context={
             'kandidatur': kandidatur,
-            'funktionen': funktionen,
             'funktionen': funktionen,
             'referate': referate
                  })
@@ -548,15 +543,31 @@ def kandidatur_aufnehmen(request):
     :return: HTTP Response
     """
 
-    ###### NICHT FINALER CODE!!!! #####
-
     if not request.user.is_authenticated:
         return HttpResponse("Permission denied")
     if not request.user.is_superuser:
         return HttpResponse("Permission denied")
-    # Extrahieren der Liste aller Kandidaturen-Ids und Entfernen der Kandidaturen aus Datenbank
-    kandidaturenids = request.POST.get('kandidaturen')
-    kandidaturenids = json.loads(kandidaturenids)
-    for kandidaturenid in kandidaturenids:
-        Kandidatur.objects.get(pk=kandidaturenid).delete()
+
+    
+    kandidaturid = request.POST.get('kandidatur')
+    kandidatur = Kandidatur.objects.get(pk=kandidaturid)
+    name = kandidatur.name
+    vorname = kandidatur.vorname
+    spitzname = kandidatur.spitzname
+
+    mitglied = Mitglied(name=name, vorname=vorname, spitzname=spitzname)
+    mitglied.save()
+
+    for kandidaturamt in kandidatur.kandidaturamt_set.all(): 
+        mitgliedamt = MitgliedAmt(funktion=kandidaturamt.funktion, mitglied = mitglied, amtszeit_beginn=kandidatur.wahldatum)
+        mitgliedamt.save()
+        kandidaturamt.delete()
+
+    for kandidaturmail in kandidatur.kandidaturmail_set.all():
+        mitgliedmail = MitgliedMail(email=kandidaturmail.email, mitglied=mitglied)
+        mitgliedmail.save()
+        kandidaturmail.delete()
+
+    kandidatur.delete()
+
     return HttpResponse()
