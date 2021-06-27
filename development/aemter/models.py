@@ -1,11 +1,9 @@
 from django.db import models
 from simple_history.models import HistoricalRecords
-from django.db.models.signals import post_init, post_delete
-from django.dispatch import receiver
 
 class Organisationseinheit(models.Model):
     """
-        Datenbankmodel Organisationseinheit
+        Datenbankmodell Organisationseinheit
 
         Felder:
 
@@ -27,7 +25,7 @@ class Organisationseinheit(models.Model):
 
 class Unterbereich(models.Model):
     """
-        Datenbankmodel Unterbereich
+        Datenbankmodell Unterbereich
 
         Felder:
 
@@ -48,7 +46,7 @@ class Unterbereich(models.Model):
 
 class Funktion(models.Model):
     """
-        Datenbankmodel Funktion
+        Datenbankmodell Funktion
 
         Felder:
 
@@ -78,27 +76,6 @@ class Funktion(models.Model):
         verbose_name = "Funktion"
         verbose_name_plural = "Funktionen"
 
-"""
-# Ueberpruefen, ob es eine Funktion ohne Unterbereich gibt, wenn ja, entsprechenden Wert bei Organisationseinheit setzen
-def funktion_post_init(**kwargs):
-    print("post init")
-    instance = kwargs.get('instance')
-    if instance.unterbereich is None:
-        organisationseinheit = instance.organisationseinheit
-        organisationseinheit.funktionen_ohne_unterbereich_count +=1
-        organisationseinheit.save()
-
-def funktion_post_delete(**kwargs):
-    instance = kwargs.get('instance')
-    if instance.unterbereich is None:
-        organisationseinheit = instance.organisationseinheit
-        organisationseinheit.funktionen_ohne_unterbereich_count -=1
-        organisationseinheit.save()
-
-post_init.connect(funktion_post_init, Funktion)
-post_delete.connect(funktion_post_delete, Funktion)
-"""
-
 class Recht(models.Model):
     """
         Datenbankmodell Recht
@@ -122,8 +99,8 @@ class FunktionRecht(models.Model):
 
         Felder:
 
-        * funktion
-        * recht
+        * funktion (Referenziert zugehörige Funktion)
+        * recht (Referenziert zugehöriges Recht)
         * history
     """
     funktion = models.ForeignKey(Funktion, on_delete=models.CASCADE, null=False)

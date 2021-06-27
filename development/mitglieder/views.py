@@ -476,7 +476,11 @@ def funktionen_html_laden(request):
 # Überprüfen ob Max-Members in einer Funktion schon erreicht ist
 def funktionen_max_member_ueberpruefen(request, mitglied_id):
     """
+    Überprüft, ob die maximale Anzahl an Mitgliedern in einer Funktion bereits erreicht ist.
 
+    :param request: Die Ajax-Request, welche den Aufruf der Funktion ausgelöst hat.
+    :param mitglied_id: Die Id des Mitglieds, das bearbeitet wird.
+    :return: Eine JsonResponse, die als Key 'is_valid' enthält, und als Wert entweder True oder False.
     """
     if not request.user.is_authenticated:
         return HttpResponse("Permission denied")

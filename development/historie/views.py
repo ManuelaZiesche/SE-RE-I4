@@ -1,10 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.http import HttpResponse
-from django.template import RequestContext
 from django.core.paginator import Paginator
-
-from datetime import datetime
 
 from kandidaturen.models import Kandidatur, KandidaturMail, KandidaturAmt
 from mitglieder.models import Mitglied, MitgliedMail, MitgliedAmt
@@ -15,11 +12,11 @@ from django.db.models import Q
 
 def list(request):
     """
-    Die `list`-View wird aufgerufen, wenn der Nutzer über einen Link erstmalig die Historie aufruft (z.B. aus dem Menü heraus).
+    Diese View wird aufgerufen, wenn der Nutzer über einen Link erstmalig die Historie aufruft (z.B. aus dem Menü heraus).
     
     Folgende Aufgaben werden von dieser übernommen:
 
-    * Bereitstellung von Daten: Es werden alle Historien-Einträge für alle Tabs geholt, anschließend in Seiten à 15 Elemente aufgeteilt und jeweils die erste Seite an die View übergeben.
+    * Bereitstellung von Daten: Es werden alle Historien-Einträge für alle Tabs geholt, anschließend in Seiten je 15 Elemente aufgeteilt und jeweils die erste Seite an die View übergeben.
     * Zugriffsbeschränkung: Zugriff wird nur gewährt, wenn der Nutzer angemeldet UND Administrator ist.
     * Rendern des Templates der gesamten Seite.
 
@@ -119,7 +116,7 @@ def list(request):
 
 def fetch_entries(request):
     """
-    Mit `fetch_entries` kann eine Liste von Historien-Einträgen mitsamt passender Pagination angefordert werden, welche die Einträge enthält, die...
+    Mit dieser View kann eine Liste von Historien-Einträgen mitsamt passender Pagination angefordert werden, welche die Einträge enthält, die...
 
     * ...zum angegeben Tab bzw. Model gehören.
     * ...in denen die angegebenen Suchbegriffe vorkommen.

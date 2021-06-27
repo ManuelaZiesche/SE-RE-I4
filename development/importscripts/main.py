@@ -11,23 +11,23 @@ import csv
 
 def importAemter(file):
     """
-        **!WARNING!**
-        This function clears following Tables in your Database:
+        **!ACHTUNG!**
+        Diese Funktion leert die folgenden Tabellen in der Datenbank:
 
         * Organisationseinheit
         * Unterbereich
         * Funktion
 
-        To use this function you need to have a file.csv with following structure:
+        Um diese Funktion zu verwenden, wird eine CSV-Datei mit der folgenden Struktur benötigt:
 
         * delimiter = ','
         * organisationseinheit,unterbereich,funktion,max_members
-        * First line is a heading and will not be imported
+        * Die erste Zeile ist eine Kopfzeile und wird nicht importiert
 
 
-        :param file: File containing the data to be imported
+        :param file: Datei mit zu importierendem Inhalt
         :type file: TextIO
-        :return: No return Value
+        :return: Kein Rückgabewert
     """
 
     # Delete existing Data

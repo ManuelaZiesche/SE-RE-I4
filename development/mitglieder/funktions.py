@@ -27,6 +27,13 @@ def getValue(request, attr):
 
 # preuft, ob date2 liegt hinter date1 liegt
 def is_past_due(date1, date2):
+    """
+    Prüft, ob date2 hinter date1 liegt.
+
+    :param date1: Erstes Datum
+    :param date2: Zweites Datum
+    :return: True, wenn date2 später als date1 ist. False, wenn nicht oder wenn eines der beiden Attribute None ist.
+    """
     if date1 is None or date2 is None:
         return False
     return date2 > date1
