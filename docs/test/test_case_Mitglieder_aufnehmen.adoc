@@ -1,5 +1,5 @@
 
-= TC 02 - Mitglieder aufnehmen
+= Test Cases zu Use-Case 02 - Mitglieder aufnehmen
 
 *Beschreibung:* Der Admin möchte bereits vorhandenen Kandidaten zu einem Mitglied machen
 

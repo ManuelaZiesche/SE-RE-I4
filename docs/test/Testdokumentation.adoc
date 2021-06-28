@@ -4,38 +4,3 @@
 
 
 == Testergebnislisten aller Tests:
-
-*Hier kommen höchstwahrscheinlich alle grünen Listen der gesamten Testdokumentation hinein.*
-
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.

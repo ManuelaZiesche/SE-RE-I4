@@ -48,3 +48,15 @@ Wichtig:
 
 === Testen durch User
 Besonders wichtig bei unserer Webanwendungs-Erweiterung ist die einfache Bedienung durch den Endbenutzer. Deshalb soll spezielles Augenmerk auf den Test durch einen Benutzer gelegt  werden. Auf Feedback soll gehört werden und eventuelle Anpassungen danach sollten mit Priorität umgesetzt werden.
+
+
+
+=== Farbenbliche Testmarkierung in diesem Dokument:
+
+[%header, width="60%", cols="1,2,3,4"]
+|===
+|Test-Datensätze{set:cellbgcolor:FF0000}
+|Unittests{set:cellbgcolor:#f4f4e9}
+|Integrationstest{set:cellbgcolor:#eaf1f5}
+|Testdokumentation{set:cellbgcolor:#e6f2d5}
+|===

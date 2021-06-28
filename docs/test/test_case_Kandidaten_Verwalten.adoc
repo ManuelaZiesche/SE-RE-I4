@@ -171,7 +171,7 @@
 |Gesamtes Eingabeformular
 |Testdatensatz 1
 |Testdatensatz 1 eingeben + Speicherbutton betätigen
-|Weiterleitung zu Kandidatenliste + Kandidat (Testdatensatz 1) befindet sich in der Liste (Keine Fehler werden angezeigt)
+|Weiterleitung zu Kandidatenliste (Kein Fehler wird angezeigt)
 
 
 |3
@@ -317,15 +317,9 @@ Speicherbutton betätigen
 |1
 |29.05.2021
 |Sebastian, Vasco
-|nein
-|-
-
-|1  
-|2
-|18.06.2021
-|Sebastian
 |ja
 |-
+
 
 |2
 |1
@@ -346,38 +340,49 @@ Speicherbutton betätigen
 |18.06.2021
 |Sebastian
 |nein
-|-
+|Fehler: Zahlen können mit Namen kombiniert werden. Ursachenanalyse -> (Entwicklung)
 
 |4
 |2
-|
-|
-|
-|
+|24.06.2021
+|Sebastian
+|ja
+|-
 
 |5
 |1
 |18.06.2021
 |Sebastian
 |ja
-|Nutzer weiß ggf. nicht, warum es rot markiert wird?!
+|-
 
 |6
 |1
 |18.06.2021
 |Sebastian
 |ja
-|Nutzer weiß ggf. nicht, warum es rot markiert wird?!
+|-
 
 |7
 |1
 |18.06.2021
 |Sebastian
 |ja
-|Test überflüssig, weil Integrationstest (Siehe I.-Test 19)
+|-
 
 |8
 |1
+|18.06.2021
+|Sebastian
+|nein
+|Kalender gibt falschen Wochentag zu einem Datum aus +
+Analyse:
+(US-Kalender → MESZ)
+
+
+
+|8
+|2
 |18.06.2021
 |Sebastian
 |ja
@@ -426,9 +431,9 @@ Speicherbutton betätigen
 |-
 |===
 
-*Auswertung fehlgeschlagener Test´s:* _Wer kümmert sich wann,..um die Dinge, die Fehlgeschlagen sind?! -> Ursachenanalyse_ (Entwicklung)
 
-*Protokoll:*
+
+
 
 
 
