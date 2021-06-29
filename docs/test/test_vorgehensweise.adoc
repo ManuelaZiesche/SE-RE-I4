@@ -48,7 +48,7 @@ Wichtig:
 
 * Erstellung einer möglichst vielseitigen Liste an möglichen Fehleingaben in verschiedenen Variationen 
 
-=== Testen durch User
+=== Akzeptanztest
 Besonders wichtig bei unserer Webanwendungs-Erweiterung ist die einfache Bedienung durch den Endbenutzer. Deshalb soll spezielles Augenmerk auf den Test durch einen Benutzer gelegt  werden. Auf Feedback soll gehört werden und eventuelle Anpassungen danach sollten mit Priorität umgesetzt werden.
 
 

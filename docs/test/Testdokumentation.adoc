@@ -6,7 +6,7 @@ Außerdem sollen die festglegten Anforderungen auf Erfüllung überprüft werden
 
 == Testkonzept:
 
-Die wichtigsten Komponenten, welche getestet wurden, bilden die Elemente der UI der Webseite (Button, Check-Funktionen, Zeichenfelder) und deren Funktionen sowie die zusammenarbeitenden Komponenten des Backends (Datenbank, Schnittstellen, Django-Framework, Swings Framework Python).
+Die wichtigsten Komponenten, welche getestet wurden, bilden die Elemente der UI der Webseite (Button, Check-Funktionen, Zeichenfelder) und deren Funktionen sowie die zusammenarbeitenden Komponenten des Backends (Datenbank, Schnittstellen, Django-Framework).
 
 *Folgende Testmethoden/-verfahren wurden eingesetzt:*
 
@@ -31,7 +31,7 @@ Die Testfälle wurden verbal beschrieben und in einem Testprotokoll festgehalten
 War ein Test erfolgreich so wurde als Testergebnis _“bestanden“_ in die Tabelle aufgenommen. Das Testergebnis _„nicht bestanden“_ wurde eingetragen, wenn der Test nicht erfolgreich verlief.
 
 Fehler wurden als sofortige Mitteilung an die Entwickler mitgeteilt.
-Die fehlgeschlagenen Tests wurden nach swm fixen des Problems zu einem späteren Entwurfszeitpunkt wiederholt und erneut geprüft.
+Die fehlgeschlagenen Tests wurden nach zum beheben des Problems zu einem späteren Entwurfszeitpunkt wiederholt und erneut geprüft.
 
 Zu jedem Test wurde ein genaues Testdatum festgehalten.
 Personen, welche getestet haben: Sebastian (Rolle des Testers) in Absprache mit Vasco (Rolle des Entwicklers).
