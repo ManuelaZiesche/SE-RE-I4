@@ -36,9 +36,9 @@ Integrationstests sollen also prüfen, ob Gruppen von Komponenten wie im technis
 
 
 
-=== Abnahmetest (spezielle Form des Systemtests)
+=== Akzeptanztest (spezielle Form des Systemtests)
 
-Der Abnahmetest prüft, ob das System aus Kundensicht die vertraglich vereinbarten Leistungsmerkmale aufweist. Hierbei stehen die Sicht und das Urteil der Mitglieder und Anwender des StuRa´s im Vordergrund. Dabei zielt der Abnahmetest nicht auf das Finden von Fehlerzuständen ab. Vielmehr soll Vertrauen in das Produkt gewonnen werden sowie dessen Eignung
+Der Akzeptanztest prüft, ob das System aus Kundensicht die vertraglich vereinbarten Leistungsmerkmale aufweist. Hierbei stehen die Sicht und das Urteil der Mitglieder und Anwender des StuRa im Vordergrund. Dabei zielt der Akzeptanztest nicht auf das Finden von Fehlerzuständen ab. Vielmehr soll Vertrauen in das Produkt gewonnen werden sowie dessen Eignung
 für den beabsichtigten Einsatz (durch den Kunden!) beurteilt werden.
 
 
