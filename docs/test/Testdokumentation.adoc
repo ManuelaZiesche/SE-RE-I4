@@ -31,11 +31,7 @@ Die Testfälle wurden verbal beschrieben und in einem Testprotokoll festgehalten
 War ein Test erfolgreich so wurde als Testergebnis _“bestanden“_ in die Tabelle aufgenommen. Das Testergebnis _„nicht bestanden“_ wurde eingetragen, wenn der Test nicht erfolgreich verlief.
 
 Fehler wurden als sofortige Mitteilung an die Entwickler mitgeteilt.
-<<<<<<< HEAD
-Die fehlgeschlagenen Tests wurden nach zum beheben des Problems zu einem späteren Entwurfszeitpunkt wiederholt und erneut geprüft.
-=======
 Die fehlgeschlagenen Tests wurden nach Beheben des Problems zu einem späteren Zeitpunkt wiederholt und erneut geprüft.
->>>>>>> 667d366720acac33aad9a1a1c62607cf2f9761ee
 
 Zu jedem Test wurde ein genaues Testdatum festgehalten.
 Personen, welche getestet haben: Sebastian (Rolle des Testers) in Absprache mit Vasco (Rolle des Entwicklers).
