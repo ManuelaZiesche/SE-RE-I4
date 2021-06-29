@@ -42,8 +42,7 @@ R1: Datenbank soll einmal die Woche ein Backup machen. Maximal drei Versionen de
 === Effizienz (Performance)
 // Performance (Leistung): Reaktionszeiten, Durchsatz, Genauigkeit. Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
-P1: Das System muss für eine gleichzeitige Nutzung von 10 Nutzern ausgelegt sein. Dafür werden wir uns noch 5 weitere  +
-P2: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken, unter der Voraussetzung einer 16Mbit/s-Anschlusses. +
+P1: Die Ladezeiten einer neuen Seite sollte sich auf zwei Sekunden beschränken, unter der Voraussetzung einer 16Mbit/s-Anschlusses. +
 
 === Wartbarkeit (Supportability)
 //Supportability (Unterstützbarkeit): Anpassungsfähigkeit, Wartbarkeit, Konfigurierbarkeit. Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.

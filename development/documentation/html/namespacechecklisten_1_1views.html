@@ -117,14 +117,14 @@ Funktionen</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This view is responsible for checking or unchecking a task from the checklist.
-It first checks if the user is allowed to check a task, i.e. is auhenticated and superuser.
-Next, the parameters task_type and task_id are fetched from the request. They are used to determine if an Aufgabe or a Recht was checked, and to get the correct task.
-Finally, the task is checked or unchecked depending on its current state and the changes are saved.
+<pre class="fragment">Diese View ist dafür verantwortlich, eine Aufgabe in der Checkliste zu aktivieren oder zu deaktivieren.
+Sie prüft zunächst, ob der User eine Aufgabe abhaken darf, d. h. authentifiziert und Admin ist.
+Als nächstes werden die Parameter task_type und task_id aus der request geholt. Sie werden verwendet, um festzustellen, ob eine Aufgabe oder ein Recht geprüft wurde, und um die richtige Aufgabe zu erhalten.
+Zum Schluss wird die Aufgabe je nach aktuellem Status aktiviert oder deaktiviert und die Änderungen gespeichert.
 
-:param request: The HTTP request that triggered the view, including parameters task_type and task_id.
-:return: An empty HttpResponse if the operation was successful.
-:return: An HttpResponse indicitang the error if an error has occured or if the user is not allowed to perform the operation.
+:param request: Die HTTP-Request, welche die View ausgelöst hat, einschließlich der Parameter task_type und task_id.
+:return: Eine leere HttpResponse, wenn der Vorgang erfolgreich war.
+:return: Eine HttpResponse, die dem User anzeigt, wenn ein Fehler aufgetreten ist oder der User die Operation nicht ausführen darf.
 </pre> 
 </div>
 </div>
@@ -143,16 +143,16 @@ Finally, the task is checked or unchecked depending on its current state and the
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This view is responsible for creating a new checklist.
-It first checks if the user is allowed to create a new checklist (i.e. is authenticated and superuser).
-Next, the Mitglied's and Funktion's IDs as well as whether general tasks shall be included are fetched from the request.
-The view then tries to find the Mitglied and Funktion with the specified ID, and returns an error message if at least one of them could not be found.
-After that, the view checks if a checklist for this Mitglied and Funktion already exists. If that is the case, an error message is shown to the user.
-Finally, the new checklist is created and all Aufgaben and Rechte are added to it according to the specified parameters in the request.
+<pre class="fragment">Diese View ist für das Erstellen einer neuen Checkliste verantwortlich.
+Sie prüft zunächst, ob der User eine neue Checkliste erstellen darf (d. h. authentifiziert und Admin ist).
+Als nächstes werden die IDs des Mitglieds und der Funktion aus der Request geholt, sowie ob allgemeine Aufgaben aufgenommen werden sollen.
+Die View versucht dann, das Mitglied und die Funktion mit der angegebenen ID zu finden und gibt eine Fehlermeldung zurück, falls mindestens eins davon nicht gefunden werden konnte.
+Danach prüft die View, ob für dieses Mitglied und diese Funktion bereits eine Checkliste existiert. Sollte dies der Fall sein, wird dem Benutzer eine Fehlermeldung ausgegeben.
+Zum Schluss wird die neue Checkliste erstellt und alle Aufgaben sowie Rechte gemäß den in der Request angegebenen Parametern hinzugefügt.
 
-:param request: The HTTP request that triggered the view, including parameters mitgliedSelect, funktionSelect and generalTasksCheckbox.
-:return: A HttpResponse, if an error has occured, indicating the error to the user.
-:return: A redirect to /checklisten if creating the checklist was successful or a checklist for the same Mitglied and Funktion already exists.
+:param request: Die HTTP-Request, welche die View auslöst, einschließlich der Parameter mitgliedSelect, funktionSelect und generalTasksCheckbox.
+:return: Eine HttpResponse, die dem User anzeigt, wenn ein Fehler aufgetreten ist.
+:return: Eine Weiterleitung zu /checklisten, wenn das Erstellen der Checkliste erfolgreich war oder bereits eine Checkliste für das gleiche Mitglied mit gleicher Funktion existiert.
 </pre> 
 </div>
 </div>
@@ -171,13 +171,13 @@ Finally, the new checklist is created and all Aufgaben and Rechte are added to i
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This view is responsible for getting all Funktionen associated to a Mitglied that was selected in the create checklist modal.
-First, it checks if the user is allowed to get a list of Funktionen for a Mitglied in this context (i.e. the user is authenticated and superuser).
-Next, all Funktionen for the specified mitglied_id are determined and returned through a rendered template of select options to populate the dropdown in the create checklist modal.
+<pre class="fragment">Diese View ist dafür verantwortlich, alle Funktionen abzurufen, die einem Mitglied zugeordnet sind, welches im Modal zum Erstellen einer Checkliste ausgewählt wurde.
+Zunächst wird geprüft, ob der User in diesem Zusammenhang eine Liste von Funktionen für ein Mitglied erhalten darf (d. h. der User ist authentifiziert und Admin).
+Als nächstes werden alle Funktionen für die angegebene mitglied_id bestimmt und durch eine gerenderte Vorlage mit Auswahloptionen zurückgegeben, um das Dropdown-Menü im „Checklisten erstellen“ Modal zu füllen.
 
-:param request: The HTTP request that triggered the view, including the mitglied_id to get the Funktionen for.
-:return: An HttpResponse indicating the error if an error occured.
-:return: The rendered select options to populate the dropdown with if everything was successful.
+:param request: Die HTTP-Request, welche die View auslöst, einschließlich der mitglied_id, um die Funktionen zu erhalten.
+:return: Eine HttpResponse, die dem User anzeigt, wenn ein Fehler aufgetreten ist.
+:return: Die gerenderten Auswahloptionen zum Auffüllen des Dropdown-Menüs, wenn alles erfolgreich war.
 </pre> 
 </div>
 </div>
@@ -196,14 +196,14 @@ Next, all Funktionen for the specified mitglied_id are determined and returned t
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This view is responsible for deleting an existing checklist.
-First, it checks whether the user is allowed to delete the checklist (i.e. is authenticated and superuser).
-Next, the checkliste specified in the request's parameter checkliste_id is deleted. 
-Since all ForeignKey relations in other models are set to cascade if the checklist is deleted (i.e. in ChecklisteRecht and AufgabeRecht), only the checklist itself needs to be deleted explicitly.
+<pre class="fragment">Diese View ist für das Löschen einer bestehenden Checkliste verantwortlich.
+Zunächst wird geprüft, ob der User die Checkliste löschen darf (d. h. authentifiziert und Admin ist).
+Als nächstes wird die Checkliste mit dem in der request angegebenen Parameter checklist_id gelöscht.
+Da alle Fremdschlüssel-Beziehungen in anderen Models auf Cascade gesetzt sind, muss, wenn die Checkliste gelöscht wird (d. h. in ChecklistRecht und TaskRecht), nur die Checkliste selbst explizit gelöscht werden.
 
-:param request: The HTTP request that triggered the view, including parameter checkliste_id.
-:return: An empty HttpResponse if deleting the checklist was successful.
-:return: An HttpResponse indicating an error if one occured or a user is not allowed to to delete a checklist.
+:param request: Die HTTP-Request, welche die View auslöst, einschließlich der checkliste_id.
+:return: Eine leere HttpResponse, falls das Löschen der Checkliste erfolgreich war.
+: return: Eine HttpResponse, die einen Fehler anzeigt, wenn einer aufgetreten ist oder der User eine Checkliste nicht löschen darf.
 </pre> 
 </div>
 </div>
@@ -222,11 +222,11 @@ Since all ForeignKey relations in other models are set to cascade if the checkli
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This view renders all existing checklists. Furthermore, it provides the 20 latest Mitglieder to the modal used for creating a new checklist.
-If the user is not authenticated, an error message will be displayed and the user is redirected to the login page.
+<pre class="fragment">Diese View rendert alle vorhandenen Checklisten. Des Weiteren liefert sie die letzten 20 Mitglieder für das Modal, das zum Erstellen einer neuen Checkliste verwendet wird.
+Wenn der User nicht authentifiziert ist, wird eine Fehlermeldung angezeigt und der User wird auf die Anmeldeseite zurückgeleitet.
 
-:param request: The HTTP request that triggered the view.
-:return: The rendered main_screen view, or a redirect to the login page if the user is not authenticated.
+:param request: Die HTTP-Request, welche die View auslöst hat.
+:return: Die gerenderte main_screen View oder eine Weiterleitung zur Anmeldeseite, falls der User nicht authentifiziert ist.
 </pre> 
 </div>
 </div>

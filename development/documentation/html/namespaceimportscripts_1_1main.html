@@ -115,23 +115,25 @@ Variablen</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">    **!ACHTUNG!**
+<pre class="fragment">Diese Funktion importiert Organisationseinheiten, Unterbereiche und Funktionen aus einer CSV-Datei.
+    
+    **!ACHTUNG!**
     Diese Funktion leert die folgenden Tabellen in der Datenbank:
 
     * Organisationseinheit
     * Unterbereich
     * Funktion
 
-    Um diese Funktion zu verwenden, wird eine CSV-Datei mit der folgenden Struktur benötigt:
+Um diese Funktion zu verwenden, wird eine CSV-Datei mit der folgenden Struktur benötigt:
 
     * delimiter = ','
     * organisationseinheit,unterbereich,funktion,max_members
     * Die erste Zeile ist eine Kopfzeile und wird nicht importiert
 
 
-    :param file: Datei mit zu importierendem Inhalt
-    :type file: TextIO
-    :return: Kein Rückgabewert
+:param file: Datei mit zu importierendem Inhalt
+:type file: TextIO
+:return: Kein Rückgabewert
 </pre> 
 </div>
 </div>

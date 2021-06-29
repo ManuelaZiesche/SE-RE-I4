@@ -11,6 +11,8 @@ import csv
 
 def importAemter(file):
     """
+    Diese Funktion importiert Organisationseinheiten, Unterbereiche und Funktionen aus einer CSV-Datei.
+        
         **!ACHTUNG!**
         Diese Funktion leert die folgenden Tabellen in der Datenbank:
 
@@ -18,16 +20,16 @@ def importAemter(file):
         * Unterbereich
         * Funktion
 
-        Um diese Funktion zu verwenden, wird eine CSV-Datei mit der folgenden Struktur benötigt:
+    Um diese Funktion zu verwenden, wird eine CSV-Datei mit der folgenden Struktur benötigt:
 
         * delimiter = ','
         * organisationseinheit,unterbereich,funktion,max_members
         * Die erste Zeile ist eine Kopfzeile und wird nicht importiert
 
 
-        :param file: Datei mit zu importierendem Inhalt
-        :type file: TextIO
-        :return: Kein Rückgabewert
+    :param file: Datei mit zu importierendem Inhalt
+    :type file: TextIO
+    :return: Kein Rückgabewert
     """
 
     # Delete existing Data
