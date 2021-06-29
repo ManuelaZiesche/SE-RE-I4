@@ -14,6 +14,14 @@ def main_screen(request):
     :param request: The HTTP request that triggered the view.
     :return: The rendered main_screen view, or a redirect to the login page if the user is not authenticated.
     """
+    """
+    Diese View rendert alle vorhandenen Checklisten. Des Weiteren liefert sie die letzten 20 Mitglieder des Modals, das zum Erstellen einer neuen Checkliste verwendet wird.
+    Wenn der User nicht authentifiziert ist, wird eine Fehlermeldung angezeigt und der User wird auf die Anmeldeseite zurückgeleitet.
+
+    :param request: Die http request, welche die View auslöst hat.
+    :return: Die gerenderte main_screen View oder eine Weiterleitung zur Anmeldeseite, falls der User nicht authentifiziert ist.
+    """
+
     if not request.user.is_authenticated:
         messages.error(request, "Du musst angemeldet sein, um diese Seite sehen zu können.")
         return redirect("/")
@@ -38,6 +46,20 @@ def erstellen(request):
     :return: A HttpResponse, if an error has occured, indicating the error to the user.
     :return: A redirect to /checklisten if creating the checklist was successful or a checklist for the same Mitglied and Funktion already exists.
     """
+
+    """
+    Diese View ist für das Erstellen einer neuen Checkliste verantwortlich.
+    Sie prüft zunächst, ob der User eine neue Checkliste erstellen darf (d. h. authentifiziert und Admin ist).
+    Als nächstes werden die IDs des Mitglieds und der Funktion sowie ob allgemeine Aufgaben aufgenommen werden sollen, aus der request geholt.
+    Die View versucht dann, das Mitglied und die Funktion mit der angegebenen ID zu finden und gibt eine Fehlermeldung zurück, falls mindestens eins davon nicht gefunden werden konnte.
+    Danach prüft die View, ob für dieses Mitglied und diese Funktion bereits eine Checkliste existiert. Sollte dies der Fall sein, wird dem Benutzer eine Fehlermeldung ausgegeben.
+    Zum Schluss wird die neue Checkliste erstellt und alle Aufgaben sowie Rechte gemäß den in der request angegebenen Parameter hinzugefügt.
+
+    :param request: Die http request, welche die View auslöst, einschließlich der Parameter mitgliedSelect, funktionSelect und generalTasksCheckbox.
+    :return: Eine HttpResponse, die dem User anzeigt, wenn ein Fehler aufgetreten ist.
+    :return: Eine Weiterleitung zu /checklisten, wenn das Erstellen der Checkliste erfolgreich war oder bereits eine Checkliste für das gleiche Mitglied mit gleicher Funktion existiert.
+    """
+
     if not request.user.is_authenticated:
         return HttpResponse("Permission denied")
     if not request.user.is_superuser:
@@ -101,6 +123,18 @@ def abhaken(request):
     :return: An empty HttpResponse if the operation was successful.
     :return: An HttpResponse indicitang the error if an error has occured or if the user is not allowed to perform the operation.
     """
+
+    """
+    Diese View ist dafür verantwortlich, eine Aufgabe in der Checkliste zu aktivieren oder zu deaktivieren.
+    Sie prüft zunächst, ob der User eine Aufgabe prüfen darf, d. h. authentifiziert und Admin ist.
+    Als nächstes werden die Parameter task_type und task_id aus der request geholt. Sie werden verwendet, um festzustellen, ob eine Aufgabe oder ein Recht geprüft wurde, und um die richtige Aufgabe zu erhalten.
+    Zum Schluss wird die Aufgabe je nach aktuellem Status aktiviert oder deaktiviert und die Änderungen gespeichert.
+
+    :param request: Die http request, welche die View ausgelöst hat, einschließlich der Parameter task_type und task_id.
+    :return: Eine leere HttpResponse, wenn der Vorgang erfolgreich war.
+    :return: Eine HttpResponse, die dem User anzeigt, wenn ein Fehler aufgetreten ist oder das der User die Operation nicht ausführen darf.
+    """
+
     if not request.user.is_authenticated:
         return HttpResponse("Nice try, FBI.")
     if not request.user.is_superuser:
@@ -141,6 +175,18 @@ def loeschen(request):
     :return: An empty HttpResponse if deleting the checklist was successful.
     :return: An HttpResponse indicating an error if one occured or a user is not allowed to to delete a checklist.
     """
+
+    """
+    Diese View ist für das Löschen einer bestehenden Checkliste verantwortlich.
+    Zunächst wird geprüft, ob der Userer die Checkliste löschen darf (d. h. authentifiziert und Admin ist).
+    Als nächstes wird die Ceckliste mit dem aus der request angegebenen Parameter checklist_id gelöscht.
+    Da alle Fremdschlüssel-Beziehungen in anderen Models auf cascade gesetzt werden, wenn die Checkliste gelöscht wurde (d. h. in ChecklistRight und TaskRight), muss nur die Checkliste selbst explizit gelöscht werden.
+
+    :param request: Die http request, welche die View auslöst, einschließlich der checkliste_id.
+    :return: Eine leere HttpResponse, falls das Löschen der Checkliste erfolgreich war.
+    : return: Eine HttpResponse, die einen Fehler anzeigt, wenn einer aufgetreten ist oder ein User eine Checkliste nicht löschen darf.
+    """
+
     if not request.user.is_authenticated:
         return HttpResponse("Not today, NSA.")
     if not request.user.is_superuser:
@@ -169,6 +215,17 @@ def get_funktionen(request):
     :return: An HttpResponse indicating the error if an error occured.
     :return: The rendered select options to populate the dropdown with if everything was successful.
     """
+
+    """
+    Diese View ist dafür verantwortlich, alle Funktionen abzurufen, die einem Mitglied zugeordnet sind, welches im Modal zum Erstellen einer Checkliste ausgewählt wurde.
+    Zunächst wird geprüft, ob der User in diesem Zusammenhang eine Liste von Funktionen für ein Mitglied erhalten darf (d. h. der User ist authentifiziert und Admin).
+    Als nächstes werden alle Funktionen für die angegebene mitglied_id bestimmt und durch eine gerenderte Vorlage mit Auswahloptionen zurückgegeben, um das Dropdown-Menü im „Checklisten erstellen“ Modal zu füllen.
+
+    :param request: Die HTTP request, welche die View auslöst, einschließlich der mitglied_id, um die Funktionen zu erhalten.
+    :return: Eine HttpResponse, die dem User anzeigt, wenn ein Fehler aufgetreten ist.
+    :return: Die gerenderten Auswahloptionen zum Auffüllen des Dropdown-Menüs, wenn alles erfolgreich war.
+    """
+
     if not request.user.is_authenticated:
         return HttpResponse("Permission denied")
     if not request.user.is_superuser:
