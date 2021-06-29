@@ -33,13 +33,15 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Notizen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt | Essence Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken | alle Teammitglieder |  1
 | Iteration 06 planen und managen | hoch |  | erledigt | Work Item List, Risk List,Iterationsplan  | Manuela | 
-| Test Cases formulieren | mittel | | erledigt | | Sebastian, Bayu | 
-| Prototyp des Kandidatentabs fertigstellen (Use Case 1) | hoch | | erledigt | | Vasco |
-| Architecture Notebook überarbeiten + erweitern | mittel | | erledigt | | Benjamin + Sebastian | 
+| Test Cases formulieren | mittel | | erledigt | | Sebastian, Bayu | 5
+| Prototyp des Kandidatentabs fertigstellen (Use Case 1) | hoch | | erledigt | | Vasco | 15
+| Architecture Notebook überarbeiten + erweitern | mittel | | erledigt | | Benjamin + Sebastian + Sabine | 2
 | Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin + Sabine + Manuela | 3
 | mit der Dokumentation beschäftigen | mittel |  | erledigt | | Sabine, Manuela | 6
-| Kandidaten per Knopfdruck zu Mitgliedern aufnehmen (Use Case 2) | niedrig | | in Bearbeitung | | Vasco | 9
+
 |===
+
+//| Kandidaten per Knopfdruck zu Mitgliedern aufnehmen (Use Case 2) | niedrig | | in Bearbeitung | | Vasco | 9
 
 == Probleme 
 

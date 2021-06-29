@@ -37,14 +37,15 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
 | Iteration 07 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
-| Testen der Use Cases 1-3 -> Akzeptanztests mit Stakeholdern | hoch |  | erledigt | | Vasco, Sabine, Benjamin, Sebastian | 
-| C4 Model beenden | mittel |  | | | Benjamin | 
+| Testen der Use Cases 1-3 -> Akzeptanztests mit Stakeholdern | hoch |  | erledigt | | Vasco, Sabine, Benjamin, Sebastian | 1
+| Diagramme zur Architektur erstellen | mittel |  | | | Benjamin | 11
 | Projektbericht 'Planung' beenden | mittel |  | | | Manuela | 
 | Projektbericht 'Durchführung' zu circa 75% fertigstellen | mittel |  | | | Manuela | 
-| Projektbericht 'Ergebnisse' anfangen | mittel |  | erledigt | | Sabine | 
-| Anwenderdokumentation zu circa 75% fertigstellen | mittel |  | erledigt | | Sabine | 
-| Kandidaten zu Mitgliedern aufnehmen - fertigstellen | hoch|  | erledigt | | Vasco | 
-| E-Mail Buttons zu UseCase 3 implementieren (Mitglieder kontaktieren) | hoch|  | erledigt | | Vasco | 
+| Projektbericht 'Ergebnisse' anfangen | mittel |  | erledigt | | Sabine | 1
+| Anwenderdokumentation zu circa 75% fertigstellen | mittel |  | erledigt | | Sabine | 5
+| Kandidaten zu Mitgliedern aufnehmen (UC 02) | hoch|  | erledigt | | Vasco | 3
+| E-Mail Buttons UC 04 implementieren (Mitglieder kontaktieren) | hoch|  | erledigt | | Vasco | 1
+| Checklisten, weitere Informationen implementieren (UC 03) | hoch|  | erledigt | | Vasco | 10
 |===
 
 == Probleme 
