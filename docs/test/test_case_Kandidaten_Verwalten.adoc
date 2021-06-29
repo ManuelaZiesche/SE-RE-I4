@@ -340,7 +340,7 @@ Speicherbutton betätigen
 |18.06.2021
 |Sebastian
 |nein
-|Fehler: Zahlen können mit Namen kombiniert werden. Ursachenanalyse -> (Entwicklung)
+|Fehler: Namen können mit Zahlen kombiniert werden. Ursachenanalyse -> (Entwicklung)
 
 |4
 |2

@@ -7,7 +7,9 @@
 
 == Vorgehensweise zum Testverfahren/der Teststrategie
 
-Die folgenden Testverfahren sollen die Funktionalität der zu entwickelten Webanwendung überprüfen und sicherstellen.
+Die Tests dienen zur Sicherung der gewünschten Softwarequalität (Robustheit des Softwaresystems).
+In den Tests wird u.a. überprüft, ob die festgelegten Anforderungen richtig erfüllt wurden.
+
 
 === Unittests (Modultest/Komponententest)
 Kleinste prüfbare Funktionen unserer Webanwendung sollen einzeln und unabhängig voneinander auf ihren ordnungsgemäßen Betrieb hin untersucht werden.
