@@ -35,13 +35,13 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
-| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
+| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 | erledigt | | Manuela | 2
 | Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
-| Test Cases formulieren | mittel | | | | Sebastian, Bayu| 11
-| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 15 
-| Vision, Use Cases und Requirements überarbeiten | mittel | | |  | Sabine + Manuela| 4
-| Architecture Notebook überarbeiten + erweitern | mittel | | | | Benjamin + Sebastian + Sabine | 4
-| Domänenmodell erstellen | mittel | 2 | | | Benjamin + Sabine + Manuela | 3
+| Test Cases formulieren | mittel | | erledigt | | Sebastian, Bayu | 11
+| Prototyp des Kandidatentabs erstellen | hoch | | erledigt| | Vasco | 15 
+| Vision, Use Cases und Requirements überarbeiten | mittel | | erledigt |  | Sabine + Manuela| 4
+| Architecture Notebook überarbeiten + erweitern | mittel | | erledigt | | Benjamin + Sebastian + Sabine | 4
+| Domänenmodell erstellen | mittel | 2 | erledigt| | Benjamin + Sabine + Manuela | 3
 |===
 
 == Probleme 
@@ -57,7 +57,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 - Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
 - ersten Prototypen haben funktioniert
 - erste Tests wurden erstellt 
-- Belegnachbereitung ist abgeschlossen?
+- Belegnachbereitung ist abgeschlossen
 
 == Assessment
 
