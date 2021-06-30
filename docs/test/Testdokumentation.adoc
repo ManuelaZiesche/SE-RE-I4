@@ -1,0 +1,47 @@
+
+= Testdokumentation
+
+Die folgenden Testverfahren sollen die Softwarequalität der zu entwickelnden Webanwendung überprüfen und sicherstellen.
+Außerdem sollen die festglegten Anforderungen auf Erfüllung überprüft werden.
+
+== Testkonzept:
+
+Die wichtigsten Komponenten, welche getestet wurden, bilden die Elemente der UI der Webseite (Button, Check-Funktionen, Zeichenfelder) und deren Funktionen sowie die zusammenarbeitenden Komponenten des Backends (Datenbank, Schnittstellen, Django-Framework).
+
+*Folgende Testmethoden/-verfahren wurden eingesetzt:*
+
+* *Unittests* (manuell) auf Grund der Übersichtlichkeit anlehnend an Use Cases
+- Kleinste prüfbare Funktionen unserer Webanwendung wurden einzeln & unabhängig getestet.
+- Testcases wurden zu passenden UseCases ausgearbeitet und tabellarisch festgehalten
+
+* *Integrationstests* (manuell)
+Bsp: .. Speichern, bearbeiten, anlegen, Historie → Funktionalität wurde getestet!
+* *Akzeptanztest* 
+- Durch den Abnahmetest direkt durch die Themensteller, wurde das gesamte Projekt auf Erfüllung der Ziele sowie die Zufriedenheit der Umsetzung geprüft.
+
+
+Ausführliches Testkonzept: Siehe Vorgehensweise zum Testverfahren
+
+== Testdokumentation
+
+*Testfallbeschreibung*
+
+Die Testfälle wurden verbal beschrieben und in einem Testprotokoll festgehalten. Zu jedem Testfall gibt es im Testprotokoll eine Tabellenzeile mit *Testfallnummer*, *Vorbedingungen*, Definition des *Testobjektes*, *Eingabedaten*, *Handlungen zur Durchführung des Tests* sowie das zu *erwartende Ergebnis*.
+
+War ein Test erfolgreich so wurde als Testergebnis _“bestanden“_ in die Tabelle aufgenommen. Das Testergebnis _„nicht bestanden“_ wurde eingetragen, wenn der Test nicht erfolgreich verlief.
+
+Fehler wurden als sofortige Mitteilung an die Entwickler mitgeteilt.
+Die fehlgeschlagenen Tests wurden nach Beheben des Problems zu einem späteren Zeitpunkt wiederholt und erneut geprüft.
+
+Zu jedem Test wurde ein genaues Testdatum festgehalten.
+Personen, welche getestet haben: Sebastian (Rolle des Testers) in Absprache mit Vasco (Rolle des Entwicklers).
+
+== Ergebnisse der Testdurchführung:
+
+Die Testergebnisse waren bis auf sehr wenige Tests erfolgreich.
+
+*Beispiele für Negative Testergebnisse:*
+
+- Negative Testergebnisse gab es beim Datepicker (falschen Wochentag zu einem Datum auf Grund falsch gesetzter Ortszeit)
+
+- Namen konnten mit Zahlen kombiniert werden.
