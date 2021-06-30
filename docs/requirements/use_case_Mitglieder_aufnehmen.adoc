@@ -2,7 +2,7 @@
 == Use-Case 02:  Mitglieder aufnehmen
 
 .Schematische Beschreibung der Mitgliederaufname
-image::../docs/requirements/images_use_case/mitgliederaufname.jpg[]
+image::../images_use_case/mitgliederaufnahme.jpg[]
 
 ===	Kurzbeschreibung
 Die kandidierende Person wird als Mitglied gewählt und im System als solches übernommen. 
