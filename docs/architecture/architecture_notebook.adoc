@@ -1,50 +1,139 @@
 = Architecture Notebook: Projekt - Weiterentwicklung der Mitgliederdatenbank
 
-== 1. Zweck
+== Zweck
 
 Dieses Dokument beschreibt wesentliche  Elemente der Softwarearchitektur, sowie andere übergreifende Aspekte des Systems für die Mitgliederdatenbank des StuRa. Hier werden im Folgenden auf die Ziele, Annahmen, die Architektonische Bedeutung, unsere Entscheidungen bzw. Einschränkungen und weitere Dinge eingegangen und Dokumentiert.
 
 Mit Hilfe von verschiedenen Modellen und Entwürfen für die Architektur, soll die spätere Weiterentwicklung und Anpassung einfacher gemacht werden.
 
 
-== 2. Architektonische Ziele und Philosophie
+== Architektonische Ziele und Philosophie
 
-Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit Datenbank bereits vorhanden ist. Aus der Anforderungsanalyse ergeben sich damit folgende Ziele für den Entwurf: +
+//Für den Architekturentwurf ist zu berücksichtigen, dass eine Webanwendung mit angebundener Datenbank bereits vorhanden ist. Aus der //Anforderungsanalyse ergeben sich damit folgende Ziele für den Entwurf: +
 
-Ziele:
+//- Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
+//- Übersichtlichkeit bzw. intuitive Bedienbarkeit.
+//- Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  
+//- Verfügbarkeit 
 
-- Vorarbeit für eine nahtlose und ressourcenschonende Erweiterung der Webanwendung
-- Übersichtlichkeit bzw. intuitive Bedienbarkeit.
-- Anpassung/Erweiterung der Datenbank, um Funktionalitäten gewährleisten zu können.  
+//neu: +
+Das System ist eine bestehende Webanwendung zur Verwaltung der Kandidaten und Mitglider des Stura der HTW Dresden durch einen Admin. Offizielle Mitglieder erhalten über einen Login Zugang zur Anwedung und können verschiedene Informationen einsehen, aus diesem Grund muss eine parallele Nutzung von mindestens 10 Personen gewährleistet werden. Des Weiteren ist nicht bekannt auf welchem Endgerät die Nutzung der Anwendung erfolgen wird, wesshalb auf die Kompatibilität des Inhaltes mit deren Ansicht auf diversen Bildschirmgrößen geachtet werden muss. +
 
+Eine gute Bedienbarkeit wird durch eine übersichtliche und intuitive Benutzeroberfläche erzielt, welche zur Akzeptanz des Gesamtsystems durch die Mitglieder und des Admin beiträgt. +
 
-== 3. Annahmen und Abhängigkeiten
-
-- Der Server auf dem die Webseite laufen soll bietet ausreichen Ressourcen
-- bisher verwendete Datenbankmodelle und Frameworks können weiter verwendet werden
-- die Mitgliederdatenbank wird in Zukunft funktional erweitert
-// - weitere Annahmen und Abhängigkeiten
+Die Anwendung ist eine weiterentwickelte Version des Projektes der Gruppe, von der wir das System übernommen haben. Andere Gruppen, aus zukünftigen Semestern, werden vermutlich ebenfalls an der Optimierung der sogennanten Mitgliederdatenbank arbeiten, sodass Aspekte, die unsere Gruppe im Rahmen des Projektes nicht umsetzten könnten, trotzdem umgesetzt werden können. Dazu zählen beispielsweise die Integrierung des Workloads der Mitglieder oder die Erstellung eines Organigramms aus den Mitgliedern der Dantenbank.
 
 
-== 4. Entscheidungen, Einschränkungen und Begründungen
+//Arbeitsspeicher: Verbund aus 3 Servern mit jeweils 72 GB Ram
+//Massenspeicher: ausreichend groß
+//Betriebssystem: Linux
+//Müsste nochmal nach der Prozessorleistung fragen
 
-- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden
-- aus selben Grund wird Python Programmiersprache ebenso weiterverwendet
+== Annahmen und Abhängigkeiten
+
+=== Annahmen
+
+* jeder Nutzer hat eine stabile Internetverbindung und nutzt einen aktuellen Browser (Firefox oder Chrome)
+* Der Server auf dem die Webseite laufen soll, bietet ausreichen Ressourcen
+** Arbeitsspeicher: Verbund aus 3 Servern mit jeweils 72 GB RAM
+** Massenspeicher: ausreichend groß
+** Betriebssystem: Linux
+* die bisher verwendete Datenbankmodelle und Frameworks können weiter verwendet werden
+* die Mitgliederdatenbank wird in Zukunft funktional erweitert
+
+=== Abhängigkeiten
+* wir sind vom Laborbereich abhängig, der den Server mit seinen Ressourcen stellt
+
+== Entscheidungen, Einschränkungen und Begründungen
+
+//- Die Datenbank wird mit SQLite weitergeführt um Mehraufwand im Sinne von Umstrukturierung zu vermeiden, außerdem passt das Datenbankschema sehr gut zu den Daten, die verwaltet werden sollen
+//- Python als Prpgrammiersprache wird verwendet, da das eine objektorientierte Programmiersprache ist und diese eine verhältnismäßig leichte Syntax besitzt
+//- Django weil Vorgänger verwendet
+//- Swings Framework Python
+//- Silenium
+//- SimpleJason
+
+//.neu: +
+. Wir nutzen Python als Programmiersprache, da die bestehenden Teile der Anwendung in dieser Sprache programmiert wurden und wir einen Mehraufwand im Sinne einer Umstrukturierung vermeiden wollten. +
+Außerdem ist sie objektorientiert und besitzt eine verhältnismäßig leichte Syntax.
+. Ebenso wie unsere Vorgänger nutzen wir Django als Framework. Es ist ebenfalls in Python verfasst und folgt einem Model-View-Presenter-Schema, aus dem eine leichte Erweiterbarkeit resultiert.
+. SQLite wird als Programmierbibliothek aufgegriffen, da es standartmäßig von Django unterstützt wird und von der Syntax sehr dem SQL-Standard ähnelt, mit dem einige Gruppenmitglieder schon intensiveren Kontakt hatten. +
+Abgesehen davon ist SQLite sowohl mit verschiedenen Betriebssystemen von Smartphones, sowie mit unterschiedlichsten Browsern kompatibel und unterstützt so das Erreichen von mehr Nutzern, die sich durch ihre verschiedenen Voraussetzungen auszeichnen.
+. Im Gegensatz zur Vorgängergruppe entscheiden wir uns dagegen das Framework Selenium im Zusammenhang mit den Tests zu verwenden, da hierbei der Einarbeitungsaufwand unverhältnismäßig groß wäre, da kein Mitglied unseres Teams damit bis jetzt in Kontakt gekommen ist. Die Tests werden stattdessen manuell erstellt.
+
+== Architektur-relevante Anforderungen
+[cols="1,4,4"]
+|===
+| *Anforderung* | *Systemkomponente* | *Architekturmechanismen*
+
+| UC03 | Webanwendung | Erlernbarkeit
+| F1 | Webanwendung | Zugriffsschutz
+| F2 | Datenbank | Persistenz
+| U1, U2 | Interface | Erlernbarkeit
+| R1 | Webanwendung +
+Datenbank | Archivierung
+| S1 | Webanwendung | Dokumentation
+
+|===
 
 //- weitere Entscheidungen, Nebenbedingungen und Begründungen 
 
-== 5. Architekturmechanismen
-=== 5.1 Datenspeicherung
-Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
+== Architekturmechanismen
 
-=== 5.2 Webschnitstelle
-Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu Organisieren und zu Verwalten.
+. *Archivierung*
+** Zustand: Analysis
+** Zweck: Daten dürfen bei Systemausfällen nicht verloren gehen
+** Eigenschaften/ Attribute: Pro Woche soll ein Backup erstellt werden. Es sollen nie mehr als 3 Backups vorhanden sein
+** Funktion: Backup der Datenbank wird auf dem Server angelegt
+. *Dokumentation*
+** Zustand: Implementation
+** Zweck: Die Anwendung soll erweiterbar sein/bleiben
+** Eigenschaften/ Attribute: verständlich
+** Funktion: Framework Django wird verwendet. Dokumentationen werden angefertigt
+. *Erlernbarkeit*
+** Zustand: Implementation
+** Zweck: Eine intuitive Nutzung soll erzielt werden
+** Eigenschaften/ Attribute: einfach unkompliziert
+** Funktion: Nutzerfreundliches Interface wird beibehalten
+. *Persistenz*
+** Zustand: Implementation
+** Zweck: Daten müssen zur Verfügung stehen für den Admin und die Mitglieder des Stura
+** Eigenschaften/ Attribute: SQLite-Datenbank
+** Funktion: Alle zu speichernden Daten müssen Platz in der Datenbakn finden
+. *Zugriffsschutz*
+** Zustand: Implementation (Vorgängersystem)
+** Zweck: Login
+** Eigenschaften/ Attribute: Nicht jeder Nutzer ist dazu berechtigt alle daten einzusehen
+** Funktion: Unterscheidung beim Login nach Mitglied Stura und Admin
 
-=== 5.3 Informationsvermittlung
+=== Datenspeicherung
+//Zweck: Speicherung der Daten von Mitgliedern und Kandidaten in der Mitgliederdatenbank
+Die Speicherung der Daten erfolg über die SQLite-Datenbank. Jeder Datensatz ist identifizierbar über einen Primärschlüssel in Form einer ID, die jedoch nicht durch die Webanwendung dem Admin oder dern Mitgliedern präsentiert wird. 
+
+=== Webschnitstelle
+Die von Django bereitgestellte Schnittstelle wird verwendet um Daten über die Webseite zu organisieren und zu verwalten.
+Die weboberfläche wurde mittels HTML/CSS erstellt.
+
+=== Informationsvermittlung
 Bereitstellung der Daten für Organisations- und Informationszwecke auf der Webseite
 
-== 6. Schichten oder Architektur-Framework
+== Wesentliche Abstraktionen
+* Objekte/Personen, die als Datensätze im System eingebunden sind
+
+== Schichten oder Architektur-Framework
+
+=== Model-View-Presenter (MVP)
+* ergibt sich aus Django Framework
+* *Model:* betreibt die Ansicht und ist für die Logig der Ansicht zuständig
+* *View* (Ansicht)*:* für Ein- und Ausgaben verantwortlich
+* *Presenter:* Verbindung zwischen Model und View
+
+== Architekturschichten (Views)
+
+=== Logische Sicht (C4-Modell)
 image::../docs/architecture/images/level1.jpg[level1,280,280]
 image::../docs/architecture/images/level2.jpg[level2,550,550]
+
+=== Use Cases
 
 

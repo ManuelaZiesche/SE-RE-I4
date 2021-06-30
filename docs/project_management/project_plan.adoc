@@ -101,7 +101,7 @@ Wir haben uns für Iterationslängen von 3 Wochen entschieden. Anfangs wollten w
 - durchgängig Spaß an dem Projekt/der Bearbeitung der einzelnen Aufgaben
 
 == Deployment
-Sobald das überarbeitete Projekt online geht, übergeben wir den Admins die Zugangsdaten. ???
+Sobald die Zeit für unser Projekt abgelaufen ist, werden wir das gesammelt an den StuRa ausliefern. Wir werden außerdem Anleitungen zur weiteren Nutzung bereitstellen. 
 
 == Erkenntnisse
 - Dokumente sollten von mehreren Personen kontrolliert/durchgeschaut werden, um Fehler zu erkennen und zu vermeiden -> 4-Augen-Prinzip

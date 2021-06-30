@@ -1,0 +1,85 @@
+= Iteration Plan 05: {I4 - Weiterentwicklung der Mitgleiderdatenbank}
+Manuela Ziesche <manuela.ziesche@htw-dresden.de>
+{localdatetime}
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:sectnums:
+:source-highlighter: highlightjs
+
+
+== Meilensteine
+
+.Meilensteine
+|===
+| *Meilenstein* | *Datum* | *Notizen*
+| Beginn der Iteration | 10.05.2021 |
+| Meeting
+| Ende der Iteration | 30.05.2021 |
+|===
+
+== Wesentliche Ziele
+
+- Architecture Notebook fertigstellen
+- UseCase 1 und 2 implementieren (1 fertigstellen und 2 anfangen)
+- Dokumentation starten 
+
+
+== Aufgabenzuordnung
+
+Die Aufgaben, welche in der sechsten Iteration bearbeitet werden, folgen in der untenstehenden Tabelle:
+Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link:../work_item_list.adoc[]>>
+
+|===
+| *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Notizen* | *Name* | *Gearbeitete Stunden* 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt | Essence Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken | alle Teammitglieder |  1
+| Iteration 06 planen und managen | hoch |  | erledigt | Work Item List, Risk List,Iterationsplan  | Manuela | 
+| Test Cases formulieren | mittel | | erledigt | | Sebastian, Bayu | 5
+| Prototyp des Kandidatentabs fertigstellen (Use Case 1) | hoch | | erledigt | | Vasco | 15
+| Architecture Notebook überarbeiten + erweitern | mittel | | erledigt | | Benjamin + Sebastian + Sabine | 2
+| Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin + Sabine + Manuela | 3
+| mit der Dokumentation beschäftigen | mittel |  | erledigt | | Sabine, Manuela | 6
+
+|===
+
+//| Kandidaten per Knopfdruck zu Mitgliedern aufnehmen (Use Case 2) | niedrig | | in Bearbeitung | | Vasco | 9
+
+== Probleme 
+
+.Probleme
+|===
+| *Problem* | *Status* | *Notizen*
+|===
+
+
+== Bewertungskriterien
+
+- Gemeinsame Inspektion des Iterations-Ergebnisses mit dem gesamten Team
+- ersten Prototypen haben funktioniert 
+- erste Tests wurden erstellt
+- Belegnachbereitung ist abgeschlossen
+
+== Assessment
+
+.Assessment
+|===
+|*Assessment Ziel* | *Iteration 6 beenden*
+|Assessment Datum | 31.05.2021
+| Teilnehmer | alle
+| Projektstatus | gelb/grün
+|===
+
+Der erste Prototyp des Kandidatentabs wurde fertiggestellt, das meint, dass der Use Case 1 fertig implementiert ist. Den Use Case 2 hat unser Entwickler angefangen zu implementieren. Dieser wird in der nächsten Iteration fertiggestellt. 
+Der Beleg wurde komplett nachbereitet und die Test Cases zu dem Use Case 1 alle schriftlich notiert. 
+Wir haben außerdem angefangen uns mit der Dokumentation zu beschäftigen & erste Ideen gesammelt. In der nächsten Iteration werden wir anfangen, die Ideen auszuformulieren und zu notieren.
+Wenn wir unsere erfüllten Aufgaben und Ziele mit den Bewertungskriterien vergleichen, sehen wir, dass die 6. Iteration einen grünen projektstatus erreichen kann.
+ 
+
+
+== Essence Navigator Bild
+
+- alle Bilder aus den gesamten Iterationen finden Sie hier: +
+<<link:../essence_navigator_images[]>> 
+
+- Bild von der sechsten Iteration
+
+image::../docs/project_management/essence_navigator_images/Essence_Navigator_Iteration06.png[]

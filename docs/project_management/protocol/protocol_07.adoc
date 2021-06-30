@@ -1,0 +1,63 @@
+= Protokoll vom 17.06.2021
+Sabine Adam
+1.0, 11.06.2021
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+= Algemeine Angaben
+
+[cols="2,2,1,2"]
+|====
+
+| *Datum* | 17.06.2021 | *Thema* | 1. Akzeptanztest
+| *Teilnehmer (Rolle)* 3+^|
+ Sophia (Auftraggeberin) +
+ Axel (Admin) +
+ Hannes (Stura) +
+ Benni (Architekt) +
+ Vasco Schwarze (Entwickler) +
+ Sabine Adam (Protokoll) 
+
+|====
+
+= Ablauf
+
+* Webseite aufrufen (*https://sturadb.herokuapp.com/*)
+* Anmelden
+** *admin: DBadmin123*
+** user: DBuser123
+* einzelne Funktionen testen -> Feedback geben
+* frei testen
+
+= Funktionstest
+
+[cols="4,1,7"]
+|====
+| Funktionen | UC | Anmerkungen
+
+| Kandidatur anlegen .3+^.^| UC01 
+| angenommen
+| Kandidatur bearbeiten 
+| angenommen
+| Kandidatur löschen 
+| angenommen
+
+| Kandidatur aufnehmen zu Mitglied | UC02 
+| - Wahldatum automatisch als Amtsbeginn übernehmen, aber abänderbar lassen 
+
+| Mitglied bearbeiten | UC03 
+| angenommen
+
+| Mitglieder per Mail kontaktieren | UC04 
+| angenommen
+
+|====
+
+= Hinweise/ Wünsche
+
+* Weitergabe der Telefonnummer
+** Checkbox, ob sie weitergegeben werden darf an normale Mitglieder oder nur für den Admin sichtbar ist
+* Checkliste vollständig abgehakt -> soll sichtbar bleiben
+* Kandidaturentab nur für Admin sichtbar -> ja
+* Mitgliederliste als Exelliste exportieren

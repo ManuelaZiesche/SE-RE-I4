@@ -2,6 +2,7 @@
 
 == Allgemeine Informationen
 
+== TC  01: 
 == TC 01: Kandidat hinzufügen
 == Ziel : Neue Kandidat wird hinzugefügt
 == Methode/Objekte/Funktionen :  loginAsLukasAdmin() ; loginAsLukasUser() ; addMitglied() ; createAmt();  addMitgliedWithParameters()
@@ -123,7 +124,7 @@ Einzelschrite :
 Benötigte Daten:
 - Kandidatendaten
 
-== TC 07: Weitere Informationen hinzufügen
+== TC 7: Weitere Informationen hinzufügen
 Beschreibung: Der Admin möchte die Kandidatendaten einen bereits vorhandenen Kandidaten bearbeiten.
 Vorbedingungen:
 - Der Kandidat ist bereits in der Datenbank vorhanden.

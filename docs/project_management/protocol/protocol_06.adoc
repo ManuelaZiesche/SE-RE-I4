@@ -1,0 +1,51 @@
+= Protokoll vom 11.06.21 - FA Tests
+Sabine Adam
+1.0, 11.06.2021
+:toc: 
+:toc-title: Inhaltsverzeichnis
+:source-highlighter: highlightjs
+
+= Fachaustausch zum Thema Tests
+
+* Unittests testen einzelne Komponenten
+** ein Modul in Isolation
+** viele unittests, entlang des Use Cases
+* Integrationstests testen verschiedene Komponenten, die ineinander greifen
+* Regressionstests sind alte Tests, die wiederholt angewendet werden +
+
+= Notizen
+
+* Ablauf testen anhand von Use Case -> Integrationstest/Systemtest, KEIN Unittest
+** Funktionalität in Kombination mit DB, ..
+** Selenium wäre Systemtest
+
+* Teststrategie
+** Ende-zu-Ende
+
+* Eingabedaten konkretisieren
+* Tabelle mit richtigen/falschen Datensätzen
+* Ergebnisse -> Name TC, Datum, Verantwortlicher, Erfolg/ Nichterfolg, Kommentar
+* Wie wird mit Abweichungen umgegangen
+* vielleicht doch automatisiert testen ?
+* Ergebnis zählt -> laufendes System
+
+* Akzeptanztest
+** Anweisungen, Checkliste
+** Kommentare abgeben
+
+= FAQ
+
+* Mehrere Browser testen - mobile Browser?
+** Anforderungen lesen, ist das gefordert ?
+** oder ist das gar nicht genau spezifiziert?
+** HTML Kompatibilitätstest
+** Unterschied zwischen Kompatibilität/ responsive Oberfläche
+
+* Wie genau soll man die Unittests formulieren
+** Allgemeine Formulierungen -> Konstante für Oberflächenelemente
+
+* Muss ich beim Testen konkrete Daten eingeben ?
+** Ja, ganz konkrete Daten
+** Tabelle mit gültigen Datensätzen, die eingegeben werden können, zur Verfügung stellen
+
+* Unterscheidung Testplanung/ Testdurchführung

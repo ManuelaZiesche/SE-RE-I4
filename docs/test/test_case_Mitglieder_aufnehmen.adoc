@@ -1,3 +1,0 @@
-= Test Cases zu Use Case 02 - Mitglieder aufnehmen 
-
-== Allgemeine Informationen

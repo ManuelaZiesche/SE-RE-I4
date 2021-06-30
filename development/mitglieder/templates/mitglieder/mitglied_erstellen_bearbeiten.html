@@ -23,7 +23,7 @@
       </div>
       <div class="input-field col s12 m4 l3">
         <input id="spitzname" name="spitzname" type="text" class="validate" {% if mitglied.spitzname %}value="{{mitglied.spitzname}}"{% endif %}>
-        <label for="spitzname">Nickname</label>
+        <label for="spitzname">Spitzname</label>
       </div>
     </div>
 
@@ -112,7 +112,72 @@
         <input id="telefon_mobil" name="telefon_mobil" type="text" class="validate" {% if mitglied.tel_mobil %}value="{{mitglied.tel_mobil}}"{% endif %}>
         <label for="telefon_mobil">Telefon (mobil)</label>
       </div>
+    
+    <div class="col s12">
+      <label style="color:#000" for="chk5-{{entry.id}}">
+        <input type="checkbox" name="tel_weitergabe"  id="chk5-{{entry.id}}" {% if mitglied.tel_weitergabe %}checked{% endif %}/>
+        <span>Telefonnummer im Notfall weitergeben an andere Mitglieder</span>
+      </label>
     </div>
+  </div>
+
+
+    <!-- Checkliste für neu hinzugefügte Mitglieder -->
+    <div class="row">
+      <div class="col s12">
+        <h5>Checkliste</h5>
+        <br />
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk1-{{entry.id}}">
+          <input type="checkbox" name="wahl_angenommen"  id="chk1-{{entry.id}}" {% if mitglied.wahl_angenommen %}checked{% endif %}/>
+          <span>Wahl angenommen</span>
+        </label>
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk2-{{entry.id}}">
+          <input type="checkbox" name="kenntnis_ordn" id="chk2-{{entry.id}}" {% if mitglied.kenntnis_ordn %}checked{% endif %}/>
+          <span>Kenntnisnahme der Ordnungen</span>
+        </label>
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk3-{{entry.id}}">
+          <input type="checkbox" name="verpfl_datengeheimnis" id="chk3-{{entry.id}}" {% if mitglied.verpfl_datengeheimnis %}checked{% endif %}/>
+          <span>Verpflichtung auf das Datengeheimnis</span>
+        </label>
+      </div>
+
+      <div class="col s12">
+        <label style="color:#000" for="chk4-{{entry.id}}">
+          <input type="checkbox" name="stammdatenblatt" id="chk4-{{entry.id}}" {% if mitglied.stammdatenblatt %}checked{% endif %}/>
+          <span>Stammdatenblatt</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Dateiuploadfeld -->
+
+    <!-- noch keine Funktionalität zum Dateiupload vorhanden
+
+    <div class="row">
+      <div class="file-field input-field col s12 m12 l9">
+        <div class="btn btn-amber" style="border-radius: 7%;">
+          <span>
+            <i class="material-icons">file_upload</i>
+          </span>
+          <input type="file" multiple>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Lade eine oder mehrere Dateien hoch">
+        </div>
+      </div>
+    </div>
+
+    -->
+
     <!-- Buttons: Hinzufuegen, Abbrechen -->
     <div class="row">
         <div class="col s12">
@@ -120,6 +185,7 @@
           <a href="/mitglieder" class="waves-effect waves-light btn-large grey lighten-2 black-text">Abbrechen</a>
         </div>
     </div>
+
   </div>
 </div>
 </form>
@@ -185,7 +251,7 @@
     var amt_num = {% if mitglied %}{{mitglied.mitgliedamt_set.count}}{% else %}1{% endif %};
     var email_num = {% if mitglied %}{{mitglied.mitgliedmail_set.count}}{% else %}1{% endif %};
   $(document).ready(function(){
-  // Selects und Date Picker initialisieren, Event Listener fuer Dropdowns hinzufuegen
+  // Selects und Date Picker initialisieren, Event Listener für Dropdowns hinzufügen
   initSelect();
   for (var i=1; i<=amt_num; i++) initDatePicker(i);
   addReferatEventListener();
@@ -194,20 +260,20 @@
   // Speicherbutton geklickt
   $("#save_button").click(function(){
     var valid_input = true;
-    // Pruefen, ob Vor- und Nachname angegeben sind
-    if ($("#vorname").val()==""){
+    // Prüfen, ob Vor- und Nachname angegeben sind und ob sie Zahlen enthalten
+    if ($("#vorname").val()=="" || /\d/.test($("#vorname").val())){
       $("#vorname").addClass("invalid_input");
       addInputEventListener("vorname");
       valid_input = false;
       console.log("vorname fehlt");
     } else $("#vorname").removeClass("invalid_input");
-    if ($("#nachname").val()==""){
+    if ($("#nachname").val()=="" || /\d/.test($("#nachname").val())){
       $("#nachname").addClass("invalid_input");
       addInputEventListener("nachname");
       console.log("name fehlt");
       valid_input = false;
     }
-    // Pruefen, ob alle E-Mail- und Amtfelder ausgefuellt sind
+    // Prüfen, ob alle E-Mail- und Amtfelder ausgefüllt sind
     console.log("anzahl emails: " + email_num.toString());
     for (var i=1; i<=email_num; i++){
       var email = $("#email"+i.toString()).val();
@@ -219,10 +285,10 @@
       }
     }
     for (var i=1; i<=amt_num; i++){
-      // Select fuer Amt existiert nocht nicht (weil kein Organisationseinheit oder Bereich ausgewaehlt wurde) => rot markieren
+      // Select für Amt existiert nocht nicht (weil kein Organisationseinheit oder Bereich ausgewählt wurde) => rot markieren
       if (!$("#selectamt"+i.toString()).length){
         console.log("selectamt" + i.toString());
-        // Dropdown fuer Bereich existiert => rot markieren, ansonsten Dropdown fuer Organisationseinheit rot markieren
+        // Dropdown für Bereich existiert => rot markieren, ansonsten Dropdown für Organisationseinheit rot markieren
         if ($("#selectbereich" + i.toString()).length){
           console.log("Bereich wurde nicht ausgewaehlt")
           $("#div_selectbereich"+i.toString()).addClass("invalid_input");
@@ -235,7 +301,7 @@
         console.log("Kein Bereich oder Organisationseinheit ausgewahelt");
         valid_input = false;
       }
-      // Organisationseinheit und Bereich, aber kein Amt ausgewaehlt => Amt rot markieren
+      // Organisationseinheit und Bereich, aber kein Amt ausgewählt => Amt rot markieren
       if ($("#selectamt" + i.toString() + " option:selected").prop("disabled")==true){
         console.log("Ein Amt wurde nicht ausgewaehlt");
         valid_input = false;
@@ -248,32 +314,32 @@
     if (valid_input) {
         // check if MaxMembers is reached
         $.ajax({
-            type: "POST",
-            {% if mitglied %}
-                url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=mitglied.id %}",
-                {% else %}
-                url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=0 %}",
-            {% endif %}
-            data: $('#mitgliedForm').serialize(),
+          type: "POST",
+          {% if mitglied %}
+              url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=mitglied.id %}",
+              {% else %}
+              url: "{% url 'mitglieder:funktionen-max-member-ueberpruefen' mitglied_id=0 %}",
+          {% endif %}
+          data: $('#mitgliedForm').serialize(),
 
-        success: function(data){
-          var ret = data['isValid'];
-          if(ret == true) {
-              $('#mitgliedForm').submit();
+          success: function(data){
+            var ret = data['isValid'];
+            if(ret == true) {
+                $('#mitgliedForm').submit();
+            }
+            else {
+                window.scrollTo(0,0);
+                var modal = $("#modal-max-members");
+                var instance = M.Modal.getInstance(modal);
+                $("#list-max-members").html("");
+                var funktionen = data['funktion'];
+                console.log(funktionen);
+                funktionen.forEach(function appendtolist(currval) {
+                    $("#list-max-members").append("<li>" + currval + "</li>");
+                });
+                instance.open();
+            }
           }
-          else {
-              window.scrollTo(0,0);
-              var modal = $("#modal-max-members");
-              var instance = M.Modal.getInstance(modal);
-              $("#list-max-members").html("");
-              var funktionen = data['funktion'];
-              console.log(funktionen);
-              funktionen.forEach(function appendtolist(currval) {
-                  $("#list-max-members").append("<li>" + currval + "</li>");
-              });
-              instance.open();
-          }
-        }
         });
     }
     else {
@@ -481,15 +547,15 @@
   function initDatePicker(amtid){
     var beginn_datepicker = document.querySelectorAll('#beginn_kandidatur' + amtid);
     var ende_datepicker = document.querySelectorAll('#ende_kandidatur' + amtid);
-    var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', showClearBtn: true, i18n: {
+    var init_settings = {formatSubmit: 'yyyy/mm/dd', dateFormat: 'dd.mm.yyyy', format: 'dd.mm.yyyy', firstDay: 1, showClearBtn: true, i18n: {
                 months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
                 monthsShort: ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
-                weekdays: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
-                weekdaysShort: ["Mo","Di", "Mi", "Do", "Fr", "Sa", "So"],
-                weekdaysAbbrev: ["M","D", "M", "D", "F", "S", "S"],
+                weekdays: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+                weekdaysShort: ["So", "Mo","Di", "Mi", "Do", "Fr", "Sa"],
+                weekdaysAbbrev: ["S", "M","D", "M", "D", "F", "S"],
                 today: 'heute',
                 clear: 'löschen',
-                cancel: 'abbrechen',
+                cancel: 'abbrechen'
             },
             onSelect: function(selectedDate) {
               var instance = M.Datepicker.getInstance($('#ende_kandidatur' + amtid));

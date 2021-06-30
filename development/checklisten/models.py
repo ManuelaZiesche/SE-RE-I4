@@ -6,13 +6,15 @@ from aemter.models import Recht
 
 class Checkliste(models.Model):
     """
-    Represents a checklist.
+    Datenbankmodell für eine Checkliste.
     
-    * mitglied: The Mitglied the checklist was created for. Must not be null.
-    * amt: The Funktion the checklist was created for. Can be null.
-    * history: Contains a log of all changes made to the model. Provided by django-simple-history.
+    Felder:
 
-    Note that the checklist will be deleted if the associated Mitglied or Funktion is deleted (cascade).
+    * mitglied: Das Mitglied, für das die Checkliste erstellt wurde. Darf nicht null sein.
+    * amt: Die Funktion, für die die Checkliste erstellt wurde. Kann null sein.
+    * history
+
+    Es ist zu beachten, dass die Checkliste gelöscht wird, wenn das zugehörige Mitglied oder die Funktion gelöscht wird. (Cascade)
     """
     mitglied = models.ForeignKey(Mitglied, on_delete=models.CASCADE, null=False)
     amt = models.ForeignKey(MitgliedAmt, on_delete=models.CASCADE, null=True)
@@ -26,10 +28,12 @@ class Checkliste(models.Model):
 
 class Aufgabe(models.Model):
     """
-    Defines a general task that can be added to a checklist.
+    Datenbankmodell Aufgabe
 
-    * bezeichnung: The task's title that will be shown in the UI. May contain up to 50 characters and must not be null.
-    * history: Contains a log of all changes made to the model. Provided by django-simple-history.
+    Felder:
+
+    * bezeichnung: Die Aufgabenbezeichnung, die im UI angezeigt wird. Kann bis zu 50 Zeichen lang sein und darf nicht null sein.
+    * history
     """
     bezeichnung = models.CharField(max_length=50, null=False)
     history = HistoricalRecords()
@@ -42,14 +46,16 @@ class Aufgabe(models.Model):
 
 class ChecklisteAufgabe(models.Model):
     """
-    Represents a general task inside of a specific checklist.
+    Datenbankmodell einer spezifischen Aufgabe in einer bestimmten Checkliste.
 
-    * checkliste: The checklist that this task belongs to. Must not be null.
-    * aufgabe: The task that was assigned to the checklist. Must not be null.
-    * abgehakt: Whether or not the task has been completed for this specific checklist. Must not be null and is false by default.
-    * history: Contains a log of all changes made to the model. Provided by django-simple-history.
+    Felder:
 
-    Please note that the entry is deleted if the associated Checkliste or Aufgabe is deleted (cascade).
+    * checkliste: Referenziert die Checkliste, zu der diese Aufgabe gehört. Kann nicht null sein.
+    * aufgabe: Referenziert die Aufgabe, die zu der Checkliste gehört. Kann nicht null sein.
+    * abgehakt: Stellt dar, ob die Aufgabe in dieser bestimmten Checkliste bereits erledigt wurde. Standard ist False.
+    * history
+
+    Es ist zu beachten, dass diese Checklisten-Aufgabe gelöscht wird, wenn die zugehörige Checkliste oder die Aufgabe gelöscht wird. (Cascade)
     """
     checkliste = models.ForeignKey(Checkliste, on_delete=models.CASCADE, null=False)
     aufgabe = models.ForeignKey(Aufgabe, on_delete=models.CASCADE, null=False)
@@ -64,14 +70,16 @@ class ChecklisteAufgabe(models.Model):
 
 class ChecklisteRecht(models.Model):
     """
-    Represents a Recht to be given inside of a specific checklist.
+    Datenbankmodell eines Rechts, das in einer Checkliste gegeben werden soll.
 
-    * checkliste: The checklist that this Recht was assigned to. Must not be null.
-    * recht: The Recht that was assigned to the checklist. Must not be null.
-    * abgehakt: Whether or not the Recht has been given for this specific checklist. Must not be null and is false by default.
-    * history: Contains a log of all changes made to the model. Provided by django-simple-history.
+    Felder:
+    
+    * checkliste: Die Checkliste, zu der dieses Recht gehört. Kann nicht null sein.
+    * recht: Das Recht, was dieser Checkliste zugeordnet wurde. Kann nicht null sein.
+    * abgehakt: Stellt dar, ob das Recht in dieser Checkliste schon gegeben wurde. Standard ist False.
+    * history
 
-    Please note that the entry is deleted if the associated Checkliste or Recht is deleted (cascade).
+    Es ist zu beachten, dass dieses Checklisten-Recht gelöscht wird, wenn die zugehörige Checkliste oder das Recht gelöscht wird. (Cascade)
     """
     checkliste = models.ForeignKey(Checkliste, on_delete=models.CASCADE, null=False)
     recht = models.ForeignKey(Recht, on_delete=models.CASCADE, null=False)

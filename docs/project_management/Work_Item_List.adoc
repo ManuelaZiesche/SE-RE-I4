@@ -35,4 +35,12 @@
 | Vision, Use Cases und Requirements überarbeiten | mittel | | | | sabine + Manuela| 
 | Architecture Notebook überarbeiten | mittel | | | | Benjamin + Sebastian | 
 | Domänenmodell erstellen | mittel | | | | Benjamin + Sebastian | 
+| *Iteration 06:* | | | | | | 
+
+
+| *Iteration 07:* | | | | | | 
+
+
+| *Iteration 08:* | | | | | | 
 |===
+

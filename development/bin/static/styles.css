@@ -46,9 +46,9 @@ main {
    color: #000 !important;
  }
 
-.checkbox-amber[type="checkbox"]:checked + span:not(.lever):after {
-  border: 2px solid #ffc107;
+.btn-amber, .btn-amber:hover {
   background-color: #ffc107;
+  color: #000;
 }
 
 .dropdown-content li > span {

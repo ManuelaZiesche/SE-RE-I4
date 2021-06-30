@@ -31,18 +31,22 @@ Ist für die Mitgliederaufnahme und die Bearbeitung der Check-Listen zuständig
 //. Der Use Case ist abgeschlossen.
 . Der Use Case beginnt, wenn der Admin den Tab "Kandidaturen" auswählt
 . Der Admin wählt die Möglichkeit aus, die kandidierende Person als Mitglied aufzunehmen
-. Eine kleine Checkliste erscheint 
-. Der Admin prüft, ob die benötigten Dokumente (Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten) hochgeladen worden sind
-. Der Admin bestätigt, dass er alle Aufgaben erledigt hat und die Kandidatur als Mitglied hinzufügen möchte 
-. Die Anwendung fügt den Kandidat mit all seinen Informationen als Mitglied hinzu
-. Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen muss
-. Die neue Checkliste wird am Ende aller offenen Checklisten aufgereiht 
+. Der Datensatz der Kandidatur wird aus der Übersicht entfernt und taucht unter dem Tab "Mitglieder" auf, in der er bearbeitet werden kann
+
+
+
+//. Eine kleine Checkliste erscheint 
+//. Der Admin prüft, ob die benötigten Dokumente (Verpflichtung auf das Datengeheimnis, Kenntnisnahme der Ordnungen, Stammdaten) hochgeladen worden sind
+//. Der Admin bestätigt, dass er alle Aufgaben erledigt hat und die Kandidatur als Mitglied hinzufügen möchte 
+//. Die Anwendung fügt den Kandidat mit all seinen Informationen als Mitglied hinzu
+//. Die Anwendung erstellt dabei automatisch unter dem Tab "Checklisten" eine Checkliste mit Aufgaben für jedes neue Mitglied, die der Admin erledigen muss
+//. Die neue Checkliste wird am Ende aller offenen Checklisten aufgereiht 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-* Check Liste mit zu erfüllenden Aufgaben für den Admin wurde erstellt +
-* die Kandidatur wurde zum Mitglied umgewandelt +
-* Kandidatur (jetzt Mitglied) taucht nicht mehr unter dem Tab "Kandidaturen" auf
+
+* Die Kandidatur wurde zum Mitglied umgewandelt und kann unter dem Tab "Mitglieder" bearbeitet werden
+
 
 
 
