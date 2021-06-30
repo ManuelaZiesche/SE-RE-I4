@@ -1,3 +1,130 @@
-= Test Cases zu Use Case 02 - Mitglieder aufnehmen 
 
-== Allgemeine Informationen
+= Test Cases zu Use-Case 02 - Mitglieder aufnehmen
+
+*Beschreibung:* Der Admin möchte bereits vorhandenen Kandidaten zu einem Mitglied machen
+
+*Vorbedingungen:*
+
+- Kandidat (Datensatz 1), welcher als Mitglied übernommen werden soll, befindet sich bereits in der Datenbank
+- Das Kandidatentab ist geöffnet und die Liste der Kandidaten ist sichtbar
+
+
+.*Testdaten*
+[%header, cols="1,2,3,4,5", ]
+|===
+|Nr.
+|Name
+|Vorname
+|Spitzname
+|Wahldatum
+
+|1
+|Stern
+|Stefan
+|Sterni
+|01.08.2021
+|===
+
+.*Testdaten fortgesetzt*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Nr.
+|Beschlussnummer
+|Organisationseinheit
+|Bereich
+|Funktion
+|E-Mail-Adresse
+
+|1
+|2021-07-03
+|Referat Soziales
+|Freizeit
+|Leitung
+|sterni@gmail.com
+|===
+
+
+
+
+.*Unittests*
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.{set:cellbgcolor:#f4f4e9}
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1
+|Wie  oben beschrieben
+|AUFNAHME-Button (links vom Stift)
+|Mausklick
+|*Plus*-Button des Kandidats, welche als Mitglied übernommen werden soll (Datensatz 1), wird geklickt
+|Popup mit "*JA*/*NEIN*-Bestätigungsdialog" ploppt auf
+
+
+|2
+|Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
+|*NEIN*-Button
+|Mausklick
+|Klick auf *NEIN*-Button
+|Kandidat nach wie vor in der Kandidaturenliste zu sehen + Popup schließt sich
+|===
+
+
+
+
+
+.*Testdokumentation - "Mitglieder aufnehmen"*
+[%header, cols="1,2,3,4,5,6", ]
+|===
+|Getestet wurde T.-Nr.{set:cellbgcolor:#e6f2d5}
+|Anzahl (Num­me­rie­rung)
+|Datum
+|Verantwortlicher +
+(Wer hat getestet?)
+|Erfolgreich?
+|Kommentar (Was ist aufgefallen?)
+
+|1
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
+
+|2
+|1
+|17.06.2021
+|Sebastian
+|ja
+|-
+
+|===
+
+
+
+
+.*Integrationstests*
+[%header, cols="1,2,3,4,5,6"]
+|===
+|T.-Nr.{set:cellbgcolor:#eaf1f5}
+|Vorbedingungen
+|Testobjekt
+|Eingabe(daten)
+|Handlungen zur Durchführung des Tests
+|Erwartetes Ergebnis
+
+|1. 
+|Wie  oben beschrieben + *JA*/*NEIN*-Bestätigungsdialog bereits zu sehen
+|*JA*-Button
+|Mausklick
+|Klick auf *JA*-Button + Wechsel in das Mitgliedertab
+|Anzeige "Kandidatur wurde erfolgreich aufgenommen" ist über Kandidaturenliste zu sehen + Kandidat nicht mehr in der Kandidaturenliste  + Kandidat jetzt als Mitglied in der Mitgliedsliste zu sehen (Datensatz 1)
+|===
+
+
+
+
+
