@@ -12,12 +12,12 @@ Sabine Adam
 
 | *Datum* | 17.06.2021 | *Thema* | 1. Akzeptanztest
 | *Teilnehmer (Rolle)* 3+^|
- Sophia (Auftraggeberin) +
- Axel (Admin) +
+ Sophia von Asow (Auftraggeberin) +
+ Axel Schiller (Admin) +
  Hannes (Stura) +
- Benni (Architekt) +
- Vasco Schwarze (Entwickler) +
- Sabine Adam (Protokoll) 
+ Bennjamin Müller (Architekt) +
+ Leander Vasco Schwarze (Entwickler) +
+ Sabine Elisabeth Adam (Protokoll) 
 
 |====
 
