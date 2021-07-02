@@ -28,19 +28,44 @@
 | Test Cases formulieren | mittel | 4 | in Bearbeitung |  | alle Teammitglieder | 2
 | *Iteration 05:* | | | | | | 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
-| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 
+| Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 | erledigt | | Manuela | 2
 | Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
-| Test Cases formulieren | mittel | | | | Sebastian, Bayu und Manuela | 
-| Prototyp des Kandidatentabs erstellen | hoch | | in Bearbeitung | | Vasco | 4 (bis jetzt)
-| Vision, Use Cases und Requirements überarbeiten | mittel | | | | sabine + Manuela| 
-| Architecture Notebook überarbeiten | mittel | | | | Benjamin + Sebastian | 
-| Domänenmodell erstellen | mittel | | | | Benjamin + Sebastian | 
+| Test Cases formulieren | mittel | 5| | | Sebastian | 5
+| Prototyp des Kandidatentabs erstellen | hoch | 5 | in Bearbeitung | | Vasco | 7
+| Vision, Use Cases und Requirements überarbeiten | mittel | 2 |  erledigt | | Sabine + Manuela | 3
+| Architecture Notebook überarbeiten | mittel | 2 | erledigt | | Benjamin + Sebastian | 2
+| Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin | 3
 | *Iteration 06:* | | | | | | 
-
-
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt | Essence Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken | alle Teammitglieder |  1
+| Iteration 06 planen und managen | hoch | 2 | erledigt | Work Item List, Risk List,Iterationsplan  | Manuela | 2
+| Test Cases formulieren | mittel | 4 | erledigt | | Sebastian (Bayu)  | 5
+| Prototyp des Kandidatentabs fertigstellen (Use Case 1) | hoch | | erledigt | | Vasco | 15
+| Kandidaten per Knopfdruck zu Mitgliedern aufnehmen (Use Case 2) | niedrig | | in Bearbeitung | | Vasco | 9
+| Architecture Notebook überarbeiten + erweitern | mittel | 1 | erledigt | | Benjamin + Sebastian + Sabine | 2
+| Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin + Sabine + Manuela | 3
+| mit der Dokumentation beschäftigen | mittel | 4 | erledigt | | Sabine, Manuela | 6
 | *Iteration 07:* | | | | | | 
-
-
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
+| Iteration 07 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 | erledigt | | Manuela | 2
+| Testen der Use Cases 1-3 -> Akzeptanztests mit Stakeholdern | hoch | 1 | erledigt | | Vasco, Sabine, Benjamin, Sebastian | 1
+| Diagramme zur Architektur erstellen | mittel | 10 | erledigt | | Benjamin | 11
+| Projektbericht 'Planung' beenden | mittel | 2 | erledigt | | Manuela, Sabine | 2
+| Projektbericht 'Durchführung' zu circa 75% fertigstellen | mittel | 5 | erledigt | | Manuela | 7
+| Projektbericht 'Ergebnisse' anfangen | mittel | 2 | erledigt | | Sabine | 1
+| Anwenderdokumentation zu circa 75% fertigstellen | mittel | 6 | erledigt | | Sabine | 5
+| Kandidaten zu Mitgliedern aufnehmen (UC 02) | hoch| 2 | erledigt | | Vasco | 3
+| E-Mail Buttons UC 04 implementieren (Mitglieder kontaktieren) | hoch| 1 | erledigt | | Vasco | 1
+| Checklisten, weitere Informationen implementieren (UC 03) | hoch| 11 | erledigt | | Vasco | 10
+| Wünsche der Stakeholder aus den Akzeptanztestmeeting implementieren | hoch| 1 | erledigt | | Vasco | 2
 | *Iteration 08:* | | | | | | 
+| Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
+| Iteration 08 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 3
+| Testdokumentation | hoch | 4 | erledigt | | Sebastian (Bayu)| 5
+| Anwenderdokumentation fertigstellen | hoch| 4 | erledigt | | Sabine| 5
+| Betriebsdokumentation | hoch | 6| erledigt | | Vasco + Sabine | x + 3
+| Softwaredokumentation der Entwicklerdokumentation | hoch | 5 | erledigt | | Vasco + Benni | 5
+| Entwurfsdokumentation der Entwicklerdokumentation | hoch | 3 | erledigt | | Sabine| 2
+| 'Durchführung' des Projektberichtes | hoch| 4 | erledigt | | Manuela | 5
+| 'Ergebnisse' des Projektberichtes | hoch| 1 | erledigt | | Sabine | 1
 |===
 
