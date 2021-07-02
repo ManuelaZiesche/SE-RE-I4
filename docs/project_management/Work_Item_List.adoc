@@ -30,18 +30,18 @@
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  
 | Iteration 05 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 | erledigt | | Manuela | 2
 | Use Cases verfeinern - mithilfe des Inputs von Felix | hoch | 2 | erledigt | | Sabine | 2
-| Test Cases formulieren | mittel | 5| | | Sebastian | 5
+| Test Cases formulieren | mittel | 5| | | Sebastian, Bayu | 5
 | Prototyp des Kandidatentabs erstellen | hoch | 5 | in Bearbeitung | | Vasco | 7
 | Vision, Use Cases und Requirements überarbeiten | mittel | 2 |  erledigt | | Sabine + Manuela | 3
-| Architecture Notebook überarbeiten | mittel | 2 | erledigt | | Benjamin + Sebastian | 2
+| Architecture Notebook überarbeiten | mittel | 2 | erledigt | | Benjamin + Sebastian  + Bayu| 2
 | Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin | 3
 | *Iteration 06:* | | | | | | 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt | Essence Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken | alle Teammitglieder |  1
 | Iteration 06 planen und managen | hoch | 2 | erledigt | Work Item List, Risk List,Iterationsplan  | Manuela | 2
-| Test Cases formulieren | mittel | 4 | erledigt | | Sebastian (Bayu)  | 5
+| Test Cases formulieren | mittel | 4 | erledigt | | Sebastian, Bayu | 5
 | Prototyp des Kandidatentabs fertigstellen (Use Case 1) | hoch | | erledigt | | Vasco | 15
 | Kandidaten per Knopfdruck zu Mitgliedern aufnehmen (Use Case 2) | niedrig | | in Bearbeitung | | Vasco | 9
-| Architecture Notebook überarbeiten + erweitern | mittel | 1 | erledigt | | Benjamin + Sebastian + Sabine | 2
+| Architecture Notebook überarbeiten + erweitern | mittel | 1 | erledigt | | Benjamin + Sebastian + Sabine + Bayu| 2
 | Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin + Sabine + Manuela | 3
 | mit der Dokumentation beschäftigen | mittel | 4 | erledigt | | Sabine, Manuela | 6
 | *Iteration 07:* | | | | | | 
@@ -61,11 +61,14 @@
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
 | Iteration 08 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 3
 | Testdokumentation | hoch | 4 | erledigt | | Sebastian (Bayu)| 5
-| Anwenderdokumentation fertigstellen | hoch| 4 | erledigt | | Sabine| 5
+| Anwenderdokumentation fertigstellen | hoch| 4 | erledigt | | Sabine + Bayu| 5
 | Betriebsdokumentation | hoch | 6| erledigt | | Vasco + Sabine | x + 3
 | Softwaredokumentation der Entwicklerdokumentation | hoch | 5 | erledigt | | Vasco + Benni | 5
+| Softwaredokumentation übersetzen | mittel | 2 | erledigt | |  Benni + Bayu | 2
 | Entwurfsdokumentation der Entwicklerdokumentation | hoch | 3 | erledigt | | Sabine| 2
 | 'Durchführung' des Projektberichtes | hoch| 4 | erledigt | | Manuela | 5
 | 'Ergebnisse' des Projektberichtes | hoch| 1 | erledigt | | Sabine | 1
+| Reflexion schreiben | hoch | 6 | erledigt | | jedes Teammitglied seine eigene| 6
+| Korrektur lesen aller Dokumentationen | hoch | 3 | erledigt | | Benjamin, Sabine, Vasco, Manuela | 5
 |===
 
