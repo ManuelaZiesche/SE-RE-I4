@@ -40,7 +40,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | Test Cases formulieren | mittel | | erledigt | | Sebastian, Bayu | 11
 | Prototyp des Kandidatentabs erstellen | hoch | | erledigt| | Vasco | 15 
 | Vision, Use Cases und Requirements überarbeiten | mittel | | erledigt |  | Sabine + Manuela| 4
-| Architecture Notebook überarbeiten + erweitern | mittel | | erledigt | | Benjamin + Sebastian + Sabine | 4
+| Architecture Notebook überarbeiten + erweitern | mittel | | offen | | Benjamin + Sebastian + Sabine | 4
 | Domänenmodell erstellen | mittel | 2 | erledigt| | Benjamin + Sabine + Manuela | 3
 |===
 
