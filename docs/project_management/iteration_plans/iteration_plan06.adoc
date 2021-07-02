@@ -32,13 +32,13 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |===
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Notizen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt | Essence Navigator unter 'Control' den Punkt 'Working Well' komplett abhaken | alle Teammitglieder |  1
-| Iteration 06 planen und managen | hoch |  | erledigt | Work Item List, Risk List,Iterationsplan  | Manuela | 
-| Test Cases formulieren | mittel | | erledigt | | Sebastian, Bayu | 5
+| Iteration 06 planen und managen | hoch | 2 | erledigt | Work Item List, Risk List,Iterationsplan  | Manuela | 2
+| Test Cases formulieren | mittel | 4 | erledigt | | Sebastian (Bayu)  | 5
 | Prototyp des Kandidatentabs fertigstellen (Use Case 1) | hoch | | erledigt | | Vasco | 15
 | Kandidaten per Knopfdruck zu Mitgliedern aufnehmen (Use Case 2) | niedrig | | in Bearbeitung | | Vasco | 9
-| Architecture Notebook überarbeiten + erweitern | mittel | | erledigt | | Benjamin + Sebastian + Sabine | 2
+| Architecture Notebook überarbeiten + erweitern | mittel | 1 | erledigt | | Benjamin + Sebastian + Sabine | 2
 | Domänenmodell erstellen | mittel | 2 | erledigt | | Benjamin + Sabine + Manuela | 3
-| mit der Dokumentation beschäftigen | mittel |  | erledigt | | Sabine, Manuela | 6
+| mit der Dokumentation beschäftigen | mittel | 4 | erledigt | | Sabine, Manuela | 6
 
 |===
 
@@ -65,7 +65,7 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 |*Assessment Ziel* | *Iteration 6 beenden*
 |Assessment Datum | 31.05.2021
 | Teilnehmer | alle
-| Projektstatus | gelb/grün
+| Projektstatus | grün
 |===
 
 Der erste Prototyp des Kandidatentabs wurde fertiggestellt, das meint, dass der Use Case 1 fertig implementiert ist. Den Use Case 2 hat unser Entwickler angefangen zu implementieren. Dieser wird in der nächsten Iteration fertiggestellt. 

@@ -32,13 +32,13 @@ Alle, aus dem gesamten Projekt, werden in der *Work Item List* vermerkt:  <<link
 | *Aufgabe bzw Beschreibung* | *Priorität* | *Schätzung der Größe* | *Status* | *Referenzen* | *Name* | *Gearbeitete Stunden* 
 | Essence Navigator durchschauen und aktualisieren | niedrig | 1 | erledigt |  | alle Teammitglieder |  1
 | Iteration 08 planen und managen (Work Item List, Risk List,Iterationsplan) | hoch | 2 |  | | Manuela | 3
-| Testdokumentation | hoch | | | | Sebastian, Bayu | 
-| Anwenderdokumentation fertigstellen | hoch| 2 | | | Sabine| 5
-| Betriebsdokumentation | hoch | | | | Vasco + Sabine | x + 3
-| Softwaredokumentation der Entwicklerdokumentation | hoch | | | | Vasco + Benni | 5
-| Entwurfsdokumentation der Entwicklerdokumentation | hoch | | | | Sabine| 2
-| Durchführung des Projektberichtes | hoch| | | | Manuela| 
-| Ergebnisse des Projektberichtes | hoch| | | | Sabine | 1
+| Testdokumentation | hoch | 4 | erledigt | | Sebastian (Bayu)| 5
+| Anwenderdokumentation fertigstellen | hoch| 4 | erledigt | | Sabine| 5
+| Betriebsdokumentation | hoch | 6| erledigt | | Vasco + Sabine | x + 3
+| Softwaredokumentation der Entwicklerdokumentation | hoch | 5 | erledigt | | Vasco + Benni | 5
+| Entwurfsdokumentation der Entwicklerdokumentation | hoch | 3 | erledigt | | Sabine| 2
+| 'Durchführung' des Projektberichtes | hoch| 4 | erledigt | | Manuela | 5
+| 'Ergebnisse' des Projektberichtes | hoch| 1 | erledigt | | Sabine | 1
 |===
 
 == Probleme 
